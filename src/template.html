@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delhi Metro Phase V</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+:root{
+  --bg:#f6f5f2; --panel:#ffffff; --ink:#1d1d1f; --muted:#6b6b70; --line:#e3e1dc; --chip:#f0eee9;
+  --accent:#B5267B; --station:#ffffff; --stroke:#1d1d1f; --shadow:0 6px 24px rgba(0,0,0,.10);
+  --tile-filter:none; --label-halo:#ffffff;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121214; --panel:#1b1b1e; --ink:#ececef; --muted:#9a9aa2; --line:#2c2c31; --chip:#26262b;
+    --station:#1b1b1e; --stroke:#ececef; --shadow:0 6px 24px rgba(0,0,0,.5); --label-halo:#121214;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121214; --panel:#1b1b1e; --ink:#ececef; --muted:#9a9aa2; --line:#2c2c31; --chip:#26262b;
+  --station:#1b1b1e; --stroke:#ececef; --shadow:0 6px 24px rgba(0,0,0,.5); --label-halo:#121214;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:14px/1.4 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#app{display:flex;height:100%;width:100%;overflow:hidden}
+#map{min-width:0;min-height:0}
+#map{flex:1;background:var(--bg)}
+aside{width:340px;max-width:100%;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;padding:18px 16px 28px;z-index:1000}
+h1{font-size:19px;margin:0 0 2px;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:12.5px;margin-bottom:14px}
+h2{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:18px 0 8px;font-weight:600}
+.row{display:flex;align-items:center;gap:8px;padding:5px 6px;border-radius:8px;cursor:pointer;user-select:none}
+.row:hover{background:var(--chip)}
+.row input{margin:0;accent-color:var(--accent)}
+.row .count{margin-left:auto;color:var(--muted);font-variant-numeric:tabular-nums;font-size:12.5px}
+.sw{width:26px;height:0;border-top:4px solid var(--ink);flex:none}
+.sw.IV{border-top-style:dashed}.sw.VA{border-top-style:dashed;border-top-width:3px}.sw.VB{border-top-style:dotted}.sw.VC{border-top-style:dotted;border-top-width:3px;opacity:.7}.sw.G1{border-top-style:dashed;border-top-color:#8E7CC3}.sw.G2{border-top-style:dashed;border-top-width:3px;border-top-color:#26A69A}.sw.RR{border-top-width:5px;border-top-color:#C2410C;border-top-style:dashed}
+.dot{width:12px;height:12px;border-radius:50%;flex:none}
+.lines .row{padding:3px 6px}
+.lines .row.off{opacity:.35}
+.tag{font-size:10.5px;padding:1px 6px;border-radius:99px;background:var(--chip);color:var(--muted);margin-left:auto;white-space:nowrap}
+.key{display:flex;align-items:center;gap:10px;font-size:13px;margin:6px 6px}
+.k-st{width:12px;height:12px;border-radius:50%;border:2.5px solid var(--ink);background:var(--station);flex:none}
+.k-ix{width:15px;height:15px;border:2.5px solid var(--ink)}
+.k-pr{border-style:dashed;background:transparent}
+input[type=search]{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);font:inherit}
+#results{margin-top:4px}
+#results div{padding:5px 8px;border-radius:7px;cursor:pointer;font-size:13px}
+#results div:hover{background:var(--chip)}
+.note{font-size:12.5px;color:var(--muted);margin:6px 6px}
+.note b{color:var(--ink)}
+.src a{color:var(--muted);font-size:12px;display:block;margin:4px 6px;word-break:break-word}
+.btns{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+button{font:inherit;font-size:12.5px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+button:hover{background:var(--chip)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:4px}
+.stat{background:var(--chip);border-radius:9px;padding:8px}
+.stat b{display:block;font-size:17px;font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:var(--muted)}
+/* map labels */
+.leaflet-tooltip.lbl{background:none;border:0;box-shadow:none;padding:0;color:var(--ink);font-weight:500;font-size:11px;
+  text-shadow:0 0 3px var(--label-halo),0 0 3px var(--label-halo),0 0 2px var(--label-halo);white-space:nowrap}
+.leaflet-tooltip.lbl:before{display:none}
+.leaflet-tooltip.lbl.ix{font-weight:700;font-size:11.5px}
+.leaflet-tooltip.lbl.proj{font-style:italic;color:var(--muted)}
+#map.z-low .lbl.minor{display:none}
+#map.z-vlow .lbl{display:none}
+#map.z-vlow .lbl.term{display:block}
+#map.z-xlow .lbl.term{display:none}
+.leaflet-container{font:inherit}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--panel);color:var(--ink);box-shadow:var(--shadow)}
+.leaflet-popup-content{margin:12px 14px;min-width:220px}
+.pp h3{margin:0 0 4px;font-size:15px}
+.pp .badge{display:inline-block;font-size:11px;padding:2px 7px;border-radius:99px;margin-bottom:8px}
+.pp .b-o{background:#e7f5ec;color:#17663a}.pp .b-p{background:#fff1dc;color:#8a5200}
+:root[data-theme="dark"] .pp .b-o{background:#163223;color:#8fe0ae}:root[data-theme="dark"] .pp .b-p{background:#3a2a10;color:#f3c37a}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .pp .b-o{background:#163223;color:#8fe0ae}:root:not([data-theme="light"]) .pp .b-p{background:#3a2a10;color:#f3c37a}}
+.pp .ln{display:flex;align-items:center;gap:7px;margin:3px 0;font-size:12.5px}
+.pp .ln small{color:var(--muted);margin-left:auto}
+.pp a{color:var(--muted)}
+.leaflet-tile-pane{filter:var(--tile-filter)}
+#toggle{display:none}
+.tl{display:flex;align-items:center;gap:10px;margin:4px 6px}
+.tl input[type=range]{flex:1;accent-color:var(--accent)}
+.tl b{min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#play{width:34px;height:30px;padding:0}
+#yearBadge{position:absolute;right:24px;bottom:26px;z-index:1000;font:800 64px/1 Inter,system-ui,sans-serif;color:var(--ink);opacity:.18;pointer-events:none;display:none;letter-spacing:-.02em}
+.rp input{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);font:inherit;margin-bottom:6px}
+#rOut{margin:8px 2px 0;font-size:13px}
+#rOut .sum{font-size:15px;font-weight:700;margin-bottom:6px}
+#rOut .sum small{font-weight:400;color:var(--muted)}
+#rOut .leg{display:flex;gap:8px;align-items:flex-start;margin:6px 0}
+#rOut .leg .dot{margin-top:4px}
+#rOut .leg small{display:block;color:var(--muted)}
+.pp .rb{display:flex;gap:6px;margin-top:8px}
+.pp .rb button{font-size:12px;padding:4px 8px}
+#map.dimmed .leaflet-tracks-pane{opacity:.28}
+#map.dimmed .leaflet-stations-pane{opacity:.45}
+#schem.dimmed #s-lines{opacity:.22}
+#schem.dimmed #s-stations g.st:not(.onroute){opacity:.35}
+
+.seg{display:flex;background:var(--chip);border-radius:9px;padding:3px;gap:3px;margin:4px 0 6px}
+.seg button{flex:1;border:0;background:transparent;padding:7px 8px}
+.seg button.on{background:var(--panel);box-shadow:0 1px 3px rgba(0,0,0,.15);font-weight:600}
+#schem{flex:1;position:relative;overflow:hidden;background:var(--bg);touch-action:none;cursor:grab;min-width:0;min-height:0}
+#schem.drag{cursor:grabbing}
+#schem svg{width:100%;height:100%;display:block}
+#schem .st circle{fill:var(--station);stroke-width:2.6}
+#schem .st.ix circle{stroke-width:3;stroke:var(--stroke)!important}
+#schem .st text{font:500 10.5px Inter,system-ui,Arial,sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--bg);stroke-width:2.5px;stroke-linejoin:round}
+#schem .st.ix text{font-weight:700}
+#schem .st.proj text{font-style:italic;fill:var(--muted)}
+#schem .st.proj circle{stroke-dasharray:2 2}
+#schem .st{cursor:pointer}
+#schem .st.hit circle{stroke-width:4}
+#schem .ph-IV{stroke-dasharray:12 7}#schem .ph-VA{stroke-dasharray:8 6}#schem .ph-VB{stroke-dasharray:.1 10;stroke-width:7.5}#schem .ph-VC{stroke-dasharray:11 6 .1 6}#schem .ph-G1{stroke-dasharray:12 7}#schem .ph-G2{stroke-dasharray:3 6 10 6}#schem .ph-RR{stroke-dasharray:18 5}
+#schem.solid .ln{stroke-dasharray:none!important;stroke-width:7!important}
+#schem.nonames .st text{display:none}
+#map.nonames .lbl{display:none!important}
+.zbtns{position:absolute;left:12px;top:12px;display:flex;flex-direction:column;gap:4px;z-index:5}
+.zbtns button{width:34px;height:34px;padding:0;font-size:18px;background:var(--panel)}
+#card{position:absolute;z-index:6;background:var(--panel);color:var(--ink);border-radius:12px;box-shadow:var(--shadow);padding:12px 14px;min-width:220px;max-width:300px;display:none}
+#card .x{position:absolute;right:8px;top:6px;border:0;background:none;font-size:16px;padding:2px 6px}
+#app{position:relative}
+@media (max-width:760px){
+  #app{flex-direction:column-reverse}
+  aside{width:100%;min-width:0;flex:none;height:46%;border-right:0;border-top:1px solid var(--line);padding:14px 16px 24px}
+  aside.collapsed{height:56px;overflow:hidden}
+  #toggle{display:block;position:absolute;right:0;top:0}
+  header{padding-right:44px}
+  header{position:relative}
+}
+</style>
+</head>
+<body>
+<div id="app">
+<aside id="side">
+  <header>
+    <h1>Delhi NCR Rail · Metro to Phase V(C), Gurugram, Noida, Meerut & Namo Bharat</h1>
+    <div class="sub">Delhi Metro to Phase V(C), the Gurugram, Noida and Meerut metros, and the Namo Bharat (RRTS) corridors. Data as of 17 Oct 2026.</div>
+    <button id="toggle" aria-label="Toggle panel">☰</button>
+  </header>
+  <div class="stats" id="stats"></div>
+
+  <h2>Timeline</h2>
+  <div class="tl"><button id="play" aria-label="Play timeline">▶</button><input type="range" id="yr" min="2002" max="2041" step="1" value="2041" aria-label="Year"><b id="yrLbl">All plans</b></div>
+  <div class="note" id="yrNote"></div>
+
+  <h2>Phases</h2>
+  <div id="phases"></div>
+
+  <h2>Station markers</h2>
+  <div class="key"><span class="k-st"></span> Station — named in a source</div>
+  <div class="key"><span class="k-st k-pr"></span><span><i>Projected</i>: name and site picked by locality and density, not published by DMRC</span></div>
+  <div class="key"><span class="k-st k-ix"></span> Interchange</div>
+  <label class="row"><input type="checkbox" id="showProj" checked> Show projected stations</label>
+  <label class="row"><input type="checkbox" id="showBase" checked> Street basemap</label>
+  <h2>View</h2>
+  <div class="seg" role="tablist"><button id="vGeo" class="on">Geographic</button><button id="vSch">Schematic</button></div>
+  <label class="row"><input type="checkbox" id="solid"> Solid lines <span class="tag">ignore phase dashes</span></label>
+  <label class="row"><input type="checkbox" id="names" checked> Station names</label>
+  <label class="row" id="curvedRow"><input type="checkbox" id="curved" checked> Curved lines <span class="tag">schematic</span></label>
+  <div class="btns"><button id="theme">Toggle dark mode</button><button id="fit">Reset view</button></div>
+
+  <h2>Route planner</h2>
+  <div class="rp">
+    <input id="rFrom" list="stlist" placeholder="From, e.g. Rohini Sector 34" autocomplete="off">
+    <input id="rTo" list="stlist" placeholder="To, e.g. Jewar Airport" autocomplete="off">
+    <div class="btns"><button id="rGo">Find route</button><button id="rSwap">Swap</button><button id="rClear">Clear</button></div>
+    <datalist id="stlist"></datalist>
+    <div id="rOut"></div>
+  </div>
+
+  <h2>Find a station</h2>
+  <input type="search" id="q" placeholder="e.g. JNU, Mithapur, Kishangarh" autocomplete="off">
+  <div id="results"></div>
+
+  <h2>Lines <span style="text-transform:none;letter-spacing:0;font-weight:400">· click to dim/show</span></h2>
+  <div class="lines" id="lines"></div>
+
+  <h2>Notes</h2>
+  <div class="note"><b>Station counts match the official corridor counts</b> for every V(B) and V(C) corridor. Where DMRC has not published names (most of V(B) and V(C)), the stations are <i>projected</i> and marked that way.</div>
+  <div class="note"><b>Gokulpuri–Arthala:</b> the V(C) table says 8 stations, but DMRC's Sept 2024 proposal names 10. All 10 are shown.</div>
+  <div class="note"><b>Station positions:</b> operational stations and track are from OpenStreetMap. Planned station positions are approximate.</div>
+  <div class="note"><b>Name changes:</b> renamed stations use their new names, e.g. Rohini West → Dr. Baba Saheb Ambedkar Hospital and Rohini East → Rohini (May 2026).</div>
+  <div class="note"><b>Gurugram:</b> Line 2 stations are from GMRL's published list. The Airport line to Gurugram follows DMRC's merged DPR (Jul 2026): 5 underground stations to Rajiv Chowk, replacing the older V(C) plan to Subhash Chowk. Sector 56–Pachgaon fills the 28-station count around the sectors named in its DPR. The Namo Bharat corridor shows only its 8 named stops, not its 15 planned metro feeder stations, whose order has not been published.</div>
+  <div class="note"><b>Namo Bharat and Noida:</b> the Alwar, Panipat–Karnal and Ghaziabad–Jewar corridors use the full station lists from NCRTC's plans. The Palwal–Jewar metro and the Film City light rail have no published stations, so theirs are projected and named after the villages and sectors they pass. The Greater Noida–Jewar metro was shelved in Oct 2023 in favour of the RRTS, so it isn't drawn.</div>
+  <div class="note"><b>Meerut Metro:</b> Line 1 is open, and its track and stations come from OpenStreetMap. Line 2 uses the 13-station list from Metro Rail News; Wikipedia says 12. Line 3 has 6 stations, and only CCS University, Ganga Nagar and Begumpul are named in the source; the rest are projected.</div>
+  <div class="note"><b>Delhi Metrolite:</b> all 21 stations are from the 2019 plan, which is still awaiting Delhi government approval. Wikipedia's index of Indian rail projects lists it as cancelled, and much of its Kirti Nagar–Mayapuri stretch overlaps the V(B) Kirti Nagar–Palam corridor.</div>
+  <div class="note"><b>Future Namo Bharat and the Phase V wish list:</b> NCRTC has published only the endpoints of the Palwal, Khurja, Rohtak, Hapur and Baraut corridors, so their stops are projected at the main towns. The same goes for Yamuna Bank–Loni, Shiv Vihar–Loni, Mayur Vihar III–Loni Border and CGO Complex–Surya Vihar. The Faridabad–Gurugram metro uses the 12 stations in DMRC's 2020 DPR.</div>
+  <div class="note"><b>Haryana extensions:</b> Red Line to Sonipat Sector 7, Grey Line to Jhajjar via Badli, and Green Line to Rohtak. Studies are done but no stations are published, so the stops are projected and named after villages on the route. One News24 report says the Sonipat link may be a Yellow Line extension from Samaypur Badli instead.</div>
+  <div class="note"><b>Completion years:</b> official targets are used where published. Elsewhere it's our estimate from each project's stage as of Oct 2026: construction-start year announced → +4–5 yrs; DPR submitted or PIB-cleared → 2032–34; DPR being prepared → 2035–36; only proposed → 2036–38; stalled or no study → 2040. Each station card shows the reason.</div>
+  <div class="note"><b>Not shown:</b> the Central Vista loop (superseded by the V(A) Magenta stretch through Kartavya Bhawan and India Gate), Samaypur Badli–Khera Kalan (superseded by V(B) III), the Gurugram Railway Station spur and Gurugram–Faridabad metro feeder stations.</div>
+
+  <h2>Sources</h2>
+  <div class="src" id="src"></div>
+</aside>
+<div id="map"></div>
+<div id="yearBadge"></div>
+<div id="schem" hidden><div class="zbtns"><button id="zIn" aria-label="Zoom in">+</button><button id="zOut" aria-label="Zoom out">−</button><button id="zFit" aria-label="Fit" style="font-size:13px">⤢</button></div>
+<div id="card"><button class="x" aria-label="Close">×</button><div class="body"></div></div>
+<!--SCHEM--></div>
+</div>
+
+<script>/*DATA*/</script>
+<script>
+(function(){
+const M = window.METRO;
+const PH = {op:{n:"Operational",d:null,w:4.5},IV:{n:"Phase IV · under construction / approved",d:"11 7",w:4},
+  VA:{n:"Phase V(A) · Centre approved",d:"7 6",w:4},VB:{n:"Phase V(B) · State approved",d:"1 8",w:4.5},VC:{n:"Phase V(C) · Proposed",d:"10 6 1 6",w:3.5},
+  G1:{n:"Gurugram & Noida metro · under construction / approved",d:"11 7",w:4},G2:{n:"NCR metro plans · DPR / proposed",d:"2 5 8 5",w:3.5},
+  RR:{n:"Namo Bharat (RRTS) · approved / DPR",d:"16 4",w:5}};
+const ORDER=["op","IV","VA","VB","VC","G1","G2","RR"];
+const SHORT={IV:"IV",VA:"V(A)",VB:"V(B)",VC:"V(C)",G1:"building",G2:"planned",RR:"RRTS"};
+const state={ph:{op:true,IV:true,VA:true,VB:true,VC:true,G1:true,G2:true,RR:true},lines:{},proj:true,view:"geo",solid:false,names:true,curved:true,year:2041};
+const YMAX=2041;
+function yrOK(y){return state.year>=YMAX||(y??9999)<state.year+1;}
+try{state.view=localStorage.getItem('dm-view')||"geo";state.solid=localStorage.getItem('dm-solid')==='1';state.names=localStorage.getItem('dm-names')!=='0';state.curved=localStorage.getItem('dm-curved')!=='0';}catch(e){}
+Object.keys(M.lines).forEach(k=>state.lines[k]=true);
+
+const root=document.documentElement;
+try{const t=localStorage.getItem("dm-theme"); if(t) root.dataset.theme=t;}catch(e){}
+const isDark=()=>root.dataset.theme==="dark"||(!root.dataset.theme&&matchMedia("(prefers-color-scheme: dark)").matches);
+
+const map=L.map("map",{zoomControl:true,preferCanvas:false,minZoom:9,maxZoom:17,zoomSnap:.25});
+const tileUrl=()=>"https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_"+(isDark()?"Dark":"Light")+"_Gray_Base/MapServer/tile/{z}/{y}/{x}";
+let base=L.tileLayer(tileUrl(),{attribution:'Basemap © Esri · Lines © OpenStreetMap contributors',maxZoom:16,maxNativeZoom:16,opacity:.8}).addTo(map);
+const HOME=[[28.13,76.86],[28.92,77.44]];
+const hm=location.hash.match(/^#([\d.]+),([\d.]+),([\d.]+)/);
+if(hm) map.setView([+hm[1],+hm[2]],+hm[3]); else map.fitBounds([[28.40,76.95],[28.86,77.42]]);
+map.on("moveend",()=>{const c=map.getCenter();history.replaceState(null,"",`#${c.lat.toFixed(4)},${c.lng.toFixed(4)},${map.getZoom()}`);});
+
+map.createPane("tracks").style.zIndex=410;
+map.createPane("links").style.zIndex=415;
+map.createPane("stations").style.zIndex=420;
+const svgR=L.svg({pane:"stations",padding:.5});
+
+const S=M.stations.map((a,i)=>({i,name:a[0],lat:a[1],lon:a[2],conf:a[3],served:a[4],cx:a[5],y:a[6],ly:a[7]}));
+const segs=M.segments;
+// complexes
+const cxMap={}; S.forEach(s=>(cxMap[s.cx]=cxMap[s.cx]||[]).push(s));
+
+// terminals: first/last of each segment
+const term=new Set(); segs.forEach(g=>{
+  if(g.phase==="op"&&["aqua","rapid","rrts"].includes(g.line)) return;
+  if(g.phase==="op") term.add(g.ids[0]);
+  term.add(g.ids[g.ids.length-1]);
+});
+
+function smooth(pts){ // Catmull-Rom through station points
+  if(pts.length<3) return pts;
+  const out=[];
+  for(let i=0;i<pts.length-1;i++){
+    const p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||p2;
+    for(let t=0;t<1;t+=.2){
+      const t2=t*t,t3=t2*t;
+      out.push([0,1].map(k=>.5*((2*p1[k])+(-p0[k]+p2[k])*t+(2*p0[k]-5*p1[k]+4*p2[k]-p3[k])*t2+(-p0[k]+3*p1[k]-3*p2[k]+p3[k])*t3)));
+    }
+  }
+  out.push(pts[pts.length-1]); return out;
+}
+
+const layers=[]; // {layer, line, phase, kind}
+// operational track geometry
+Object.entries(M.tracks).forEach(([line,ways])=>{
+  const col=M.lines[line].color;
+  const thin=["aqua","rapid","rrts"].includes(line);
+  ways.forEach((w,wi)=>{
+    const l=L.polyline(w,{pane:"tracks",color:col,weight:thin?3:PH.op.w,opacity:thin?.75:1,lineCap:"round",lineJoin:"round",interactive:false});
+    layers.push({layer:l,line,phase:"op",kind:"track",w:thin?3:PH.op.w,y:(M.trackYears[line]||[])[wi]});
+  });
+});
+// planned segments
+segs.forEach(g=>{
+  if(g.phase==="op") return;
+  const pts=g.ids.map(i=>[S[i].lat,S[i].lon]);
+  const col=M.lines[g.line].color, p=PH[g.phase];
+  const casing=L.polyline(smooth(pts),{pane:"tracks",color:"var(--bg)",weight:p.w+3,opacity:.9,interactive:false});
+  const l=L.polyline(smooth(pts),{pane:"tracks",color:col,weight:p.w,dashArray:p.d,lineCap:g.phase==="VB"?"round":"butt",opacity:1});
+  l.bindTooltip(`<b>${M.lines[g.line].name}</b> · ${g.title}<br>${g.status}${g.km?` · ${g.km} km`:""}<br>${g.est?"Est. ":"Target "}${g.yr}`,{sticky:true});
+  layers.push({layer:casing,line:g.line,phase:g.phase,kind:"casing",w:p.w+3,y:g.yr});
+  layers.push({layer:l,line:g.line,phase:g.phase,kind:"seg",w:p.w,y:g.yr});
+});
+// interchange links (walk connections between distinct points of a complex)
+Object.values(cxMap).forEach(arr=>{
+  if(arr.length<2) return;
+  for(let k=1;k<arr.length;k++){
+    const a=arr[0],b=arr[k];
+    if(Math.abs(a.lat-b.lat)+Math.abs(a.lon-b.lon)<1e-5) continue;
+    const l=L.polyline([[a.lat,a.lon],[b.lat,b.lon]],{pane:"links",color:"var(--stroke)",weight:2.5,opacity:.8,interactive:false});
+    layers.push({layer:l,kind:"link",members:[a,b]});
+  }
+});
+
+function servedVisible(s){
+  return Object.entries(s.served).filter(([ln,ph])=>state.ph[ph]&&state.lines[ln]&&yrOK(s.ly[ln]));
+}
+function cxLines(s){const set=new Set();cxMap[s.cx].forEach(m=>servedVisible(m).forEach(([ln])=>set.add(ln)));return set;}
+
+const phaseLabel={op:"Open",IV:"Phase IV",VA:"Phase V(A)",VB:"Phase V(B)",VC:"Phase V(C)",G1:"Building / approved",G2:"Planned",RR:"Namo Bharat"};
+function popupHtml(s){
+  const members=cxMap[s.cx];
+  const rows=[];
+  members.forEach(m=>Object.entries(m.served).forEach(([ln,ph])=>{
+    const y=m.ly[ln], est=segs.some(g=>g.line===ln&&g.est&&g.ids.includes(m.i)&&g.yr===y), ys=y==null||y>=9999?"no date":(ph==="op"?"opened "+Math.floor(y+1e-6):(est?"est. ":"target ")+Math.floor(y));
+    rows.push(`<div class="ln"><span class="dot" style="background:${M.lines[ln].color}"></span>${M.lines[ln].name}<small>${phaseLabel[ph]} · ${ys}</small></div>`);
+  }));
+  const segInfo=segs.filter(g=>g.phase!=="op"&&g.ids.includes(s.i)).map(g=>{
+    const src=M.sources[g.src];
+    return `<div style="margin-top:6px;font-size:12px;color:var(--muted)">${g.title} — ${g.status}${g.km?`, ${g.km} km`:""}${g.n?`, ${g.n} stations (official count)`:""}${g.est?`<br><b>Est. ${g.yr}</b> (our estimate: ${g.est})`:` · target ${g.yr}`}${src?`<br><a href="${src.u}" target="_blank" rel="noopener">${src.t}</a>`:""}</div>`;
+  }).join("");
+  const badge=s.conf==="p"?`<span class="badge b-p">Projected — not published by DMRC</span>`:`<span class="badge b-o">Named in source</span>`;
+  return `<div class="pp"><h3>${s.name}</h3>${badge}${[...new Set(rows)].join("")}${segInfo}<div class="rb"><button data-from="${s.i}">Route from here</button><button data-to="${s.i}">Route to here</button></div></div>`;
+}
+
+const stLayers=S.map(s=>{
+  const mk=L.circleMarker([s.lat,s.lon],{renderer:svgR,pane:"stations",radius:4,weight:2.2});
+  mk.bindPopup(()=>popupHtml(s));
+  return mk;
+});
+
+// size factor by zoom: dots and lines shrink when zoomed out so the network stays readable
+function zf(){const z=map.getZoom();return z>=13?1:z>=12?.85:z>=11?.65:z>=10?.5:.4;}
+function styleStation(s,mk){
+  const vis=servedVisible(s);
+  const z=map.getZoom(), k=zf();
+  const ixq=cxLines(s).size>1, termq=term.has(s.i);
+  const hide=!vis.length||(s.conf==="p"&&!state.proj)||(z<11.5&&!ixq&&!termq)||(z<10&&!ixq);
+  if(hide){ if(map.hasLayer(mk)) map.removeLayer(mk); return; }
+  const lines=cxLines(s);
+  const ix=lines.size>1;
+  const openNow=vis.some(([,ph])=>ph==="op");
+  const col=ix?getCss("--stroke"):M.lines[vis[0][0]].color;
+  mk.setStyle({radius:(ix?6:(openNow?3.6:4))*k,color:col,weight:(ix?2.6:2.2)*Math.max(k,.6),fillColor:getCss("--station"),fillOpacity:s.conf==="p"?.6:1,
+    dashArray:s.conf==="p"?"2.5 2.5":null});
+  if(!map.hasLayer(mk)) mk.addTo(map);
+  const isTerm=term.has(s.i);
+  const cls=["lbl",ix?"ix":"",(isTerm||ix)?"":"minor",isTerm?"term":"",s.conf==="p"?"proj":""].join(" ");
+  // label only once per complex
+  const first=cxMap[s.cx].find(m=>servedVisible(m).length&&!(m.conf==="p"&&!state.proj));
+  mk.unbindTooltip();
+  if(first===s) mk.bindTooltip(s.name,{permanent:true,direction:"right",offset:[6,0],className:cls,interactive:false});
+}
+function getCss(v){return getComputedStyle(root).getPropertyValue(v).trim();}
+
+function render(){
+  layers.forEach(o=>{
+    let on;
+    if(o.kind==="link") on=o.members.every(m=>servedVisible(m).length&&!(m.conf==="p"&&!state.proj));
+    else on=state.ph[o.phase]&&state.lines[o.line]&&yrOK(o.y);
+    if(o.kind==="link") o.layer.setStyle({color:getCss("--stroke"),weight:2.5*Math.max(zf(),.5)});
+    if(o.w) o.layer.setStyle({weight:o.w*Math.max(zf(),.55)});
+    if(o.kind==="casing"){ o.layer.setStyle({color:getCss("--bg")}); if(state.solid) on=false; }
+    if(o.kind==="seg") o.layer.setStyle({dashArray:state.solid?null:PH[o.phase].d,lineCap:state.solid||o.phase==="VB"?"round":"butt"});
+    if(on&&!map.hasLayer(o.layer)) o.layer.addTo(map); else if(!on&&map.hasLayer(o.layer)) map.removeLayer(o.layer);
+  });
+  S.forEach((s,i)=>styleStation(s,stLayers[i]));
+  zoomCls();
+  renderSchem();
+}
+// ---------- schematic ----------
+const sch=document.getElementById("schem"), svg=sch.querySelector("svg");
+const sPaths=[...svg.querySelectorAll("path.ln")].map(el=>{const c=[...el.classList];return {el,y:+el.dataset.y,line:c.find(x=>x.startsWith("ln-")).slice(3),ph:c.find(x=>x.startsWith("ph-")).slice(3)};});
+const sSt=[...svg.querySelectorAll("g.st")].map(el=>({el,ids:el.dataset.i.split(",").map(Number),served:el.dataset.s.split(" ").map(x=>x.split(":")),proj:el.classList.contains("proj")}));
+let curvedNow=true; // SVG ships with curved paths in d and straight ones in data-sharp
+function renderSchem(){
+  sPaths.forEach(p=>p.el.style.display=(state.ph[p.ph]&&state.lines[p.line]&&yrOK(p.y))?"":"none");
+  sSt.forEach(s=>{const vis=s.served.some(([l,p,y])=>state.ph[p]&&state.lines[l]&&M.lines[l]&&yrOK(+y))&&!(s.proj&&!state.proj);s.el.style.display=vis?"":"none";});
+  sch.classList.toggle("solid",state.solid); sch.classList.toggle("nonames",!state.names);
+  if(curvedNow!==state.curved){
+    sPaths.forEach(p=>{const a=p.el.getAttribute("d"),b=p.el.dataset.sharp;p.el.setAttribute("d",b);p.el.dataset.sharp=a;});
+    sSt.forEach(s=>{const sh=s.el.dataset.sh;if(sh)s.el.setAttribute("transform",state.curved?`translate(${sh})`:"");});
+    curvedNow=state.curved;
+  }
+  document.getElementById("map").classList.toggle("nonames",!state.names);
+}
+const VB0=svg.viewBox.baseVal; const full={x:VB0.x,y:VB0.y,w:VB0.width,h:VB0.height};
+let vb={...full};
+function setVB(){svg.setAttribute("viewBox",`${vb.x} ${vb.y} ${vb.w} ${vb.h}`);}
+function fitSchem(){const r=sch.getBoundingClientRect();const ar=r.width/r.height;vb={...full};if(full.w/full.h>ar){vb.h=full.w/ar;vb.y=full.y-(vb.h-full.h)/2;}else{vb.w=full.h*ar;vb.x=full.x-(vb.w-full.w)/2;}setVB();}
+function zoomAt(f,cx,cy){const r=sch.getBoundingClientRect();const px=vb.x+(cx-r.left)/r.width*vb.w,py=vb.y+(cy-r.top)/r.height*vb.h;
+  const nw=Math.min(Math.max(vb.w*f,full.w/25),full.w*2.5); f=nw/vb.w; vb.x=px-(px-vb.x)*f; vb.y=py-(py-vb.y)*f; vb.w*=f; vb.h*=f; setVB();}
+svg.setAttribute("preserveAspectRatio","xMidYMid meet");
+sch.addEventListener("wheel",e=>{e.preventDefault();zoomAt(Math.exp(e.deltaY*0.0015),e.clientX,e.clientY);},{passive:false});
+const ptrs=new Map(); let lastD=0, moved=false;
+sch.addEventListener("pointerdown",e=>{if(e.target.closest(".zbtns,#card"))return;sch.setPointerCapture(e.pointerId);ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});moved=false;sch.classList.add("drag");});
+sch.addEventListener("pointermove",e=>{if(!ptrs.has(e.pointerId))return;const p=ptrs.get(e.pointerId);const r=sch.getBoundingClientRect();
+  if(ptrs.size===1){const dx=e.clientX-p.x,dy=e.clientY-p.y;if(Math.abs(dx)+Math.abs(dy)>3)moved=true;vb.x-=dx/r.width*vb.w;vb.y-=dy/r.height*vb.h;setVB();}
+  ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(ptrs.size===2){const [a,b]=[...ptrs.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);if(lastD)zoomAt(lastD/d,(a.x+b.x)/2,(a.y+b.y)/2);lastD=d;moved=true;}});
+const endPtr=e=>{ptrs.delete(e.pointerId);if(ptrs.size<2)lastD=0;if(!ptrs.size)sch.classList.remove("drag");};
+sch.addEventListener("pointerup",e=>{const was=moved;endPtr(e);if(!was){const g=e.target.closest&&e.target.closest("g.st");if(g)showCard(g,e);else hideCard();}});
+sch.addEventListener("pointercancel",endPtr);
+document.getElementById("zIn").onclick=()=>{const r=sch.getBoundingClientRect();zoomAt(1/1.5,r.left+r.width/2,r.top+r.height/2);};
+document.getElementById("zOut").onclick=()=>{const r=sch.getBoundingClientRect();zoomAt(1.5,r.left+r.width/2,r.top+r.height/2);};
+document.getElementById("zFit").onclick=fitSchem;
+const card=document.getElementById("card");
+function showCard(g,e){const s=S[+g.dataset.i.split(",")[0]];card.querySelector(".body").innerHTML=popupHtml(s);card.style.display="block";
+  const r=sch.getBoundingClientRect();let x=e.clientX-r.left+12,y=e.clientY-r.top+12;card.style.left=Math.min(x,r.width-card.offsetWidth-8)+"px";card.style.top=Math.min(y,r.height-card.offsetHeight-8)+"px";}
+function hideCard(){card.style.display="none";}
+card.querySelector(".x").onclick=hideCard;
+function focusSchem(s){const g=sSt.find(x=>x.ids.includes(s.i));if(!g)return;const c=g.el.querySelector("circle");const cx=+c.getAttribute("cx"),cy=+c.getAttribute("cy");
+  const r=sch.getBoundingClientRect();vb.w=full.w/5;vb.h=vb.w*r.height/r.width;vb.x=cx-vb.w/2;vb.y=cy-vb.h/2;setVB();
+  sSt.forEach(x=>x.el.classList.remove("hit"));g.el.classList.add("hit");
+  const br=c.getBoundingClientRect();showCard(g.el,{clientX:br.left,clientY:br.top});}
+function zoomCls(){
+  const z=map.getZoom(),el=document.getElementById("map");
+  el.classList.toggle("z-low",z<13); el.classList.toggle("z-vlow",z<11.5); el.classList.toggle("z-xlow",z<10.5);
+}
+let lastK=null;
+map.on("zoomend",()=>{zoomCls(); const k=zf()+"|"+(map.getZoom()<11.5)+"|"+(map.getZoom()<10); if(k!==lastK){lastK=k; if(state.view!=="schem") render();}});
+
+// ---------- sidebar ----------
+const newBy={op:0,IV:0,VA:0,VB:0,VC:0,G1:0,G2:0,RR:0};
+S.forEach(s=>{const phs=Object.values(s.served);const best=ORDER.find(p=>phs.includes(p));newBy[best]++;});
+const projN=S.filter(s=>s.conf==="p").length;
+document.getElementById("stats").innerHTML=
+  `<div class="stat"><b>${S.length}</b><span>station points</span></div>`+
+  `<div class="stat"><b>${newBy.VA+newBy.VB+newBy.VC+newBy.G1+newBy.G2+newBy.RR}</b><span>new: Phase V + NCR + RRTS</span></div>`+
+  `<div class="stat"><b>${projN}</b><span>projected</span></div>`;
+
+const phEl=document.getElementById("phases");
+ORDER.forEach(p=>{
+  const r=document.createElement("label"); r.className="row";
+  r.innerHTML=`<input type="checkbox" checked><span class="sw ${p}"></span>${PH[p].n}<span class="count" title="${p==="op"?"open station points":"new station points first added in this phase"}">${newBy[p]}</span>`;
+  r.querySelector("input").onchange=e=>{state.ph[p]=e.target.checked;render();};
+  phEl.appendChild(r);
+});
+const lnEl=document.getElementById("lines");
+const lineSegs={}; segs.forEach(g=>{if(g.phase!=="op")(lineSegs[g.line]=lineSegs[g.line]||[]).push(PH[g.phase].n.split(" ·")[0].replace("Phase ",""));});
+Object.entries(M.lines).forEach(([k,v])=>{
+  const r=document.createElement("div"); r.className="row";
+  const mine=segs.filter(g=>g.line===k), isNew=mine.length&&!mine.some(g=>g.phase==="op");
+  const tag=isNew?"new · "+[...new Set(mine.map(g=>SHORT[g.phase]))].join(", "):(lineSegs[k]?"+ "+[...new Set(mine.filter(g=>g.phase!=="op").map(g=>SHORT[g.phase]))].join(", "):"");
+  r.innerHTML=`<span class="dot" style="background:${v.color}"></span>${v.name}${tag?`<span class="tag">${tag}</span>`:""}`;
+  r.onclick=()=>{state.lines[k]=!state.lines[k];r.classList.toggle("off",!state.lines[k]);render();};
+  lnEl.appendChild(r);
+});
+document.getElementById("showProj").onchange=e=>{state.proj=e.target.checked;render();};
+const baseBox=document.getElementById("showBase");
+function syncBase(){ baseBox.checked?base.addTo(map):map.removeLayer(base); }
+baseBox.onchange=syncBase;
+const solidBox=document.getElementById("solid"),namesBox=document.getElementById("names"),curvedBox=document.getElementById("curved"),vGeo=document.getElementById("vGeo"),vSch=document.getElementById("vSch");
+let schFitted=false;
+function applyView(){
+  const sc=state.view==="schem";
+  document.getElementById("map").hidden=sc; sch.hidden=!sc;
+  vGeo.classList.toggle("on",!sc); vSch.classList.toggle("on",sc);
+  baseBox.closest(".row").style.display=sc?"none":"";
+  solidBox.checked=state.solid; namesBox.checked=state.names; curvedBox.checked=state.curved;
+  document.getElementById("curvedRow").style.display=sc?"":"none";
+  try{localStorage.setItem("dm-view",state.view);localStorage.setItem("dm-solid",state.solid?"1":"0");localStorage.setItem("dm-names",state.names?"1":"0");localStorage.setItem("dm-curved",state.curved?"1":"0");}catch(e){}
+  render();
+  if(sc&&!schFitted){fitSchem();schFitted=true;}
+  if(!sc) setTimeout(()=>map.invalidateSize(),0);
+}
+vGeo.onclick=()=>{state.view="geo";applyView();};
+vSch.onclick=()=>{state.view="schem";applyView();};
+solidBox.onchange=e=>{state.solid=e.target.checked;applyView();};
+namesBox.onchange=e=>{state.names=e.target.checked;applyView();};
+curvedBox.onchange=e=>{state.curved=e.target.checked;applyView();};
+addEventListener("resize",()=>{if(state.view==="schem")fitSchem();});
+document.getElementById("fit").onclick=()=>{if(state.view==="schem")fitSchem();else map.fitBounds([[28.40,76.95],[28.86,77.42]]);};
+document.getElementById("theme").onclick=()=>{
+  root.dataset.theme=isDark()?"light":"dark";
+  try{localStorage.setItem("dm-theme",root.dataset.theme);}catch(e){}
+  base.setUrl(tileUrl()); render();
+};
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{base.setUrl(tileUrl());render();});
+document.getElementById("toggle").onclick=()=>document.getElementById("side").classList.toggle("collapsed");
+
+const srcEl=document.getElementById("src");
+Object.values(M.sources).forEach(s=>{const a=document.createElement("a");a.href=s.u;a.target="_blank";a.rel="noopener";a.textContent=s.t;srcEl.appendChild(a);});
+[["OpenStreetMap (operational track + stations, Overpass, 16 Oct 2026)","https://www.openstreetmap.org/"]].forEach(([t,u])=>{const a=document.createElement("a");a.href=u;a.target="_blank";a.textContent=t;srcEl.appendChild(a);});
+
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.oninput=()=>{
+  const v=q.value.trim().toLowerCase(); res.innerHTML="";
+  if(v.length<2) return;
+  S.filter(s=>s.name.toLowerCase().includes(v)).slice(0,8).forEach(s=>{
+    const d=document.createElement("div");
+    const lines=Object.keys(s.served).map(l=>`<span class="dot" style="display:inline-block;width:8px;height:8px;background:${M.lines[l].color}"></span>`).join(" ");
+    d.innerHTML=`${lines} ${s.name}${s.conf==="p"?" <i style='color:var(--muted)'>(projected)</i>":""}`;
+    d.onclick=()=>{if(state.view==="schem")focusSchem(s);else{map.setView([s.lat,s.lon],14.5);stLayers[s.i].openPopup();}};
+    res.appendChild(d);
+  });
+};
+// ---------- timeline ----------
+const yrEl=document.getElementById("yr"),yrLbl=document.getElementById("yrLbl"),yrNote=document.getElementById("yrNote"),badge=document.getElementById("yearBadge"),playBtn=document.getElementById("play");
+function setYear(y){
+  state.year=+y; yrEl.value=state.year;
+  const all=state.year>=YMAX;
+  yrLbl.textContent=all?"All plans":state.year;
+  badge.style.display=all?"none":"block"; badge.textContent=all?"":state.year;
+  const n=S.filter(s=>yrOK(s.y)).length;
+  const open=S.filter(s=>yrOK(s.y)&&Object.values(s.served).includes("op")&&Object.entries(s.ly).some(([l,y])=>s.served[l]==="op"&&yrOK(y))).length;
+  const nEst=S.filter(s=>yrOK(s.y)&&segs.some(g=>g.est&&g.ids.includes(s.i)&&g.yr<=state.year)).length;
+  yrNote.innerHTML=all?"Every line. Years after 2026 are official targets where published, otherwise our estimates (shown as \"est.\" in station cards).":
+    state.year<=2026?`<b>${open}</b> stations open by the end of ${state.year}.`:
+    `<b>${n}</b> stations open or due by ${state.year}${nEst?`, of which ${nEst} come from lines dated by our estimate`:""}. Official targets usually slip 1–3 years.`;
+  render(); if(route.from!=null&&route.to!=null) runRoute(false);
+}
+yrEl.oninput=e=>{stopPlay();setYear(e.target.value);};
+let playT=null;
+function stopPlay(){if(playT){clearInterval(playT);playT=null;playBtn.textContent="▶";}}
+playBtn.onclick=()=>{
+  if(playT){stopPlay();return;}
+  let y=state.year>=YMAX||state.year<2002?2002:state.year; setYear(y); playBtn.textContent="❚❚";
+  playT=setInterval(()=>{y++; setYear(y); if(y>=YMAX) stopPlay();},650);
+};
+
+// ---------- route planner ----------
+const SPEED=l=>["rrts","rrA","rrP","rrJ","nbg"].includes(l)?[110,1]:l==="airport"?[75,1]:["lite","lrt"].includes(l)?[25,.5]:["meerut","meerut2","meerut3"].includes(l)?[50,.5]:[38,.5]; // km/h, dwell min
+function km(a,b){const R=6371,dl=(b.lat-a.lat)*Math.PI/180,dn=(b.lon-a.lon)*Math.PI/180,x=Math.sin(dl/2)**2+Math.cos(a.lat*Math.PI/180)*Math.cos(b.lat*Math.PI/180)*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(x));}
+const EDGES=[]; segs.forEach(g=>{for(let k=0;k<g.ids.length-1;k++){const a=g.ids[k],b=g.ids[k+1];if(a===b)continue;EDGES.push({a,b,line:g.line,ph:g.phase,y:g.phase==="op"?g.ey[k]:g.yr});}});
+const route={from:null,to:null,layer:null};
+const names=[...new Map(S.map(s=>[s.name,s.i])).entries()].sort((a,b)=>a[0].localeCompare(b[0]));
+document.getElementById("stlist").innerHTML=names.map(([n])=>`<option value="${n.replace(/"/g,"&quot;")}">`).join("");
+const byName=new Map(names);
+function edgeOK(e){return state.ph[e.ph]&&state.lines[e.line]&&yrOK(e.y)&&!((S[e.a].conf==="p"||S[e.b].conf==="p")&&!state.proj);}
+function plan(fromI,toI){
+  const adj=new Map(), linesAt=new Map();
+  EDGES.forEach(e=>{if(!edgeOK(e))return;const [sp,dw]=SPEED(e.line);const c=km(S[e.a],S[e.b])*1.15/sp*60+dw;
+    [[e.a,e.b],[e.b,e.a]].forEach(([u,v])=>{const k=u+"|"+e.line;(adj.get(k)||adj.set(k,[]).get(k)).push([v,c]);(linesAt.get(u)||linesAt.set(u,new Set()).get(u)).add(e.line);});});
+  const dist=new Map(),prev=new Map(),open=[];
+  const goal=new Set(cxMap[S[toI].cx].map(m=>m.i));
+  cxMap[S[fromI].cx].forEach(m=>(linesAt.get(m.i)||[]).forEach(l=>{const k=m.i+"|"+l;dist.set(k,0);open.push(k);}));
+  const done=new Set(); let best=null;
+  while(open.length){
+    let bi=0; for(let i=1;i<open.length;i++) if(dist.get(open[i])<dist.get(open[bi])) bi=i;
+    const k=open.splice(bi,1)[0]; if(done.has(k)) continue; done.add(k);
+    const [si,l]=k.split("|"), s=+si, d=dist.get(k);
+    if(goal.has(s)){best=k;break;}
+    const relax=(nk,c)=>{if(done.has(nk))return;const nd=d+c;if(!dist.has(nk)||nd<dist.get(nk)){dist.set(nk,nd);prev.set(nk,k);open.push(nk);}};
+    (adj.get(k)||[]).forEach(([v,c])=>relax(v+"|"+l,c));
+    cxMap[S[s].cx].forEach(m=>(linesAt.get(m.i)||[]).forEach(l2=>{if(m.i===s&&l2===l)return;
+      const rr=["rrts","rrA","rrP","rrJ","nbg"]; const pen=(rr.includes(l)!==rr.includes(l2))?7:5;
+      relax(m.i+"|"+l2,pen+km(S[s],m)/4.5*60);}));
+  }
+  if(!best) return null;
+  const steps=[]; for(let k=best;k;k=prev.get(k)){const [si,l]=k.split("|");steps.unshift({s:+si,l});}
+  const legs=[]; steps.forEach(st=>{const last=legs[legs.length-1]; if(last&&last.l===st.l) last.ids.push(st.s); else legs.push({l:st.l,ids:[st.s]});});
+  return {legs:legs.filter(g=>g.ids.length>1),min:dist.get(best)};
+}
+function clearRouteDraw(){
+  if(route.layer){map.removeLayer(route.layer);route.layer=null;}
+  const g=svg.querySelector("#s-route"); if(g) g.remove();
+  document.getElementById("map").classList.remove("dimmed"); sch.classList.remove("dimmed");
+  sSt.forEach(x=>x.el.classList.remove("onroute"));
+}
+function schPos(i){const g=sSt.find(x=>x.ids.includes(i)); if(!g) return null; const c=g.el.querySelector("circle"); let x=+c.getAttribute("cx"),y=+c.getAttribute("cy");
+  const tr=g.el.getAttribute("transform"); if(tr){const m=tr.match(/translate\(([-\d.]+),([-\d.]+)\)/); if(m){x+=+m[1];y+=+m[2];}} return [x,y,g];}
+function runRoute(fit){
+  const out=document.getElementById("rOut"); clearRouteDraw();
+  if(route.from==null||route.to==null){out.innerHTML="";return;}
+  const r=plan(route.from,route.to);
+  if(!r){out.innerHTML=`<div class="note">No route in the network shown${state.year<YMAX?` for ${state.year}`:""}. Try a later year or switch more phases on.</div>`;return;}
+  const xfers=r.legs.length-1, kmTot=r.legs.reduce((a,g)=>a+g.ids.slice(1).reduce((b,id,k)=>b+km(S[g.ids[k]],S[id])*1.15,0),0);
+  out.innerHTML=`<div class="sum">≈ ${Math.round(r.min)} min <small>· ${xfers} change${xfers===1?"":"s"} · ${kmTot.toFixed(0)} km${state.year<YMAX?` · network of ${state.year}`:""}</small></div>`+
+    r.legs.map(g=>`<div class="leg"><span class="dot" style="background:${M.lines[g.l].color}"></span><div><b>${M.lines[g.l].name}</b><small>${S[g.ids[0]].name} → ${S[g.ids[g.ids.length-1]].name} · ${g.ids.length-1} stop${g.ids.length===2?"":"s"}</small></div></div>`).join("")+
+    `<div class="note">Rough estimate: line speeds plus a dwell at each stop and 5–7 min per change.</div>`;
+  // geographic highlight
+  const grp=L.layerGroup(); const pts=[];
+  r.legs.forEach(g=>{const ll=g.ids.map(i=>[S[i].lat,S[i].lon]); pts.push(...ll);
+    L.polyline(ll,{pane:"links",color:getCss("--bg"),weight:13,opacity:1}).addTo(grp);
+    L.polyline(ll,{pane:"links",color:M.lines[g.l].color,weight:8,opacity:1,lineCap:"round",lineJoin:"round"}).addTo(grp);});
+  [r.legs[0].ids[0],...r.legs.map(g=>g.ids[g.ids.length-1])].forEach(i=>L.circleMarker([S[i].lat,S[i].lon],{pane:"links",radius:6,color:getCss("--stroke"),weight:3,fillColor:getCss("--station"),fillOpacity:1}).bindTooltip(S[i].name).addTo(grp));
+  route.layer=grp.addTo(map); document.getElementById("map").classList.add("dimmed");
+  if(fit&&state.view!=="schem") map.fitBounds(pts,{padding:[60,60]});
+  // schematic highlight
+  const NS="http://www.w3.org/2000/svg", G=document.createElementNS(NS,"g"); G.id="s-route"; let bx=[1e9,1e9,-1e9,-1e9];
+  r.legs.forEach(g=>{const P=g.ids.map(schPos).filter(Boolean); P.forEach(p=>{p[2].el.classList.add("onroute");bx=[Math.min(bx[0],p[0]),Math.min(bx[1],p[1]),Math.max(bx[2],p[0]),Math.max(bx[3],p[1])];});
+    [["var(--bg)",20],[M.lines[g.l].color,12]].forEach(([c,w])=>{const pl=document.createElementNS(NS,"polyline");pl.setAttribute("points",P.map(p=>p[0]+","+p[1]).join(" "));pl.setAttribute("fill","none");pl.setAttribute("stroke",c);pl.setAttribute("stroke-width",w);pl.setAttribute("stroke-linecap","round");pl.setAttribute("stroke-linejoin","round");G.appendChild(pl);});});
+  svg.insertBefore(G,svg.querySelector("#s-stations")); sch.classList.add("dimmed");
+  if(fit&&state.view==="schem"&&bx[0]<1e9){const r2=sch.getBoundingClientRect(),pad=120;let w=bx[2]-bx[0]+pad*2,h=bx[3]-bx[1]+pad*2;if(w/h>r2.width/r2.height)h=w*r2.height/r2.width;else w=h*r2.width/r2.height;vb={x:(bx[0]+bx[2])/2-w/2,y:(bx[1]+bx[3])/2-h/2,w,h};setVB();}
+}
+const rFrom=document.getElementById("rFrom"),rTo=document.getElementById("rTo");
+function pick(inp){const v=inp.value.trim();if(byName.has(v))return byName.get(v);const m=names.find(([n])=>n.toLowerCase().includes(v.toLowerCase()));return v&&m?m[1]:null;}
+document.getElementById("rGo").onclick=()=>{route.from=pick(rFrom);route.to=pick(rTo);if(route.from!=null)rFrom.value=S[route.from].name;if(route.to!=null)rTo.value=S[route.to].name;runRoute(true);};
+document.getElementById("rSwap").onclick=()=>{[rFrom.value,rTo.value]=[rTo.value,rFrom.value];[route.from,route.to]=[route.to,route.from];if(route.from!=null&&route.to!=null)runRoute(true);};
+document.getElementById("rClear").onclick=()=>{route.from=route.to=null;rFrom.value=rTo.value="";runRoute(false);};
+[rFrom,rTo].forEach(i=>i.addEventListener("keydown",e=>{if(e.key==="Enter")document.getElementById("rGo").click();}));
+document.addEventListener("click",e=>{const b=e.target.closest("[data-from],[data-to]");if(!b)return;
+  if(b.dataset.from!=null){route.from=+b.dataset.from;rFrom.value=S[route.from].name;}else{route.to=+b.dataset.to;rTo.value=S[route.to].name;}
+  map.closePopup(); hideCard(); if(route.from!=null&&route.to!=null) runRoute(true);});
+
+setYear(YMAX);
+applyView();
+})();
+</script>
+</body>
+</html>

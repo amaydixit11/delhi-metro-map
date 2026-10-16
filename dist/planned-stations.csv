@@ -1,0 +1,558 @@
+phase,line,corridor,seq,station,status,year,year_basis,lat,lon
+IV,Red Line,Rithala → Kundli → Nathupur,1,Rithala,sourced,2029,official target,28.72079,77.10716
+IV,Red Line,Rithala → Kundli → Nathupur,2,Rohini Sector 25,sourced,2029,official target,28.7273,77.0982
+IV,Red Line,Rithala → Kundli → Nathupur,3,Rohini Sector 26,sourced,2029,official target,28.7328,77.0901
+IV,Red Line,Rithala → Kundli → Nathupur,4,Rohini Sector 31,sourced,2029,official target,28.7394,77.08
+IV,Red Line,Rithala → Kundli → Nathupur,5,Rohini Sector 32,sourced,2029,official target,28.7432,77.0708
+IV,Red Line,Rithala → Kundli → Nathupur,6,Rohini Sector 36,sourced,2029,official target,28.7479,77.0617
+IV,Red Line,Rithala → Kundli → Nathupur,7,Barwala,sourced,2029,official target,28.7607,77.059
+IV,Red Line,Rithala → Kundli → Nathupur,8,Rohini Sector 35,sourced,2029,official target,28.7738,77.0558
+IV,Red Line,Rithala → Kundli → Nathupur,9,Rohini Sector 34,sourced,2029,official target,28.7787,77.0495
+IV,Red Line,Rithala → Kundli → Nathupur,10,"Bawana Industrial Area-1 Sector 3,4",sourced,2029,official target,28.7858,77.0414
+IV,Red Line,Rithala → Kundli → Nathupur,11,"Bawana Industrial Area-1 Sector 1,2",sourced,2029,official target,28.7955,77.0421
+IV,Red Line,Rithala → Kundli → Nathupur,12,Bawana JJ Colony,sourced,2029,official target,28.8043,77.0469
+IV,Red Line,Rithala → Kundli → Nathupur,13,Sanoth,sourced,2029,official target,28.8184,77.0622
+IV,Red Line,Rithala → Kundli → Nathupur,14,New Sanoth,sourced,2029,official target,28.8285,77.073
+IV,Red Line,Rithala → Kundli → Nathupur,15,Depot Station,sourced,2029,official target,28.832,77.08
+IV,Red Line,Rithala → Kundli → Nathupur,16,Bhorgarh Village,sourced,2029,official target,28.8345,77.088
+IV,Red Line,Rithala → Kundli → Nathupur,17,Anaj Mandi Narela,sourced,2029,official target,28.8364,77.0949
+IV,Red Line,Rithala → Kundli → Nathupur,18,Narela DDA Sports Complex,sourced,2029,official target,28.844,77.1035
+IV,Red Line,Rithala → Kundli → Nathupur,19,Narela,sourced,2029,official target,28.853,77.101
+IV,Red Line,Rithala → Kundli → Nathupur,20,Narela Sector 5,sourced,2029,official target,28.8625,77.108
+IV,Red Line,Rithala → Kundli → Nathupur,21,Kundli,sourced,2029,official target,28.878,77.118
+IV,Red Line,Rithala → Kundli → Nathupur,22,Nathupur,sourced,2029,official target,28.896,77.112
+IV,Magenta Line,Krishna Park Extn → Deepali Chowk,1,Krishna Park Extension,sourced,2026,official target,28.6478,77.08431
+IV,Magenta Line,Krishna Park Extn → Deepali Chowk,2,Keshopur,sourced,2026,official target,28.6515,77.0867
+IV,Magenta Line,Krishna Park Extn → Deepali Chowk,3,Paschim Vihar,sourced,2026,official target,28.6685,77.0928
+IV,Magenta Line,Krishna Park Extn → Deepali Chowk,4,Peeragarhi,sourced,2026,official target,28.67971,77.09266
+IV,Magenta Line,Krishna Park Extn → Deepali Chowk,5,Mangolpuri,sourced,2026,official target,28.6873,77.096
+IV,Magenta Line,Krishna Park Extn → Deepali Chowk,6,Mangolpur Kalan–West Enclave,sourced,2026,official target,28.6931,77.1011
+IV,Magenta Line,Krishna Park Extn → Deepali Chowk,7,Pushpanjali,sourced,2026,official target,28.6956,77.1088
+IV,Magenta Line,Krishna Park Extn → Deepali Chowk,8,Deepali Chowk,sourced,2026,official target,28.69807,77.11828
+IV,Magenta Line,Majlis Park → R.K. Ashram Marg,1,Majlis Park,sourced,2027,official target,28.72461,77.18182
+IV,Magenta Line,Majlis Park → R.K. Ashram Marg,2,Azadpur,sourced,2027,official target,28.70707,77.18038
+IV,Magenta Line,Majlis Park → R.K. Ashram Marg,3,Ashok Vihar,sourced,2027,official target,28.6995,77.1848
+IV,Magenta Line,Majlis Park → R.K. Ashram Marg,4,Nanak Piao–Derawal Nagar,sourced,2027,official target,28.6927,77.1904
+IV,Magenta Line,Majlis Park → R.K. Ashram Marg,5,Ghanta Ghar,sourced,2027,official target,28.6774,77.2017
+IV,Magenta Line,Majlis Park → R.K. Ashram Marg,6,Pulbangash,sourced,2027,official target,28.66641,77.20742
+IV,Magenta Line,Majlis Park → R.K. Ashram Marg,7,Sadar Bazar,sourced,2027,official target,28.6593,77.2159
+IV,Magenta Line,Majlis Park → R.K. Ashram Marg,8,Nabi Karim,sourced,2027,official target,28.6528,77.2112
+IV,Magenta Line,Majlis Park → R.K. Ashram Marg,9,Ramakrishna Ashram Marg,sourced,2027,official target,28.63922,77.20857
+IV,Magenta Line,Indraprastha → Inderlok,1,Indraprastha,sourced,2030,official target,28.62058,77.24955
+IV,Magenta Line,Indraprastha → Inderlok,2,Delhi Sachivalaya–I.G. Stadium,sourced,2030,official target,28.6316,77.2468
+IV,Magenta Line,Indraprastha → Inderlok,3,Delhi Gate,sourced,2030,official target,28.63922,77.24081
+IV,Magenta Line,Indraprastha → Inderlok,4,New Delhi,sourced,2030,official target,28.64347,77.22277
+IV,Magenta Line,Indraprastha → Inderlok,5,Nabi Karim,sourced,2030,official target,28.6528,77.2112
+IV,Magenta Line,Indraprastha → Inderlok,6,Jhandewalan Mandir,sourced,2030,official target,28.6475,77.2015
+IV,Magenta Line,Indraprastha → Inderlok,7,Ajmal Khan Park,sourced,2030,official target,28.6533,77.1959
+IV,Magenta Line,Indraprastha → Inderlok,8,Sarai Rohilla,sourced,2030,official target,28.6598,77.1851
+IV,Magenta Line,Indraprastha → Inderlok,9,Daya Basti,sourced,2030,official target,28.6676,77.1805
+IV,Magenta Line,Indraprastha → Inderlok,10,Inderlok,sourced,2030,official target,28.67359,77.17035
+IV,Golden Line,Delhi Aerocity → Tughlakabad,1,Delhi Aerocity,sourced,2026,official target,28.54876,77.1208
+IV,Golden Line,Delhi Aerocity → Tughlakabad,2,Mahipal Pur,sourced,2026,official target,28.5413,77.1299
+IV,Golden Line,Delhi Aerocity → Tughlakabad,3,Vasant Kunj,sourced,2026,official target,28.5344,77.1422
+IV,Golden Line,Delhi Aerocity → Tughlakabad,4,Kishangarh,sourced,2026,official target,28.522,77.168
+IV,Golden Line,Delhi Aerocity → Tughlakabad,5,Chhatarpur,sourced,2026,official target,28.50676,77.17494
+IV,Golden Line,Delhi Aerocity → Tughlakabad,6,Chhatarpur Mandir,sourced,2026,official target,28.501,77.183
+IV,Golden Line,Delhi Aerocity → Tughlakabad,7,IGNOU,sourced,2026,official target,28.499,77.1975
+IV,Golden Line,Delhi Aerocity → Tughlakabad,8,Neb Sarai,sourced,2026,official target,28.5055,77.2075
+IV,Golden Line,Delhi Aerocity → Tughlakabad,9,Saket G Block,sourced,2026,official target,28.5173,77.2182
+IV,Golden Line,Delhi Aerocity → Tughlakabad,10,Ambedkar Nagar,sourced,2026,official target,28.5154,77.2278
+IV,Golden Line,Delhi Aerocity → Tughlakabad,11,Khanpur–Vayusenabad,sourced,2026,official target,28.5135,77.2355
+IV,Golden Line,Delhi Aerocity → Tughlakabad,12,Sangam Vihar–Tigri,sourced,2026,official target,28.5122,77.2439
+IV,Golden Line,Delhi Aerocity → Tughlakabad,13,Anandmayee Marg Jn.,sourced,2026,official target,28.5042,77.2793
+IV,Golden Line,Delhi Aerocity → Tughlakabad,14,Tughlakabad Railway Colony,sourced,2026,official target,28.5016,77.2908
+IV,Golden Line,Delhi Aerocity → Tughlakabad,15,Tughlakabad,sourced,2026,official target,28.50236,77.29924
+IV,Golden Line,Lajpat Nagar → Saket G Block (branch),1,Lajpat Nagar,sourced,2029,official target,28.57057,77.23642
+IV,Golden Line,Lajpat Nagar → Saket G Block (branch),2,Andrews Ganj,sourced,2029,official target,28.5623,77.2324
+IV,Golden Line,Lajpat Nagar → Saket G Block (branch),3,Greater Kailash-1,sourced,2029,official target,28.5546,77.2286
+IV,Golden Line,Lajpat Nagar → Saket G Block (branch),4,Chirag Delhi,sourced,2029,official target,28.54109,77.23029
+IV,Golden Line,Lajpat Nagar → Saket G Block (branch),5,Pushpa Bhawan,sourced,2029,official target,28.529,77.2322
+IV,Golden Line,Lajpat Nagar → Saket G Block (branch),6,Saket District Centre,sourced,2029,official target,28.5276,77.2262
+IV,Golden Line,Lajpat Nagar → Saket G Block (branch),7,Pushp Vihar,sourced,2029,official target,28.525,77.2215
+IV,Golden Line,Lajpat Nagar → Saket G Block (branch),8,Saket G Block,sourced,2029,official target,28.5173,77.2182
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,1,Millennium City Centre Gurugram,sourced,2029,official target,28.45933,77.07269
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,2,Sector 45,sourced,2029,official target,28.4449,77.0664
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,3,Cyber Park,sourced,2029,official target,28.4429,77.0559
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,4,Sector 47,sourced,2029,official target,28.4252,77.0475
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,5,Subhash Chowk,sourced,2029,official target,28.4277,77.0371
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,6,Sector 48,sourced,2029,official target,28.4185,77.0335
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,7,Sector 33,sourced,2029,official target,28.4245,77.025
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,8,Hero Honda Chowk,sourced,2029,official target,28.429,77.016
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,9,Udyog Vihar Ph-6,sourced,2029,official target,28.432,77.007
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,10,Sector 10,sourced,2029,official target,28.442,77.004
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,11,Sector 37,sourced,2029,official target,28.448,76.9965
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,12,Basai,sourced,2029,official target,28.458,76.989
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,13,Sector 101,sourced,2029,official target,28.4684,76.9804
+G1,Gurugram Metro Line 2,Line 2 Ph-1: Millennium City Centre → Sector 9,14,Sector 9,sourced,2029,official target,28.4645,77.003
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,1,Sector 9,sourced,2029,official target,28.4645,77.003
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,2,Sector 7,sourced,2029,official target,28.4663,77.0143
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,3,Sector 4,sourced,2029,official target,28.475,77.0104
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,4,Sector 5,sourced,2029,official target,28.4835,77.0115
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,5,Ashok Vihar (Gurugram),sourced,2029,official target,28.4951,77.0248
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,6,Sector 3,sourced,2029,official target,28.4985,77.019
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,7,Bajghera Road,sourced,2029,official target,28.5065,77.0225
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,8,Palam Vihar Ext.,sourced,2029,official target,28.511,77.031
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,9,Palam Vihar,sourced,2029,official target,28.5101,77.0418
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,10,Sector 23A,sourced,2029,official target,28.5057,77.0475
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,11,Sector 22,sourced,2029,official target,28.5063,77.0655
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,12,Udyog Vihar Ph-4,sourced,2029,official target,28.499,77.079
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,13,Udyog Vihar Ph-5,sourced,2029,official target,28.496,77.086
+G1,Gurugram Metro Line 2,Line 2 Ph-2: Sector 9 → Cyber City,14,Cyber City,sourced,2029,official target,28.49806,77.08916
+VA,Magenta Line,R.K. Ashram Marg → Indraprastha,1,Ramakrishna Ashram Marg,sourced,2028,official target,28.63922,77.20857
+VA,Magenta Line,R.K. Ashram Marg → Indraprastha,2,Shivaji Stadium,sourced,2028,official target,28.62888,77.21133
+VA,Magenta Line,R.K. Ashram Marg → Indraprastha,3,Yuge Yugeen Bharat,sourced,2028,official target,28.6142,77.2052
+VA,Magenta Line,R.K. Ashram Marg → Indraprastha,4,Central Secretariat,sourced,2028,official target,28.61588,77.21231
+VA,Magenta Line,R.K. Ashram Marg → Indraprastha,5,Kartavya Bhawan,sourced,2028,official target,28.6118,77.2175
+VA,Magenta Line,R.K. Ashram Marg → Indraprastha,6,India Gate,sourced,2028,official target,28.6135,77.226
+VA,Magenta Line,R.K. Ashram Marg → Indraprastha,7,War Memorial–High Court,sourced,2028,official target,28.6095,77.235
+VA,Magenta Line,R.K. Ashram Marg → Indraprastha,8,Baroda House,sourced,2028,official target,28.6178,77.231
+VA,Magenta Line,R.K. Ashram Marg → Indraprastha,9,Bharat Mandapam,sourced,2028,official target,28.6172,77.242
+VA,Magenta Line,R.K. Ashram Marg → Indraprastha,10,Indraprastha,sourced,2028,official target,28.62058,77.24955
+VA,Golden Line,Delhi Aerocity → Terminal 1,1,Delhi Aerocity,sourced,2028,official target,28.54876,77.1208
+VA,Golden Line,Delhi Aerocity → Terminal 1,2,Terminal 1 IGI Airport,sourced,2028,official target,28.56486,77.12262
+VA,Golden Line,Tughlakabad → Kalindi Kunj,1,Tughlakabad,sourced,2028,official target,28.50236,77.29924
+VA,Golden Line,Tughlakabad → Kalindi Kunj,2,Sarita Vihar Depot,sourced,2028,official target,28.515,77.299
+VA,Golden Line,Tughlakabad → Kalindi Kunj,3,Madanpur Khadar,sourced,2028,official target,28.53,77.302
+VA,Golden Line,Tughlakabad → Kalindi Kunj,4,Kalindi Kunj,sourced,2028,official target,28.5429,77.31013
+VB,Grey Line,Dhansa Bus Stand → Nangloi,1,Dhansa Bus Stand,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.61188,76.97855
+VB,Grey Line,Dhansa Bus Stand → Nangloi,2,Roshan Garden,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6155,76.9945
+VB,Grey Line,Dhansa Bus Stand → Nangloi,3,Gopal Nagar,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6265,77.0005
+VB,Grey Line,Dhansa Bus Stand → Nangloi,4,Sainik Enclave,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6335,77.007
+VB,Grey Line,Dhansa Bus Stand → Nangloi,5,Baprola,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6404,77.0129
+VB,Grey Line,Dhansa Bus Stand → Nangloi,6,Bakkarwala,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6545,77.021
+VB,Grey Line,Dhansa Bus Stand → Nangloi,7,Ranhola,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.658,77.0359
+VB,Grey Line,Dhansa Bus Stand → Nangloi,8,Nilothi Extension,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.665,77.048
+VB,Grey Line,Dhansa Bus Stand → Nangloi,9,Naresh Park Extension,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6738,77.0575
+VB,Grey Line,Dhansa Bus Stand → Nangloi,10,Nangloi,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.68233,77.06473
+VB,Central Secretariat–Kishangarh,Central Secretariat → Kishangarh,1,Central Secretariat,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.61588,77.21231
+VB,Central Secretariat–Kishangarh,Central Secretariat → Kishangarh,2,PM Sangrahalaya–Teen Murti,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6028,77.1988
+VB,Central Secretariat–Kishangarh,Central Secretariat → Kishangarh,3,Chanakyapuri,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.5947,77.1885
+VB,Central Secretariat–Kishangarh,Central Secretariat → Kishangarh,4,Sir M. Vishweshwaraiah Moti Bagh,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.57852,77.17571
+VB,Central Secretariat–Kishangarh,Central Secretariat → Kishangarh,5,R.K. Puram Sector 5,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.566,77.179
+VB,Central Secretariat–Kishangarh,Central Secretariat → Kishangarh,6,R. K. Puram,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.55036,77.18551
+VB,Central Secretariat–Kishangarh,Central Secretariat → Kishangarh,7,JNU East Gate,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.5455,77.1745
+VB,Central Secretariat–Kishangarh,Central Secretariat → Kishangarh,8,JNU,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.5402,77.1646
+VB,Central Secretariat–Kishangarh,Central Secretariat → Kishangarh,9,Vasant Kunj Sector B,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.53,77.159
+VB,Central Secretariat–Kishangarh,Central Secretariat → Kishangarh,10,Kishangarh,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.522,77.168
+VB,Yellow Line,Samaypur Badli → Narela DDA Sports Complex,1,Samaypur Badli,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.74464,77.1383
+VB,Yellow Line,Samaypur Badli → Narela DDA Sports Complex,2,Siraspur,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.7581,77.1298
+VB,Yellow Line,Samaypur Badli → Narela DDA Sports Complex,3,Khera Kalan,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.7697,77.1159
+VB,Yellow Line,Samaypur Badli → Narela DDA Sports Complex,4,Khera Khurd,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.784,77.12
+VB,Yellow Line,Samaypur Badli → Narela DDA Sports Complex,5,Alipur,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.7973,77.133
+VB,Yellow Line,Samaypur Badli → Narela DDA Sports Complex,6,Bakoli,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.8105,77.129
+VB,Yellow Line,Samaypur Badli → Narela DDA Sports Complex,7,Holambi Kalan,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.8215,77.115
+VB,Yellow Line,Samaypur Badli → Narela DDA Sports Complex,8,Narela Sector A-9,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.8335,77.11
+VB,Yellow Line,Samaypur Badli → Narela DDA Sports Complex,9,Narela DDA Sports Complex,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.844,77.1035
+VB,Green Line,Kirti Nagar → Palam,1,Kirti Nagar,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.65573,77.15065
+VB,Green Line,Kirti Nagar → Palam,2,Mayapuri Industrial Area,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.629,77.13
+VB,Green Line,Kirti Nagar → Palam,3,Hari Nagar,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6255,77.111
+VB,Green Line,Kirti Nagar → Palam,4,Janakpuri A-Block,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6185,77.0975
+VB,Green Line,Kirti Nagar → Palam,5,Sagarpur,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.608,77.099
+VB,Green Line,Kirti Nagar → Palam,6,Sadh Nagar,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.596,77.0905
+VB,Green Line,Kirti Nagar → Palam,7,Palam,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.58891,77.08305
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,1,Jor Bagh,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.58659,77.21256
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,2,Lodhi Colony,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.585,77.2255
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,3,Defence Colony,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.5735,77.231
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,4,Lajpat Nagar,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.57057,77.23642
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,5,Amar Colony,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.5615,77.2431
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,6,Okhla NSIC,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.55445,77.26484
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,7,Okhla Phase II,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.5366,77.2756
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,8,Jasola Apollo,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.53843,77.28304
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,9,Madanpur Khadar,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.53,77.302
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,10,Madanpur Khadar Extension,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.518,77.3065
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,11,Jaitpur,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.506,77.3105
+VB,Jor Bagh–Mithapur,Jor Bagh → Mithapur,12,Mithapur,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.4935,77.3185
+VB,Shastri Park–Mayur Vihar III,Shastri Park → Mayur Vihar Ph-III,1,Shastri Park,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.66846,77.25054
+VB,Shastri Park–Mayur Vihar III,Shastri Park → Mayur Vihar Ph-III,2,Gandhi Nagar,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6588,77.2716
+VB,Shastri Park–Mayur Vihar III,Shastri Park → Mayur Vihar Ph-III,3,Geeta Colony,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.65,77.276
+VB,Shastri Park–Mayur Vihar III,Shastri Park → Mayur Vihar Ph-III,4,Nirman Vihar,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.63656,77.28675
+VB,Shastri Park–Mayur Vihar III,Shastri Park → Mayur Vihar Ph-III,5,Patparganj,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6235,77.296
+VB,Shastri Park–Mayur Vihar III,Shastri Park → Mayur Vihar Ph-III,6,Trilokpuri–Sanjay Lake,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.61343,77.30888
+VB,Shastri Park–Mayur Vihar III,Shastri Park → Mayur Vihar Ph-III,7,Kondli,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.6071,77.3243
+VB,Shastri Park–Mayur Vihar III,Shastri Park → Mayur Vihar Ph-III,8,Mayur Vihar Phase-III,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.602,77.335
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,1,Keshav Puram,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.68893,77.16168
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,2,West Shalimar Bagh,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.704,77.156
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,3,Uttari Pitampura–Prashant Vihar,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.71308,77.13869
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,4,Rohini Sector 16,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.724,77.131
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,5,Rohini Sector 17,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.7345,77.1265
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,6,DTU,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.7505,77.117
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,7,Shahbad Daulatpur,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.7545,77.106
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,8,Rohini Sector 24,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.754,77.096
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,9,Rohini Sector 29,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.76,77.088
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,10,Rohini Sector 30,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.766,77.079
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,11,Rohini Sector 33,projected,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.773,77.064
+VB,Keshav Puram–Rohini Sec 34,Keshav Puram → Rohini Sector 34,12,Rohini Sector 34,sourced,2030,estimate: V(B) has no official date; four corridors are due by 2029,28.7787,77.0495
+VC,Airport Express,Yashobhoomi Dwarka Sec 25 → Rajiv Chowk (Gurugram),1,Yashobhoomi Dwarka Sector 25,sourced,2032,estimate: Gurugram plan: construction from 2027; 20 km underground ≈ 5 yr,28.55081,77.04529
+VC,Airport Express,Yashobhoomi Dwarka Sec 25 → Rajiv Chowk (Gurugram),2,Bijwasan,sourced,2032,estimate: Gurugram plan: construction from 2027; 20 km underground ≈ 5 yr,28.537,77.0513
+VC,Airport Express,Yashobhoomi Dwarka Sec 25 → Rajiv Chowk (Gurugram),3,Kapashera,sourced,2032,estimate: Gurugram plan: construction from 2027; 20 km underground ≈ 5 yr,28.5273,77.0823
+VC,Airport Express,Yashobhoomi Dwarka Sec 25 → Rajiv Chowk (Gurugram),4,Sector 22,sourced,2032,estimate: Gurugram plan: construction from 2027; 20 km underground ≈ 5 yr,28.5063,77.0655
+VC,Airport Express,Yashobhoomi Dwarka Sec 25 → Rajiv Chowk (Gurugram),5,IFFCO Chowk,sourced,2032,estimate: Gurugram plan: construction from 2027; 20 km underground ≈ 5 yr,28.47233,77.07245
+VC,Airport Express,Yashobhoomi Dwarka Sec 25 → Rajiv Chowk (Gurugram),6,Rajiv Chowk (Gurugram),sourced,2032,estimate: Gurugram plan: construction from 2027; 20 km underground ≈ 5 yr,28.4475,77.0328
+VC,Red Line,Shaheed Sthal → Ghaziabad Railway Station,1,Shaheed Sthal (New Bus Adda),sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.67071,77.41539
+VC,Red Line,Shaheed Sthal → Ghaziabad Railway Station,2,Ghaziabad Old Bus Stand,projected,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.665,77.425
+VC,Red Line,Shaheed Sthal → Ghaziabad Railway Station,3,Ghaziabad Railway Station,projected,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.6529,77.4282
+VC,Blue Line,Noida Electronic City → Sahibabad,1,Noida Electronic City,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.62826,77.3751
+VC,Blue Line,Noida Electronic City → Sahibabad,2,Vaibhav Khand,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.637,77.369
+VC,Blue Line,Noida Electronic City → Sahibabad,3,DPS Indirapuram,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.6435,77.3705
+VC,Blue Line,Noida Electronic City → Sahibabad,4,Shakti Khand,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.65,77.37
+VC,Blue Line,Noida Electronic City → Sahibabad,5,Vasundhara Sector 5,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.6585,77.374
+VC,Blue Line,Noida Electronic City → Sahibabad,6,Sahibabad,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.66767,77.36817
+VC,Blue Line,Vaishali → Mohan Nagar,1,Vaishali,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.64977,77.33951
+VC,Blue Line,Vaishali → Mohan Nagar,2,Vaishali Sector 5,projected,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.6555,77.3445
+VC,Blue Line,Vaishali → Mohan Nagar,3,Prahladgarhi,projected,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.6605,77.352
+VC,Blue Line,Vaishali → Mohan Nagar,4,Sahibabad Industrial Area,projected,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.666,77.36
+VC,Blue Line,Vaishali → Mohan Nagar,5,Lajpat Nagar Sahibabad,projected,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.6725,77.373
+VC,Blue Line,Vaishali → Mohan Nagar,6,Mohan Nagar,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.67856,77.3839
+VC,Mayapuri–Kashmere Gate,Mayapuri → Kashmere Gate,1,Mayapuri,sourced,2036,"estimate: new underground line, DMRC 18-corridor plan",28.63717,77.1297
+VC,Mayapuri–Kashmere Gate,Mayapuri → Kashmere Gate,2,Naraina Industrial Area,projected,2036,"estimate: new underground line, DMRC 18-corridor plan",28.6321,77.1371
+VC,Mayapuri–Kashmere Gate,Mayapuri → Kashmere Gate,3,Inderpuri,projected,2036,"estimate: new underground line, DMRC 18-corridor plan",28.6287,77.1471
+VC,Mayapuri–Kashmere Gate,Mayapuri → Kashmere Gate,4,Old Rajinder Nagar,projected,2036,"estimate: new underground line, DMRC 18-corridor plan",28.6395,77.183
+VC,Mayapuri–Kashmere Gate,Mayapuri → Kashmere Gate,5,Dev Nagar,projected,2036,"estimate: new underground line, DMRC 18-corridor plan",28.6544,77.1835
+VC,Mayapuri–Kashmere Gate,Mayapuri → Kashmere Gate,6,Tis Hazari,sourced,2036,"estimate: new underground line, DMRC 18-corridor plan",28.66716,77.21663
+VC,Mayapuri–Kashmere Gate,Mayapuri → Kashmere Gate,7,Kashmere Gate,sourced,2036,"estimate: new underground line, DMRC 18-corridor plan",28.66748,77.22825
+VC,Blue Line,Dwarka Sector 21 → Udyog Vihar,1,Dwarka Sector 21,sourced,2035,estimate: folded into the Airport-line DPR,28.55199,77.05846
+VC,Blue Line,Dwarka Sector 21 → Udyog Vihar,2,Bijwasan,sourced,2035,estimate: folded into the Airport-line DPR,28.537,77.0513
+VC,Blue Line,Dwarka Sector 21 → Udyog Vihar,3,Kapashera,sourced,2035,estimate: folded into the Airport-line DPR,28.5273,77.0823
+VC,Blue Line,Dwarka Sector 21 → Udyog Vihar,4,Udyog Vihar Ph-4,sourced,2035,estimate: folded into the Airport-line DPR,28.499,77.079
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),1,Gokulpuri,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.70242,77.28613
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),2,Gol Chakkar,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.704,77.301
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),3,DLF,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.701,77.3175
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),4,Tulsi Niketan,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.695,77.326
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),5,Bhopura,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.6984,77.3334
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),6,Shalimar Garden,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.688,77.342
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),7,Rajendra Nagar (Sahibabad),sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.6905,77.354
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),8,Hindon Airport,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.7043,77.3648
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),9,Karhaira,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.6965,77.379
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),10,New Karhaira Colony,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.69,77.384
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),11,Loni Road Industrial Area,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.683,77.3885
+VC,Pink Line,Gokulpuri → Arthala (via Hindon Airport),12,Arthala,sourced,2035,"estimate: DMRC 18-corridor plan, after V(B)",28.67703,77.39189
+VC,Tughlakabad–Noida Sec 142,Tughlakabad → Noida Sector 142,1,Tughlakabad,sourced,2036,estimate: DMRC 18-corridor plan; Yamuna crossing,28.50236,77.29924
+VC,Tughlakabad–Noida Sec 142,Tughlakabad → Noida Sector 142,2,Molarband,projected,2036,estimate: DMRC 18-corridor plan; Yamuna crossing,28.5,77.311
+VC,Tughlakabad–Noida Sec 142,Tughlakabad → Noida Sector 142,3,Mithapur,projected,2036,estimate: DMRC 18-corridor plan; Yamuna crossing,28.4935,77.3185
+VC,Tughlakabad–Noida Sec 142,Tughlakabad → Noida Sector 142,4,Noida Sector 168,projected,2036,estimate: DMRC 18-corridor plan; Yamuna crossing,28.4975,77.352
+VC,Tughlakabad–Noida Sec 142,Tughlakabad → Noida Sector 142,5,Noida Sector 133,projected,2036,estimate: DMRC 18-corridor plan; Yamuna crossing,28.5052,77.3715
+VC,Tughlakabad–Noida Sec 142,Tughlakabad → Noida Sector 142,6,Noida Sector 132,projected,2036,estimate: DMRC 18-corridor plan; Yamuna crossing,28.51,77.383
+VC,Tughlakabad–Noida Sec 142,Tughlakabad → Noida Sector 142,7,Noida Sector 134,projected,2036,estimate: DMRC 18-corridor plan; Yamuna crossing,28.502,77.3895
+VC,Tughlakabad–Noida Sec 142,Tughlakabad → Noida Sector 142,8,Noida Sector 135,projected,2036,estimate: DMRC 18-corridor plan; Yamuna crossing,28.498,77.4
+VC,Tughlakabad–Noida Sec 142,Tughlakabad → Noida Sector 142,9,Noida Sector 140A,projected,2036,estimate: DMRC 18-corridor plan; Yamuna crossing,28.504,77.407
+VC,Tughlakabad–Noida Sec 142,Tughlakabad → Noida Sector 142,10,Noida Sector 142,sourced,2036,estimate: DMRC 18-corridor plan; Yamuna crossing,28.49897,77.41285
+VC,Violet Line,Raja Nahar Singh → Palwal,1,Raja Nahar Singh,sourced,2034,estimate: HMRTC feasibility done; Haryana-funded,28.34001,77.31648
+VC,Violet Line,Raja Nahar Singh → Palwal,2,Sector 58-59,sourced,2034,estimate: HMRTC feasibility done; Haryana-funded,28.312,77.3095
+VC,Violet Line,Raja Nahar Singh → Palwal,3,Sector 61-62,projected,2034,estimate: HMRTC feasibility done; Haryana-funded,28.303,77.314
+VC,Violet Line,Raja Nahar Singh → Palwal,4,Jajru,projected,2034,estimate: HMRTC feasibility done; Haryana-funded,28.2935,77.3125
+VC,Violet Line,Raja Nahar Singh → Palwal,5,Sikri,sourced,2034,estimate: HMRTC feasibility done; Haryana-funded,28.285,77.311
+VC,Violet Line,Raja Nahar Singh → Palwal,6,Sikri Industrial Area,projected,2034,estimate: HMRTC feasibility done; Haryana-funded,28.273,77.31
+VC,Violet Line,Raja Nahar Singh → Palwal,7,Softa,sourced,2034,estimate: HMRTC feasibility done; Haryana-funded,28.26,77.307
+VC,Violet Line,Raja Nahar Singh → Palwal,8,Gadpuri,projected,2034,estimate: HMRTC feasibility done; Haryana-funded,28.247,77.303
+VC,Violet Line,Raja Nahar Singh → Palwal,9,Prithla,projected,2034,estimate: HMRTC feasibility done; Haryana-funded,28.2328,77.3
+VC,Violet Line,Raja Nahar Singh → Palwal,10,Baghola,projected,2034,estimate: HMRTC feasibility done; Haryana-funded,28.2089,77.3063
+VC,Violet Line,Raja Nahar Singh → Palwal,11,Rasoolpur,projected,2034,estimate: HMRTC feasibility done; Haryana-funded,28.193,77.312
+VC,Violet Line,Raja Nahar Singh → Palwal,12,Alahpur,projected,2034,estimate: HMRTC feasibility done; Haryana-funded,28.178,77.318
+VC,Violet Line,Raja Nahar Singh → Palwal,13,Palwal Bus Stand,projected,2034,estimate: HMRTC feasibility done; Haryana-funded,28.1459,77.3348
+VC,Violet Line,Raja Nahar Singh → Palwal,14,Palwal Railway Station,projected,2034,estimate: HMRTC feasibility done; Haryana-funded,28.1516,77.3418
+VC,Green Line,Brigadier Hoshiyar Singh → Asaudha,1,Brigadier Hoshiyar Singh,sourced,2032,"estimate: DPR May 2026, short 8 km elevated",28.69734,76.91914
+VC,Green Line,Brigadier Hoshiyar Singh → Asaudha,2,Sankhol,sourced,2032,"estimate: DPR May 2026, short 8 km elevated",28.7075,76.912
+VC,Green Line,Brigadier Hoshiyar Singh → Asaudha,3,Udyog Vihar Sector 16,sourced,2032,"estimate: DPR May 2026, short 8 km elevated",28.716,76.902
+VC,Green Line,Brigadier Hoshiyar Singh → Asaudha,4,HSIIDC Sector 17,sourced,2032,"estimate: DPR May 2026, short 8 km elevated",28.7245,76.8945
+VC,Green Line,Brigadier Hoshiyar Singh → Asaudha,5,Jakhoda,sourced,2032,"estimate: DPR May 2026, short 8 km elevated",28.7335,76.886
+VC,Green Line,Brigadier Hoshiyar Singh → Asaudha,6,HPCL Plant,sourced,2032,"estimate: DPR May 2026, short 8 km elevated",28.742,76.879
+VC,Green Line,Brigadier Hoshiyar Singh → Asaudha,7,Asaudha,sourced,2032,"estimate: DPR May 2026, short 8 km elevated",28.7507,76.8715
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),1,Sector 55–56,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4233,77.10509
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),2,Sector 61,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.411,77.0964
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),3,Sector 62,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4077,77.0824
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),4,Sector 63,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.403,77.069
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),5,Sector 66,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.3974,77.0539
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),6,Vatika Chowk,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.3985,77.044
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),7,Sector 69,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.3961,77.0372
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),8,Sector 70,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.3947,77.0223
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),9,Sector 71,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.3955,77.0145
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),10,Sector 75,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.3964,77.0066
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),11,Kherki Daula,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.404,76.983
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),12,Sector 36A,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.412,76.974
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),13,Sector 88,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.413,76.966
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),14,Sector 84,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4095,76.96
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),15,Sector 85,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.406,76.953
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),16,Sector 89,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4075,76.946
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),17,Sector 86,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4035,76.94
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),18,Sector 90,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.404,76.932
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),19,Sector 91,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4,76.923
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),20,M-15,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.3925,76.916
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),21,M-14,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.384,76.908
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),22,M-10,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.377,76.915
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),23,M-9,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.37,76.92
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),24,IMT Manesar,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.361,76.923
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),25,M-7,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.353,76.915
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),26,M-6,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.345,76.908
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),27,P-7,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.339,76.901
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),28,P-4,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.333,76.895
+G2,Gurugram: Sector 56–Pachgaon,Sector 56 → Pachgaon (Manesar),29,Pachgaon,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.327,76.889
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,1,Sarai Kale Khan,sourced,2031,official target,28.5892,77.2581
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,2,Dilli Haat–INA,sourced,2031,official target,28.57416,77.20933
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,3,Munirka,sourced,2031,official target,28.55688,77.17504
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,4,Delhi Aerocity,sourced,2031,official target,28.54876,77.1208
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,5,Cyber City,sourced,2031,official target,28.49806,77.08916
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,6,Gurugram Sector-17,sourced,2031,official target,28.4758,77.0608
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,7,Rajiv Chowk (Gurugram),sourced,2031,official target,28.4475,77.0328
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,8,Kherki Daula,sourced,2031,official target,28.404,76.983
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,9,IMT Manesar,sourced,2031,official target,28.361,76.923
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,10,Pachgaon,sourced,2031,official target,28.327,76.889
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,11,Bilaspur Chowk,sourced,2031,official target,28.2886,76.8602
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,12,Dharuhera,sourced,2031,official target,28.2055,76.7953
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,13,MBIR,sourced,2031,official target,28.175,76.705
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,14,Rewari District,sourced,2031,official target,28.1957,76.6165
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,15,Bawal,sourced,2031,official target,28.0597,76.5766
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,16,Kotputli-Behror Border,sourced,2031,official target,28.015,76.505
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,17,Shahjahanpur,sourced,2031,official target,27.9953,76.4509
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,18,Neemrana,sourced,2031,official target,27.9922,76.3857
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,19,Behror,sourced,2031,official target,27.8901,76.2858
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,20,Sotanala,sourced,2031,official target,27.82,76.295
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,21,Khairthal,sourced,2031,official target,27.7978,76.6417
+RR,Namo Bharat: Delhi–Gurugram–Alwar,Namo Bharat: Sarai Kale Khan → Gurugram → Bawal → Alwar,22,Alwar,sourced,2031,official target,27.5605,76.6214
+G2,Palam Vihar–Dwarka link,Palam Vihar → Dwarka Sector 21,1,Palam Vihar,sourced,2031,estimate: Gurugram plan: construction from 2027 + ~4 yr,28.5101,77.0418
+G2,Palam Vihar–Dwarka link,Palam Vihar → Dwarka Sector 21,2,Chauma–Sector 110A,sourced,2031,estimate: Gurugram plan: construction from 2027 + ~4 yr,28.5161,77.0376
+G2,Palam Vihar–Dwarka link,Palam Vihar → Dwarka Sector 21,3,Sector 111,sourced,2031,estimate: Gurugram plan: construction from 2027 + ~4 yr,28.5223,77.0336
+G2,Palam Vihar–Dwarka link,Palam Vihar → Dwarka Sector 21,4,Yashobhoomi Dwarka Sector 25,sourced,2031,estimate: Gurugram plan: construction from 2027 + ~4 yr,28.55081,77.04529
+G2,Palam Vihar–Dwarka link,Palam Vihar → Dwarka Sector 21,5,Dwarka Sector 21,sourced,2031,estimate: Gurugram plan: construction from 2027 + ~4 yr,28.55199,77.05846
+G2,Gurugram: GCER–Sector 5,Golf Course Ext. Road → Sector 5,1,Sector 61,sourced,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.411,77.0964
+G2,Gurugram: GCER–Sector 5,Golf Course Ext. Road → Sector 5,2,Sector 57,projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.4232,77.0804
+G2,Gurugram: GCER–Sector 5,Golf Course Ext. Road → Sector 5,3,Sector 46,projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.4359,77.064
+G2,Gurugram: GCER–Sector 5,Golf Course Ext. Road → Sector 5,4,Millennium City Centre Gurugram,sourced,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.45933,77.07269
+G2,Gurugram: GCER–Sector 5,Golf Course Ext. Road → Sector 5,5,Signature Tower,sourced,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.4664,77.0581
+G2,Gurugram: GCER–Sector 5,Golf Course Ext. Road → Sector 5,6,Rana Pratap Chowk,sourced,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.4705,77.047
+G2,Gurugram: GCER–Sector 5,Golf Course Ext. Road → Sector 5,7,Atul Kataria Chowk,sourced,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.477,77.034
+G2,Gurugram: GCER–Sector 5,Golf Course Ext. Road → Sector 5,8,Sector 5,sourced,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.4835,77.0115
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,1,Bhondsi,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.3505,77.0619
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,2,Ramgarh,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.372,77.056
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,3,Badshahpur,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.388,77.049
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,4,Vatika Chowk,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.3985,77.044
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,5,Sector 49,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4129,77.0498
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,6,Subhash Chowk,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4277,77.0371
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,7,Medanta,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.439,77.04
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,8,Rajiv Chowk (Gurugram),sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4475,77.0328
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,9,Sadar Bazar (Gurugram),projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4609,77.0293
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,10,Sector 12,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4725,77.0225
+G2,Gurugram: Bhondsi–Railway Stn,Bhondsi → Gurugram Railway Station,11,Sector 5,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4835,77.0115
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),1,Manesar,projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.36,76.938
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),2,Sector 80,projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.38,76.96
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),3,Narsinghpur,projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.395,76.97
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),4,Kherki Daula,sourced,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.404,76.983
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),5,Sector 35,projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.418,76.996
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),6,Hero Honda Chowk,sourced,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.429,77.016
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),7,New Colony,projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.452,77.021
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),8,Sadar Bazar (Gurugram),projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.4609,77.0293
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),9,Sector 14,projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.4738,77.0472
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),10,Gurugram Sector-17,sourced,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.4758,77.0608
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),11,Sector 21,projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.5144,77.073
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),12,Kapashera,sourced,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.5273,77.0823
+G2,Gurugram: Manesar–Samalkha,Manesar → Samalkha–Kapashera Road (via Old Gurugram),13,Samalkha,projected,2035,estimate: Gurugram plan: construction from 2030 + ~5 yr,28.5319,77.1034
+G2,Gurugram: Dwarka Expressway,Kherki Daula → Sector 111 (Dwarka Expressway),1,Kherki Daula,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.404,76.983
+G2,Gurugram: Dwarka Expressway,Kherki Daula → Sector 111 (Dwarka Expressway),2,Sector 36,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.423,76.984
+G2,Gurugram: Dwarka Expressway,Kherki Daula → Sector 111 (Dwarka Expressway),3,Sector 37D,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.448,76.97
+G2,Gurugram: Dwarka Expressway,Kherki Daula → Sector 111 (Dwarka Expressway),4,Sector 99,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4646,76.9629
+G2,Gurugram: Dwarka Expressway,Kherki Daula → Sector 111 (Dwarka Expressway),5,Sector 102,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.473,76.98
+G2,Gurugram: Dwarka Expressway,Kherki Daula → Sector 111 (Dwarka Expressway),6,Sector 104,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.4795,76.9937
+G2,Gurugram: Dwarka Expressway,Kherki Daula → Sector 111 (Dwarka Expressway),7,Sector 106,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.5061,76.9968
+G2,Gurugram: Dwarka Expressway,Kherki Daula → Sector 111 (Dwarka Expressway),8,Sector 109,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.5109,77.0066
+G2,Gurugram: Dwarka Expressway,Kherki Daula → Sector 111 (Dwarka Expressway),9,Sector 110,projected,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.517,77.017
+G2,Gurugram: Dwarka Expressway,Kherki Daula → Sector 111 (Dwarka Expressway),10,Sector 111,sourced,2034,estimate: Gurugram plan: construction from 2029 + ~5 yr,28.5223,77.0336
+RR,Namo Bharat: Gurugram–Faridabad–Noida,Namo Bharat: IFFCO Chowk → Faridabad → Surajpur,1,IFFCO Chowk,sourced,2032,estimate: Gurugram plan: construction from 2027 + ~5 yr,28.47233,77.07245
+RR,Namo Bharat: Gurugram–Faridabad–Noida,Namo Bharat: IFFCO Chowk → Faridabad → Surajpur,2,Sector 61,sourced,2032,estimate: Gurugram plan: construction from 2027 + ~5 yr,28.411,77.0964
+RR,Namo Bharat: Gurugram–Faridabad–Noida,Namo Bharat: IFFCO Chowk → Faridabad → Surajpur,3,Gwal Pahari,sourced,2032,estimate: Gurugram plan: construction from 2027 + ~5 yr,28.4326,77.1481
+RR,Namo Bharat: Gurugram–Faridabad–Noida,Namo Bharat: IFFCO Chowk → Faridabad → Surajpur,4,Sainik Colony (Faridabad),sourced,2032,estimate: Gurugram plan: construction from 2027 + ~5 yr,28.429,77.289
+RR,Namo Bharat: Gurugram–Faridabad–Noida,Namo Bharat: IFFCO Chowk → Faridabad → Surajpur,5,Bata Chowk,sourced,2032,estimate: Gurugram plan: construction from 2027 + ~5 yr,28.38584,77.31346
+RR,Namo Bharat: Gurugram–Faridabad–Noida,Namo Bharat: IFFCO Chowk → Faridabad → Surajpur,6,Sector 87-88 (Faridabad),sourced,2032,estimate: Gurugram plan: construction from 2027 + ~5 yr,28.4,77.342
+RR,Namo Bharat: Gurugram–Faridabad–Noida,Namo Bharat: IFFCO Chowk → Faridabad → Surajpur,7,Noida Sector 142,sourced,2032,estimate: Gurugram plan: construction from 2027 + ~5 yr,28.49897,77.41285
+RR,Namo Bharat: Gurugram–Faridabad–Noida,Namo Bharat: IFFCO Chowk → Faridabad → Surajpur,8,Surajpur,sourced,2032,estimate: Gurugram plan: construction from 2027 + ~5 yr,28.5107,77.4786
+G1,Aqua Line (NMRC),Aqua branch: Botanical Garden → Noida Sector 142,1,Botanical Garden,sourced,2030,official target,28.56392,77.33437
+G1,Aqua Line (NMRC),Aqua branch: Botanical Garden → Noida Sector 142,2,Noida Sector 44,sourced,2030,official target,28.5513,77.3352
+G1,Aqua Line (NMRC),Aqua branch: Botanical Garden → Noida Sector 142,3,Noida Office,sourced,2030,official target,28.5454,77.3377
+G1,Aqua Line (NMRC),Aqua branch: Botanical Garden → Noida Sector 142,4,Noida Sector 97,sourced,2030,official target,28.5405,77.3541
+G1,Aqua Line (NMRC),Aqua branch: Botanical Garden → Noida Sector 142,5,Noida Sector 105,sourced,2030,official target,28.5316,77.3692
+G1,Aqua Line (NMRC),Aqua branch: Botanical Garden → Noida Sector 142,6,Noida Sector 108,sourced,2030,official target,28.5266,77.3768
+G1,Aqua Line (NMRC),Aqua branch: Botanical Garden → Noida Sector 142,7,Noida Sector 93,sourced,2030,official target,28.523,77.3861
+G1,Aqua Line (NMRC),Aqua branch: Botanical Garden → Noida Sector 142,8,Panchsheel Balak Inter College,sourced,2030,official target,28.5098,77.3927
+G1,Aqua Line (NMRC),Aqua branch: Botanical Garden → Noida Sector 142,9,Noida Sector 142,sourced,2030,official target,28.49897,77.41285
+G1,Aqua Line (NMRC),Aqua: Depot → Boraki,1,Depot,sourced,2028,official target,28.48898,77.54401
+G1,Aqua Line (NMRC),Aqua: Depot → Boraki,2,MMTH–Junpat,sourced,2028,official target,28.4952,77.5548
+G1,Aqua Line (NMRC),Aqua: Depot → Boraki,3,Boraki,sourced,2028,official target,28.5076,77.5637
+G2,Aqua Line (NMRC),Aqua: Noida Sector 51 → Knowledge Park V,1,Noida Sector 51,sourced,2033,estimate: built together with the Ghaziabad–Jewar RRTS section I,28.58572,77.37524
+G2,Aqua Line (NMRC),Aqua: Noida Sector 51 → Knowledge Park V,2,Noida Sector 122,sourced,2033,estimate: built together with the Ghaziabad–Jewar RRTS section I,28.5929,77.3976
+G2,Aqua Line (NMRC),Aqua: Noida Sector 51 → Knowledge Park V,3,Noida Sector 123,sourced,2033,estimate: built together with the Ghaziabad–Jewar RRTS section I,28.5885,77.4085
+G2,Aqua Line (NMRC),Aqua: Noida Sector 51 → Knowledge Park V,4,Greater Noida West Sector IV,sourced,2033,estimate: built together with the Ghaziabad–Jewar RRTS section I,28.6075,77.43
+G2,Aqua Line (NMRC),Aqua: Noida Sector 51 → Knowledge Park V,5,Ecotech 12,sourced,2033,estimate: built together with the Ghaziabad–Jewar RRTS section I,28.612,77.442
+G2,Aqua Line (NMRC),Aqua: Noida Sector 51 → Knowledge Park V,6,Greater Noida West Sector II,sourced,2033,estimate: built together with the Ghaziabad–Jewar RRTS section I,28.6,77.444
+G2,Aqua Line (NMRC),Aqua: Noida Sector 51 → Knowledge Park V,7,Greater Noida West Sector 3,sourced,2033,estimate: built together with the Ghaziabad–Jewar RRTS section I,28.593,77.448
+G2,Aqua Line (NMRC),Aqua: Noida Sector 51 → Knowledge Park V,8,Greater Noida West Sector 10,sourced,2033,estimate: built together with the Ghaziabad–Jewar RRTS section I,28.585,77.452
+G2,Aqua Line (NMRC),Aqua: Noida Sector 51 → Knowledge Park V,9,Greater Noida West Sector 12,sourced,2033,estimate: built together with the Ghaziabad–Jewar RRTS section I,28.578,77.456
+G2,Aqua Line (NMRC),Aqua: Noida Sector 51 → Knowledge Park V,10,Knowledge Park V,sourced,2033,estimate: built together with the Ghaziabad–Jewar RRTS section I,28.57,77.461
+G2,Violet Line,Palwal → Noida Airport (Jewar),1,Palwal Railway Station,projected,2040,estimate: no study yet,28.1516,77.3418
+G2,Violet Line,Palwal → Noida Airport (Jewar),2,Chandhat,projected,2040,estimate: no study yet,28.1541,77.3752
+G2,Violet Line,Palwal → Noida Airport (Jewar),3,Sihol,projected,2040,estimate: no study yet,28.1566,77.4086
+G2,Violet Line,Palwal → Noida Airport (Jewar),4,Rampur Khor,projected,2040,estimate: no study yet,28.1591,77.442
+G2,Violet Line,Palwal → Noida Airport (Jewar),5,Rajupur,projected,2040,estimate: no study yet,28.1617,77.4754
+G2,Violet Line,Palwal → Noida Airport (Jewar),6,Jewar Khader,projected,2040,estimate: no study yet,28.1642,77.5087
+G2,Violet Line,Palwal → Noida Airport (Jewar),7,Sirsa (Jewar),projected,2040,estimate: no study yet,28.1667,77.5421
+G2,Violet Line,Palwal → Noida Airport (Jewar),8,Mukimpur,projected,2040,estimate: no study yet,28.1692,77.5755
+G2,Violet Line,Palwal → Noida Airport (Jewar),9,Jewar Airport,sourced,2040,estimate: no study yet,28.1717,77.6089
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),1,Ghaziabad,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.67257,77.41372
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),2,Ghaziabad South,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.6405,77.4113
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),3,Greater Noida West Sector IV,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.6075,77.43
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),4,Greater Noida West Sector II,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.6,77.444
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),5,Knowledge Park V,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.57,77.461
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),6,Surajpur,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.5107,77.4786
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),7,Pari Chowk,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.46338,77.50837
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),8,Ecotech VI,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.45,77.53
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),9,Dankaur,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.3496,77.554
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),10,YEIDA Sector 18,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.315,77.545
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),11,YEIDA Sector 21,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.27,77.557
+RR,Namo Bharat: Ghaziabad–Jewar Airport,Namo Bharat: Ghaziabad → Noida Airport (Jewar),12,Jewar Airport,sourced,2033,estimate: DPR with UP govt since 2024; YEIDA funding set,28.1717,77.6089
+G2,Film City light rail (YEIDA),Film City light rail: Noida Airport → YEIDA Sector 21,1,Jewar Airport,sourced,2035,estimate: tied to Film City and the Jewar RRTS,28.1717,77.6089
+G2,Film City light rail (YEIDA),Film City light rail: Noida Airport → YEIDA Sector 21,2,Kureb,projected,2035,estimate: tied to Film City and the Jewar RRTS,28.1914,77.5985
+G2,Film City light rail (YEIDA),Film City light rail: Noida Airport → YEIDA Sector 21,3,YEIDA Sector 29,projected,2035,estimate: tied to Film City and the Jewar RRTS,28.211,77.5881
+G2,Film City light rail (YEIDA),Film City light rail: Noida Airport → YEIDA Sector 21,4,Dhanpura,projected,2035,estimate: tied to Film City and the Jewar RRTS,28.2307,77.5778
+G2,Film City light rail (YEIDA),Film City light rail: Noida Airport → YEIDA Sector 21,5,YEIDA Sector 22,projected,2035,estimate: tied to Film City and the Jewar RRTS,28.2503,77.5674
+G2,Film City light rail (YEIDA),Film City light rail: Noida Airport → YEIDA Sector 21,6,YEIDA Sector 21,sourced,2035,estimate: tied to Film City and the Jewar RRTS,28.27,77.557
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,1,Sarai Kale Khan,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,28.5892,77.2581
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,2,Indraprastha,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,28.62058,77.24955
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,3,Kashmere Gate,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,28.66748,77.22825
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,4,Jharoda Majra,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,28.72491,77.21368
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,5,Bhalaswa,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,28.7369,77.16807
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,6,Alipur,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,28.7973,77.133
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,7,Narela,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,28.853,77.101
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,8,Kundli,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,28.878,77.118
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,9,KMP,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,28.91,77.113
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,10,Bahalgarh Chowk,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,28.9587,77.0951
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,11,Murthal,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.035,77.075
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,12,Bahri,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.085,77.055
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,13,Gannaur,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.1378,77.0203
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,14,Samalkha (Panipat),sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.235,77.013
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,15,Panipat ISBT,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.37,76.979
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,16,Panipat City,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.392,76.97
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,17,Panipat Sector 18,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.418,76.958
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,18,Ganjbar-Badauli-Kohand,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.4777,76.9654
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,19,Gharunda,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.5394,76.9389
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,20,Karnal Bypass,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.665,76.985
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,21,Karnal Sector 7,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.692,76.98
+RR,Namo Bharat: Delhi–Panipat–Karnal,Namo Bharat: Sarai Kale Khan → Panipat → Karnal,22,Karnal ISBT,sourced,2032,estimate: PIB cleared Nov 2025; Cabinet sanction + ~5 yr build,29.708,76.992
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,1,Shradhapuri Phase II,sourced,2035,estimate: awaiting new DPR tender,29.031,77.672
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,2,Kanker Khera,sourced,2035,estimate: awaiting new DPR tender,29.0233,77.6879
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,3,Meerut Cantt Railway Station,sourced,2035,estimate: awaiting new DPR tender,29.0165,77.6877
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,4,Rajban Bazar,sourced,2035,estimate: awaiting new DPR tender,29.0049,77.6976
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,5,Begumpul,sourced,2035,estimate: awaiting new DPR tender,28.99674,77.70558
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,6,Bachcha Park,sourced,2035,estimate: awaiting new DPR tender,28.989,77.7065
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,7,Shahpeer Gate,sourced,2035,estimate: awaiting new DPR tender,28.9786,77.7114
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,8,Hapur Adda,sourced,2035,estimate: awaiting new DPR tender,28.9738,77.7136
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,9,Gandhi Ashram,sourced,2035,estimate: awaiting new DPR tender,28.9709,77.7206
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,10,Mangal Pandey Nagar,sourced,2035,estimate: awaiting new DPR tender,28.9725,77.732
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,11,Tejgarhi,sourced,2035,estimate: awaiting new DPR tender,28.9641,77.7397
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,12,Medical College,sourced,2035,estimate: awaiting new DPR tender,28.9611,77.7508
+G2,Meerut Metro Line 2,Meerut Line 2: Shradhapuri Ph-II → Jagriti Vihar,13,Jagriti Vihar Extension,sourced,2035,estimate: awaiting new DPR tender,28.96,77.762
+G2,Meerut Metro Line 3,Meerut Line 3: CCS University → Begumpul (via Ganga Nagar),1,CCS University,sourced,2038,estimate: planning stage,28.967,77.7389
+G2,Meerut Metro Line 3,Meerut Line 3: CCS University → Begumpul (via Ganga Nagar),2,Shastri Nagar Extension,projected,2038,estimate: planning stage,28.982,77.748
+G2,Meerut Metro Line 3,Meerut Line 3: CCS University → Begumpul (via Ganga Nagar),3,Ganga Nagar,sourced,2038,estimate: planning stage,28.9997,77.7594
+G2,Meerut Metro Line 3,Meerut Line 3: CCS University → Begumpul (via Ganga Nagar),4,Mawana Road,projected,2038,estimate: planning stage,28.9995,77.738
+G2,Meerut Metro Line 3,Meerut Line 3: CCS University → Begumpul (via Ganga Nagar),5,Civil Lines (Meerut),projected,2038,estimate: planning stage,28.999,77.718
+G2,Meerut Metro Line 3,Meerut Line 3: CCS University → Begumpul (via Ganga Nagar),6,Begumpul,sourced,2038,estimate: planning stage,28.99674,77.70558
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),1,Kirti Nagar,sourced,2040,estimate: stalled since 2019; may be cancelled,28.65573,77.15065
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),2,Saraswati Garden,sourced,2040,estimate: stalled since 2019; may be cancelled,28.6466,77.1374
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),3,Mayapuri Bus Depot,sourced,2040,estimate: stalled since 2019; may be cancelled,28.642,77.133
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),4,Mayapuri,sourced,2040,estimate: stalled since 2019; may be cancelled,28.63717,77.1297
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),5,Hari Nagar Block BE,sourced,2040,estimate: stalled since 2019; may be cancelled,28.634,77.124
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),6,Mayapuri Industrial Area,sourced,2040,estimate: stalled since 2019; may be cancelled,28.629,77.13
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),7,Mayapuri Industrial Area-II,sourced,2040,estimate: stalled since 2019; may be cancelled,28.623,77.1235
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),8,Lajwanti Garden,sourced,2040,estimate: stalled since 2019; may be cancelled,28.6133,77.1073
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),9,Shivpuri,sourced,2040,estimate: stalled since 2019; may be cancelled,28.6118,77.0985
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),10,Dabri Village,sourced,2040,estimate: stalled since 2019; may be cancelled,28.6101,77.0889
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),11,Sitapuri Extension,sourced,2040,estimate: stalled since 2019; may be cancelled,28.6131,77.0836
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),12,Mahavir Enclave,sourced,2040,estimate: stalled since 2019; may be cancelled,28.6,77.079
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),13,Dwarka Sector 2,sourced,2040,estimate: stalled since 2019; may be cancelled,28.5986,77.0687
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),14,Dwarka Sector 7,sourced,2040,estimate: stalled since 2019; may be cancelled,28.5874,77.0673
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),15,Dwarka Sector 6,sourced,2040,estimate: stalled since 2019; may be cancelled,28.5925,77.0647
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),16,Dwarka Sector 10,sourced,2040,estimate: stalled since 2019; may be cancelled,28.58107,77.05751
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),17,Dwarka Sector 20,sourced,2040,estimate: stalled since 2019; may be cancelled,28.5714,77.0589
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),18,Dwarka Sector 23,sourced,2040,estimate: stalled since 2019; may be cancelled,28.562,77.0491
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),19,Dhul Siras Village,sourced,2040,estimate: stalled since 2019; may be cancelled,28.556,77.038
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),20,Yashobhoomi Dwarka Sector 25,sourced,2040,estimate: stalled since 2019; may be cancelled,28.55081,77.04529
+G2,Delhi Metrolite (light rail),Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli),21,Dwarka Sector 28,sourced,2040,estimate: stalled since 2019; may be cancelled,28.5442,77.025
+G2,Blue Line,Yamuna Bank → Loni,1,Yamuna Bank,sourced,2036,"estimate: DMRC 18-corridor plan, second stage",28.62314,77.26804
+G2,Blue Line,Yamuna Bank → Loni,2,Geeta Colony,projected,2036,"estimate: DMRC 18-corridor plan, second stage",28.65,77.276
+G2,Blue Line,Yamuna Bank → Loni,3,Shastri Park,sourced,2036,"estimate: DMRC 18-corridor plan, second stage",28.66846,77.25054
+G2,Blue Line,Yamuna Bank → Loni,4,Usmanpur,projected,2036,"estimate: DMRC 18-corridor plan, second stage",28.6862,77.2507
+G2,Blue Line,Yamuna Bank → Loni,5,Bhajanpura,sourced,2036,"estimate: DMRC 18-corridor plan, second stage",28.70362,77.26264
+G2,Blue Line,Yamuna Bank → Loni,6,Loni Border,projected,2036,"estimate: DMRC 18-corridor plan, second stage",28.7378,77.2609
+G2,Blue Line,Yamuna Bank → Loni,7,Loni,sourced,2036,"estimate: DMRC 18-corridor plan, second stage",28.7317,77.2901
+G2,Pink Line,Shiv Vihar → Loni,1,Shiv Vihar,sourced,2035,estimate: short Phase V proposal,28.72143,77.28946
+G2,Pink Line,Shiv Vihar → Loni,2,Loni,sourced,2035,estimate: short Phase V proposal,28.7317,77.2901
+G2,Mayur Vihar III–Loni Border,Mayur Vihar Ph-III → Loni Border,1,Mayur Vihar Phase-III,projected,2036,"estimate: DMRC 18-corridor plan, second stage",28.602,77.335
+G2,Mayur Vihar III–Loni Border,Mayur Vihar Ph-III → Loni Border,2,Ghazipur,projected,2036,"estimate: DMRC 18-corridor plan, second stage",28.6303,77.3203
+G2,Mayur Vihar III–Loni Border,Mayur Vihar Ph-III → Loni Border,3,Anand Vihar,sourced,2036,"estimate: DMRC 18-corridor plan, second stage",28.64689,77.31605
+G2,Mayur Vihar III–Loni Border,Mayur Vihar Ph-III → Loni Border,4,Vivek Vihar,projected,2036,"estimate: DMRC 18-corridor plan, second stage",28.672,77.315
+G2,Mayur Vihar III–Loni Border,Mayur Vihar Ph-III → Loni Border,5,Dilshad Garden,sourced,2036,"estimate: DMRC 18-corridor plan, second stage",28.67589,77.32151
+G2,Mayur Vihar III–Loni Border,Mayur Vihar Ph-III → Loni Border,6,Sunder Nagri,projected,2036,"estimate: DMRC 18-corridor plan, second stage",28.689,77.306
+G2,Mayur Vihar III–Loni Border,Mayur Vihar Ph-III → Loni Border,7,Johri Enclave,sourced,2036,"estimate: DMRC 18-corridor plan, second stage",28.71289,77.29016
+G2,Mayur Vihar III–Loni Border,Mayur Vihar Ph-III → Loni Border,8,Loni Border,projected,2036,"estimate: DMRC 18-corridor plan, second stage",28.7378,77.2609
+G2,CGO Complex–Surya Vihar (Faridabad),CGO Complex → Surya Vihar (Faridabad),1,CGO Complex,sourced,2037,"estimate: DMRC 18-corridor plan, second stage; route undecided",28.5863,77.2387
+G2,CGO Complex–Surya Vihar (Faridabad),CGO Complex → Surya Vihar (Faridabad),2,Hazrat Nizamuddin,projected,2037,"estimate: DMRC 18-corridor plan, second stage; route undecided",28.5864,77.253
+G2,CGO Complex–Surya Vihar (Faridabad),CGO Complex → Surya Vihar (Faridabad),3,Ashram,sourced,2037,"estimate: DMRC 18-corridor plan, second stage; route undecided",28.572,77.25812
+G2,CGO Complex–Surya Vihar (Faridabad),CGO Complex → Surya Vihar (Faridabad),4,Sukhdev Vihar,sourced,2037,"estimate: DMRC 18-corridor plan, second stage; route undecided",28.55978,77.27497
+G2,CGO Complex–Surya Vihar (Faridabad),CGO Complex → Surya Vihar (Faridabad),5,Sarita Vihar,sourced,2037,"estimate: DMRC 18-corridor plan, second stage; route undecided",28.52859,77.28832
+G2,CGO Complex–Surya Vihar (Faridabad),CGO Complex → Surya Vihar (Faridabad),6,Badarpur,sourced,2037,"estimate: DMRC 18-corridor plan, second stage; route undecided",28.49317,77.30302
+G2,CGO Complex–Surya Vihar (Faridabad),CGO Complex → Surya Vihar (Faridabad),7,Faridabad Sector 37,projected,2037,"estimate: DMRC 18-corridor plan, second stage; route undecided",28.4797,77.3119
+G2,CGO Complex–Surya Vihar (Faridabad),CGO Complex → Surya Vihar (Faridabad),8,Surya Vihar,sourced,2037,"estimate: DMRC 18-corridor plan, second stage; route undecided",28.4802,77.2919
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,1,Bata Chowk,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.38584,77.31346
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,2,Piyali Chowk,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.395,77.3
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,3,Shaheed Bhagat Singh Marg,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.4,77.292
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,4,Badkhal Enclave,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.4073,77.283
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,5,Pali Chowk,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.405,77.246
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,6,Police Chowki Mangar,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.415,77.2
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,7,Gwal Pahari,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.4326,77.1481
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,8,Sector 55–56,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.4233,77.10509
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,9,Sushant Lok,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.42,77.09
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,10,Sushant Lok Phase III,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.413,77.078
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,11,Rosewood City,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.4102,77.0545
+G2,Faridabad–Gurugram Metro,Faridabad–Gurugram: Bata Chowk → Vatika Chowk,12,Vatika Chowk,sourced,2034,estimate: revised DPR pending; Aravalli section slows approvals,28.3985,77.044
+RR,Namo Bharat: Delhi–Faridabad–Palwal,Namo Bharat: Delhi → Faridabad → Ballabgarh → Palwal,1,Sarai Kale Khan,sourced,2036,estimate: NCRTC future phase; DPRs being prepared,28.5892,77.2581
+RR,Namo Bharat: Delhi–Faridabad–Palwal,Namo Bharat: Delhi → Faridabad → Ballabgarh → Palwal,2,Tughlakabad,sourced,2036,estimate: NCRTC future phase; DPRs being prepared,28.50236,77.29924
+RR,Namo Bharat: Delhi–Faridabad–Palwal,Namo Bharat: Delhi → Faridabad → Ballabgarh → Palwal,3,Old Faridabad,sourced,2036,estimate: NCRTC future phase; DPRs being prepared,28.41084,77.31146
+RR,Namo Bharat: Delhi–Faridabad–Palwal,Namo Bharat: Delhi → Faridabad → Ballabgarh → Palwal,4,Raja Nahar Singh,sourced,2036,estimate: NCRTC future phase; DPRs being prepared,28.34001,77.31648
+RR,Namo Bharat: Delhi–Faridabad–Palwal,Namo Bharat: Delhi → Faridabad → Ballabgarh → Palwal,5,Palwal Railway Station,projected,2036,estimate: NCRTC future phase; DPRs being prepared,28.1516,77.3418
+RR,Namo Bharat: Ghaziabad–Khurja,Namo Bharat: Ghaziabad → Bulandshahr → Khurja,1,Ghaziabad,sourced,2038,estimate: NCRTC future phase,28.67257,77.41372
+RR,Namo Bharat: Ghaziabad–Khurja,Namo Bharat: Ghaziabad → Bulandshahr → Khurja,2,Dadri,projected,2038,estimate: NCRTC future phase,28.5387,77.5372
+RR,Namo Bharat: Ghaziabad–Khurja,Namo Bharat: Ghaziabad → Bulandshahr → Khurja,3,Sikandrabad,projected,2038,estimate: NCRTC future phase,28.4171,77.7353
+RR,Namo Bharat: Ghaziabad–Khurja,Namo Bharat: Ghaziabad → Bulandshahr → Khurja,4,Bulandshahr,projected,2038,estimate: NCRTC future phase,28.3874,77.9744
+RR,Namo Bharat: Ghaziabad–Khurja,Namo Bharat: Ghaziabad → Bulandshahr → Khurja,5,Khurja,sourced,2038,estimate: NCRTC future phase,28.2533,77.8539
+RR,Namo Bharat: Delhi–Bahadurgarh–Rohtak,Namo Bharat: Delhi → Bahadurgarh → Rohtak,1,Inderlok,sourced,2037,estimate: NCRTC future phase,28.67359,77.17035
+RR,Namo Bharat: Delhi–Bahadurgarh–Rohtak,Namo Bharat: Delhi → Bahadurgarh → Rohtak,2,Nangloi,sourced,2037,estimate: NCRTC future phase,28.68233,77.06473
+RR,Namo Bharat: Delhi–Bahadurgarh–Rohtak,Namo Bharat: Delhi → Bahadurgarh → Rohtak,3,Mundka,sourced,2037,estimate: NCRTC future phase,28.68235,77.03057
+RR,Namo Bharat: Delhi–Bahadurgarh–Rohtak,Namo Bharat: Delhi → Bahadurgarh → Rohtak,4,Bahadurgarh City,sourced,2037,estimate: NCRTC future phase,28.69066,76.93544
+RR,Namo Bharat: Delhi–Bahadurgarh–Rohtak,Namo Bharat: Delhi → Bahadurgarh → Rohtak,5,Sampla,projected,2037,estimate: NCRTC future phase,28.8192,76.7609
+RR,Namo Bharat: Delhi–Bahadurgarh–Rohtak,Namo Bharat: Delhi → Bahadurgarh → Rohtak,6,Rohtak,sourced,2037,estimate: NCRTC future phase,28.9011,76.5802
+RR,Namo Bharat: Ghaziabad–Hapur,Namo Bharat: Ghaziabad → Hapur,1,Ghaziabad,sourced,2038,estimate: NCRTC future phase,28.67257,77.41372
+RR,Namo Bharat: Ghaziabad–Hapur,Namo Bharat: Ghaziabad → Hapur,2,Masuri,projected,2038,estimate: NCRTC future phase,28.6919,77.5529
+RR,Namo Bharat: Ghaziabad–Hapur,Namo Bharat: Ghaziabad → Hapur,3,Pilkhuwa,projected,2038,estimate: NCRTC future phase,28.7142,77.6549
+RR,Namo Bharat: Ghaziabad–Hapur,Namo Bharat: Ghaziabad → Hapur,4,Hapur,sourced,2038,estimate: NCRTC future phase,28.7167,77.8904
+RR,Namo Bharat: Delhi–Shahdara–Baraut,Namo Bharat: Delhi → Shahdara → Baghpat → Baraut,1,Shahdara,sourced,2037,estimate: NCRTC future phase,28.67346,77.28988
+RR,Namo Bharat: Delhi–Shahdara–Baraut,Namo Bharat: Delhi → Shahdara → Baghpat → Baraut,2,Loni,sourced,2037,estimate: NCRTC future phase,28.7317,77.2901
+RR,Namo Bharat: Delhi–Shahdara–Baraut,Namo Bharat: Delhi → Shahdara → Baghpat → Baraut,3,Khekra,projected,2037,estimate: NCRTC future phase,28.8656,77.284
+RR,Namo Bharat: Delhi–Shahdara–Baraut,Namo Bharat: Delhi → Shahdara → Baghpat → Baraut,4,Baghpat,projected,2037,estimate: NCRTC future phase,29.0375,77.3063
+RR,Namo Bharat: Delhi–Shahdara–Baraut,Namo Bharat: Delhi → Shahdara → Baghpat → Baraut,5,Baraut,sourced,2037,estimate: NCRTC future phase,29.1561,77.3064
+G2,Red Line,Red Line: Nathupur → Sonipat Sector 7,1,Nathupur,sourced,2037,estimate: studies done; follows Rithala–Nathupur (2029),28.896,77.112
+G2,Red Line,Red Line: Nathupur → Sonipat Sector 7,2,Rai,projected,2037,estimate: studies done; follows Rithala–Nathupur (2029),28.9406,77.0962
+G2,Red Line,Red Line: Nathupur → Sonipat Sector 7,3,Bahalgarh Chowk,sourced,2037,estimate: studies done; follows Rithala–Nathupur (2029),28.9587,77.0951
+G2,Red Line,Red Line: Nathupur → Sonipat Sector 7,4,Sonipat Sector 7,sourced,2037,estimate: studies done; follows Rithala–Nathupur (2029),28.9866,77.0788
+G2,Grey Line,Grey Line: Dhansa Bus Stand → Jhajjar (via Badli),1,Dhansa Bus Stand,sourced,2036,estimate: DPR consultant tendered Mar 2025,28.61188,76.97855
+G2,Grey Line,Grey Line: Dhansa Bus Stand → Jhajjar (via Badli),2,Surakhpur,projected,2036,estimate: DPR consultant tendered Mar 2025,28.6054,76.9339
+G2,Grey Line,Grey Line: Dhansa Bus Stand → Jhajjar (via Badli),3,Rawata Mor,projected,2036,estimate: DPR consultant tendered Mar 2025,28.5989,76.8893
+G2,Grey Line,Grey Line: Dhansa Bus Stand → Jhajjar (via Badli),4,Gubhana,projected,2036,estimate: DPR consultant tendered Mar 2025,28.5925,76.8447
+G2,Grey Line,Grey Line: Dhansa Bus Stand → Jhajjar (via Badli),5,Badli (Jhajjar),sourced,2036,estimate: DPR consultant tendered Mar 2025,28.5727,76.8101
+G2,Grey Line,Grey Line: Dhansa Bus Stand → Jhajjar (via Badli),6,Jhajjar Bypass,projected,2036,estimate: DPR consultant tendered Mar 2025,28.596,76.71
+G2,Grey Line,Grey Line: Dhansa Bus Stand → Jhajjar (via Badli),7,Jhajjar,sourced,2036,estimate: DPR consultant tendered Mar 2025,28.606,76.657
+G2,Green Line,Green Line: Asaudha → Rohtak,1,Asaudha,sourced,2037,estimate: studies done; follows Asaudha (2032),28.7507,76.8715
+G2,Green Line,Green Line: Asaudha → Rohtak,2,Loharheri,projected,2037,estimate: studies done; follows Asaudha (2032),28.7735,76.8346
+G2,Green Line,Green Line: Asaudha → Rohtak,3,Kharkhauda Road,projected,2037,estimate: studies done; follows Asaudha (2032),28.7964,76.7978
+G2,Green Line,Green Line: Asaudha → Rohtak,4,Sampla,projected,2037,estimate: studies done; follows Asaudha (2032),28.8192,76.7609
+G2,Green Line,Green Line: Asaudha → Rohtak,5,Gandhra,projected,2037,estimate: studies done; follows Asaudha (2032),28.8383,76.7223
+G2,Green Line,Green Line: Asaudha → Rohtak,6,Kheri Sadh,projected,2037,estimate: studies done; follows Asaudha (2032),28.8573,76.6838
+G2,Green Line,Green Line: Asaudha → Rohtak,7,Garhi Bohar,projected,2037,estimate: studies done; follows Asaudha (2032),28.8764,76.6452
+G2,Green Line,Green Line: Asaudha → Rohtak,8,Rohtak,sourced,2037,estimate: studies done; follows Asaudha (2032),28.9011,76.5802
