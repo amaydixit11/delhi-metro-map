@@ -11,5 +11,6 @@ if [[ "${LAYOUT:-0}" == "1" ]]; then                                      # 3. s
   "$LOOM/loom" < /tmp/dm-graph.json | "$LOOM/octi" -g 60% | "$LOOM/loom" > schematic/layout.json
 fi
 python3 -I scripts/render_schematic.py schematic/layout.json data/metro-data.js schematic/schem.svg 60
+# population grid (only when updating it): python scripts/population.py <worldpop.tif> data/pop.js
 python3 -I scripts/assemble.py                                             # -> dist/index.html
 echo "built dist/index.html"

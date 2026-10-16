@@ -8,6 +8,8 @@ Interactive map of the Delhi Metro and the wider NCR rail network: every open, u
 - **Schematic view:** octilinear layout made with [LOOM](https://github.com/ad-freiburg/loom), with curved or sharp corners
 - **Timeline:** drag 2002 → 2041 to watch the network grow (official targets where published, estimates otherwise)
 - **Route planner:** fastest route on whatever network is visible for the chosen year
+- **Who's left out:** WorldPop 2020 population density with 1 km station coverage. Shows what share of NCR lives near a station for any year, and the biggest unserved neighbourhoods
+- **Animation:** `images/delhi-metro-2002-2041.mp4` / `.gif` (built by `scripts/anim.py`)
 - Station cards show sources, phase and year; stations whose names aren't published yet are marked *projected*
 
 `images/` has the Reddit images and `dist/planned-stations.csv` lists every planned station with its source status and year.

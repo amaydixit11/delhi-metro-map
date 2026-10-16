@@ -4,6 +4,6 @@ d = open("data/metro-data.js").read()
 s = open("schematic/schem.svg").read()
 import re
 s = re.sub(r'^(<svg[^>]*?) width="[^"]*" height="[^"]*"', r'\1', s, count=1)
-out = t.replace("/*DATA*/", d).replace("<!--SCHEM-->", s)
+out = t.replace("/*DATA*/", d).replace("<!--SCHEM-->", s).replace("/*POP*/", open("data/pop.js").read())
 open("dist/index.html", "w").write(out)
 print(len(out))

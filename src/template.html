@@ -82,6 +82,11 @@ button:hover{background:var(--chip)}
 .pp a{color:var(--muted)}
 .leaflet-tile-pane{filter:var(--tile-filter)}
 #toggle{display:none}
+.popstat{display:flex;align-items:baseline;gap:8px;margin:6px 6px 2px}.popstat b{font-size:26px;font-variant-numeric:tabular-nums}
+.ramp{height:10px;border-radius:5px;margin:6px 6px 2px;background:linear-gradient(90deg,#FDE68A,#FB923C,#DC2626,#7F1D1D)}
+.rampl{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin:0 6px}
+#hotlist div{display:flex;justify-content:space-between;gap:8px;padding:4px 6px;border-radius:7px;cursor:pointer;font-size:13px}
+#hotlist div:hover{background:var(--chip)} #hotlist small{color:var(--muted);white-space:nowrap}
 .tl{display:flex;align-items:center;gap:10px;margin:4px 6px}
 .tl input[type=range]{flex:1;accent-color:var(--accent)}
 .tl b{min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
@@ -148,6 +153,15 @@ button:hover{background:var(--chip)}
   <div class="tl"><button id="play" aria-label="Play timeline">▶</button><input type="range" id="yr" min="2002" max="2041" step="1" value="2041" aria-label="Year"><b id="yrLbl">All plans</b></div>
   <div class="note" id="yrNote"></div>
 
+  <h2>Who's left out</h2>
+  <div class="popstat"><b id="popPct">–</b><span id="popTxt" style="font-size:12.5px;color:var(--muted)"></span></div>
+  <label class="row"><input type="checkbox" id="popOn"> Show population density <span class="tag">geographic</span></label>
+  <div id="popLegend" style="display:none"><div class="ramp"></div><div class="rampl"><span>5k</span><span>people / km² with no station within 1 km</span><span>60k+</span></div>
+  <div class="note">Green tint = dense areas already within 1 km of a station.</div></div>
+  <div class="note">Population: WorldPop 2020, 1 km grid, smoothed to 500 m. Area names are the nearest locality from OpenStreetMap, so they're approximate.</div>
+  <div class="note" style="margin-top:8px"><b>Most people still unserved</b> (for the year and phases shown):</div>
+  <div id="hotlist"></div>
+
   <h2>Phases</h2>
   <div id="phases"></div>
 
@@ -205,6 +219,7 @@ button:hover{background:var(--chip)}
 </div>
 
 <script>/*DATA*/</script>
+<script>/*POP*/</script>
 <script>
 (function(){
 const M = window.METRO;
@@ -359,6 +374,7 @@ function render(){
   S.forEach((s,i)=>styleStation(s,stLayers[i]));
   zoomCls();
   renderSchem();
+  if(window.POP&&typeof renderPop==="function") renderPop();
 }
 // ---------- schematic ----------
 const sch=document.getElementById("schem"), svg=sch.querySelector("svg");
@@ -473,7 +489,7 @@ document.getElementById("toggle").onclick=()=>document.getElementById("side").cl
 
 const srcEl=document.getElementById("src");
 Object.values(M.sources).forEach(s=>{const a=document.createElement("a");a.href=s.u;a.target="_blank";a.rel="noopener";a.textContent=s.t;srcEl.appendChild(a);});
-[["OpenStreetMap (operational track + stations, Overpass, 16 Oct 2026)","https://www.openstreetmap.org/"]].forEach(([t,u])=>{const a=document.createElement("a");a.href=u;a.target="_blank";a.textContent=t;srcEl.appendChild(a);});
+[["OpenStreetMap (operational track + stations, Overpass, 16 Oct 2026)","https://www.openstreetmap.org/"],["WorldPop 2020 population, 1 km UN-adjusted (CC BY 4.0)","https://hub.worldpop.org/"]].forEach(([t,u])=>{const a=document.createElement("a");a.href=u;a.target="_blank";a.textContent=t;srcEl.appendChild(a);});
 
 const q=document.getElementById("q"),res=document.getElementById("results");
 q.oninput=()=>{
@@ -487,6 +503,53 @@ q.oninput=()=>{
     res.appendChild(d);
   });
 };
+// ---------- population coverage ----------
+const P=window.POP, NPC=P.nx*P.ny;
+const kmLat=111.2, kmLon=111.2*Math.cos(28.6*Math.PI/180), cellKm2=(P.d*kmLat)*(P.d*kmLon);
+const totalPop=P.cells.reduce((a,b)=>a+b,0);
+let popLayer=null; const popCanvas=document.createElement("canvas"); popCanvas.width=P.nx; popCanvas.height=P.ny;
+function coverage(){
+  const cov=new Uint8Array(NPC), R=1.0, ry=Math.ceil(R/(P.d*kmLat)), rx=Math.ceil(R/(P.d*kmLon));
+  S.forEach(s=>{
+    if(!servedVisible(s).length||(s.conf==="p"&&!state.proj)) return;
+    const cy=Math.floor((P.lat0-s.lat)/P.d), cx=Math.floor((s.lon-P.lon0)/P.d);
+    for(let y=cy-ry;y<=cy+ry;y++){ if(y<0||y>=P.ny) continue;
+      for(let x=cx-rx;x<=cx+rx;x++){ if(x<0||x>=P.nx) continue;
+        const dy=(y+.5-(P.lat0-s.lat)/P.d)*P.d*kmLat, dx=(x+.5-(s.lon-P.lon0)/P.d)*P.d*kmLon;
+        if(dx*dx+dy*dy<=R*R) cov[y*P.nx+x]=1; } }
+  });
+  return cov;
+}
+function ramp(t){const st=[[253,230,138],[251,146,60],[220,38,38],[127,29,29]];t=Math.max(0,Math.min(1,t))*3;const i=Math.min(2,Math.floor(t)),f=t-i;return st[i].map((c,k)=>Math.round(c+(st[i+1][k]-c)*f));}
+function lakh(n){return n>=1e5?(n/1e5).toFixed(n>=1e6?0:1)+" lakh":Math.round(n/1000)+"k";}
+function renderPop(){
+  const cov=coverage(); let covered=0;
+  for(let i=0;i<NPC;i++) if(cov[i]) covered+=P.cells[i];
+  document.getElementById("popPct").textContent=Math.round(covered/totalPop*100)+"%";
+  document.getElementById("popTxt").textContent=`of ${(totalPop/1e7).toFixed(1)} crore people in Delhi NCR live within 1 km of a station${state.year<YMAX?` (${state.year})`:""}`;
+  // top unserved neighbourhoods (hotspot blocks, grouped by name)
+  const by=new Map();
+  P.hot.forEach(([lat,lon,name,y0,x0])=>{let u=0;for(let y=y0;y<y0+P.B&&y<P.ny;y++)for(let x=x0;x<x0+P.B&&x<P.nx;x++){const i=y*P.nx+x;if(!cov[i])u+=P.cells[i];}
+    if(u<20000) return; const o=by.get(name)||{u:0,lat,lon,best:0}; o.u+=u; if(u>o.best){o.best=u;o.lat=lat;o.lon=lon;} by.set(name,o);});
+  const top=[...by.entries()].sort((a,b)=>b[1].u-a[1].u).slice(0,7);
+  const hl=document.getElementById("hotlist");
+  hl.innerHTML=top.length?top.map(([n,o])=>`<div data-lat="${o.lat}" data-lon="${o.lon}"><span>${n}</span><small>~${lakh(o.u)} people</small></div>`).join(""):`<div class="note">No large unserved pockets in the densest areas.</div>`;
+  hl.querySelectorAll("div[data-lat]").forEach(d=>d.onclick=()=>{if(state.view==="schem"){state.view="geo";applyView();}if(!document.getElementById("popOn").checked){document.getElementById("popOn").click();}map.setView([+d.dataset.lat,+d.dataset.lon],13.5);});
+  // overlay
+  const on=document.getElementById("popOn").checked&&state.view!=="schem";
+  document.getElementById("popLegend").style.display=document.getElementById("popOn").checked?"":"none";
+  if(!on){ if(popLayer&&map.hasLayer(popLayer)) map.removeLayer(popLayer); return; }
+  const ctx=popCanvas.getContext("2d"), img=ctx.createImageData(P.nx,P.ny);
+  for(let i=0;i<NPC;i++){const dens=P.cells[i]/cellKm2; if(dens<5000) continue; const o=i*4;
+    if(cov[i]){img.data[o]=30;img.data[o+1]=158;img.data[o+2]=72;img.data[o+3]=60;}
+    else{const c=ramp((dens-5000)/55000);img.data[o]=c[0];img.data[o+1]=c[1];img.data[o+2]=c[2];img.data[o+3]=Math.round(150+80*Math.min(1,dens/40000));}}
+  ctx.putImageData(img,0,0);
+  const url=popCanvas.toDataURL(), b=[[P.lat0-P.ny*P.d,P.lon0],[P.lat0,P.lon0+P.nx*P.d]];
+  if(!popLayer) popLayer=L.imageOverlay(url,b,{opacity:.78,interactive:false}); else popLayer.setUrl(url);
+  if(!map.hasLayer(popLayer)) popLayer.addTo(map);
+}
+document.getElementById("popOn").onchange=()=>renderPop();
+
 // ---------- timeline ----------
 const yrEl=document.getElementById("yr"),yrLbl=document.getElementById("yrLbl"),yrNote=document.getElementById("yrNote"),badge=document.getElementById("yearBadge"),playBtn=document.getElementById("play");
 function setYear(y){

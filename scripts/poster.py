@@ -14,6 +14,7 @@ hubs = []
 for m in re.finditer(r'<g class="([^"]*)" data-i="([^"]+)" data-s="([^"]*)"[^>]*><circle cx="([\d.]+)" cy="([\d.]+)" r="([\d.]+)"', svg):
     served = [x.split(":") for x in m.group(3).split()]
     alive = {l for l, p, y in served if (year == 0 or float(y) < year + 1) and (mode != "today" or p == "op")}
+    if not alive: continue
     x, y, r = float(m.group(4)), float(m.group(5)), float(m.group(6))
     if not (X0 < x < X1 and Y0 < y < Y1): continue
     ids = [int(i) for i in m.group(2).split(",")]
@@ -21,7 +22,9 @@ for m in re.finditer(r'<g class="([^"]*)" data-i="([^"]+)" data-s="([^"]*)"[^>]*
     name = min(names, key=len) if len(set(names)) > 1 else names[0]
     hubs.append((len(alive), name, x, y, r))
 hubs.sort(key=lambda h: -h[0])
-FS = 30 / k                                   # 30 px on the output image
+import os
+FS = float(os.environ.get("POSTER_FS", 30)) / k   # label size in px on the output image
+BADGE = os.environ.get("POSTER_BADGE", ""); STATS = os.environ.get("POSTER_STATS", "")
 # obstacles: every drawn line segment (straight version) + every station circle
 segs = []
 for m in re.finditer(r'<path class="ln[^"]*ph-(\w+)" data-y="([\d.]+)" d="[^"]*" data-sharp="([^"]+)"', svg):
@@ -49,7 +52,7 @@ hubs.sort(key=lambda h: (h[1] not in MUST, MUST.index(h[1]) if h[1] in MUST else
 placed, labels = [], []
 def ov(a, b): return not (a[2] <= b[0] or b[2] <= a[0] or a[3] <= b[1] or b[3] <= a[1])
 for n, name, x, y, r in hubs:
-    if n < MIN_LINES: continue
+    if n < MIN_LINES and name not in MUST: continue
     w = len(name) * FS * 0.56; h = FS * 1.1
     best = None
     for dist in (r + FS * 0.35, r + FS * 0.9):
@@ -90,7 +93,8 @@ h1{{font-size:104px;margin:0;letter-spacing:-3px;line-height:1.05}} .sub{{font-s
 #hub-labels{{display:{'none' if mode=='detail' else 'inline'};fill:#1d1d1f;paint-order:stroke;stroke:#f7f6f2;stroke-width:{13/k:.1f}px;stroke-linejoin:round}}
 {'' if mode=='detail' else '.st:not(.ix) circle{r:' + f'{5/k:.1f}' + 'px}'}
 {'path.ln:not(.ph-op){display:none} ' if mode=='today' else ''}#s-lines path{{stroke-dasharray:none!important}} .st.proj circle{{stroke-dasharray:none!important}} .foot{{font-size:26px;color:#777;margin-top:22px;line-height:1.45}}
-</style></head><body><div class="wrap"><h1>{title}</h1><div class="sub">{sub}</div><div class="legend">{leg}</div>
+</style></head><body><div class="wrap" style="position:relative"><h1>{title}</h1><div class="sub">{sub}</div><div class="legend">{leg}</div>
+{f'<div style="position:absolute;right:80px;top:40px;text-align:right"><div style="font:800 230px/1 Inter,Arial,sans-serif;letter-spacing:-8px">{BADGE}</div><div style="font:600 52px Inter,Arial,sans-serif;color:#444">{STATS}</div></div>' if BADGE else ''}
 {body}
 <div class="foot">Not an official map. Open lines from OpenStreetMap; plans from DMRC, NCRTC, GMRL, NMRC, Union Cabinet & news reports (Oct 2026).<br>Most V(B)/V(C) and NCR station names are not yet published; those stops are placed by locality{" and shown in italics" if mode=="detail" else ""}. Outer lines to Karnal, Alwar, Meerut, Rohtak, Jewar etc. cropped.</div>
 </div><script>
