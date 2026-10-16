@@ -1,6 +1,13 @@
 import json, math, sys, os
 sys.path.insert(0, os.path.dirname(__file__))
-from planned import LINES, SEGMENTS, SOURCES, PENDING_EXISTING
+CITY = os.environ.get("CITY", "delhi")
+if CITY == "delhi":
+    from planned import LINES, SEGMENTS, SOURCES, PENDING_EXISTING
+else:
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "cities", CITY))
+    from config import LINES, SEGMENTS, SOURCES
+    import config as _cfg
+    PENDING_EXISTING = getattr(_cfg, "PENDING_EXISTING", {})
 
 ops = json.load(open(sys.argv[1]))
 OPS_PHASE = "op"

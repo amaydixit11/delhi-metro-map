@@ -3,7 +3,8 @@ usage: python population.py ind_ppp_2020_1km_Aggregated_UNadj.tif data/pop.js   
 import json, sys, time, urllib.parse, urllib.request
 import numpy as np, rasterio
 from rasterio.windows import from_bounds
-W, S, E, N = 76.85, 28.30, 77.60, 28.92            # Delhi + Gurugram + Faridabad + Noida + Ghaziabad
+import os
+W, S, E, N = map(float, os.environ.get("POP_BBOX", "76.85,28.30,77.60,28.92").split(","))   # default: Delhi NCR core
 r = rasterio.open(sys.argv[1])
 win = from_bounds(W, S, E, N, r.transform).round_offsets().round_lengths()
 a = r.read(1, window=win).astype(float); a[a < 0] = 0

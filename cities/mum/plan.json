@@ -1,0 +1,2282 @@
+{
+"lines": {
+"line1blue": [
+"Line 1 (Blue)",
+"#00AEEF"
+],
+"line2ayellow": [
+"Line 2A (Yellow)",
+"#FFC600"
+],
+"line2byellow": [
+"Line 2B (Yellow)",
+"#FFC600"
+],
+"line3aqua": [
+"Line 3 (Aqua)",
+"#059DB2"
+],
+"line4green": [
+"Line 4 (Green)",
+"#00AE5A"
+],
+"line4agreen": [
+"Line 4A (Green)",
+"#00AE5A"
+],
+"line5orange": [
+"Line 5 (Orange)",
+"#FF8200"
+],
+"line5aorange": [
+"Line 5A (Orange) – Durgadi–Kalyan–Ulhasnagar",
+"#FF8200"
+],
+"line6pink": [
+"Line 6 (Pink)",
+"#F99FC9"
+],
+"line7red": [
+"Line 7 (Red)",
+"#D83431"
+],
+"line7ared": [
+"Line 7A (Red)",
+"#D83431"
+],
+"line8goldair": [
+"Line 8 (Gold) – airport link",
+"#BF9724"
+],
+"line9red": [
+"Line 9 (Red)",
+"#D83431"
+],
+"line10green": [
+"Line 10 (Green)",
+"#00AE5A"
+],
+"line11": [
+"Line 11",
+"#00ACC1"
+],
+"line12orange": [
+"Line 12 (Orange)",
+"#FF8200"
+],
+"line13purple": [
+"Line 13 (Purple)",
+"#B896D4"
+],
+"line14magent": [
+"Line 14 (Magenta)",
+"#E10098"
+],
+"mumbaimonora": [
+"Mumbai Monorail Line 1",
+"#FFB347"
+],
+"navimumbaime": [
+"Navi Mumbai Metro Line 1",
+"#1F63B6"
+],
+"navimumba20": [
+"Navi Mumbai Metro Line 2 (MIDC Taloja–Khandeshwar)",
+"#1E9E48"
+],
+"navimumba21": [
+"Navi Mumbai Metro Line 3 (Pendhar–MIDC Taloja)",
+"#6A2C91"
+],
+"navimumba22": [
+"Navi Mumbai Metro Line 4 (Khandeshwar–NMIA)",
+"#F28C28"
+],
+"navimumba23": [
+"Navi Mumbai Metro Line 1A",
+"#EE82B4"
+],
+"thaneintegra": [
+"Thane Integral Ring Metro",
+"#8C4E2C"
+],
+"thanekalwamu": [
+"Thane–Kalwa–Mumbra–Diva Metro",
+"#C49A3A"
+]
+},
+"segs": [
+{
+"line": "line1blue",
+"status": "operational",
+"phase": "OP",
+"year": "2014-06",
+"stage": "Opened 8 Jun 2014; elevated; MMOPL (PPP)",
+"km": 11.4,
+"n": 12,
+"title": "Versova → Ghatkopar",
+"src": "s0",
+"st": [
+[
+"Versova",
+19.13025,
+72.82138
+],
+[
+"D N Nagar",
+19.12828,
+72.83024
+],
+[
+"Azad Nagar",
+19.1246,
+72.83913
+],
+[
+"Andheri",
+19.12091,
+72.84803
+],
+[
+"Western Express Highway",
+19.1181,
+72.85492
+],
+[
+"Chakala (J. B. Nagar)",
+19.11529,
+72.86181
+],
+[
+"Airport Road",
+19.11013,
+72.87418
+],
+[
+"Marol Naka",
+19.1085,
+72.87858
+],
+[
+"Saki Naka",
+19.10821,
+72.88284
+],
+[
+"Asalpha",
+19.097,
+72.8945
+],
+[
+"Jagruti Nagar",
+19.09254,
+72.90195
+],
+[
+"Ghatkopar",
+19.08569,
+72.90837
+]
+]
+},
+{
+"line": "line2ayellow",
+"status": "operational",
+"phase": "OP",
+"year": "2022-04",
+"stage": "Opened 2 Apr 2022",
+"km": null,
+"n": 9,
+"title": "Dahisar (East) → Dahanukarwadi",
+"src": "s1",
+"st": [
+[
+"Dahisar (East)",
+19.24936,
+72.85963
+],
+[
+"Anand Nagar",
+19.25721,
+72.86635
+],
+[
+"Kandarpada",
+19.25663,
+72.8505
+],
+[
+"Mandapeshwar",
+19.24959,
+72.8458
+],
+[
+"Eksar",
+19.24038,
+72.84345
+],
+[
+"Borivali (West)",
+19.22907,
+72.85736
+],
+[
+"Shimpoli",
+19.22283,
+72.84094
+],
+[
+"Kandivli (West)",
+19.20805,
+72.86214
+],
+[
+"Dahanukarwadi",
+19.20623,
+72.83481
+]
+]
+},
+{
+"line": "line2ayellow",
+"status": "operational",
+"phase": "OP",
+"year": "2023-01",
+"stage": "Opened 19 Jan 2023; full 2A = 18.589 km, 17 stations",
+"km": null,
+"n": 9,
+"title": "Dahanukarwadi → Andheri (West)",
+"src": "s2",
+"st": [
+[
+"Dahanukarwadi",
+19.20623,
+72.83481
+],
+[
+"Valnai–Meeth Chowky",
+19.19683,
+72.83378
+],
+[
+"Malad (West)",
+19.18513,
+72.83537
+],
+[
+"Lower Malad",
+19.1731,
+72.83648
+],
+[
+"Bangur Nagar",
+19.16247,
+72.83487
+],
+[
+"Goregaon (West)",
+19.16487,
+72.84955
+],
+[
+"Oshiwara",
+19.14604,
+72.83395
+],
+[
+"Lower Oshiwara",
+19.1407,
+72.83171
+],
+[
+"Andheri (West)",
+19.12091,
+72.84803
+]
+]
+},
+{
+"line": "line2byellow",
+"status": "under_construction",
+"phase": "UC",
+"year": "2026-12",
+"stage": "Phase DN Nagar–Saraswat Nagar; Wikipedia target Dec 2026 (earlier 'summer 2026' target missed)",
+"km": null,
+"n": 7,
+"title": "Andheri (West) → Saraswat Nagar",
+"src": "s3",
+"st": [
+[
+"Andheri (West)",
+19.12091,
+72.84803
+],
+[
+"Hare Ram Hare Krishna Mandir - Juhu",
+19.11575,
+72.84592
+],
+[
+"Prem Nagar",
+19.1106,
+72.84381
+],
+[
+"Indira Nagar (Vile Parle)",
+19.10544,
+72.84169
+],
+[
+"Nanavati Hospital",
+19.10028,
+72.83958
+],
+[
+"Khira Nagar",
+19.08831,
+72.83694
+],
+[
+"Saraswat Nagar",
+19.07467,
+72.83755
+]
+]
+},
+{
+"line": "line2byellow",
+"status": "under_construction",
+"phase": "UC",
+"year": "2027-12",
+"stage": "Central stretch Bandra–BKC–Kurla; Wikipedia target Dec 2027, no official date",
+"km": null,
+"n": 9,
+"title": "Saraswat Nagar → Chembur",
+"src": "s4",
+"st": [
+[
+"Saraswat Nagar",
+19.07467,
+72.83755
+],
+[
+"Bandra",
+19.05498,
+72.84022
+],
+[
+"Income Tax Office",
+19.05899,
+72.85472
+],
+[
+"ILFS",
+19.05779,
+72.86599
+],
+[
+"MTNL",
+19.05658,
+72.87725
+],
+[
+"SG Barve Marg",
+19.05537,
+72.88851
+],
+[
+"Kurla (East)",
+19.06528,
+72.87938
+],
+[
+"Eastern Express Highway",
+19.06325,
+72.88849
+],
+[
+"Chembur",
+19.06121,
+72.89759
+]
+]
+},
+{
+"line": "line2byellow",
+"status": "operational",
+"phase": "OP",
+"year": "2026-04",
+"stage": "Phase 1 inaugurated 7 Apr 2026, public service 8 Apr 2026",
+"km": 5.4,
+"n": 5,
+"title": "Deshbhakt N.G. Acharya Udyan-Diamond Garden, Chembur → Maharashtranagar Mandale",
+"src": "s5",
+"st": [
+[
+"Deshbhakt N.G. Acharya Udyan-Diamond Garden, Chembur",
+19.10383,
+73.07809
+],
+[
+"Chhatrapati Shivaji Maharaj Chowk (Chembur)",
+19.07433,
+72.99779
+],
+[
+"Deonar",
+19.04483,
+72.9175
+],
+[
+"Mankhurd",
+19.04922,
+72.93123
+],
+[
+"Maharashtranagar Mandale",
+19.0536,
+72.94497
+]
+]
+},
+{
+"line": "line3aqua",
+"status": "operational",
+"phase": "OP",
+"year": "2024-10",
+"stage": "Phase 1 inaugurated 5 Oct 2024, public 7 Oct 2024; underground (Aarey JVLR at grade)",
+"km": 12.44,
+"n": 10,
+"title": "Aarey JVLR → Bandra Kurla Complex",
+"src": "s6",
+"st": [
+[
+"Aarey JVLR",
+19.13043,
+72.88432
+],
+[
+"SEEPZ",
+19.126,
+72.87373
+],
+[
+"MIDC – Andheri",
+19.11735,
+72.8736
+],
+[
+"Marol Naka",
+19.1085,
+72.87858
+],
+[
+"Chhatrapati Shivaji Maharaj International Airport - T2",
+19.10233,
+72.87447
+],
+[
+"Sahar Road",
+19.1022,
+72.86524
+],
+[
+"Chhatrapati Shivaji Maharaj International Airport - T1",
+19.0939,
+72.85358
+],
+[
+"Santacruz",
+19.07929,
+72.84712
+],
+[
+"Bandra Colony",
+19.06996,
+72.84936
+],
+[
+"Bandra Kurla Complex",
+19.06066,
+72.85468
+]
+]
+},
+{
+"line": "line3aqua",
+"status": "operational",
+"phase": "OP",
+"year": "2025-05",
+"stage": "Phase 2A opened 9/10 May 2025",
+"km": 9.77,
+"n": 7,
+"title": "Bandra Kurla Complex → Acharya Atre Chowk",
+"src": "s7",
+"st": [
+[
+"Bandra Kurla Complex",
+19.06066,
+72.85468
+],
+[
+"Dharavi",
+19.04626,
+72.84974
+],
+[
+"Shitaladevi Mandir",
+19.03846,
+72.84196
+],
+[
+"Dadar",
+19.02362,
+72.83922
+],
+[
+"Siddhivinayak",
+19.01611,
+72.82925
+],
+[
+"Worli",
+19.00861,
+72.81927
+],
+[
+"Acharya Atre Chowk",
+18.99782,
+72.81772
+]
+]
+},
+{
+"line": "line3aqua",
+"status": "operational",
+"phase": "OP",
+"year": "2025-10",
+"stage": "Final phase opened 8/9 Oct 2025; full line 33.5 km, 27 stations",
+"km": 10.99,
+"n": 12,
+"title": "Acharya Atre Chowk → Cuffe Parade",
+"src": "s8",
+"st": [
+[
+"Acharya Atre Chowk",
+18.99782,
+72.81772
+],
+[
+"Science Centre",
+18.99089,
+72.82135
+],
+[
+"Mahalaxmi",
+18.97947,
+72.8254
+],
+[
+"Jagannath Shankar Sheth",
+18.96999,
+72.82118
+],
+[
+"Grant Road",
+18.96322,
+72.81804
+],
+[
+"Girgaon",
+18.9521,
+72.82221
+],
+[
+"Kalbadevi",
+18.94633,
+72.82719
+],
+[
+"Chhatrapati Shivaji Maharaj Terminus",
+18.94083,
+72.83186
+],
+[
+"Hutatma Chowk",
+18.93418,
+72.8325
+],
+[
+"Churchgate",
+18.93149,
+72.82694
+],
+[
+"Vidhan Bhavan",
+18.92478,
+72.82549
+],
+[
+"Cuffe Parade",
+18.91357,
+72.82072
+]
+]
+},
+{
+"line": "line4green",
+"status": "under_construction",
+"phase": "UC",
+"year": "2026",
+"stage": "Phase 1 (with 4A Gaimukh–Cadbury Jn, 10.5 km, 10 stns): RDSO cert 2 Jun 2026, CMRS rolling-stock clearance 28 Aug 2026; not open as of Sep 2026; target Diwali/Nov–Dec 2026",
+"km": null,
+"n": 8,
+"title": "Kasarvadavali → Cadbury Junction",
+"src": "s9",
+"st": [
+[
+"Kasarvadavali",
+19.26206,
+72.97816
+],
+[
+"Vijay Garden",
+19.25542,
+72.97645
+],
+[
+"Dongripada",
+19.24877,
+72.97473
+],
+[
+"Tikuji-ni-wadi",
+19.24212,
+72.97302
+],
+[
+"Manpada (Thane)",
+19.23548,
+72.9713
+],
+[
+"Kapurbawdi",
+19.22414,
+72.97742
+],
+[
+"Majiwada",
+19.19748,
+72.99293
+],
+[
+"Cadbury Junction",
+19.17081,
+73.00843
+]
+]
+},
+{
+"line": "line4green",
+"status": "under_construction",
+"phase": "UC",
+"year": "2027",
+"stage": "Wikipedia planning table says Dec 2026, station table says 2027",
+"km": null,
+"n": 12,
+"title": "Cadbury Junction → Gandhi Nagar (Kanjurmarg)",
+"src": "s10",
+"st": [
+[
+"Cadbury Junction",
+18.80786,
+72.65698
+],
+[
+"Mahapalika Marg",
+18.94296,
+72.83148
+],
+[
+"RTO Thane",
+19.07807,
+73.00599
+],
+[
+"Teen Haath Naka (Thane)",
+19.13085,
+72.98025
+],
+[
+"Mulund Naka",
+19.18363,
+72.95452
+],
+[
+"Mulund Fire Station",
+19.1757,
+72.94252
+],
+[
+"Sonapur",
+19.16348,
+72.93746
+],
+[
+"Shangrila",
+19.15312,
+72.93756
+],
+[
+"Bhandup",
+19.14276,
+72.93765
+],
+[
+"Bhandup Mahapalika",
+19.13876,
+72.93073
+],
+[
+"Naval Housing",
+19.13208,
+72.92349
+],
+[
+"Gandhi Nagar (Kanjurmarg)",
+19.12541,
+72.91625
+]
+]
+},
+{
+"line": "line4green",
+"status": "under_construction",
+"phase": "UC",
+"year": "2027-11",
+"stage": "Line 4 total 32.32 km, 32 stations",
+"km": null,
+"n": 14,
+"title": "Gandhi Nagar (Kanjurmarg) → Bhakti Park (Wadala)",
+"src": "s11",
+"st": [
+[
+"Gandhi Nagar (Kanjurmarg)",
+19.12661,
+72.91898
+],
+[
+"Surya Nagar",
+19.11904,
+72.9235
+],
+[
+"Vikhroli",
+19.11148,
+72.92802
+],
+[
+"Godrej Company",
+19.10477,
+72.92178
+],
+[
+"Shreyas Cinema",
+19.09387,
+72.91291
+],
+[
+"Laxmi Nagar (Ghatkopar)",
+19.0908,
+72.9168
+],
+[
+"Pant Nagar",
+19.08333,
+72.9115
+],
+[
+"Garodia Nagar",
+19.07413,
+72.90852
+],
+[
+"Amar Mahal Junction",
+19.06517,
+72.89906
+],
+[
+"Siddharth Colony",
+19.05783,
+72.89206
+],
+[
+"Suman Nagar",
+19.05302,
+72.88377
+],
+[
+"Anik Nagar Bus Depot",
+19.04583,
+72.87863
+],
+[
+"Wadala Truck Terminal",
+19.03476,
+72.87674
+],
+[
+"Bhakti Park (Wadala)",
+19.02897,
+72.87757
+]
+]
+},
+{
+"line": "line4agreen",
+"status": "under_construction",
+"phase": "UC",
+"year": "2026",
+"stage": "Opens with Line 4 phase 1 (Gaimukh–Cadbury Jn); see Line 4",
+"km": 2.88,
+"n": 3,
+"title": "Gaimukh → Kasarvadavali",
+"src": "s12",
+"st": [
+[
+"Gaimukh",
+19.28443,
+72.94681
+],
+[
+"Gowniwada",
+19.27675,
+72.95823
+],
+[
+"Kasarvadavali",
+19.26906,
+72.96965
+]
+]
+},
+{
+"line": "line5orange",
+"status": "under_construction",
+"phase": "UC",
+"year": "2026-12",
+"stage": "Phase 1 Thane–Bhiwandi, ~95% civil complete; target Dec 2026 (one report says Jan 2027)",
+"km": 12.811,
+"n": 7,
+"title": "Kapurbawdi → Dhamankar Naka",
+"src": "s13",
+"st": [
+[
+"Kapurbawdi",
+19.22414,
+72.97742
+],
+[
+"Balkum Naka",
+19.19413,
+72.94214
+],
+[
+"Kasheli",
+19.16412,
+72.90685
+],
+[
+"Kalher",
+19.13411,
+72.87156
+],
+[
+"Purna",
+19.1041,
+72.83628
+],
+[
+"Anjur Phata",
+19.07408,
+72.80099
+],
+[
+"Dhamankar Naka",
+19.04407,
+72.7657
+]
+]
+},
+{
+"line": "line5orange",
+"status": "approved",
+"phase": "AP",
+"year": null,
+"stage": "Bhiwandi–Kalyan (Durgadi) section on hold for realignment; revised Line 5 (with 5A) approved by state Apr 2026 and Union govt 29 Aug 2026; Wikipedia station list is pre-realignment",
+"km": 10.47,
+"n": 10,
+"title": "Dhamankar Naka → Kalyan Railway Station",
+"src": "s14",
+"st": [
+[
+"Dhamankar Naka",
+19.19229,
+72.9777
+],
+[
+"Bhiwandi",
+19.21805,
+73.01308
+],
+[
+"Gopal Nagar",
+19.24381,
+73.04847
+],
+[
+"Temghar",
+19.26957,
+73.08385
+],
+[
+"Rajnouli Village",
+19.29534,
+73.11923
+],
+[
+"Govegaon MIDC",
+19.3211,
+73.15462
+],
+[
+"Kongaon",
+19.34686,
+73.19
+],
+[
+"Durgadi Fort",
+19.37262,
+73.22538
+],
+[
+"Sahajanand Chowk",
+19.39838,
+73.26076
+],
+[
+"Kalyan Railway Station",
+19.42414,
+73.29615
+]
+]
+},
+{
+"line": "line6pink",
+"status": "under_construction",
+"phase": "UC",
+"year": "2028",
+"stage": "Elevated; Wikipedia planned opening 2028",
+"km": 14.477,
+"n": 13,
+"title": "Swami Samarth Nagar (Lokhandwala) → Vikhroli EEH",
+"src": "s15",
+"st": [
+[
+"Swami Samarth Nagar (Lokhandwala)",
+19.1431,
+72.82461
+],
+[
+"Adarsh Nagar",
+19.14211,
+72.83456
+],
+[
+"Jogeshwari (West)",
+19.1429,
+72.85516
+],
+[
+"JVLR Junction",
+19.14003,
+72.85831
+],
+[
+"Shyam Nagar",
+19.13716,
+72.86147
+],
+[
+"Mahakali Caves",
+19.13061,
+72.87382
+],
+[
+"SEEPZ Village",
+19.13049,
+72.87493
+],
+[
+"Saki Vihar Road",
+19.12858,
+72.89585
+],
+[
+"Rambaug (Powai)",
+19.12815,
+72.90103
+],
+[
+"Powai Lake",
+19.12772,
+72.90621
+],
+[
+"IIT Powai",
+19.13262,
+72.91497
+],
+[
+"Kanjurmarg (West)",
+19.1241,
+72.93856
+],
+[
+"Vikhroli EEH",
+19.11559,
+72.96214
+]
+]
+},
+{
+"line": "line7red",
+"status": "operational",
+"phase": "OP",
+"year": "2022-04",
+"stage": "Opened 2 Apr 2022",
+"km": null,
+"n": 10,
+"title": "Dahisar (East) → Aarey",
+"src": "s16",
+"st": [
+[
+"Dahisar (East)",
+19.24936,
+72.85963
+],
+[
+"Ovaripada",
+19.24315,
+72.86414
+],
+[
+"Rashtriya Udyan",
+19.23461,
+72.86314
+],
+[
+"Devipada",
+19.22404,
+72.86433
+],
+[
+"Magathane",
+19.2168,
+72.8668
+],
+[
+"Poisar",
+19.20377,
+72.86332
+],
+[
+"Akurli",
+19.19816,
+72.86049
+],
+[
+"Kurar",
+19.1873,
+72.85845
+],
+[
+"Dindoshi",
+19.17976,
+72.8583
+],
+[
+"Aarey",
+19.16932,
+72.85879
+]
+]
+},
+{
+"line": "line7red",
+"status": "operational",
+"phase": "OP",
+"year": "2023-01",
+"stage": "Opened 19 Jan 2023; full Line 7 = 16.495 km",
+"km": null,
+"n": 5,
+"title": "Aarey → Gundavali",
+"src": "s17",
+"st": [
+[
+"Aarey",
+19.16932,
+72.85879
+],
+[
+"Goregaon (East)",
+19.16487,
+72.84955
+],
+[
+"Jogeshwari (East)",
+19.1429,
+72.85516
+],
+[
+"Mogra",
+19.12844,
+72.85546
+],
+[
+"Gundavali",
+19.11451,
+72.85516
+]
+]
+},
+{
+"line": "line7ared",
+"status": "under_construction",
+"phase": "UC",
+"year": "2026-12",
+"stage": "Tunnelling done Jul 2025; Wikipedia gives Dec 2026 (stations) and Dec 2027 (summary table); no official date",
+"km": 3.42,
+"n": 3,
+"title": "Gundavali → Chhatrapati Shivaji Maharaj International Airport - T2",
+"src": "s18",
+"st": [
+[
+"Gundavali",
+19.11451,
+72.85516
+],
+[
+"Airport Colony",
+19.10582,
+72.85402
+],
+[
+"Chhatrapati Shivaji Maharaj International Airport - T2",
+19.10233,
+72.87447
+]
+]
+},
+{
+"line": "line8goldair",
+"status": "approved",
+"phase": "AP",
+"year": "2030",
+"stage": "State cabinet approved 27 Jan 2026 (PPP, CIDCO nodal, ~Rs 22,862 cr); first 9.25 km underground to Ghatkopar (E) with 6 stations; target 3.5–5 yrs",
+"km": 35,
+"n": 20,
+"title": "Chhatrapati Shivaji Maharaj International Airport - T2 → Navi Mumbai International Airport Terminal 2",
+"src": "s19",
+"st": [
+[
+"Chhatrapati Shivaji Maharaj International Airport - T2",
+19.10233,
+72.87447
+],
+[
+"Phoenix Mall",
+19.08628,
+72.88922
+],
+[
+"SG Barve Marg",
+19.05537,
+72.88851
+],
+[
+"Kurla",
+19.06528,
+72.87938
+],
+[
+"Lokmanya Tilak Terminus",
+19.06947,
+72.89198
+],
+[
+"Garodia Nagar",
+19.07413,
+72.90852
+],
+[
+"Baiganwadi",
+19.0619,
+72.92497
+],
+[
+"Mankhurd",
+19.04922,
+72.93123
+],
+[
+"ISBT",
+19.05623,
+72.96501
+],
+[
+"Vashi",
+19.06325,
+72.9988
+],
+[
+"Sanpada",
+19.06598,
+73.00953
+],
+[
+"Juinagar",
+19.05595,
+73.01825
+],
+[
+"LP",
+19.04477,
+73.01821
+],
+[
+"Nerul",
+19.03359,
+73.01816
+],
+[
+"Seawoods",
+19.02167,
+73.01862
+],
+[
+"Apollo",
+19.06637,
+72.83285
+],
+[
+"Sagar Sangam",
+19.04669,
+72.82684
+],
+[
+"Targhar",
+19.02702,
+72.82084
+],
+[
+"Navi Mumbai International Airport West",
+19.00734,
+72.81483
+],
+[
+"Navi Mumbai International Airport Terminal 2",
+18.98766,
+72.80882
+]
+]
+},
+{
+"line": "line9red",
+"status": "operational",
+"phase": "OP",
+"year": "2026-04",
+"stage": "Phase 1 inaugurated 7 Apr 2026, service 8 Apr 2026",
+"km": 4.97,
+"n": 4,
+"title": "Dahisar (East) → Kashigaon",
+"src": "s20",
+"st": [
+[
+"Dahisar (East)",
+19.24936,
+72.85963
+],
+[
+"Pandurang Wadi",
+19.25973,
+72.87249
+],
+[
+"Miragaon",
+19.27101,
+72.8807
+],
+[
+"Kashigaon",
+19.27767,
+72.88024
+]
+]
+},
+{
+"line": "line9red",
+"status": "under_construction",
+"phase": "UC",
+"year": "2026-12",
+"stage": "~96% complete (Apr 2026), CM said 'later this year'; Wikipedia summary table says Dec 2027",
+"km": null,
+"n": 5,
+"title": "Kashigaon → Subhash Chandra Bose Stadium",
+"src": "s21",
+"st": [
+[
+"Kashigaon",
+19.27767,
+72.88024
+],
+[
+"Sai Baba Nagar",
+19.28338,
+72.86995
+],
+[
+"Deepak Hospital (Medtiya Nagar)",
+19.2891,
+72.85965
+],
+[
+"Shahid Bhagat Singh Garden",
+19.29481,
+72.84936
+],
+[
+"Subhash Chandra Bose Stadium",
+19.30053,
+72.83907
+]
+]
+},
+{
+"line": "line10green",
+"status": "approved",
+"phase": "AP",
+"year": "2030",
+"stage": "Revised state approval Aug 2026 (Rs 8,535 cr incl. Ghodbunder Rd widening), project period to Mar 2030; no civil contract confirmed. Approval says 5 stations; list is Wikipedia's (4 new + Gaimukh)",
+"km": 9.676,
+"n": 5,
+"title": "Gaimukh → Shivaji Chowk (Mira Road)",
+"src": "s22",
+"st": [
+[
+"Gaimukh",
+19.28443,
+72.94681
+],
+[
+"Gaimukh Reti Bandar",
+19.27701,
+72.92338
+],
+[
+"Varsova Char Phata",
+19.26958,
+72.89996
+],
+[
+"Kashimira",
+19.26215,
+72.87653
+],
+[
+"Shivaji Chowk (Mira Road)",
+19.17587,
+72.93756
+]
+]
+},
+{
+"line": "line11",
+"status": "approved",
+"phase": "AP",
+"year": null,
+"stage": "State cabinet approved Sep 2025 (MMRCL, Rs 23,487 cr; 13 UG + 1 at-grade); interim consultant bids Jan 2026; GPR survey tender May 2026",
+"km": 17.51,
+"n": 14,
+"title": "Anik Nagar Bus Depot → Gateway of India",
+"src": "s23",
+"st": [
+[
+"Anik Nagar Bus Depot",
+19.04583,
+72.87863
+],
+[
+"Wadala Depot",
+19.03882,
+72.87402
+],
+[
+"CGS Colony",
+19.02953,
+72.8694
+],
+[
+"Ganesh Nagar",
+19.02119,
+72.86543
+],
+[
+"BPT Hospital",
+19.01286,
+72.86147
+],
+[
+"Sewri",
+18.99898,
+72.86068
+],
+[
+"Hay Bunder",
+18.99028,
+72.85432
+],
+[
+"Darukhana",
+18.97704,
+72.84908
+],
+[
+"Byculla",
+18.97662,
+72.83279
+],
+[
+"Nagpada Junction",
+18.96668,
+72.82874
+],
+[
+"Bhendi Bazaar",
+18.95794,
+72.83178
+],
+[
+"Chhatrapati Shivaji Maharaj Terminus",
+18.94083,
+72.83186
+],
+[
+"Horniman Circle",
+18.93201,
+72.83502
+],
+[
+"Gateway of India",
+18.92197,
+72.83457
+]
+]
+},
+{
+"line": "line11",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Westward extension via Dharavi (state directive Mar 2026; line made independent of Green Line); 6.9 km GPR survey tender May 2026",
+"km": 6.9,
+"n": 6,
+"title": "Bandra Terminus → Anik Nagar Bus Depot",
+"src": "s24",
+"st": [
+[
+"Bandra Terminus",
+19.06239,
+72.84092
+],
+[
+"Bandra",
+19.05498,
+72.84022
+],
+[
+"Central Dharavi",
+19.05075,
+72.85175
+],
+[
+"Sion",
+19.04652,
+72.86328
+],
+[
+"Chunabhatti",
+19.05209,
+72.86741
+],
+[
+"Anik Nagar Bus Depot",
+19.04583,
+72.87863
+]
+]
+},
+{
+"line": "line12orange",
+"status": "under_construction",
+"phase": "UC",
+"year": "2027-12",
+"stage": "Kalyan–Taloja; construction from Mar 2020 (works awarded 2024); Wikipedia target Dec 2027; ends at Amandoot (Navi Mumbai Metro L1 interchange) per Wikipedia",
+"km": 22.17,
+"n": 19,
+"title": "Kalyan Railway Station → Amandoot",
+"src": "s25",
+"st": [
+[
+"Kalyan Railway Station",
+18.99514,
+72.86799
+],
+[
+"Kalyan APMC",
+19.02518,
+72.88091
+],
+[
+"Ganesh Nagar (Kalyan)",
+19.05522,
+72.89382
+],
+[
+"Pisavali Gaon",
+19.08527,
+72.90673
+],
+[
+"Golavali",
+19.11531,
+72.91965
+],
+[
+"Dombivali MIDC",
+19.14535,
+72.93256
+],
+[
+"Sagaon",
+19.17539,
+72.94547
+],
+[
+"Sonarpada",
+19.20544,
+72.95839
+],
+[
+"Manpada (Dombivali East)",
+19.23548,
+72.9713
+],
+[
+"Hedutane",
+19.21272,
+72.97792
+],
+[
+"Kolegaon",
+19.18996,
+72.98455
+],
+[
+"Nilaje Gaon",
+19.1672,
+72.99117
+],
+[
+"Vadavali",
+19.14444,
+72.99779
+],
+[
+"Bale",
+19.12168,
+73.00441
+],
+[
+"Waklan",
+19.09892,
+73.01104
+],
+[
+"Turbhe",
+19.07616,
+73.01766
+],
+[
+"Pisarve Depot",
+19.05341,
+73.02428
+],
+[
+"Pisarve",
+19.03065,
+73.03091
+],
+[
+"Amandoot",
+19.00789,
+73.03753
+]
+]
+},
+{
+"line": "line13purple",
+"status": "approved",
+"phase": "AP",
+"year": "2031",
+"stage": "State Cabinet Infrastructure Committee approved 18 Aug 2026 (Rs 17,725 cr, MMRDA, 5-yr target); 13 elevated + 3 UG; depot Chikhal Dongri; no official station list published",
+"km": 25.03,
+"n": 16,
+"title": "Mira Road (Subhash Chandra Bose Stadium) → Virar",
+"src": "s26",
+"st": [
+[
+"Mira Road (Subhash Chandra Bose Stadium)",
+19.1879,
+72.8366
+],
+[
+"Virar",
+19.35679,
+72.89282
+]
+]
+},
+{
+"line": "mumbaimonora",
+"status": "operational",
+"phase": "OP",
+"year": "2014-02",
+"stage": "Opened 2 Feb 2014. SERVICES SUSPENDED since 20 Sep 2025 for CBTC/new-rake upgrade; CMRS cleared Jun 2026 but not reopened as of Sep 2026",
+"km": 8.93,
+"n": 7,
+"title": "Chembur → Wadala Depot",
+"src": "s27",
+"st": [
+[
+"Chembur",
+19.06121,
+72.89759
+],
+[
+"VNP and RC Marg Junction",
+19.05264,
+72.89428
+],
+[
+"Fertiliser Township",
+19.04388,
+72.89346
+],
+[
+"Bharat Petroleum",
+19.03528,
+72.89556
+],
+[
+"Mysore Colony",
+19.02772,
+72.89144
+],
+[
+"Bhakti Park",
+19.02897,
+72.87757
+],
+[
+"Wadala Depot",
+19.03882,
+72.87402
+]
+]
+},
+{
+"line": "mumbaimonora",
+"status": "operational",
+"phase": "OP",
+"year": "2019-03",
+"stage": "Opened 3 Mar 2019; suspended since 20 Sep 2025 (see above)",
+"km": 11.28,
+"n": 11,
+"title": "Wadala Depot → Sant Gadge Maharaj Chowk",
+"src": "s28",
+"st": [
+[
+"Wadala Depot",
+19.03882,
+72.87402
+],
+[
+"Guru Tegh Bahadur Nagar",
+19.03669,
+72.87079
+],
+[
+"Antop Hill",
+19.03018,
+72.86695
+],
+[
+"Acharya Atre Nagar",
+19.02365,
+72.8638
+],
+[
+"Wadala Bridge",
+19.01748,
+72.85932
+],
+[
+"Dadar (East)",
+19.02362,
+72.83922
+],
+[
+"Naigaon",
+19.00954,
+72.84787
+],
+[
+"Ambedkar Nagar",
+19.00159,
+72.84423
+],
+[
+"Mint Colony",
+18.99451,
+72.84331
+],
+[
+"Lower Parel",
+18.99312,
+72.83147
+],
+[
+"Sant Gadge Maharaj Chowk",
+18.98309,
+72.82859
+]
+]
+},
+{
+"line": "navimumbaime",
+"status": "operational",
+"phase": "OP",
+"year": "2023-11",
+"stage": "Opened 17 Nov 2023 (CIDCO)",
+"km": 11.1,
+"n": 11,
+"title": "CBD Belapur → Pendhar",
+"src": "s29",
+"st": [
+[
+"CBD Belapur",
+19.0206,
+73.04027
+],
+[
+"RBI Colony",
+19.02298,
+73.04794
+],
+[
+"Belpada",
+19.02526,
+73.05495
+],
+[
+"Utsav Chowk (Kharghar)",
+19.03129,
+73.05875
+],
+[
+"Kendriya Vihar",
+19.03731,
+73.06254
+],
+[
+"Kharghar Village",
+19.04334,
+73.06634
+],
+[
+"Central Park (Kharghar)",
+19.04911,
+73.07264
+],
+[
+"Pethpada (Kharghar)",
+19.05489,
+73.07894
+],
+[
+"Amandoot",
+19.06066,
+73.08524
+],
+[
+"Pethali - Taloja",
+19.06644,
+73.09154
+],
+[
+"Pendhar",
+19.07221,
+73.09784
+]
+]
+},
+{
+"line": "navimumba20",
+"status": "approved",
+"phase": "AP",
+"year": null,
+"stage": "Original L1 Phase II; CIDCO approved switching Lines 2–4 to MetroNeo (2023); no construction confirmed. Station names are DPR placeholders from Wikipedia",
+"km": 7.12,
+"n": 8,
+"title": "MIDC Taloja → Khandeshwar",
+"src": "s30",
+"st": [
+[
+"MIDC Station 2",
+18.79749,
+73.25128
+],
+[
+"MIDC Station 1",
+18.87826,
+73.15046
+],
+[
+"Kasadi",
+18.95902,
+73.04964
+],
+[
+"Sector 7E (Kalamboli)",
+19.03979,
+72.94882
+],
+[
+"Sector 13 (Kalamboli)",
+19.12056,
+72.84799
+],
+[
+"Sector 2E (Kalamboli)",
+19.12056,
+72.84799
+],
+[
+"Sector 10 (Kamothe)",
+19.12056,
+72.84799
+],
+[
+"Khandeshwar",
+19.12056,
+72.84799
+]
+]
+},
+{
+"line": "navimumba21",
+"status": "approved",
+"phase": "AP",
+"year": null,
+"stage": "Interlink; CIDCO MetroNeo plan; no published station names",
+"km": 3.87,
+"n": 0,
+"title": "Pendhar → MIDC Taloja",
+"src": "s31",
+"st": [
+[
+"Pendhar",
+19.07221,
+73.09784
+],
+[
+"MIDC Taloja",
+19.06189,
+73.09569
+]
+]
+},
+{
+"line": "navimumba22",
+"status": "approved",
+"phase": "AP",
+"year": null,
+"stage": "CIDCO MetroNeo plan (some reports: NMIA–Panvel); no published station names",
+"km": 4.17,
+"n": 0,
+"title": "Khandeshwar → Navi Mumbai International Airport",
+"src": "s32",
+"st": [
+[
+"Khandeshwar",
+19.00735,
+73.09528
+],
+[
+"Navi Mumbai International Airport",
+18.99135,
+73.06575
+]
+]
+},
+{
+"line": "navimumba23",
+"status": "approved",
+"phase": "AP",
+"year": null,
+"stage": "Per Wikipedia only: 3 km extension approved by state in 2026, links to Line 8 at Sagar Sangam; unverified in news",
+"km": 3,
+"n": 0,
+"title": "Sagar Sangam → CBD Belapur",
+"src": "s33",
+"st": [
+[
+"Sagar Sangam",
+19.04669,
+72.82684
+],
+[
+"CBD Belapur",
+19.0206,
+73.04027
+]
+]
+},
+{
+"line": "thaneintegra",
+"status": "under_construction",
+"phase": "UC",
+"year": "2029",
+"stage": "Maha Metro; Union approval 14 Aug 2024; C-01 viaduct bids Sep 2025; work reported started Apr 2026; loop line, 20 elevated + 2 UG; colour from Wikipedia infobox",
+"km": 29,
+"n": 22,
+"title": "Thane Junction → Thane Junction (loop)",
+"src": "s34",
+"st": [
+[
+"Thane Junction",
+19.15856,
+72.94262
+],
+[
+"New Thane",
+19.17113,
+72.94483
+],
+[
+"Raila Devi",
+19.18371,
+72.94704
+],
+[
+"Wagle Circle",
+19.19628,
+72.94925
+],
+[
+"Lokmanya Nagar Bus Depot",
+19.20886,
+72.95146
+],
+[
+"Shivai Nagar",
+19.21739,
+72.95417
+],
+[
+"Neelkanth Terminal",
+19.22119,
+72.95939
+],
+[
+"Gandhi Nagar",
+19.21911,
+72.96752
+],
+[
+"Dr. Kashinath Ghanekar Natyagruha",
+19.22917,
+72.96988
+],
+[
+"Manpada",
+19.23548,
+72.9713
+],
+[
+"Dongripada",
+19.24877,
+72.97473
+],
+[
+"Vijay Nagari",
+19.25547,
+72.97352
+],
+[
+"Waghbil",
+19.26392,
+72.97943
+],
+[
+"Water Front",
+19.26249,
+72.98841
+],
+[
+"Patlipada",
+19.2473,
+72.98318
+],
+[
+"Azad Nagar Bus Stop",
+19.24104,
+72.981
+],
+[
+"Manorma Nagar",
+19.23018,
+72.97376
+],
+[
+"Kolshet Industrial Area",
+19.21931,
+72.96652
+],
+[
+"Balkum Naka",
+19.20845,
+72.95928
+],
+[
+"Balkumpada",
+19.19759,
+72.95204
+],
+[
+"Rabodi",
+19.18673,
+72.9448
+],
+[
+"Shivaji Chowk",
+19.17587,
+72.93756
+]
+]
+},
+{
+"line": "thanekalwamu",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "In-principle approval 3 Aug 2026; Maha Metro DPR due in 6 months; interchange with HSR at Mhatardi and Line 12 at Manpada",
+"km": null,
+"n": 0,
+"title": "Thane → Diva",
+"src": "s35",
+"st": [
+[
+"Thane",
+19.02048,
+73.03991
+],
+[
+"Diva",
+19.18145,
+73.02254
+]
+]
+}
+],
+"sources": {
+"s0": [
+"Line 1 (Blue): Versova – Ghatkopar",
+"https://en.wikipedia.org/wiki/Blue_Line_(Mumbai_Metro)"
+],
+"s1": [
+"Line 2A (Yellow): Dahisar (East) – Dahanukarwadi",
+"https://en.wikipedia.org/wiki/Yellow_Line_(Mumbai_Metro)"
+],
+"s2": [
+"Line 2A (Yellow): Dahanukarwadi – Andheri (West)",
+"https://en.wikipedia.org/wiki/Yellow_Line_(Mumbai_Metro)"
+],
+"s3": [
+"Line 2B (Yellow): Andheri (West) – Saraswat Nagar",
+"https://en.wikipedia.org/wiki/Yellow_Line_(Mumbai_Metro)"
+],
+"s4": [
+"Line 2B (Yellow): Saraswat Nagar – Chembur",
+"https://en.wikipedia.org/wiki/Yellow_Line_(Mumbai_Metro)"
+],
+"s5": [
+"Line 2B (Yellow): Deshbhakt N.G. Acharya Udyan-Diamond Garden, Chembur – Maharashtranagar Mandale",
+"https://en.wikipedia.org/wiki/Yellow_Line_(Mumbai_Metro)"
+],
+"s6": [
+"Line 3 (Aqua): Aarey JVLR – Bandra Kurla Complex",
+"https://en.wikipedia.org/wiki/Aqua_Line_(Mumbai_Metro)"
+],
+"s7": [
+"Line 3 (Aqua): Bandra Kurla Complex – Acharya Atre Chowk",
+"https://en.wikipedia.org/wiki/Aqua_Line_(Mumbai_Metro)"
+],
+"s8": [
+"Line 3 (Aqua): Acharya Atre Chowk – Cuffe Parade",
+"https://en.wikipedia.org/wiki/Aqua_Line_(Mumbai_Metro)"
+],
+"s9": [
+"Line 4 (Green): Kasarvadavali – Cadbury Junction",
+"https://en.wikipedia.org/wiki/Green_Line_(Mumbai_Metro)"
+],
+"s10": [
+"Line 4 (Green): Cadbury Junction – Gandhi Nagar (Kanjurmarg)",
+"https://en.wikipedia.org/wiki/Green_Line_(Mumbai_Metro)"
+],
+"s11": [
+"Line 4 (Green): Gandhi Nagar (Kanjurmarg) – Bhakti Park (Wadala)",
+"https://en.wikipedia.org/wiki/Green_Line_(Mumbai_Metro)"
+],
+"s12": [
+"Line 4A (Green): Gaimukh – Kasarvadavali",
+"https://en.wikipedia.org/wiki/Green_Line_(Mumbai_Metro)"
+],
+"s13": [
+"Line 5 (Orange): Kapurbawdi – Dhamankar Naka",
+"https://en.wikipedia.org/wiki/Orange_Line_(Mumbai_Metro)"
+],
+"s14": [
+"Line 5 (Orange): Dhamankar Naka – Kalyan Railway Station",
+"https://en.wikipedia.org/wiki/Orange_Line_(Mumbai_Metro)"
+],
+"s15": [
+"Line 6 (Pink): Swami Samarth Nagar (Lokhandwala) – Vikhroli EEH",
+"https://en.wikipedia.org/wiki/Pink_Line_(Mumbai_Metro)"
+],
+"s16": [
+"Line 7 (Red): Dahisar (East) – Aarey",
+"https://en.wikipedia.org/wiki/Red_Line_(Mumbai_Metro)"
+],
+"s17": [
+"Line 7 (Red): Aarey – Gundavali",
+"https://en.wikipedia.org/wiki/Red_Line_(Mumbai_Metro)"
+],
+"s18": [
+"Line 7A (Red): Gundavali – Chhatrapati Shivaji Maharaj International Airport - T2",
+"https://en.wikipedia.org/wiki/Red_Line_(Mumbai_Metro)"
+],
+"s19": [
+"Line 8 (Gold) – airport link: Chhatrapati Shivaji Maharaj International Airport - T2 – Navi Mumbai International Airport Terminal 2",
+"https://en.wikipedia.org/wiki/Gold_Line_(Mumbai_Metro)"
+],
+"s20": [
+"Line 9 (Red): Dahisar (East) – Kashigaon",
+"https://en.wikipedia.org/wiki/Red_Line_(Mumbai_Metro)"
+],
+"s21": [
+"Line 9 (Red): Kashigaon – Subhash Chandra Bose Stadium",
+"https://en.wikipedia.org/wiki/Red_Line_(Mumbai_Metro)"
+],
+"s22": [
+"Line 10 (Green): Gaimukh – Shivaji Chowk (Mira Road)",
+"https://en.wikipedia.org/wiki/Green_Line_(Mumbai_Metro)"
+],
+"s23": [
+"Line 11: Anik Nagar Bus Depot – Gateway of India",
+"https://en.wikipedia.org/wiki/Line_11_(Mumbai_Metro)"
+],
+"s24": [
+"Line 11: Bandra Terminus – Anik Nagar Bus Depot",
+"https://en.wikipedia.org/wiki/Line_11_(Mumbai_Metro)"
+],
+"s25": [
+"Line 12 (Orange): Kalyan Railway Station – Amandoot",
+"https://en.wikipedia.org/wiki/Orange_Line_(Mumbai_Metro)"
+],
+"s26": [
+"Line 13 (Purple): Mira Road (Subhash Chandra Bose Stadium) – Virar",
+"https://www.freepressjournal.in/mumbai/maharashtra-govt-approves-17725-crore-metro-line-13-linking-mira-bhayandar-with-vasai-virar"
+],
+"s27": [
+"Mumbai Monorail Line 1: Chembur – Wadala Depot",
+"https://en.wikipedia.org/wiki/Mumbai_Monorail"
+],
+"s28": [
+"Mumbai Monorail Line 1: Wadala Depot – Sant Gadge Maharaj Chowk",
+"https://en.wikipedia.org/wiki/Mumbai_Monorail"
+],
+"s29": [
+"Navi Mumbai Metro Line 1: CBD Belapur – Pendhar",
+"https://en.wikipedia.org/wiki/Line_1_(Navi_Mumbai_Metro)"
+],
+"s30": [
+"Navi Mumbai Metro Line 2 (MIDC Taloja–Khandeshwar): MIDC Taloja – Khandeshwar",
+"https://en.wikipedia.org/wiki/Line_1_(Navi_Mumbai_Metro)"
+],
+"s31": [
+"Navi Mumbai Metro Line 3 (Pendhar–MIDC Taloja): Pendhar – MIDC Taloja",
+"https://en.wikipedia.org/wiki/Navi_Mumbai_Metro"
+],
+"s32": [
+"Navi Mumbai Metro Line 4 (Khandeshwar–NMIA): Khandeshwar – Navi Mumbai International Airport",
+"https://en.wikipedia.org/wiki/Navi_Mumbai_Metro"
+],
+"s33": [
+"Navi Mumbai Metro Line 1A: Sagar Sangam – CBD Belapur",
+"https://en.wikipedia.org/wiki/Line_1_(Navi_Mumbai_Metro)"
+],
+"s34": [
+"Thane Integral Ring Metro: Thane Junction – Thane Junction (loop)",
+"https://en.wikipedia.org/wiki/Thane_Metro"
+],
+"s35": [
+"Thane–Kalwa–Mumbra–Diva Metro: Thane – Diva",
+"https://www.freepressjournal.in/amp/mumbai/thane-diva-metro-proposed-maharashtra-govt-plans-new-corridor-passing-through-kalwa-mumbra-benefiting-3-lakh-people-dpr-to-be-ready-in-6-months"
+]
+},
+"notes": [
+"Excluded: Mumbai Suburban Railway (Western/Central/Harbour/Trans-Harbour) and the BKC pod taxi, by request.",
+"Segment station lists include both endpoints, so adjacent segments share a station; n_stations = len(stations) except where list is empty (then official count).",
+"Operational as of 2026-10 (Wikipedia network table): L1, 2A, 2B (Mandale–Chembur, 6 stns), 3, 7, 9 (Dahisar E–Kashigaon) = 79 stations / 91.48 km. Monorail is built but suspended since 2025-09-20.",
+"Opening dates: Line 3 inaugurated 5 Oct 2024/public 7 Oct; phases 9/10 May 2025 and 8/9 Oct 2025. Line 2B/9 inaugurated 7 Apr 2026, public 8 Apr. Months are unaffected.",
+"Line 4/4A: no source confirms opening by mid-Oct 2026 (latest Sep 2026: trials, CMRS rolling-stock clearance 28 Aug). Re-check before publishing; could open around Diwali/Nov 2026.",
+"Line 2B naming conflict: news names Phase-1 stations 'Diamond Garden, Shivaji Chowk, BSNL Metro, Mankhurd, Mandale'; Wikipedia uses 'Deshbhakt N.G. Acharya Udyan-Diamond Garden, Chembur', 'Chhatrapati Shivaji Maharaj Chowk (Chembur)', 'Deonar' (= BSNL Metro, inferred), 'Maharashtranagar Mandale'. First 2B station after Andheri (W) was ESIC Nagar in tender docs; Wikipedia now 'Hare Ram Hare Krishna Mandir - Juhu' (likely renamed, unverified). Old Airport/National College/MMRDA/Kurla Terminus stations dropped.",
+"Line 2B station count: planned 20–22 vs 19 new stations in Wikipedia list; 2B length 23.643 km.",
+"Line 9: Amar Palace/Jhankar Company were earlier names (inferred: now Miragaon/Kashigaon). Phase 2 target conflicts: Dec 2026 (station table, CM) vs Dec 2027 (Wikipedia summary).",
+"Line 7A target conflicts: Dec 2026 vs Dec 2027 on Wikipedia; no official date.",
+"Line 4 count: Wikipedia main-line table 38 stations incl. Line 10 (4) and 4A (2); Line 4 proper = 32 stations, 32.32 km.",
+"Line 5: Wikipedia phase table says 23.53 km for Kapurbawdi–Dhamankar Naka, which conflicts with 12.811 km package CA-28 and 11.9 km in Aug 2026 approval; used 12.811. Approval says 6 stations on Thane–Bhiwandi vs 7 in CA-28 list. Bhiwandi–Kalyan list predates realignment.",
+"Line 12: Wikipedia lists Kalyan Railway Station to Amandoot (19 stns); originally Kalyan APMC–Taloja, 20.75 km, 17 stations. Kalyan Railway Station sits between Line 5 and 12 in the table.",
+"Line 10: approval says 5 stations; Wikipedia lists 4 new stations + Gaimukh. Length 9.2/9.676/9.718 km in different sources.",
+"Line 11: earlier 16-station alignment (with Reay Road, Crawford Market, Coal Bunder, SPM Circle) superseded; terminus sometimes given as Regal Cinema. Dharavi/Bandra Terminus extension is proposal-stage.",
+"Line 8: station list is Wikipedia's; consistent with cabinet note of 6 UG stations CSMIA T2→Ghatkopar(E). A blog list (Marol Naka, Powai, Kanjurmarg, Airoli…) contradicts it and is not used.",
+"Line 13: 16 stations per Aug 2026 approval (one post says 17 in revised DPR); names not officially published, left empty. Wikipedia main page still shows old 23 km/Rs 6,900 cr.",
+"Line 14: proposed; length 38–45 km in sources; no official station list.",
+"Navi Mumbai: Line 1 has no official colour in sources (color null). Lines 2–4 per CIDCO 2023 MetroNeo decision; an older 106 km masterplan (Vashi/Turbhe/Ghansoli lines) is outdated and omitted. Line 1A only on Wikipedia.",
+"Monorail: Wikipedia infobox says 18 stations, station table lists 17; length 19.54 vs 20.21 km.",
+"Colours: Mumbai Metro hexes from Wikipedia Module:Adjacent stations/Mumbai Metro (official line names Blue/Yellow/Aqua/Green/Orange/Pink/Red/Gold/Purple/Magenta). Line 11 has no assigned colour.",
+"Not included (no current evidence): Monorail Phase I/II lines 2–8 (shelved), Line 9 extension to Uttan, MMRDA '10 new corridors' report (undated)."
+]
+}

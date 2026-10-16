@@ -1,0 +1,69 @@
+{
+ "title": "Bengaluru Metro future map",
+ "h1": "Bengaluru Namma Metro · open, building and planned",
+ "sub": "Purple, Green and Yellow lines open; Pink and Blue under construction; Phase 3, 3A and proposed extensions. Data as of Oct 2026.",
+ "agency": "BMRCL",
+ "region": "Bengaluru",
+ "fit": [
+  [
+   12.8,
+   77.45
+  ],
+  [
+   13.2,
+   77.8
+  ]
+ ],
+ "lat": 12.97,
+ "phases": {
+  "op": {
+   "n": "Operational",
+   "d": null,
+   "w": 4.5
+  },
+  "OP": {
+   "n": "Open (recent)",
+   "d": null,
+   "w": 4.5
+  },
+  "UC": {
+   "n": "Under construction",
+   "d": "11 7",
+   "w": 4
+  },
+  "AP": {
+   "n": "Approved (Phase 3, 3A)",
+   "d": "1 8",
+   "w": 4.5
+  },
+  "PR": {
+   "n": "Proposed",
+   "d": "10 6 1 6",
+   "w": 3.5
+  }
+ },
+ "order": [
+  "op",
+  "OP",
+  "UC",
+  "AP",
+  "PR"
+ ],
+ "short": {
+  "OP": "open",
+  "UC": "building",
+  "AP": "approved",
+  "PR": "proposed"
+ },
+ "label": {
+  "op": "Open",
+  "OP": "Open",
+  "UC": "Under construction",
+  "AP": "Approved",
+  "PR": "Proposed"
+ },
+ "thin": [],
+ "rail": [],
+ "speeds": {},
+ "notes": "<div class=\"note\"><b>Sources:</b> Wikipedia station tables (Namma Metro line pages), checked against Deccan Herald, Swarajya, The Metro Rail Guy (Oct 2026). Open lines traced from OpenStreetMap.</div><div class=\"note\"><b>Proposed corridors without published stations</b> are drawn as straight links between their named endpoints. Years without an official target are estimates by stage.</div><div class=\"note\">Station lists are ordered along the segment and include both endpoint stations (shared endpoints repeat across consecutive sections); n_stations is the count of NEW stations as stated by the source.</div><div class=\"note\">Network operational as of 2026-10: Purple 43.49 km/37 stns, Green 33.46 km/32 stns, Yellow 19.15 km/16 stns = 96.1 km, 83 stations (Wikipedia Namma Metro).</div><div class=\"note\">Pink elevated (Kalena Agrahara–Tavarekere): CMRS inspection 6–8 Oct 2026; no confirmed opening found as of 2026-10-16. Re-check before publishing; may open within days.</div><div class=\"note\">Purple MG Road–Magadi Road underground opening: 29 Apr 2016 (text) vs 30 Apr 2016 (table) in Wikipedia; year-month 2016-04 is unambiguous.</div><div class=\"note\">Phase 1 Mysuru Road–Magadi Road: Wikipedia phase table says 5 stations/5.12 km, line text says 6 stations/6.4 km.</div><div class=\"note\">Blue Line dates conflict heavily across sources (2026-12 to 2028-12); values chosen are the latest government directive reported by Deccan Herald; Swarajya (Aug 2026) says 2A slips into 2027.</div><div class=\"note\">Blue Line 2B: stated 16 stations (8+8) but table splits 9 (KR Pura–Hebbala) + 7 (Hebbala–KIAL). Infobox mentions 3 'future' stations (e.g. Bettahalasuru) not listed.</div><div class=\"note\">Orange Line: Namma Metro article table says 'Under Construction' but Orange Line page says 'Approved' with civil bidding underway; no civil award found -> marked approved.</div>"
+}

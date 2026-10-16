@@ -79,6 +79,12 @@ EST = {
   "Palwal → Noida Airport (Jewar)": (2040, "no study yet"),
 }
 NEVER = 9999
+import os as _os, sys as _sys
+if _os.environ.get("CITY", "delhi") != "delhi":
+    _sys.path.insert(0, _os.path.join(_os.path.dirname(__file__), "..", "cities", _os.environ["CITY"]))
+    import config as _c
+    OPEN = getattr(_c, "OPEN", {}); DEFAULT = getattr(_c, "DEFAULT", {}); INFILL = getattr(_c, "INFILL", {})
+    PHASE_DEFAULT = getattr(_c, "PHASE_DEFAULT", {}); YR_OVERRIDE = getattr(_c, "YR_OVERRIDE", {}); EST = getattr(_c, "EST", {})
 
 
 def ym(s):

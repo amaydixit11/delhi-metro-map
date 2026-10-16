@@ -8,7 +8,8 @@ for i, s in enumerate(S):
     cx.setdefault(s[5], []).append(i)
 node_of = {i: s[5] for i, s in enumerate(S)}
 import math
-C0 = (28.6328, 77.2197)  # Rajiv Chowk
+import os
+C0 = tuple(map(float, os.environ.get("FISH_C", "28.6328,77.2197").split(",")))  # fisheye centre (default Rajiv Chowk)
 FC = float(sys.argv[4]) if len(sys.argv) > 4 else 8.0  # fisheye km constant
 TAIL = float(sys.argv[5]) if len(sys.argv) > 5 else 0.5  # scale of the regional tails beyond RC
 def fish(lat, lon):

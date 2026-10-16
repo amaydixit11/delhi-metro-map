@@ -1,0 +1,69 @@
+{
+ "title": "Mumbai Metro future map",
+ "h1": "Mumbai Metro · open, building and planned",
+ "sub": "Every open, under-construction, approved and proposed metro line in Mumbai. Data as of Oct 2026.",
+ "agency": "MMRDA",
+ "region": "Mumbai",
+ "fit": [
+  [
+   18.9,
+   72.8
+  ],
+  [
+   19.3,
+   73.15
+  ]
+ ],
+ "lat": 19.08,
+ "phases": {
+  "op": {
+   "n": "Operational",
+   "d": null,
+   "w": 4.5
+  },
+  "OP": {
+   "n": "Open (recent)",
+   "d": null,
+   "w": 4.5
+  },
+  "UC": {
+   "n": "Under construction",
+   "d": "11 7",
+   "w": 4
+  },
+  "AP": {
+   "n": "Approved",
+   "d": "1 8",
+   "w": 4.5
+  },
+  "PR": {
+   "n": "Proposed",
+   "d": "10 6 1 6",
+   "w": 3.5
+  }
+ },
+ "order": [
+  "op",
+  "OP",
+  "UC",
+  "AP",
+  "PR"
+ ],
+ "short": {
+  "OP": "open",
+  "UC": "building",
+  "AP": "approved",
+  "PR": "proposed"
+ },
+ "label": {
+  "op": "Open",
+  "OP": "Open",
+  "UC": "Under construction",
+  "AP": "Approved",
+  "PR": "Proposed"
+ },
+ "thin": [],
+ "rail": [],
+ "speeds": {},
+ "notes": "<div class=\"note\"><b>Sources:</b> Wikipedia station tables checked against 2025–26 news; open lines traced from OpenStreetMap. Corridors without published stations are drawn between their named endpoints. Years without an official target are estimates by stage.</div><div class=\"note\">Excluded: Mumbai Suburban Railway (Western/Central/Harbour/Trans-Harbour) and the BKC pod taxi, by request.</div><div class=\"note\">Segment station lists include both endpoints, so adjacent segments share a station; n_stations = len(stations) except where list is empty (then official count).</div><div class=\"note\">Operational as of 2026-10 (Wikipedia network table): L1, 2A, 2B (Mandale–Chembur, 6 stns), 3, 7, 9 (Dahisar E–Kashigaon) = 79 stations / 91.48 km. Monorail is built but suspended since 2025-09-20.</div><div class=\"note\">Opening dates: Line 3 inaugurated 5 Oct 2024/public 7 Oct; phases 9/10 May 2025 and 8/9 Oct 2025. Line 2B/9 inaugurated 7 Apr 2026, public 8 Apr. Months are unaffected.</div><div class=\"note\">Line 4/4A: no source confirms opening by mid-Oct 2026 (latest Sep 2026: trials, CMRS rolling-stock clearance 28 Aug). Re-check before publishing; could open around Diwali/Nov 2026.</div><div class=\"note\">Line 2B naming conflict: news names Phase-1 stations 'Diamond Garden, Shivaji Chowk, BSNL Metro, Mankhurd, Mandale'; Wikipedia uses 'Deshbhakt N.G. Acharya Udyan-Diamond Garden, Chembur', 'Chhatrapati Shivaji Maharaj Chowk (Chembur)', 'Deonar' (= BSNL Metro, inferred), 'Maharashtranagar Mandale'. First 2B station after Andheri (W) was ESIC Nagar in tender docs; Wikipedia now 'Hare Ram Hare Krishna Mandir - Juhu' (likely renamed, unverified). Old Airport/National College/MMRDA/Kurla Terminus stations dropped.</div><div class=\"note\">Line 2B station count: planned 20–22 vs 19 new stations in Wikipedia list; 2B length 23.643 km.</div><div class=\"note\">Line 9: Amar Palace/Jhankar Company were earlier names (inferred: now Miragaon/Kashigaon). Phase 2 target conflicts: Dec 2026 (station table, CM) vs Dec 2027 (Wikipedia summary).</div>"
+}

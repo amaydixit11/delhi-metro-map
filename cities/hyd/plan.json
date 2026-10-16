@@ -1,0 +1,904 @@
+{
+"lines": {
+"redlinecorri": [
+"Red Line (Corridor I)",
+"#D84A4E"
+],
+"bluelinecorr": [
+"Blue Line (Corridor III)",
+"#0081BF"
+],
+"greenlinecor": [
+"Green Line (Corridor II)",
+"#008D42"
+],
+"purplelineco": [
+"Purple Line (Corridor IV, Airport Corridor)",
+"#800080"
+],
+"airportexpre": [
+"Airport Express (Raidurg–RGIA, cancelled)",
+"#6EB2FE"
+],
+"corridorixrg": [
+"Corridor IX (RGIA–Bharat Future City)",
+"#EE82B4"
+],
+"corridorxjbs": [
+"Corridor X (JBS–Medchal)",
+"#B5267B"
+],
+"corridorxijb": [
+"Corridor XI (JBS–Shamirpet)",
+"#C49A3A"
+]
+},
+"segs": [
+{
+"line": "redlinecorri",
+"status": "operational",
+"phase": "OP",
+"year": "2017-11",
+"stage": "Phase 1",
+"km": 11.3,
+"n": 11,
+"title": "Miyapur → Ameerpet",
+"src": "s0",
+"st": [
+[
+"Miyapur",
+17.49654,
+78.37303
+],
+[
+"JNTU College",
+17.49866,
+78.38887
+],
+[
+"KPHB Colony",
+17.4938,
+78.40177
+],
+[
+"Kukatpally",
+17.48509,
+78.41164
+],
+[
+"Dr. B.R. Ambedkar Balanagar",
+17.47853,
+78.41884
+],
+[
+"Moosapet",
+17.47197,
+78.42604
+],
+[
+"Bharat Nagar",
+17.46416,
+78.43001
+],
+[
+"Erragadda",
+17.45733,
+78.43346
+],
+[
+"ESI Hospital",
+17.4474,
+78.43835
+],
+[
+"S.R. Nagar",
+17.44171,
+78.44161
+],
+[
+"Ameerpet",
+17.4375,
+78.44825
+]
+]
+},
+{
+"line": "redlinecorri",
+"status": "operational",
+"phase": "OP",
+"year": "2018-09",
+"stage": "Phase 1",
+"km": 16.8,
+"n": 17,
+"title": "Ameerpet → LB Nagar",
+"src": "s1",
+"st": [
+[
+"Ameerpet",
+17.4375,
+78.44825
+],
+[
+"Punjagutta",
+17.42863,
+78.45113
+],
+[
+"Irrum Manzil",
+17.42056,
+78.4561
+],
+[
+"Khairatabad",
+17.41153,
+78.46085
+],
+[
+"Lakdi-ka-pul",
+17.40391,
+78.46502
+],
+[
+"Assembly",
+17.39811,
+78.47082
+],
+[
+"Nampally",
+17.3924,
+78.47015
+],
+[
+"Gandhi Bhavan",
+17.38611,
+78.4731
+],
+[
+"Osmania Medical College",
+17.38235,
+78.48113
+],
+[
+"MG Bus Station",
+17.37977,
+78.48753
+],
+[
+"Malakpet",
+17.37719,
+78.49394
+],
+[
+"New Market",
+17.37343,
+78.50318
+],
+[
+"Musarambagh",
+17.37107,
+78.51195
+],
+[
+"Dilsukhnagar",
+17.36855,
+78.52572
+],
+[
+"Chaitanyapuri",
+17.36829,
+78.53594
+],
+[
+"Victoria Memorial",
+17.36185,
+78.54393
+],
+[
+"LB Nagar",
+17.34983,
+78.54791
+]
+]
+},
+{
+"line": "redlinecorri",
+"status": "approved",
+"phase": "AP",
+"year": null,
+"stage": "Corridor VII, Phase 2A; Phase 2A; state-sanctioned (GO Nov 2024); Centre gave in-principle nod for 50:50 JV (May 2026) but no Union Cabinet/financial sanction; DPR under MoHUA appraisal; NOT in GC Package-I RfP (Aug 2026); stations tentative",
+"km": 13.4,
+"n": 11,
+"title": "Miyapur → Patancheru",
+"src": "s2",
+"st": [
+[
+"Miyapur",
+17.49654,
+78.37303
+],
+[
+"Miyapur X Road",
+17.49654,
+78.37303
+],
+[
+"Allwyn X Road",
+17.49417,
+78.35767
+],
+[
+"Madinaguda",
+17.49179,
+78.34231
+],
+[
+"Chanda Nagar",
+17.49613,
+78.33184
+],
+[
+"BHEL",
+17.50046,
+78.32138
+],
+[
+"Jyoti Nagar",
+17.50479,
+78.31092
+],
+[
+"Beeramguda",
+17.50912,
+78.30046
+],
+[
+"RC Puram",
+17.50632,
+78.30525
+],
+[
+"ICRISAT",
+17.51125,
+78.2766
+],
+[
+"Patancheru",
+17.52861,
+78.26743
+]
+]
+},
+{
+"line": "redlinecorri",
+"status": "approved",
+"phase": "AP",
+"year": null,
+"stage": "Corridor VIII, Phase 2A; Phase 2A; state-sanctioned (GO Nov 2024); Centre gave in-principle nod for 50:50 JV (May 2026) but no Union Cabinet/financial sanction; DPR under MoHUA appraisal; in GC Package-I RfP dt 11 Aug 2026 (bids due 22 Oct 2026, 48-month completion); stations tentative",
+"km": 7.1,
+"n": 7,
+"title": "LB Nagar → Hayathnagar",
+"src": "s3",
+"st": [
+[
+"LB Nagar",
+17.34983,
+78.54791
+],
+[
+"Chintalkunta",
+17.34411,
+78.56368
+],
+[
+"Vanasthalipuram",
+17.33032,
+78.56828
+],
+[
+"Autonagar",
+17.33561,
+78.5792
+],
+[
+"Lecturers' Colony",
+17.33268,
+78.59445
+],
+[
+"RTC Colony",
+17.3304,
+78.59949
+],
+[
+"Hayathnagar",
+17.32811,
+78.60454
+]
+]
+},
+{
+"line": "bluelinecorr",
+"status": "operational",
+"phase": "OP",
+"year": "2017-11",
+"stage": "Phase 1",
+"km": 16.8,
+"n": 14,
+"title": "Nagole → Ameerpet",
+"src": "s4",
+"st": [
+[
+"Nagole",
+17.39077,
+78.55882
+],
+[
+"Uppal",
+17.40016,
+78.56018
+],
+[
+"Stadium",
+17.4074,
+78.55425
+],
+[
+"NGRI",
+17.41483,
+78.54633
+],
+[
+"Habsiguda",
+17.42018,
+78.54055
+],
+[
+"Tarnaka",
+17.4283,
+78.52844
+],
+[
+"Mettuguda",
+17.43552,
+78.51958
+],
+[
+"Secunderabad East",
+17.43572,
+78.50546
+],
+[
+"Parade Ground",
+17.44506,
+78.49357
+],
+[
+"Paradise",
+17.44347,
+78.48624
+],
+[
+"Rasoolpura",
+17.44361,
+78.47641
+],
+[
+"Prakash Nagar",
+17.44489,
+78.46587
+],
+[
+"Begumpet",
+17.43757,
+78.45693
+],
+[
+"Ameerpet",
+17.4375,
+78.44825
+]
+]
+},
+{
+"line": "bluelinecorr",
+"status": "operational",
+"phase": "OP",
+"year": "2019-03",
+"stage": "Phase 1 (Peddamma Gudi opened 2019-03-30, Madhapur 2019-04-13, Jubilee Hills Check Post 2019-05-18)",
+"km": 10.0,
+"n": 9,
+"title": "Ameerpet → HITEC City",
+"src": "s5",
+"st": [
+[
+"Ameerpet",
+17.4375,
+78.44825
+],
+[
+"Madhura Nagar",
+17.43697,
+78.4391
+],
+[
+"Yusufguda",
+17.43511,
+78.42732
+],
+[
+"Road No. 5 Jubilee Hills",
+17.43005,
+78.42321
+],
+[
+"Jubilee Hills Check Post",
+17.4282,
+78.41371
+],
+[
+"Peddamma Gudi",
+17.43065,
+78.40837
+],
+[
+"Madhapur",
+17.43726,
+78.40043
+],
+[
+"Durgam Cheruvu",
+17.44295,
+78.38757
+],
+[
+"HITEC City",
+17.44901,
+78.38314
+]
+]
+},
+{
+"line": "bluelinecorr",
+"status": "operational",
+"phase": "OP",
+"year": "2019-11",
+"stage": "Phase 1",
+"km": 1.5,
+"n": 2,
+"title": "HITEC City → Raidurg",
+"src": "s6",
+"st": [
+[
+"HITEC City",
+17.44901,
+78.38314
+],
+[
+"Raidurg",
+17.44218,
+78.37718
+]
+]
+},
+{
+"line": "greenlinecor",
+"status": "operational",
+"phase": "OP",
+"year": "2020-02",
+"stage": "Phase 1 (inaugurated 2020-02-07, public 2020-02-08)",
+"km": 11.0,
+"n": 10,
+"title": "JBS Parade Ground → MG Bus Station",
+"src": "s7",
+"st": [
+[
+"JBS Parade Ground",
+17.45632,
+78.48761
+],
+[
+"Parade Ground",
+17.44506,
+78.49357
+],
+[
+"Secunderabad West",
+17.4338,
+78.49952
+],
+[
+"Gandhi Hospital",
+17.42552,
+78.50196
+],
+[
+"Musheerabad",
+17.41787,
+78.49951
+],
+[
+"RTC Cross Roads",
+17.40703,
+78.4968
+],
+[
+"Chikkadpally",
+17.40036,
+78.4949
+],
+[
+"Narayanguda",
+17.39437,
+78.48996
+],
+[
+"Sultan Bazar",
+17.38445,
+78.48402
+],
+[
+"MG Bus Station",
+17.37453,
+78.47809
+]
+]
+},
+{
+"line": "greenlinecor",
+"status": "approved",
+"phase": "AP",
+"year": null,
+"stage": "Corridor VI (Old City), Phase 2A; foundation stone 2024-03-08; land acquisition 833 of 888 properties done (Oct 2026), road widening/utility shifting, pillar marking from 2025-07-30; no civil contract yet; CM ordered construction tender Aug 2026; in GC Package-I RfP; station list PARTIAL (official 6 new stations, 4 intermediate named)",
+"km": 7.5,
+"n": 7,
+"title": "MG Bus Station → Chandrayangutta",
+"src": "s8",
+"st": [
+[
+"MG Bus Station",
+17.38164,
+78.48453
+],
+[
+"Salarjung Museum",
+17.37178,
+78.48226
+],
+[
+"Charminar",
+17.36193,
+78.47999
+],
+[
+"Shalibanda",
+17.35039,
+78.46527
+],
+[
+"Falaknuma",
+17.33266,
+78.4752
+],
+[
+"Chandrayangutta",
+17.3247,
+78.48136
+]
+]
+},
+{
+"line": "purplelineco",
+"status": "approved",
+"phase": "AP",
+"year": null,
+"stage": "Corridor IV, Phase 2A; Phase 2A; state-sanctioned (GO Nov 2024); Centre gave in-principle nod for 50:50 JV (May 2026) but no Union Cabinet/financial sanction; DPR under MoHUA appraisal; in GC Package-I RfP dt 11 Aug 2026 (48-month completion); via LB Nagar and Chandrayangutta; RGIA station underground; stations tentative (HMRL Feb 2025)",
+"km": 36.8,
+"n": 24,
+"title": "Nagole → RGIA",
+"src": "s9",
+"st": [
+[
+"Nagole",
+17.39077,
+78.55882
+],
+[
+"Nagole X Road",
+17.39077,
+78.55882
+],
+[
+"Alkapuri Junction",
+17.3712,
+78.55749
+],
+[
+"Kamineni Hospital",
+17.35164,
+78.55617
+],
+[
+"LB Nagar",
+17.34983,
+78.54791
+],
+[
+"Bairamalguda",
+17.34216,
+78.54576
+],
+[
+"Maitri Nagar",
+17.34158,
+78.53937
+],
+[
+"Karmanghat",
+17.34101,
+78.53297
+],
+[
+"Champapet Road",
+17.34383,
+78.53537
+],
+[
+"Owaisi Hospital",
+17.34085,
+78.50674
+],
+[
+"DRDO Kanchanbagh",
+17.33951,
+78.50192
+],
+[
+"Balapur Road",
+17.3321,
+78.49164
+],
+[
+"Chandrayangutta",
+17.3247,
+78.48136
+],
+[
+"Bandlaguda Road",
+17.31471,
+78.46756
+],
+[
+"Mailardevpally",
+17.32002,
+78.44606
+],
+[
+"Katedan",
+17.30268,
+78.43982
+],
+[
+"Aramghar",
+17.32168,
+78.43194
+],
+[
+"New High Court",
+17.33831,
+78.45523
+],
+[
+"Gaganpahad",
+17.35493,
+78.47851
+],
+[
+"Satamrai",
+17.31612,
+78.45044
+],
+[
+"Siddanthi",
+17.2773,
+78.42237
+],
+[
+"Shamshabad",
+17.23848,
+78.3943
+],
+[
+"Cargo",
+17.23848,
+78.3943
+],
+[
+"RGIA",
+17.23848,
+78.3943
+]
+]
+},
+{
+"line": "airportexpre",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Cancelled: foundation stone Dec 2022, EPC tender May 2023, put on hold 2023-12-13 and dropped Jan 2024; replaced by Corridor IV (Nagole–RGIA)",
+"km": 31.0,
+"n": 10,
+"title": "Raidurg → RGIA Terminal",
+"src": "s10",
+"st": [
+[
+"Raidurg",
+17.44218,
+78.37718
+],
+[
+"Biodiversity Junction",
+17.42812,
+78.38018
+],
+[
+"Nanakramguda Junction",
+17.41406,
+78.38317
+],
+[
+"Puppalaguda",
+17.4,
+78.38617
+],
+[
+"Narsingi",
+17.39672,
+78.37172
+],
+[
+"TS Police Academy",
+17.36567,
+78.3902
+],
+[
+"Rajendranagar",
+17.33462,
+78.40868
+],
+[
+"Shamshabad",
+17.23848,
+78.3943
+],
+[
+"Airport Cargo",
+17.14235,
+78.37992
+],
+[
+"RGIA Terminal",
+17.04621,
+78.36554
+]
+]
+},
+{
+"line": "corridorxjbs",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Phase 2B; DPR submitted to Centre 2025-06-21; fully elevated; 18 stations per DPR reports, names not published; starts at a new JBS station",
+"km": 24.5,
+"n": 18,
+"title": "JBS → Medchal",
+"src": "s11",
+"st": [
+[
+"JBS",
+17.44882,
+78.49648
+],
+[
+"Medchal",
+17.49306,
+78.39142
+]
+]
+},
+{
+"line": "corridorxijb",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Phase 2B; DPR submitted to Centre 2025-06-21; 20.35 km elevated + 1.65 km underground near Hakimpet Air Force Station; 14 stations per DPR reports, names not published",
+"km": 22.0,
+"n": 14,
+"title": "JBS → Shamirpet",
+"src": "s12",
+"st": [
+[
+"JBS",
+17.44882,
+78.49648
+],
+[
+"Shamirpet",
+17.57371,
+78.56409
+]
+]
+}
+],
+"sources": {
+"s0": [
+"Red Line (Corridor I): Miyapur – Ameerpet",
+"https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+],
+"s1": [
+"Red Line (Corridor I): Ameerpet – LB Nagar",
+"https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+],
+"s2": [
+"Red Line (Corridor I): Miyapur – Patancheru",
+"https://hmrl.co.in/phase-ii/"
+],
+"s3": [
+"Red Line (Corridor I): LB Nagar – Hayathnagar",
+"https://hmrl.co.in/phase-ii/"
+],
+"s4": [
+"Blue Line (Corridor III): Nagole – Ameerpet",
+"https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+],
+"s5": [
+"Blue Line (Corridor III): Ameerpet – HITEC City",
+"https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+],
+"s6": [
+"Blue Line (Corridor III): HITEC City – Raidurg",
+"https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
+],
+"s7": [
+"Green Line (Corridor II): JBS Parade Ground – MG Bus Station",
+"https://en.wikipedia.org/wiki/Green_Line_(Hyderabad_Metro)"
+],
+"s8": [
+"Green Line (Corridor II): MG Bus Station – Chandrayangutta",
+"https://hmrl.co.in/foundation-stone-for-old-city-metro-rail-a-momentous-day/"
+],
+"s9": [
+"Purple Line (Corridor IV, Airport Corridor): Nagole – RGIA",
+"https://hmrl.co.in/phase-ii/"
+],
+"s10": [
+"Airport Express (Raidurg–RGIA, cancelled): Raidurg – RGIA Terminal",
+"https://en.wikipedia.org/wiki/Hyderabad_Airport_Metro_Express"
+],
+"s11": [
+"Corridor X (JBS–Medchal): JBS – Medchal",
+"https://hmrl.co.in/phase-ii/"
+],
+"s12": [
+"Corridor XI (JBS–Shamirpet): JBS – Shamirpet",
+"https://hmrl.co.in/phase-ii/"
+]
+},
+"notes": [
+"Operational network Oct 2026: 3 lines, 67.21 km (Wikipedia; segment km sum ~68.4 because Wikipedia gives Ameerpet-HITEC City as both 10 km and 8.5 km), 57 unique stations (27 Red + 23 Blue + 10 Green, with Ameerpet, MG Bus Station, Parade Ground shared).",
+"No Phase 2 corridor is under civil construction as of Oct 2026. Old City (Cor VI) has foundation stone (Mar 2024), demolitions and utility shifting only; no construction contract awarded. Nothing is marked under_construction.",
+"'approved' for Phase 2A = state-government sanctioned + Centre in-principle (21 May 2026, Newsmeter); formal Union Cabinet / financial sanction NOT found. MoHUA told Parliament on 2 Apr 2026 there was 'no fixed timeline'.",
+"Official corridor numbering (hmrl.co.in/phase-ii): IV Nagole-RGIA 36.8 km, V Raidurg-Kokapet Neopolis 11.6, VI MGBS-Chandrayangutta 7.5, VII Miyapur-Patancheru 13.4, VIII LB Nagar-Hayat Nagar 7.1 (Phase 2A = 76.4 km, Rs 24,269 cr); IX RGIA-Bharat Future City 39.6, X JBS New-Medchal 24.5, XI JBS New-Shamirpet 22.0 (Phase 2B = 86.1 km, Rs 19,579 cr). Total 162.5 km. Older press uses different numbers (e.g. Corridor 6 = Miyapur-Patancheru).",
+"2026 revised plan: 7 corridors, 122.9 km, Rs 38,595 cr (CM to Union minister 6 May 2026). INFERRED: 122.9 = Phase 2A 76.4 + JBS-Medchal 24.5 + JBS-Shamirpet 22.0, with RGIA-Future City pushed to a proposed Phase III. Not stated explicitly in any source found.",
+"GC RfP dt 11 Aug 2026 (HAML) covers Package-I = Cor IV (24 stns), V (8), VI (6), VIII (6), 63 km, 48-month completion; bid deadline extended to 22 Oct 2026. indtoday (13 Oct 2026) wrongly lists Miyapur-Patancheru instead of Nagole-RGIA in that package.",
+"Station counts: Phase 2A sources give 56 vs 54 total stations; HMRL Dec 2024 page gave Patancheru 6 stations and Kokapet 8; Wikipedia gives Patancheru 10 and Kokapet 10. Patancheru list here follows Wikipedia order; Siasat (Jan 2025) names 9 of them (no ICRISAT, no Miyapur X Road) and calls them tentative. Wikipedia's 10 Kokapet names (Biodiversity Junction, Khajaguda, Nanakramguda, Golf Course, Wipro Circle, Puppalguda, ORR Junction, Khanapur, Movie Towers, Kokapet Neopolis) are unsourced and contradict the official 8, so stations left empty.",
+"Old City list: HMRL (Mar 2024) and The Hindu (Dec 2024) name 4 new stations Salarjung Museum, Charminar, Shalibanda, Falaknuma; Shamsheergunj and Jangammet were dropped; 2026 RfP says 6 stations for MGBS-Chandrayangutta, so one station is unnamed (Aliabad appears on Wikipedia, unconfirmed). n_stations=7 includes MGBS.",
+"Corridor IV station order follows HMRL release via Deccan Chronicle (22 Feb 2025): Nagole X Road before Alkapuri Junction; Wikipedia has them reversed. HMRL labels Nagole and LB Nagar on this line 'Airport' stations (separate from existing ones).",
+"Renames / name variants: JBS Parade Ground (Wikipedia: 'Parade Ground' for Green terminus); Dr. B.R. Ambedkar Balanagar (aka Balanagar); Madhura Nagar (Wikipedia: Taruni Madhura Nagar); Sultan Bazar/Sultan Bazaar; RTC Cross Roads/R.T.C. X Roads; Patancheru/Patancheruvu; Hayathnagar/Hayat Nagar; Shamirpet/Shameerpet; MG Bus Station = MGBS.",
+"Green Line Phase 1 originally ran to Falaknuma (16.6 km, 15 stns in Wikipedia infobox); Old City stretch was deferred and reshaped as Cor VI to Chandrayangutta.",
+"Cancelled/dropped: Raidurg-RGIA Airport Express (31 km, Jan 2024); Tarnaka-ECIL and earlier BHEL-Lakdikapul / Nagole-LB Nagar standalone proposals (Nagole-LB Nagar now inside Cor IV). 'Paradise-Medchal' in older reports = current JBS-Medchal (Cor X). 'Shamshabad-Future City' / 'Fourth City' = Cor IX. The Jan 2024 draft (The Metro Rail Guy) also had a Mailardevpally-Aramghar-New High Court spur (4 km); Aramghar and New High Court are now stations on Cor IV.",
+"Phase 2B station counts (18 Medchal, 14 Shamirpet) are from DPR press reports; unclear whether they include the JBS terminus.",
+"Colours: Red/Blue/Green/Purple/Airport hex from Wikipedia Module:Adjacent stations/Hyderabad Metro, not an HMRL brand spec. Purple for Cor IV is Wikipedia's convention; HMRL has not published an official colour. Phase 2B corridors have no colour (null).",
+"Ownership: L&T agreed (29 Apr 2026) to divest 100% of L&T Metro Rail (Hyderabad) to the state for ~Rs 15,000 cr; HMRL operates from 1 May 2026.",
+"MMTS (Multi-Modal Transport System) is suburban rail run by South Central Railway, not part of the metro; interchanges at Bharat Nagar, Khairatabad, Lakdi-ka-pul, Malakpet, Begumpet (and Nampally/Secunderabad mainline)."
+]
+}

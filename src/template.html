@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Delhi Metro Phase V</title>
+<title>Metro map</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
@@ -82,6 +82,7 @@ button:hover{background:var(--chip)}
 .pp a{color:var(--muted)}
 .leaflet-tile-pane{filter:var(--tile-filter)}
 #toggle{display:none}
+#cities{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}#cities a{font-size:12.5px;padding:4px 10px;border-radius:99px;background:var(--chip);color:var(--ink);text-decoration:none}#cities a.on{background:var(--accent);color:#fff}
 .popstat{display:flex;align-items:baseline;gap:8px;margin:6px 6px 2px}.popstat b{font-size:26px;font-variant-numeric:tabular-nums}
 .ramp{height:10px;border-radius:5px;margin:6px 6px 2px;background:linear-gradient(90deg,#FDE68A,#FB923C,#DC2626,#7F1D1D)}
 .rampl{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin:0 6px}
@@ -143,8 +144,9 @@ button:hover{background:var(--chip)}
 <div id="app">
 <aside id="side">
   <header>
-    <h1>Delhi NCR Rail · Metro to Phase V(C), Gurugram, Noida, Meerut & Namo Bharat</h1>
-    <div class="sub">Delhi Metro to Phase V(C), the Gurugram, Noida and Meerut metros, and the Namo Bharat (RRTS) corridors. Data as of 17 Oct 2026.</div>
+    <nav id="cities"></nav>
+    <h1 id="cityH1"></h1>
+    <div class="sub" id="citySub"></div>
     <button id="toggle" aria-label="Toggle panel">☰</button>
   </header>
   <div class="stats" id="stats"></div>
@@ -169,7 +171,7 @@ button:hover{background:var(--chip)}
 
   <h2>Station markers</h2>
   <div class="key"><span class="k-st"></span> Station — named in a source</div>
-  <div class="key"><span class="k-st k-pr"></span><span><i>Projected</i>: name and site picked by locality and density, not published by DMRC</span></div>
+  <div class="key"><span class="k-st k-pr"></span><span><i>Projected</i>: name and site picked by locality and density, not yet published</span></div>
   <div class="key"><span class="k-st k-ix"></span> Interchange</div>
   <label class="row"><input type="checkbox" id="showProj" checked> Show projected stations</label>
   <label class="row"><input type="checkbox" id="showBase" checked> Street basemap</label>
@@ -197,18 +199,7 @@ button:hover{background:var(--chip)}
   <div class="lines" id="lines"></div>
 
   <h2>Notes</h2>
-  <div class="note"><b>Station counts match the official corridor counts</b> for every V(B) and V(C) corridor. Where DMRC has not published names (most of V(B) and V(C)), the stations are <i>projected</i> and marked that way.</div>
-  <div class="note"><b>Gokulpuri–Arthala:</b> the V(C) table says 8 stations, but DMRC's Sept 2024 proposal names 10. All 10 are shown.</div>
-  <div class="note"><b>Station positions:</b> operational stations and track are from OpenStreetMap. Planned station positions are approximate.</div>
-  <div class="note"><b>Name changes:</b> renamed stations use their new names, e.g. Rohini West → Dr. Baba Saheb Ambedkar Hospital and Rohini East → Rohini (May 2026).</div>
-  <div class="note"><b>Gurugram:</b> Line 2 stations are from GMRL's published list. The Airport line to Gurugram follows DMRC's merged DPR (Jul 2026): 5 underground stations to Rajiv Chowk, replacing the older V(C) plan to Subhash Chowk. Sector 56–Pachgaon fills the 28-station count around the sectors named in its DPR. The Namo Bharat corridor shows only its 8 named stops, not its 15 planned metro feeder stations, whose order has not been published.</div>
-  <div class="note"><b>Namo Bharat and Noida:</b> the Alwar, Panipat–Karnal and Ghaziabad–Jewar corridors use the full station lists from NCRTC's plans. The Palwal–Jewar metro and the Film City light rail have no published stations, so theirs are projected and named after the villages and sectors they pass. The Greater Noida–Jewar metro was shelved in Oct 2023 in favour of the RRTS, so it isn't drawn.</div>
-  <div class="note"><b>Meerut Metro:</b> Line 1 is open, and its track and stations come from OpenStreetMap. Line 2 uses the 13-station list from Metro Rail News; Wikipedia says 12. Line 3 has 6 stations, and only CCS University, Ganga Nagar and Begumpul are named in the source; the rest are projected.</div>
-  <div class="note"><b>Delhi Metrolite:</b> all 21 stations are from the 2019 plan, which is still awaiting Delhi government approval. Wikipedia's index of Indian rail projects lists it as cancelled, and much of its Kirti Nagar–Mayapuri stretch overlaps the V(B) Kirti Nagar–Palam corridor.</div>
-  <div class="note"><b>Future Namo Bharat and the Phase V wish list:</b> NCRTC has published only the endpoints of the Palwal, Khurja, Rohtak, Hapur and Baraut corridors, so their stops are projected at the main towns. The same goes for Yamuna Bank–Loni, Shiv Vihar–Loni, Mayur Vihar III–Loni Border and CGO Complex–Surya Vihar. The Faridabad–Gurugram metro uses the 12 stations in DMRC's 2020 DPR.</div>
-  <div class="note"><b>Haryana extensions:</b> Red Line to Sonipat Sector 7, Grey Line to Jhajjar via Badli, and Green Line to Rohtak. Studies are done but no stations are published, so the stops are projected and named after villages on the route. One News24 report says the Sonipat link may be a Yellow Line extension from Samaypur Badli instead.</div>
-  <div class="note"><b>Completion years:</b> official targets are used where published. Elsewhere it's our estimate from each project's stage as of Oct 2026: construction-start year announced → +4–5 yrs; DPR submitted or PIB-cleared → 2032–34; DPR being prepared → 2035–36; only proposed → 2036–38; stalled or no study → 2040. Each station card shows the reason.</div>
-  <div class="note"><b>Not shown:</b> the Central Vista loop (superseded by the V(A) Magenta stretch through Kartavya Bhawan and India Gate), Samaypur Badli–Khera Kalan (superseded by V(B) III), the Gurugram Railway Station spur and Gurugram–Faridabad metro feeder stations.</div>
+  <div id="cityNotes"></div>
 
   <h2>Sources</h2>
   <div class="src" id="src"></div>
@@ -220,18 +211,19 @@ button:hover{background:var(--chip)}
 <!--SCHEM--></div>
 </div>
 
+<script>/*CITY*/</script>
 <script>/*DATA*/</script>
 <script>/*POP*/</script>
 <script>
 (function(){
 const M = window.METRO;
-const PH = {op:{n:"Operational",d:null,w:4.5},IV:{n:"Phase IV · under construction / approved",d:"11 7",w:4},
-  VA:{n:"Phase V(A) · Centre approved",d:"7 6",w:4},VB:{n:"Phase V(B) · State approved",d:"1 8",w:4.5},VC:{n:"Phase V(C) · Proposed",d:"10 6 1 6",w:3.5},
-  G1:{n:"Gurugram & Noida metro · under construction / approved",d:"11 7",w:4},G2:{n:"NCR metro plans · DPR / proposed",d:"2 5 8 5",w:3.5},
-  RR:{n:"Namo Bharat (RRTS) · approved / DPR",d:"16 4",w:5}};
-const ORDER=["op","IV","VA","VB","VC","G1","G2","RR"];
-const SHORT={IV:"IV",VA:"V(A)",VB:"V(B)",VC:"V(C)",G1:"building",G2:"planned",RR:"RRTS"};
-const state={ph:{op:true,IV:true,VA:true,VB:true,VC:true,G1:true,G2:true,RR:true},lines:{},proj:true,view:"geo",solid:false,names:true,curved:true,year:2041};
+const C=window.CITY;
+document.title=C.title; document.getElementById("cityH1").textContent=C.h1; document.getElementById("citySub").textContent=C.sub;
+document.getElementById("cityNotes").innerHTML=C.notes;
+(()=>{const here=C.code||"delhi",root=here==="delhi"?"":"../";document.getElementById("cities").innerHTML=[["delhi","Delhi NCR"],["blr","Bengaluru"],["mum","Mumbai"],["pune","Pune"],["hyd","Hyderabad"]]
+  .map(([c,n])=>`<a href="${root}${c==="delhi"?"":c+"/"}${c==="delhi"?"index.html":"index.html"}" class="${c===here?"on":""}">${n}</a>`).join("");})();
+const PH=C.phases, ORDER=C.order, SHORT=C.short;
+const state={ph:Object.fromEntries(ORDER.map(p=>[p,true])),lines:{},proj:true,view:"geo",solid:false,names:true,curved:true,year:2041};
 const YMAX=2041;
 function yrOK(y){return state.year>=YMAX||(y??9999)<state.year+1;}
 try{state.view=localStorage.getItem('dm-view')||"geo";state.solid=localStorage.getItem('dm-solid')==='1';state.names=localStorage.getItem('dm-names')!=='0';state.curved=localStorage.getItem('dm-curved')!=='0';}catch(e){}
@@ -246,7 +238,7 @@ const tileUrl=()=>"https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/W
 let base=L.tileLayer(tileUrl(),{attribution:'Basemap © Esri · Lines © OpenStreetMap contributors',maxZoom:16,maxNativeZoom:16,opacity:.8}).addTo(map);
 const HOME=[[28.13,76.86],[28.92,77.44]];
 const hm=location.hash.match(/^#([\d.]+),([\d.]+),([\d.]+)/);
-if(hm) map.setView([+hm[1],+hm[2]],+hm[3]); else map.fitBounds([[28.40,76.95],[28.86,77.42]]);
+if(hm) map.setView([+hm[1],+hm[2]],+hm[3]); else map.fitBounds(C.fit);
 map.on("moveend",()=>{const c=map.getCenter();history.replaceState(null,"",`#${c.lat.toFixed(4)},${c.lng.toFixed(4)},${map.getZoom()}`);});
 
 map.createPane("tracks").style.zIndex=410;
@@ -261,7 +253,7 @@ const cxMap={}; S.forEach(s=>(cxMap[s.cx]=cxMap[s.cx]||[]).push(s));
 
 // terminals: first/last of each segment
 const term=new Set(); segs.forEach(g=>{
-  if(g.phase==="op"&&["aqua","rapid","rrts"].includes(g.line)) return;
+  if(g.phase==="op"&&C.thin.includes(g.line)) return;
   if(g.phase==="op") term.add(g.ids[0]);
   term.add(g.ids[g.ids.length-1]);
 });
@@ -283,7 +275,7 @@ const layers=[]; // {layer, line, phase, kind}
 // operational track geometry
 Object.entries(M.tracks).forEach(([line,ways])=>{
   const col=M.lines[line].color;
-  const thin=["aqua","rapid","rrts"].includes(line);
+  const thin=C.thin.includes(line);
   ways.forEach((w,wi)=>{
     const l=L.polyline(w,{pane:"tracks",color:col,weight:thin?3:PH.op.w,opacity:thin?.75:1,lineCap:"round",lineJoin:"round",interactive:false});
     layers.push({layer:l,line,phase:"op",kind:"track",w:thin?3:PH.op.w,y:(M.trackYears[line]||[])[wi]});
@@ -316,7 +308,7 @@ function servedVisible(s){
 }
 function cxLines(s){const set=new Set();cxMap[s.cx].forEach(m=>servedVisible(m).forEach(([ln])=>set.add(ln)));return set;}
 
-const phaseLabel={op:"Open",IV:"Phase IV",VA:"Phase V(A)",VB:"Phase V(B)",VC:"Phase V(C)",G1:"Building / approved",G2:"Planned",RR:"Namo Bharat"};
+const phaseLabel=C.label;
 function popupHtml(s){
   const members=cxMap[s.cx];
   const rows=[];
@@ -328,7 +320,7 @@ function popupHtml(s){
     const src=M.sources[g.src];
     return `<div style="margin-top:6px;font-size:12px;color:var(--muted)">${g.title} — ${g.status}${g.km?`, ${g.km} km`:""}${g.n?`, ${g.n} stations (official count)`:""}${g.est?`<br><b>Est. ${g.yr}</b> (our estimate: ${g.est})`:` · target ${g.yr}`}${src?`<br><a href="${src.u}" target="_blank" rel="noopener">${src.t}</a>`:""}</div>`;
   }).join("");
-  const badge=s.conf==="p"?`<span class="badge b-p">Projected — not published by DMRC</span>`:`<span class="badge b-o">Named in source</span>`;
+  const badge=s.conf==="p"?`<span class="badge b-p">Projected — not published by ${C.agency}</span>`:`<span class="badge b-o">Named in source</span>`;
   return `<div class="pp"><h3>${s.name}</h3>${badge}${[...new Set(rows)].join("")}${segInfo}<div class="rb"><button data-from="${s.i}">Route from here</button><button data-to="${s.i}">Route to here</button></div></div>`;
 }
 
@@ -431,12 +423,12 @@ let lastK=null;
 map.on("zoomend",()=>{zoomCls(); const k=zf()+"|"+(map.getZoom()<11.5)+"|"+(map.getZoom()<10); if(k!==lastK){lastK=k; if(state.view!=="schem") render();}});
 
 // ---------- sidebar ----------
-const newBy={op:0,IV:0,VA:0,VB:0,VC:0,G1:0,G2:0,RR:0};
+const newBy=Object.fromEntries(ORDER.map(p=>[p,0]));
 S.forEach(s=>{const phs=Object.values(s.served);const best=ORDER.find(p=>phs.includes(p));newBy[best]++;});
 const projN=S.filter(s=>s.conf==="p").length;
 document.getElementById("stats").innerHTML=
   `<div class="stat"><b>${S.length}</b><span>station points</span></div>`+
-  `<div class="stat"><b>${newBy.VA+newBy.VB+newBy.VC+newBy.G1+newBy.G2+newBy.RR}</b><span>new: Phase V + NCR + RRTS</span></div>`+
+  `<div class="stat"><b>${(C.newPhases||ORDER.filter(p=>p!=="op"&&p!=="OP")).reduce((a,p)=>a+newBy[p],0)}</b><span>${C.newLabel||"planned stations"}</span></div>`+
   `<div class="stat"><b>${projN}</b><span>projected</span></div>`;
 
 const phEl=document.getElementById("phases");
@@ -480,7 +472,7 @@ solidBox.onchange=e=>{state.solid=e.target.checked;applyView();};
 namesBox.onchange=e=>{state.names=e.target.checked;applyView();};
 curvedBox.onchange=e=>{state.curved=e.target.checked;applyView();};
 addEventListener("resize",()=>{if(state.view==="schem")fitSchem();});
-document.getElementById("fit").onclick=()=>{if(state.view==="schem")fitSchem();else map.fitBounds([[28.40,76.95],[28.86,77.42]]);};
+document.getElementById("fit").onclick=()=>{if(state.view==="schem")fitSchem();else map.fitBounds(C.fit);};
 document.getElementById("theme").onclick=()=>{
   root.dataset.theme=isDark()?"light":"dark";
   try{localStorage.setItem("dm-theme",root.dataset.theme);}catch(e){}
@@ -507,7 +499,7 @@ q.oninput=()=>{
 };
 // ---------- population coverage ----------
 const P=window.POP, NPC=P.nx*P.ny;
-const kmLat=111.2, kmLon=111.2*Math.cos(28.6*Math.PI/180), cellKm2=(P.d*kmLat)*(P.d*kmLon);
+const kmLat=111.2, kmLon=111.2*Math.cos(C.lat*Math.PI/180), cellKm2=(P.d*kmLat)*(P.d*kmLon);
 const totalPop=P.cells.reduce((a,b)=>a+b,0);
 let popLayer=null; const popCanvas=document.createElement("canvas"); popCanvas.width=P.nx; popCanvas.height=P.ny;
 let popR=1;
@@ -529,7 +521,7 @@ function renderPop(){
   const pct=R=>{const c=coverage(R);let s=0;for(let i=0;i<NPC;i++) if(c[i]) s+=P.cells[i];return [c,Math.round(s/totalPop*100)];};
   const all=[1,2,3].map(r=>pct(r)), [cov,p]=all[popR-1];
   document.getElementById("popPct").textContent=p+"%";
-  document.getElementById("popTxt").textContent=`of ${(totalPop/1e7).toFixed(1)} crore people in Delhi NCR live within ${popR} km of a station${state.year<YMAX?` (${state.year})`:""}`;
+  document.getElementById("popTxt").textContent=`of ${(totalPop/1e7).toFixed(1)} crore people in ${C.region} live within ${popR} km of a station${state.year<YMAX?` (${state.year})`:""}`;
   document.getElementById("popAll").textContent=`1 km: ${all[0][1]}% · 2 km: ${all[1][1]}% · 3 km: ${all[2][1]}%`;
   document.getElementById("rampTxt").textContent=`people / km² with no station within ${popR} km`;
   document.getElementById("rTxt2").textContent=popR+" km";
@@ -582,7 +574,7 @@ playBtn.onclick=()=>{
 };
 
 // ---------- route planner ----------
-const SPEED=l=>["rrts","rrA","rrP","rrJ","nbg"].includes(l)?[110,1]:l==="airport"?[75,1]:["lite","lrt"].includes(l)?[25,.5]:["meerut","meerut2","meerut3"].includes(l)?[50,.5]:[38,.5]; // km/h, dwell min
+const SPEED=l=>C.rail.includes(l)?[110,1]:C.speeds[l]||[38,.5]; // km/h, dwell min
 function km(a,b){const R=6371,dl=(b.lat-a.lat)*Math.PI/180,dn=(b.lon-a.lon)*Math.PI/180,x=Math.sin(dl/2)**2+Math.cos(a.lat*Math.PI/180)*Math.cos(b.lat*Math.PI/180)*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(x));}
 const EDGES=[]; segs.forEach(g=>{for(let k=0;k<g.ids.length-1;k++){const a=g.ids[k],b=g.ids[k+1];if(a===b)continue;EDGES.push({a,b,line:g.line,ph:g.phase,y:g.phase==="op"?g.ey[k]:g.yr});}});
 const route={from:null,to:null,layer:null};
@@ -606,7 +598,7 @@ function plan(fromI,toI){
     const relax=(nk,c)=>{if(done.has(nk))return;const nd=d+c;if(!dist.has(nk)||nd<dist.get(nk)){dist.set(nk,nd);prev.set(nk,k);open.push(nk);}};
     (adj.get(k)||[]).forEach(([v,c])=>relax(v+"|"+l,c));
     cxMap[S[s].cx].forEach(m=>(linesAt.get(m.i)||[]).forEach(l2=>{if(m.i===s&&l2===l)return;
-      const rr=["rrts","rrA","rrP","rrJ","nbg"]; const pen=(rr.includes(l)!==rr.includes(l2))?7:5;
+      const rr=C.rail; const pen=(rr.includes(l)!==rr.includes(l2))?7:5;
       relax(m.i+"|"+l2,pen+km(S[s],m)/4.5*60);}));
   }
   if(!best) return null;

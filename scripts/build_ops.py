@@ -32,6 +32,11 @@ RENAME = {
     "Dabri Mor - Janakpuri South": "Dabri Mor–Janakpuri South", "Sir M. Vishweshwaraiah Moti Bagh": "Sir M. Vishweshwaraiah Moti Bagh",
     "Phase 3 Station": "Phase 3", "Bhainsali": "Bhaisali", "Moulsari Avenue Station": "Moulsari Avenue", "Depot Station": "Depot",
 }
+import os
+CITY = os.environ.get("CITY", "delhi")
+if CITY != "delhi":
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "cities", CITY))
+    from config import PICK, RENAME
 def clean(n):
     n = re.sub(r"\s*\((Blue|Yellow|Red|Pink|Grey|Magenta|Violet|Green) Line\)", "", n).strip()
     return RENAME.get(n, n)

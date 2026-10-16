@@ -1,0 +1,1811 @@
+{
+"lines": {
+"purpleline": [
+"Purple Line",
+"#8C2877"
+],
+"greenline": [
+"Green Line",
+"#009933"
+],
+"yellowline": [
+"Yellow Line",
+"#FFDF00"
+],
+"pinkline": [
+"Pink Line",
+"#FF49A7"
+],
+"blueline": [
+"Blue Line",
+"#28458C"
+],
+"orangeline": [
+"Orange Line",
+"#FF6300"
+],
+"greyline": [
+"Grey Line",
+"#838996"
+],
+"redline": [
+"Red Line",
+"#CB0020"
+],
+"unassignedpr": [
+"Unassigned proposed corridors",
+"#0E9AA7"
+]
+},
+"segs": [
+{
+"line": "purpleline",
+"status": "operational",
+"phase": "OP",
+"year": "2011-10",
+"stage": "Phase 1 Reach 1; opened 20 Oct 2011 (first Namma Metro section)",
+"km": 6.7,
+"n": 6,
+"title": "Baiyappanahalli → Mahatma Gandhi Road",
+"src": "s0",
+"st": [
+[
+"Baiyappanahalli",
+12.99076,
+77.65236
+],
+[
+"Swami Vivekananda Road",
+12.98593,
+77.6449
+],
+[
+"Indiranagar",
+12.97833,
+77.63866
+],
+[
+"Halasuru",
+12.9765,
+77.62669
+],
+[
+"Trinity",
+12.97302,
+77.61702
+],
+[
+"Mahatma Gandhi Road",
+12.97553,
+77.60679
+]
+]
+},
+{
+"line": "purpleline",
+"status": "operational",
+"phase": "OP",
+"year": "2015-11",
+"stage": "Phase 1 Reach 2; opened 16 Nov 2015 (Wikipedia table counts 5 stations, 5.12 km for this section; line text says 6 stations, 6.4 km)",
+"km": 6.4,
+"n": 6,
+"title": "Mysuru Road → Magadi Road",
+"src": "s1",
+"st": [
+[
+"Magadi Road",
+12.97563,
+77.55535
+],
+[
+"Sri Balagangadharanatha Swamiji Station, Hosahalli",
+12.97429,
+77.54562
+],
+[
+"Vijayanagara",
+12.97096,
+77.5374
+],
+[
+"Attiguppe",
+12.96189,
+77.53358
+],
+[
+"Deepanjali Nagar",
+12.95206,
+77.53701
+],
+[
+"Mysuru Road",
+12.98226,
+77.5694
+]
+]
+},
+{
+"line": "purpleline",
+"status": "operational",
+"phase": "OP",
+"year": "2016-04",
+"stage": "Phase 1 underground section (Cubbon Park–KSR Railway Station, 4.8 km underground); opened 29/30 Apr 2016",
+"km": 6.4,
+"n": 5,
+"title": "Mahatma Gandhi Road → Magadi Road",
+"src": "s2",
+"st": [
+[
+"Mahatma Gandhi Road",
+12.97553,
+77.60679
+],
+[
+"Cubbon Park",
+12.98096,
+77.59758
+],
+[
+"Dr. B.R. Ambedkar Station, Vidhana Soudha",
+12.97874,
+77.59164
+],
+[
+"Sir M. Visvesvaraya Station, Central College",
+12.97452,
+77.58422
+],
+[
+"Nadaprabhu Kempegowda Station, Majestic",
+12.97571,
+77.57288
+],
+[
+"Krantivira Sangolli Rayanna Railway Station",
+12.97588,
+77.56538
+],
+[
+"Magadi Road",
+12.97563,
+77.55535
+]
+]
+},
+{
+"line": "purpleline",
+"status": "operational",
+"phase": "OP",
+"year": "2021-08",
+"stage": "Phase 2 west extension; opened 30 Aug 2021",
+"km": 7.5,
+"n": 6,
+"title": "Mysuru Road → Kengeri",
+"src": "s3",
+"st": [
+[
+"Mysuru Road",
+12.94672,
+77.53016
+],
+[
+"Pantharapalya - Nayandahalli",
+12.94167,
+77.52512
+],
+[
+"Rajarajeshwari Nagar",
+12.9366,
+77.51968
+],
+[
+"Jnanabharathi",
+12.93544,
+77.51241
+],
+[
+"Pattanagere",
+12.92425,
+77.49835
+],
+[
+"Kengeri Bus Terminal",
+12.91469,
+77.48786
+],
+[
+"Kengeri",
+12.90793,
+77.47657
+]
+]
+},
+{
+"line": "purpleline",
+"status": "operational",
+"phase": "OP",
+"year": "2023-03",
+"stage": "Phase 2 east extension (Reach 1A/1B); opened 26 Mar 2023, initially disconnected from rest of line",
+"km": 13.71,
+"n": 12,
+"title": "Whitefield (Kadugodi) → Krishnarajapura",
+"src": "s4",
+"st": [
+[
+"Whitefield (Kadugodi)",
+12.99574,
+77.75795
+],
+[
+"Hopefarm Channasandra",
+12.9873,
+77.75388
+],
+[
+"Kadugodi Tree Park",
+12.98565,
+77.74701
+],
+[
+"Pattandur Agrahara",
+12.98764,
+77.73777
+],
+[
+"Sri Sathya Sai Hospital",
+12.98119,
+77.72754
+],
+[
+"Nallurhalli",
+12.97664,
+77.72488
+],
+[
+"Kundalahalli",
+12.97759,
+77.71556
+],
+[
+"Seetharampalya",
+12.98086,
+77.70879
+],
+[
+"Hoodi",
+12.9888,
+77.71133
+],
+[
+"Garudacharpalya",
+12.99345,
+77.70368
+],
+[
+"Singayyanapalya",
+12.99654,
+77.69272
+],
+[
+"Krishnarajapura (K.R.Pura)",
+12.9999,
+77.67767
+]
+]
+},
+{
+"line": "purpleline",
+"status": "operational",
+"phase": "OP",
+"year": "2023-10",
+"stage": "Phase 2 gap closure; opened 9 Oct 2023",
+"km": 2.1,
+"n": 1,
+"title": "Baiyappanahalli → Krishnarajapura",
+"src": "s5",
+"st": [
+[
+"Krishnarajapura (K.R.Pura)",
+12.9999,
+77.67767
+],
+[
+"Benniganahalli",
+12.9965,
+77.66848
+],
+[
+"Baiyappanahalli",
+12.99076,
+77.65236
+]
+]
+},
+{
+"line": "purpleline",
+"status": "operational",
+"phase": "OP",
+"year": "2023-10",
+"stage": "Phase 2 west extension; opened 9 Oct 2023",
+"km": 2.05,
+"n": 1,
+"title": "Kengeri → Challaghatta",
+"src": "s6",
+"st": [
+[
+"Kengeri",
+12.90793,
+77.47657
+],
+[
+"Challaghatta",
+12.89735,
+77.46129
+]
+]
+},
+{
+"line": "purpleline",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Feasibility study stage (Oct 2026); no station list published",
+"km": 15,
+"n": null,
+"title": "Challaghatta → Bidadi",
+"src": "s7",
+"st": [
+[
+"Challaghatta",
+12.89735,
+77.46129
+],
+[
+"Bidadi",
+12.79885,
+77.38699
+]
+]
+},
+{
+"line": "purpleline",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Announced (Nov 2023 / Mar 2023 state proposals), est. Rs 2,400 cr; no station list published. May be superseded by the KR Puram–Hoskote new-line proposal",
+"km": 9,
+"n": null,
+"title": "Whitefield (Kadugodi) → Hoskote (via Katamanalluru)",
+"src": "s8",
+"st": [
+[
+"Whitefield (Kadugodi)",
+12.99574,
+77.75795
+],
+[
+"Hoskote (via Katamanalluru)",
+13.03184,
+77.76188
+]
+]
+},
+{
+"line": "greenline",
+"status": "operational",
+"phase": "OP",
+"year": "2014-03",
+"stage": "Phase 1 Reach 3/3A; opened 1 Mar 2014",
+"km": 9.91,
+"n": 10,
+"title": "Mantri Square Sampige Road → Peenya Industry",
+"src": "s9",
+"st": [
+[
+"Peenya Industry",
+13.03632,
+77.52549
+],
+[
+"Peenya",
+13.03302,
+77.5332
+],
+[
+"Goraguntepalya",
+13.02693,
+77.54409
+],
+[
+"Yeshwanthpur",
+13.02327,
+77.54988
+],
+[
+"Sandal Soap Factory",
+13.01465,
+77.55398
+],
+[
+"Mahalakshmi",
+13.00805,
+77.54881
+],
+[
+"Rajajinagara",
+13.00052,
+77.54966
+],
+[
+"Mahakavi Kuvempu Road",
+12.99853,
+77.5569
+],
+[
+"Srirampura",
+12.99653,
+77.5632
+],
+[
+"Mantri Square Sampige Road",
+12.99046,
+77.57073
+]
+]
+},
+{
+"line": "greenline",
+"status": "operational",
+"phase": "OP",
+"year": "2015-05",
+"stage": "Phase 1 Reach 3B; opened 1 May 2015",
+"km": 2.5,
+"n": 3,
+"title": "Peenya Industry → Nagasandra",
+"src": "s10",
+"st": [
+[
+"Nagasandra",
+13.04795,
+77.50014
+],
+[
+"Dasarahalli",
+13.04326,
+77.51255
+],
+[
+"Jalahalli",
+13.03941,
+77.51974
+],
+[
+"Peenya Industry",
+13.03632,
+77.52549
+]
+]
+},
+{
+"line": "greenline",
+"status": "operational",
+"phase": "OP",
+"year": "2017-06",
+"stage": "Phase 1 underground + south; inaugurated 17 Jun 2017, public 18 Jun 2017",
+"km": 11.62,
+"n": 11,
+"title": "Mantri Square Sampige Road → Yelachenahalli",
+"src": "s11",
+"st": [
+[
+"Mantri Square Sampige Road",
+12.99046,
+77.57073
+],
+[
+"Nadaprabhu Kempegowda Station, Majestic",
+12.97571,
+77.57288
+],
+[
+"Chickpete",
+12.9669,
+77.57456
+],
+[
+"Krishna Rajendra Market",
+12.96088,
+77.57466
+],
+[
+"National College",
+12.95053,
+77.57369
+],
+[
+"Lalbagh",
+12.94653,
+77.58002
+],
+[
+"South End Circle",
+12.93826,
+77.58006
+],
+[
+"Jayanagara",
+12.92951,
+77.58014
+],
+[
+"Rashtreeya Vidyalaya Road",
+12.92158,
+77.5802
+],
+[
+"Banashankari",
+12.91522,
+77.5736
+],
+[
+"Jaya Prakash Nagar",
+12.90747,
+77.57313
+],
+[
+"Yelachenahalli",
+12.89605,
+77.57012
+]
+]
+},
+{
+"line": "greenline",
+"status": "operational",
+"phase": "OP",
+"year": "2021-01",
+"stage": "Phase 2 south extension; inaugurated 14 Jan, opened 15 Jan 2021",
+"km": 6.29,
+"n": 5,
+"title": "Yelachenahalli → Silk Institute",
+"src": "s12",
+"st": [
+[
+"Yelachenahalli",
+12.89605,
+77.57012
+],
+[
+"Konanakunte Cross",
+12.88897,
+77.56267
+],
+[
+"Doddakallasandra",
+12.88464,
+77.55275
+],
+[
+"Vajarahalli",
+12.87744,
+77.54474
+],
+[
+"Thalaghattapura",
+12.87141,
+77.5384
+],
+[
+"Silk Institute",
+12.86173,
+77.52995
+]
+]
+},
+{
+"line": "greenline",
+"status": "operational",
+"phase": "OP",
+"year": "2024-11",
+"stage": "Phase 2 north extension; opened 7 Nov 2024",
+"km": 3.14,
+"n": 3,
+"title": "Nagasandra → Madavara",
+"src": "s13",
+"st": [
+[
+"Madavara",
+13.05742,
+77.47281
+],
+[
+"Chikkabidarakallu",
+13.05236,
+77.48792
+],
+[
+"Manjunath Nagar",
+13.05009,
+77.49445
+],
+[
+"Nagasandra",
+13.04795,
+77.50014
+]
+]
+},
+{
+"line": "greenline",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "DPR stage (DPR reported May 2026, PPP model, Rs 17,785–19,361 cr); length given as 59.6 km (Wikipedia) / ~60 km (Construction World) / 52.4 km (other report); no station list found",
+"km": 59.6,
+"n": null,
+"title": "Madavara → Tumakuru",
+"src": "s14",
+"st": [
+[
+"Madavara",
+13.05742,
+77.47281
+],
+[
+"Tumakuru",
+13.04644,
+77.50339
+]
+]
+},
+{
+"line": "greenline",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Feasibility study stage (Oct 2026); no station list published",
+"km": 24,
+"n": null,
+"title": "Silk Institute → Harohalli",
+"src": "s15",
+"st": [
+[
+"Silk Institute",
+12.86173,
+77.52995
+],
+[
+"Harohalli",
+13.1305,
+77.58046
+]
+]
+},
+{
+"line": "yellowline",
+"status": "operational",
+"phase": "OP",
+"year": "2025-08",
+"stage": "Phase 2 Reach 5; inaugurated 10 Aug 2025, public service 11 Aug 2025",
+"km": 19.15,
+"n": 16,
+"title": "Rashtreeya Vidyalaya Road → Delta Electronics Bommasandra",
+"src": "s16",
+"st": [
+[
+"Rashtreeya Vidyalaya Road",
+12.92158,
+77.5802
+],
+[
+"Ragigudda",
+12.91708,
+77.5883
+],
+[
+"Jayadeva Hospital",
+12.91673,
+77.59997
+],
+[
+"BTM Layout",
+12.91659,
+77.60812
+],
+[
+"Central Silk Board",
+12.91658,
+77.62057
+],
+[
+"Bommanahalli",
+12.91062,
+77.62648
+],
+[
+"Hongasandra",
+12.9017,
+77.63199
+],
+[
+"Kudlu Gate",
+12.88993,
+77.63922
+],
+[
+"Singasandra",
+12.88082,
+77.64485
+],
+[
+"Hosa Road",
+12.87075,
+77.65245
+],
+[
+"Beratena Agrahara",
+12.86388,
+77.6579
+],
+[
+"Electronic City",
+12.85651,
+77.66352
+],
+[
+"Infosys Foundation Konappana Agrahara",
+12.84644,
+77.67119
+],
+[
+"Huskur Road",
+12.83916,
+77.67737
+],
+[
+"Biocon Hebbagodi",
+12.82903,
+77.68137
+],
+[
+"Delta Electronics Bommasandra",
+12.81939,
+77.68835
+]
+]
+},
+{
+"line": "yellowline",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Feasibility study stage (Oct 2026); no station list published",
+"km": 11,
+"n": null,
+"title": "Delta Electronics Bommasandra → Attibele",
+"src": "s17",
+"st": [
+[
+"Delta Electronics Bommasandra",
+12.81939,
+77.68835
+],
+[
+"Attibele",
+12.77512,
+77.77092
+]
+]
+},
+{
+"line": "yellowline",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Inter-state link; feasibility study commissioned by CMRL/Tamil Nadu (consultant Balaji Railroad Systems, 2024); Karnataka asked TN to fund study; no 2026 decision found; no station list. ~20.5 km (11.7 km Karnataka + 8.8 km TN) per one report, ~20 km (12+8) per another",
+"km": 20.5,
+"n": null,
+"title": "Delta Electronics Bommasandra → Hosur (Tamil Nadu)",
+"src": "s18",
+"st": [
+[
+"Delta Electronics Bommasandra",
+12.81939,
+77.68835
+],
+[
+"Hosur (Tamil Nadu)",
+12.91162,
+77.63886
+]
+]
+},
+{
+"line": "pinkline",
+"status": "under_construction",
+"phase": "UC",
+"year": "2026",
+"stage": "Elevated; civil work complete, Railway Board rolling-stock nod 23 Sep 2026, CMRS inspection 6–8 Oct 2026; passenger opening expected after 15 Oct 2026 but no confirmed date found as of 2026-10-16",
+"km": 7.5,
+"n": 6,
+"title": "Kalena Agrahara → Tavarekere",
+"src": "s19",
+"st": [
+[
+"Kalena Agrahara",
+12.87148,
+77.59368
+],
+[
+"Hulimavu",
+12.88084,
+77.59585
+],
+[
+"Bilekahalli IIM-B",
+12.89534,
+77.59797
+],
+[
+"JP Nagar 4th Phase",
+12.90985,
+77.60009
+],
+[
+"Jayadeva Hospital",
+12.91673,
+77.59997
+],
+[
+"Tavarekere",
+12.9295,
+77.6005
+]
+]
+},
+{
+"line": "pinkline",
+"status": "under_construction",
+"phase": "UC",
+"year": "2027-03",
+"stage": "Underground (Dairy Circle–Nagawara, 12 stations); target March 2027 (earlier Dec 2026)",
+"km": 13.76,
+"n": 12,
+"title": "Tavarekere → Nagawara",
+"src": "s20",
+"st": [
+[
+"Tavarekere",
+12.9295,
+77.6005
+],
+[
+"Dairy Circle",
+12.94122,
+77.60243
+],
+[
+"Lakkasandra",
+12.94949,
+77.60304
+],
+[
+"Langford Town",
+12.95623,
+77.60586
+],
+[
+"National Military School",
+12.96588,
+77.60633
+],
+[
+"Mahatma Gandhi Road",
+12.97553,
+77.60679
+],
+[
+"Shivajinagar",
+12.98385,
+77.60204
+],
+[
+"Cantonment Railway Station",
+12.99348,
+77.59722
+],
+[
+"Pottery Town",
+13.00065,
+77.60943
+],
+[
+"Tannery Road",
+13.00476,
+77.61229
+],
+[
+"Venkateshpura",
+13.01731,
+77.61802
+],
+[
+"Kadugundanahalli",
+13.02996,
+77.62073
+],
+[
+"Nagawara",
+13.04122,
+77.62502
+]
+]
+},
+{
+"line": "pinkline",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Feasibility assessment (Oct 2026); ~68 km via Bannerghatta, Jigani, Attibele, Sarjapura, Dommasandra, Varthur; est. Rs 4,800 cr (Mar 2023); no station list published",
+"km": 68,
+"n": null,
+"title": "Kalena Agrahara → Kadugodi Tree Park",
+"src": "s21",
+"st": [
+[
+"Kalena Agrahara",
+12.87148,
+77.59368
+],
+[
+"Kadugodi Tree Park",
+12.98565,
+77.74701
+]
+]
+},
+{
+"line": "pinkline",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Announced (Mar 2023 state proposals), est. Rs 10,000 cr; no station list published",
+"km": 25,
+"n": null,
+"title": "Nagawara → Kempegowda International Airport (via Thanisandra)",
+"src": "s22",
+"st": [
+[
+"Nagawara",
+13.04122,
+77.62502
+],
+[
+"Kempegowda International Airport (via Thanisandra)",
+13.1976,
+77.70749
+]
+]
+},
+{
+"line": "blueline",
+"status": "under_construction",
+"phase": "UC",
+"year": "2027",
+"stage": "Phase 2A (ORR East). Targets conflict: DH (Shivakumar directive) Dec 2026; Wikipedia Mar/Jun/Dec 2027; Swarajya (Aug 2026) says commercial opening slips to 2027, trial runs KR Pura–HSR Layout targeted Oct 2026",
+"km": 19.75,
+"n": 13,
+"title": "Central Silk Board → Krishnarajapura",
+"src": "s23",
+"st": [
+[
+"Central Silk Board",
+12.91658,
+77.62057
+],
+[
+"HSR Layout",
+12.91646,
+77.63315
+],
+[
+"Agara",
+12.92052,
+77.64401
+],
+[
+"Ibbaluru",
+12.92103,
+77.66315
+],
+[
+"Prestige Bellanduru",
+12.9278,
+77.68036
+],
+[
+"Embassy TechVillage Devarabeesanahalli",
+12.93084,
+77.6917
+],
+[
+"Kadubeesanahalli",
+12.93896,
+77.69641
+],
+[
+"Marathahalli",
+12.95796,
+77.70133
+],
+[
+"ISRO",
+12.96826,
+77.70044
+],
+[
+"Doddanekundi",
+12.97132,
+77.69648
+],
+[
+"Bagmane Developers - DRDO Sports Complex",
+12.98251,
+77.69099
+],
+[
+"Saraswathi Nagara",
+12.99371,
+77.6855
+],
+[
+"Krishnarajapura (K.R.Pura)",
+12.9999,
+77.67767
+]
+]
+},
+{
+"line": "blueline",
+"status": "under_construction",
+"phase": "UC",
+"year": "2027-12",
+"stage": "Phase 2B part 1. Target Dec 2027 (DH/Shivakumar directive); Wikipedia history table says March 2028. Source counts 8 stations but station table lists 9 between KR Pura and Hebbala inclusive of Hebbala",
+"km": 11.35,
+"n": 9,
+"title": "Krishnarajapura → Hebbala",
+"src": "s24",
+"st": [
+[
+"Krishnarajapura (K.R.Pura)",
+12.9999,
+77.67767
+],
+[
+"Kasturi Nagara",
+13.00803,
+77.66263
+],
+[
+"Horamavu",
+13.01739,
+77.65956
+],
+[
+"HRBR Layout",
+13.02257,
+77.64737
+],
+[
+"Kalyana Nagara",
+13.02755,
+77.63859
+],
+[
+"HBR Layout",
+13.03252,
+77.62982
+],
+[
+"Nagawara",
+13.04122,
+77.62502
+],
+[
+"Veerannapalya",
+13.041,
+77.61805
+],
+[
+"Kempapura",
+13.0437,
+77.60516
+],
+[
+"Hebbala",
+13.04641,
+77.59227
+]
+]
+},
+{
+"line": "blueline",
+"status": "under_construction",
+"phase": "UC",
+"year": "2027-06",
+"stage": "Phase 2B part 2 (airport line). Target June 2027 (DH/Shivakumar directive); Wikipedia gives Sep 2027 / Mar 2028 / Dec 2028 in different places. Length 27.09 km (wiki history), 27.44 km (DH), 30.09 km (Namma Metro phase table). Airport stations to be built with BIAL/KIAL funding; Bettahalasuru station (Embassy-funded) and other 'future stations' (3 per infobox) not in the 29-station list",
+"km": 27.09,
+"n": 7,
+"title": "Hebbala → KIAL Terminals",
+"src": "s25",
+"st": [
+[
+"Hebbala",
+13.03889,
+77.58967
+],
+[
+"Kodigehalli",
+13.05674,
+77.59368
+],
+[
+"Jakkuru Cross",
+13.07005,
+77.59312
+],
+[
+"Yelahanka",
+13.10185,
+77.60021
+],
+[
+"Bagaluru Cross",
+13.11936,
+77.60982
+],
+[
+"Doddajala",
+13.18838,
+77.64463
+],
+[
+"Airport City",
+13.19835,
+77.68699
+],
+[
+"KIAL Terminals",
+13.19818,
+77.71291
+]
+]
+},
+{
+"line": "blueline",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Announced (Mar 2023 proposals; Devanahalli extension re-announced in Karnataka Budget 2025); no station list published",
+"km": 6,
+"n": null,
+"title": "Doddajala → Devanahalli",
+"src": "s26",
+"st": [
+[
+"Doddajala",
+13.18838,
+77.64463
+],
+[
+"Devanahalli",
+13.24835,
+77.71344
+]
+]
+},
+{
+"line": "orangeline",
+"status": "approved",
+"phase": "AP",
+"year": "2031",
+"stage": "Phase 3 (ORR West), double-decker (metro + road flyover). Union Cabinet approval 16 Aug 2024 (Phase 3 total 44.65 km, 31 stations, Rs 15,611 cr). First civil tender (3 packages, ~Rs 4,187 cr) bids due Feb 2026; no award found. Not yet under civil construction. Target: 2031 (Namma Metro article) vs 2036 (Orange Line infobox)",
+"km": 32.15,
+"n": 22,
+"title": "JP Nagar 4th Phase → Kempapura",
+"src": "s27",
+"st": [
+[
+"Jaya Prakash Nagar 4th Phase",
+12.88742,
+77.59707
+],
+[
+"Jaya Prakash Nagar 5th Phase",
+12.89745,
+77.5851
+],
+[
+"Jaya Prakash Nagar",
+12.90747,
+77.57313
+],
+[
+"Kadirenahalli",
+12.9175,
+77.56116
+],
+[
+"Kamakya Bus Depot",
+12.9222,
+77.54767
+],
+[
+"Hosakerahalli",
+12.92691,
+77.53419
+],
+[
+"Dwarka Nagar",
+12.93681,
+77.53217
+],
+[
+"Mysuru Road",
+12.94672,
+77.53016
+],
+[
+"Nagarabhavi Circle",
+12.96095,
+77.51279
+],
+[
+"Vinayaka Layout",
+12.96821,
+77.51166
+],
+[
+"Papireddy Palya",
+12.97378,
+77.5111
+],
+[
+"Nagarbhavi BDA Complex",
+12.97936,
+77.51054
+],
+[
+"Sumanahalli Cross",
+12.98788,
+77.51675
+],
+[
+"Prem Nagar",
+12.99641,
+77.52296
+],
+[
+"Freedom Fighters Colony",
+13.00901,
+77.52495
+],
+[
+"Kanteerava Nagar",
+13.02162,
+77.52693
+],
+[
+"Peenya",
+13.03302,
+77.5332
+],
+[
+"Muthyalanagar",
+13.0393,
+77.5448
+],
+[
+"BEL Circle",
+13.04558,
+77.5564
+],
+[
+"Nagashetty halli",
+13.04496,
+77.57265
+],
+[
+"Hebbala",
+13.04433,
+77.5889
+],
+[
+"Kempapura",
+13.0437,
+77.60516
+]
+]
+},
+{
+"line": "greyline",
+"status": "approved",
+"phase": "AP",
+"year": "2031",
+"stage": "Phase 3 (Magadi Road corridor), double-decker; approved with Orange Line 16 Aug 2024. Pre-construction (GTI, design consultant SYSTRA). Target 2029 (Grey infobox) vs 2031 (Namma Metro article)",
+"km": 12.5,
+"n": 9,
+"title": "Sri Balagangadharanatha Swamiji Station, Hosahalli → Kadabagere",
+"src": "s28",
+"st": [
+[
+"Sri Balagangadharanatha Swamiji Station, Hosahalli",
+12.97429,
+77.54562
+],
+[
+"KHB Colony",
+12.97951,
+77.53477
+],
+[
+"Kamakshi Palya",
+12.98472,
+77.52392
+],
+[
+"Sumanahalli Cross",
+12.98994,
+77.51307
+],
+[
+"Sunkadakatte",
+12.99516,
+77.50222
+],
+[
+"Herohalli",
+12.99123,
+77.48701
+],
+[
+"Byadarahalli",
+12.97791,
+77.48409
+],
+[
+"Kamath Layout",
+12.983,
+77.49172
+],
+[
+"Kadabagere",
+12.98809,
+77.49935
+]
+]
+},
+{
+"line": "greyline",
+"status": "proposed",
+"phase": "PR",
+"year": "2033",
+"stage": "Proposed extension along Magadi Road; 5 stations stated, names not published. Note: this Tavarekere is on Magadi Road (west), NOT the Pink Line's Tavarekere",
+"km": 6.6,
+"n": 5,
+"title": "Kadabagere → Tavarekere (Magadi Road)",
+"src": "s29",
+"st": [
+[
+"Kadabagere",
+12.98809,
+77.49935
+],
+[
+"Tavarekere (Magadi Road)",
+12.9295,
+77.6005
+]
+]
+},
+{
+"line": "redline",
+"status": "approved",
+"phase": "AP",
+"year": "2033-04",
+"stage": "Phase 3A. DPR approved by state cabinet (Dec 2024/Jan 2025), returned by Centre over cost (Rs 776 cr/km); revised DPR (Systra review) Feb 2026, sent to Centre Apr 2026, Rs 28,405 cr; Union approval PENDING as of Oct 2026. GTI contracts awarded 13 Feb 2026. Target April 2033. Length 36.58 km -> 37.80 km in revised DPR; ~37 km commonly cited. Stated 28 stations but Wikipedia table lists 27 (Veterinary College and Kodati Gate dropped, Sarjapur Terminal added)",
+"km": 37.8,
+"n": 28,
+"title": "Hebbala → Sarjapura",
+"src": "s30",
+"st": [
+[
+"Hebbala",
+13.03472,
+77.59742
+],
+[
+"Ganganagar",
+13.02755,
+77.59057
+],
+[
+"Mekhri Circle",
+13.02038,
+77.58372
+],
+[
+"Palace Guttahalli",
+12.99949,
+77.58435
+],
+[
+"Bengaluru Golf Course",
+12.99204,
+77.58632
+],
+[
+"Basaveshwara Circle",
+12.98459,
+77.58828
+],
+[
+"KR Circle",
+12.97571,
+77.5872
+],
+[
+"Town Hall",
+12.9639,
+77.58427
+],
+[
+"Shanthinagara",
+12.95565,
+77.59584
+],
+[
+"NIMHANS",
+12.93749,
+77.59414
+],
+[
+"Dairy Circle",
+12.94122,
+77.60243
+],
+[
+"Koramangala II Block",
+12.9374,
+77.62701
+],
+[
+"Koramangala III Block",
+12.92904,
+77.63136
+],
+[
+"Jakkasandra",
+12.92068,
+77.63571
+],
+[
+"Agara",
+12.92052,
+77.64401
+],
+[
+"Ibbaluru",
+12.92103,
+77.66315
+],
+[
+"Bellanduru Gate",
+12.9188,
+77.66953
+],
+[
+"Kaikondrahalli",
+12.91383,
+77.67753
+],
+[
+"Doddakannelli",
+12.91152,
+77.69341
+],
+[
+"Carmelaram",
+12.9112,
+77.70651
+],
+[
+"Ambedkar Nagara",
+12.90004,
+77.72217
+],
+[
+"Muthanalluru Cross",
+12.88887,
+77.73782
+],
+[
+"Dommasandra",
+12.87771,
+77.75348
+],
+[
+"Sompura",
+12.87184,
+77.76436
+],
+[
+"Kada Agrahara Road",
+12.86596,
+77.77525
+],
+[
+"Sarjapura",
+12.86009,
+77.78614
+],
+[
+"Sarjapura Terminal Station",
+12.85421,
+77.79702
+]
+]
+},
+{
+"line": "unassignedpr",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "New line; feasibility stage (Oct 2026); no station list published",
+"km": 16,
+"n": null,
+"title": "Krishnarajapura → Hoskote (via Budigere Cross)",
+"src": "s31",
+"st": [
+[
+"Krishnarajapura",
+12.9999,
+77.67767
+],
+[
+"Hoskote (via Budigere Cross)",
+13.03184,
+77.76188
+]
+]
+},
+{
+"line": "unassignedpr",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Announced in Mar 2023 state proposals, est. Rs 9,600 cr; no station list published",
+"km": 16,
+"n": null,
+"title": "Mahatma Gandhi Road → Hope Farm (via Marathahalli)",
+"src": "s32",
+"st": [
+[
+"Mahatma Gandhi Road",
+12.97553,
+77.60679
+],
+[
+"Hope Farm (via Marathahalli)",
+12.9873,
+77.75388
+]
+]
+},
+{
+"line": "unassignedpr",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "Inner Ring Line recommended by IISc, in CMP-2019; est. Rs 10,000 cr; no station list in this research",
+"km": 34,
+"n": null,
+"title": "Yeshwanthapura TTMC → Mahalakshmi (Inner Ring Line)",
+"src": "s33",
+"st": [
+[
+"Yeshwanthapura TTMC",
+13.01787,
+77.55647
+],
+[
+"Mahalakshmi (Inner Ring Line)",
+13.00805,
+77.54881
+]
+]
+},
+{
+"line": "unassignedpr",
+"status": "proposed",
+"phase": "PR",
+"year": null,
+"stage": "State 'considering' extensions to satellite towns (2023 report); no corridor, length or station list published",
+"km": null,
+"n": null,
+"title": "Bengaluru → Doddaballapur / Nelamangala",
+"src": "s34",
+"st": [
+[
+"Bengaluru",
+12.97679,
+77.59008
+],
+[
+"Doddaballapur / Nelamangala",
+13.29296,
+77.54315
+]
+]
+}
+],
+"sources": {
+"s0": [
+"Purple Line: Baiyappanahalli – Mahatma Gandhi Road",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s1": [
+"Purple Line: Mysuru Road – Magadi Road",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s2": [
+"Purple Line: Mahatma Gandhi Road – Magadi Road",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s3": [
+"Purple Line: Mysuru Road – Kengeri",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s4": [
+"Purple Line: Whitefield (Kadugodi) – Krishnarajapura",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s5": [
+"Purple Line: Baiyappanahalli – Krishnarajapura",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s6": [
+"Purple Line: Kengeri – Challaghatta",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s7": [
+"Purple Line: Challaghatta – Bidadi",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s8": [
+"Purple Line: Whitefield (Kadugodi) – Hoskote (via Katamanalluru)",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s9": [
+"Green Line: Mantri Square Sampige Road – Peenya Industry",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s10": [
+"Green Line: Peenya Industry – Nagasandra",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s11": [
+"Green Line: Mantri Square Sampige Road – Yelachenahalli",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s12": [
+"Green Line: Yelachenahalli – Silk Institute",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s13": [
+"Green Line: Nagasandra – Madavara",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s14": [
+"Green Line: Madavara – Tumakuru",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s15": [
+"Green Line: Silk Institute – Harohalli",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s16": [
+"Yellow Line: Rashtreeya Vidyalaya Road – Delta Electronics Bommasandra",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s17": [
+"Yellow Line: Delta Electronics Bommasandra – Attibele",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s18": [
+"Yellow Line: Delta Electronics Bommasandra – Hosur (Tamil Nadu)",
+"https://www.railwaygazette.com/metro/hosur-bommasandra-metro-study-commissioned/65808.article"
+],
+"s19": [
+"Pink Line: Kalena Agrahara – Tavarekere",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s20": [
+"Pink Line: Tavarekere – Nagawara",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s21": [
+"Pink Line: Kalena Agrahara – Kadugodi Tree Park",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s22": [
+"Pink Line: Nagawara – Kempegowda International Airport (via Thanisandra)",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s23": [
+"Blue Line: Central Silk Board – Krishnarajapura",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s24": [
+"Blue Line: Krishnarajapura – Hebbala",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s25": [
+"Blue Line: Hebbala – KIAL Terminals",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s26": [
+"Blue Line: Doddajala – Devanahalli",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s27": [
+"Orange Line: JP Nagar 4th Phase – Kempapura",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s28": [
+"Grey Line: Sri Balagangadharanatha Swamiji Station, Hosahalli – Kadabagere",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s29": [
+"Grey Line: Kadabagere – Tavarekere (Magadi Road)",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s30": [
+"Red Line: Hebbala – Sarjapura",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s31": [
+"Unassigned proposed corridors: Krishnarajapura – Hoskote (via Budigere Cross)",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s32": [
+"Unassigned proposed corridors: Mahatma Gandhi Road – Hope Farm (via Marathahalli)",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s33": [
+"Unassigned proposed corridors: Yeshwanthapura TTMC – Mahalakshmi (Inner Ring Line)",
+"https://en.wikipedia.org/wiki/Namma_Metro"
+],
+"s34": [
+"Unassigned proposed corridors: Bengaluru – Doddaballapur / Nelamangala",
+"https://indiainfrahub.com/?p=27923"
+]
+},
+"notes": [
+"Station lists are ordered along the segment and include both endpoint stations (shared endpoints repeat across consecutive sections); n_stations is the count of NEW stations as stated by the source.",
+"Network operational as of 2026-10: Purple 43.49 km/37 stns, Green 33.46 km/32 stns, Yellow 19.15 km/16 stns = 96.1 km, 83 stations (Wikipedia Namma Metro).",
+"Pink elevated (Kalena Agrahara–Tavarekere): CMRS inspection 6–8 Oct 2026; no confirmed opening found as of 2026-10-16. Re-check before publishing; may open within days.",
+"Purple MG Road–Magadi Road underground opening: 29 Apr 2016 (text) vs 30 Apr 2016 (table) in Wikipedia; year-month 2016-04 is unambiguous.",
+"Phase 1 Mysuru Road–Magadi Road: Wikipedia phase table says 5 stations/5.12 km, line text says 6 stations/6.4 km.",
+"Blue Line dates conflict heavily across sources (2026-12 to 2028-12); values chosen are the latest government directive reported by Deccan Herald; Swarajya (Aug 2026) says 2A slips into 2027.",
+"Blue Line 2B: stated 16 stations (8+8) but table splits 9 (KR Pura–Hebbala) + 7 (Hebbala–KIAL). Infobox mentions 3 'future' stations (e.g. Bettahalasuru) not listed.",
+"Orange Line: Namma Metro article table says 'Under Construction' but Orange Line page says 'Approved' with civil bidding underway; no civil award found -> marked approved.",
+"Hosahalli–Kadabagere is shown as Grey Line on Wikipedia's Namma Metro page and module; some sources/the Orange infobox treat both Phase 3 corridors under Orange. Official BMRCL colour not confirmed.",
+"Red Line (Phase 3A) marked 'approved' only at state level; Union approval pending. Station list reflects revised DPR as per Wikipedia (27 names vs 28 stated).",
+"Colours are Wikipedia's Module:Adjacent_stations/Namma_Metro hexes, not BMRCL brand specs. Unassigned corridors have color null.",
+"Renamed stations: Kalena Agrahara (was Gottigere), Tavarekere (was Swagath Cross), Hosahalli = Sri Balagangadharanatha Swamiji Station, Majestic = Nadaprabhu Kempegowda Station, City Railway Station = Krantivira Sangolli Rayanna Railway Station, Vidhana Soudha = Dr. B.R. Ambedkar Station, Central College = Sir M. Visvesvaraya Station, Bommasandra = Delta Electronics Bommasandra, Whitefield = Whitefield (Kadugodi), Yelahanka-side names Hebbal/Hebbala used interchangeably.",
+"Magadi Road: no standalone metro extension found; the Phase 3 Hosahalli–Kadabagere corridor runs along Magadi Road, with a proposed further 6.6 km to Tavarekere (Magadi Road).",
+"Excluded: Bengaluru Suburban Rail Project (K-RIDE, 4 corridors ~148 km, under construction) — not metro.",
+"Wikipedia wikitext fetched 2026-10-16/17; some page sections are snapshots from ~Apr 2026 and lag news."
+]
+}

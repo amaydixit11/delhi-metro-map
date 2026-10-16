@@ -1,0 +1,69 @@
+{
+ "title": "Pune Metro future map",
+ "h1": "Pune Metro · open, building and planned",
+ "sub": "Every open, under-construction, approved and proposed metro line in Pune. Data as of Oct 2026.",
+ "agency": "Maha Metro / PMRDA",
+ "region": "Pune",
+ "fit": [
+  [
+   18.42,
+   73.72
+  ],
+  [
+   18.7,
+   74.0
+  ]
+ ],
+ "lat": 18.52,
+ "phases": {
+  "op": {
+   "n": "Operational",
+   "d": null,
+   "w": 4.5
+  },
+  "OP": {
+   "n": "Open (recent)",
+   "d": null,
+   "w": 4.5
+  },
+  "UC": {
+   "n": "Under construction",
+   "d": "11 7",
+   "w": 4
+  },
+  "AP": {
+   "n": "Approved",
+   "d": "1 8",
+   "w": 4.5
+  },
+  "PR": {
+   "n": "Proposed",
+   "d": "10 6 1 6",
+   "w": 3.5
+  }
+ },
+ "order": [
+  "op",
+  "OP",
+  "UC",
+  "AP",
+  "PR"
+ ],
+ "short": {
+  "OP": "open",
+  "UC": "building",
+  "AP": "approved",
+  "PR": "proposed"
+ },
+ "label": {
+  "op": "Open",
+  "OP": "Open",
+  "UC": "Under construction",
+  "AP": "Approved",
+  "PR": "Proposed"
+ },
+ "thin": [],
+ "rail": [],
+ "speeds": {},
+ "notes": "<div class=\"note\"><b>Sources:</b> Wikipedia station tables checked against 2025–26 news; open lines traced from OpenStreetMap. Corridors without published stations are drawn between their named endpoints. Years without an official target are estimates by stage.</div><div class=\"note\">Operational Oct 2026: Purple PCMC Bhavan–Swargate 13 stns (~17.4 km incl. unopened Range Hills); Aqua Vanaz–Ramwadi 16 stns (~14.66–15.7 km). District Court Pune is the only interchange (Purple/Aqua; Pink pending).</div><div class=\"note\">Colours: Purple #903373, Aqua #007CB0, Pink #F91C91 from Wikipedia Module:Adjacent stations/Pune Metro; Pink Line infobox uses #E7449A. Lines 4, 5 and HCMTR have no published colour (null).</div><div class=\"note\">Pink Line not opened as of latest reports (Sep 2026): CMRS cleared Maan–R K Laxman Museum Balewadi (12 stns, ~13 km) 2026-07-23; PMRDA planned to open 17 of 23 stations first (closed: Laxmi Nagar, Balewadi Phata, Baner Gaon, Baner, RBI, Shivajinagar), date depends on PM/CMO. Total 23.203 km per PMRDA; per-segment km not published.</div><div class=\"note\">Pink Line station names vary heavily between sources. Wikipedia's renamed list is used; press names e.g. Megapolis Society/Megapolis Circle (=Maan), Quadron Business Park, Dohler, Infosys Phase 2, Wipro Phase 2, Pall India, Shivaji Chowk, Courtyard by Marriott, Balewadi Stadium, Orchid Hotel, Ramnagar, High Street/Laxmi Nagar, Krushi Anusandhan, YASHADA, District and Sessions Court/Civil Court. Mapping between old and new names not fully verified.</div><div class=\"note\">Dec 2025 renames (single news source + Wikipedia): Nal Stop -> SNDT College, Ideal Colony -> Paud Phata, Mandai -> Mahatma Phule Mandai. Wikipedia also lists Budhwar Peth as Kasba Peth, Civil Court as District Court Pune, PMC as PMC Bhavan; treat as current Wikipedia names.</div><div class=\"note\">Purple km by section from Wikipedia Phase 1 table (5.87/8.03/3.33); Wikipedia line infobox says 16.59 km, network table 17.4 km.</div><div class=\"note\">Range Hills (between Khadki and Shivaji Nagar) still listed as under construction; trains pass through. Target date unknown.</div><div class=\"note\">Swargate–Katraj: originally 3 stations (Market Yard, Padmavati, Katraj); Bibwewadi and Balaji Nagar added via revised tender Apr 2025 (state-funded, +Rs 683 cr). TMRG also mentions 'Saibaba Nagar' for the middle station. Order of Bibwewadi/Padmavati/Balaji Nagar follows Wikipedia.</div>"
+}

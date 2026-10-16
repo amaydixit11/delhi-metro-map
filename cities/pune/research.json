@@ -1,0 +1,573 @@
+{
+ "city": "Pune",
+ "as_of": "2026-10",
+ "lines": [
+  {
+   "line": "Purple Line (Line 1)",
+   "color": "#903373",
+   "segments": [
+    {
+     "from": "PCMC Bhavan",
+     "to": "Phugewadi",
+     "status": "operational",
+     "year": "2022-03",
+     "stage": "",
+     "km": 5.87,
+     "n_stations": 5,
+     "stations": [
+      "PCMC Bhavan",
+      "Sant Tukaram Nagar",
+      "Nashik Phata",
+      "Kasarwadi",
+      "Phugewadi"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)",
+      "https://en.wikipedia.org/wiki/Pune_Metro"
+     ]
+    },
+    {
+     "from": "Phugewadi",
+     "to": "District Court Pune",
+     "status": "operational",
+     "year": "2023-08",
+     "stage": "Khadki infill opened 2025-06-21; Range Hills infill not open",
+     "km": 8.03,
+     "n_stations": 6,
+     "stations": [
+      "Phugewadi",
+      "Dapodi",
+      "Bopodi",
+      "Khadki",
+      "Shivaji Nagar",
+      "District Court Pune"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)",
+      "https://en.wikipedia.org/wiki/Pune_Metro"
+     ]
+    },
+    {
+     "from": "District Court Pune",
+     "to": "Swargate",
+     "status": "operational",
+     "year": "2024-09",
+     "stage": "underground",
+     "km": 3.33,
+     "n_stations": 4,
+     "stations": [
+      "District Court Pune",
+      "Kasba Peth",
+      "Mahatma Phule Mandai",
+      "Swargate"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)",
+      "https://en.wikipedia.org/wiki/Pune_Metro",
+      "https://www.mypunepulse.com/?p=182792"
+     ]
+    },
+    {
+     "from": "Khadki",
+     "to": "Shivaji Nagar",
+     "status": "under_construction",
+     "year": null,
+     "stage": "Range Hills infill station on operational stretch; not yet open",
+     "km": null,
+     "n_stations": 3,
+     "stations": [
+      "Khadki",
+      "Range Hills",
+      "Shivaji Nagar"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)"
+     ]
+    },
+    {
+     "from": "Bhakti Shakti",
+     "to": "PCMC Bhavan",
+     "status": "under_construction",
+     "year": "2027",
+     "stage": "Line 1A; elevated; ~75% viaduct, track laying begun; MahaMetro target Dec 2027",
+     "km": 4.519,
+     "n_stations": 5,
+     "stations": [
+      "Bhakti Shakti",
+      "Nigdi",
+      "Akurdi",
+      "Chinchwad",
+      "PCMC Bhavan"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)",
+      "https://themetrorailguy.com/pune-metro-phase-1-extension-route-map-tenders-status-updates/",
+      "https://www.freepressjournal.in/pune/pune-pcmc-nigdi-metro-extension-enters-track-laying-phase-as-construction-picks-up-pace",
+      "https://www.punekarnews.in/?p=232548"
+     ]
+    },
+    {
+     "from": "Swargate",
+     "to": "Katraj",
+     "status": "under_construction",
+     "year": "2029",
+     "stage": "Line 1B; underground; ITD Cementation; segment casting began 2026-05-12; target Feb 2029",
+     "km": 5.464,
+     "n_stations": 6,
+     "stations": [
+      "Swargate",
+      "Market Yard",
+      "Bibwewadi",
+      "Padmavati",
+      "Balaji Nagar",
+      "Katraj"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Purple_Line_(Pune_Metro)",
+      "https://themetrorailguy.com/pune-metro-phase-1-extension-route-map-tenders-status-updates/",
+      "https://www.punekarnews.in/?p=235117",
+      "https://themetrorailguy.com/2025/09/20/itd-cem-wins-pune-metro-swargate-katraj-lines-underground-contract-p1a-ugcr/"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Aqua Line (Line 2)",
+   "color": "#007CB0",
+   "segments": [
+    {
+     "from": "Vanaz",
+     "to": "Garware College",
+     "status": "operational",
+     "year": "2022-03",
+     "stage": "",
+     "km": 4.35,
+     "n_stations": 5,
+     "stations": [
+      "Vanaz",
+      "Anand Nagar",
+      "Paud Phata",
+      "SNDT College",
+      "Garware College"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)",
+      "https://en.wikipedia.org/wiki/Pune_Metro",
+      "https://www.mypunepulse.com/?p=182792"
+     ]
+    },
+    {
+     "from": "Garware College",
+     "to": "Ruby Hall Clinic",
+     "status": "operational",
+     "year": "2023-08",
+     "stage": "",
+     "km": 5.45,
+     "n_stations": 8,
+     "stations": [
+      "Garware College",
+      "Deccan Gymkhana",
+      "Chhatrapati Sambhaji Udyan",
+      "PMC Bhavan",
+      "District Court Pune",
+      "R.T.O. Pune",
+      "Pune Railway Station",
+      "Ruby Hall Clinic"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)",
+      "https://en.wikipedia.org/wiki/Pune_Metro"
+     ]
+    },
+    {
+     "from": "Ruby Hall Clinic",
+     "to": "Ramwadi",
+     "status": "operational",
+     "year": "2024-03",
+     "stage": "Yerwada infill opened 2024-08-21",
+     "km": 5.94,
+     "n_stations": 5,
+     "stations": [
+      "Ruby Hall Clinic",
+      "Bund Garden",
+      "Yerwada",
+      "Kalyani Nagar",
+      "Ramwadi"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)",
+      "https://en.wikipedia.org/wiki/Pune_Metro"
+     ]
+    },
+    {
+     "from": "Vanaz",
+     "to": "Chandani Chowk",
+     "status": "under_construction",
+     "year": "2029",
+     "stage": "Line 2A; Union Cabinet 2025-06-25; civil contract T&T-Univastu JV Mar 2026 (27 months)",
+     "km": 1.12,
+     "n_stations": 3,
+     "stations": [
+      "Vanaz",
+      "Kothrud Bus Depot",
+      "Chandani Chowk"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)",
+      "https://themetrorailguy.com/pune-metro-phase-1-extension-route-map-tenders-status-updates/",
+      "https://indianinfrastructure.com/2026/03/11/tt-univastu-jv-wins-contract-for-civil-works-under-pune-metro-project/",
+      "https://indianinfrastructure.com/2025/06/26/union-government-approves-pune-metro-corridors-2a-and-2b/"
+     ]
+    },
+    {
+     "from": "Ramwadi",
+     "to": "Vitthalwadi",
+     "status": "approved",
+     "year": "2029",
+     "stage": "Line 2B; Union Cabinet 2025-06-25; viaduct+station tenders 2026, contractor selection; geotech groundwork at Ramwadi Sep 2026",
+     "km": 11.63,
+     "n_stations": 12,
+     "stations": [
+      "Ramwadi",
+      "Viman Nagar",
+      "Somnath Nagar",
+      "Kharadi Bypass",
+      "Tulaja Bhavani Nagar",
+      "Ubale Nagar",
+      "Upper Kharadi Road",
+      "Wagheshwar Temple",
+      "Wagholi",
+      "Siddharth Nagar",
+      "Bakori Phata",
+      "Vitthalwadi"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)",
+      "https://themetrorailguy.com/pune-metro-phase-1-extension-route-map-tenders-status-updates/",
+      "https://www.punekarnews.in/?p=240289",
+      "https://indianinfrastructure.com/2026/09/09/groundwork-commences-for-ramwadi-wagholi-metro-project-in-maharashtra/"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Pink Line (Line 3, Puneri Metro, PMRDA PPP)",
+   "color": "#F91C91",
+   "segments": [
+    {
+     "from": "Maan",
+     "to": "R K Laxman Museum Balewadi",
+     "status": "under_construction",
+     "year": "2026",
+     "stage": "CMRS provisional authorisation 2026-07-23; awaiting inauguration date; not opened as of early Oct 2026",
+     "km": null,
+     "n_stations": 12,
+     "stations": [
+      "Maan",
+      "Maan - MIDC Circle, Phase II",
+      "Maan Bus Depot",
+      "Hinjawadi Phase-II Circle-II",
+      "Hinjawadi Phase-II Circle-I",
+      "Padmabhushan Chowk",
+      "Shree Shiv Chhatrapati Shivaji Maharaj Chowk, Hinjawadi",
+      "Hinjawadi Phase - I",
+      "Wakad Chowk",
+      "Shree Shiv Chhatrapati Sports Complex, Mahalunge",
+      "Mitcon Balewadi",
+      "R K Laxman Museum Balewadi"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)",
+      "https://en.wikipedia.org/wiki/Pune_Metro",
+      "https://www.freepressjournal.in/pune/pune-metro-line-3-launch-delayed-as-hinjawadi-shivajinagar-corridor-awaits-safety-clearance",
+      "https://www.punekarnews.in/punes-hinjawadi-metro-is-ready-but-awaits-inauguration-date-by-pm-modi-or-cm-fadnavis/"
+     ]
+    },
+    {
+     "from": "Balewadi High Street",
+     "to": "District Court Pune",
+     "status": "under_construction",
+     "year": "2027",
+     "stage": "PPP (Tata-Siemens, PITCMRL); remaining stations targeted Dec 2026 per PMRDA, Wikipedia says Mar 2027",
+     "km": null,
+     "n_stations": 11,
+     "stations": [
+      "Balewadi High Street",
+      "Balewadi Phata",
+      "Baner Gaon",
+      "Baner Pashan Link Road",
+      "Aundh",
+      "Sakalnagar",
+      "Savitribai Phule Pune University",
+      "Bhosalenagar – RBI",
+      "Agriculture College",
+      "Shivaji Nagar",
+      "District Court Pune"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)",
+      "https://en.wikipedia.org/wiki/Pune_Metro",
+      "https://www.punekarnews.in/?p=244910",
+      "https://www.freepressjournal.in/amp/pune/pune-metro-line-3-17-stations-to-be-ready-in-10-12-days-but-pmrda-says-launch-date-not-in-its-hands",
+      "https://www.pmrda.gov.in/en/pune-metro-line-3/maan-hinjawadi-shivajinagar-metro-line/"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Line 4 (Khadakwasla–Kharadi, with 4A/4B/4C)",
+   "color": null,
+   "segments": [
+    {
+     "from": "Khadakwasla",
+     "to": "Kharadi Chowk",
+     "status": "approved",
+     "year": "2030",
+     "stage": "Union Cabinet 2025-11-26 (with 4A: 31.636 km, 28 stns, Rs 9,857.85 cr, 5 yrs); pre-tender surveys for Dandekar Pul–Khadakwasla mid-2026",
+     "km": 25.518,
+     "n_stations": 22,
+     "stations": [
+      "Khadakwasla",
+      "Dalvewadi",
+      "Nanded City",
+      "Dhayari Phata",
+      "Manik Baug",
+      "Hingne Chowk",
+      "Rajaram Bridge",
+      "Pu La Deshpande Udyan",
+      "Dandekar Pul",
+      "Swargate",
+      "7 Loves Chowk",
+      "Pune Cantonment Board",
+      "Race Course",
+      "Fatimanagar",
+      "Ramtekdi",
+      "Hadapsar Chowk",
+      "Magarpatta South",
+      "Magarpatta Main",
+      "Magarpatta North",
+      "Hadapsar Railway Station",
+      "Sant Nagar Chowk",
+      "Kharadi Chowk"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Pune_Metro",
+      "https://themetrorailguy.com/pune-metro-phase-2-route-map-tenders-status-updates/",
+      "https://indianinfrastructure.com/2025/11/27/union-government-approves-lines-4-4a-under-pune-metro-phase-ii-project/",
+      "https://www.punekarnews.in/?p=238419",
+      "https://www.punekarnews.in/?p=243165"
+     ]
+    },
+    {
+     "from": "SNDT College",
+     "to": "Manik Baug",
+     "status": "approved",
+     "year": "2030",
+     "stage": "Line 4A spur Nal Stop–Warje–Manik Baug; Union Cabinet 2025-11-26",
+     "km": 6.118,
+     "n_stations": 7,
+     "stations": [
+      "SNDT College",
+      "Karve Putala",
+      "Dahanukar Colony",
+      "Karve Nagar",
+      "Warje",
+      "Daulat Nagar",
+      "Manik Baug"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Pune_Metro",
+      "https://themetrorailguy.com/pune-metro-phase-2-route-map-tenders-status-updates/",
+      "https://indianinfrastructure.com/2025/11/27/union-government-approves-lines-4-4a-under-pune-metro-phase-ii-project/",
+      "https://www.punekarnews.in/?p=238419",
+      "https://www.punekarnews.in/?p=243165"
+     ]
+    },
+    {
+     "from": "Hadapsar Chowk",
+     "to": "Loni Kalbhor",
+     "status": "approved",
+     "year": null,
+     "stage": "Line 4B; Maharashtra state approval 2025-11-04 (with 4C Rs 5,704 cr); awaiting Union approval; consultant tenders Feb 2026",
+     "km": 11.35,
+     "n_stations": 10,
+     "stations": [
+      "Hadapsar Chowk",
+      "Hadapsar Phata",
+      "Hadapsar Bus Depot",
+      "Akashwani Hadapsar",
+      "Laxmi Colony",
+      "Stud Phata",
+      "Grape Growers Association",
+      "Toll Naka",
+      "Wak Vasti",
+      "Loni Kalbhor"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Pune_Metro",
+      "https://indianinfrastructure.com/2025/11/06/hadapsar-loni-kalbhor-and-hadapsar-bus-depot-saswad-road-metro-projects-in-pune-get-approved/",
+      "https://www.mypunepulse.com/?p=175718",
+      "https://swarajyamag.com/amp/story/news-brief/pune-metro-phase-2-advances-as-mahametro-floats-tenders-for-14-elevated-stations-on-hadapsar-corridors"
+     ]
+    },
+    {
+     "from": "Hadapsar Bus Depot",
+     "to": "Saswad Road",
+     "status": "approved",
+     "year": null,
+     "stage": "Line 4C; Maharashtra state approval 2025-11-04; awaiting Union approval",
+     "km": 5.57,
+     "n_stations": 5,
+     "stations": [
+      "Hadapsar Bus Depot",
+      "Hadapsar Gliding Centre",
+      "Fursungi IT Park",
+      "Subhash Garden",
+      "Saswad Road"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Pune_Metro",
+      "https://indianinfrastructure.com/2025/11/06/hadapsar-loni-kalbhor-and-hadapsar-bus-depot-saswad-road-metro-projects-in-pune-get-approved/",
+      "https://www.mypunepulse.com/?p=175718"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Line 5 (Nigdi–Chakan)",
+   "color": null,
+   "segments": [
+    {
+     "from": "Bhakti Shakti",
+     "to": "Chakan",
+     "status": "proposed",
+     "year": null,
+     "stage": "Revised DPR prepared by MahaMetro (40.926 km, 31 stns, Rs 10,383.89 cr); not yet approved",
+     "km": 40.926,
+     "n_stations": 31,
+     "stations": [
+      "Bhakti Shakti",
+      "Transport Nagar",
+      "Ganesh Nagar",
+      "Mukai Chowk",
+      "Ravet",
+      "Punawale Gaon",
+      "Punawale",
+      "Tathawade Gaon",
+      "Tathawade",
+      "Bhumkar Chowk",
+      "Bhujbal Chowk",
+      "Wakad",
+      "Kokane Chowk",
+      "Vishal Nagar Corner",
+      "Pimple Saudagar",
+      "Pimple Gurav",
+      "Nashik Phata",
+      "Sant Tukaram Nagar",
+      "Vallabh Nagar",
+      "Gavli Matha Chowk",
+      "Bhosari MIDC",
+      "Bhosari District Centre",
+      "Godown Chowk",
+      "PIEC",
+      "Bharatmata Chowk",
+      "Chimbali Phata",
+      "Bargevasti",
+      "Kuruli",
+      "Alandi Phata",
+      "Nanekarwadi",
+      "Chakan"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Pune_Metro",
+      "https://www.punekarnews.in/?p=232277"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "HCMTR Ring Line",
+   "color": null,
+   "segments": [
+    {
+     "from": "Ambedkar Chowk",
+     "to": "Kirloskar",
+     "status": "proposed",
+     "year": null,
+     "stage": "HCMTR ring-road metro concept listed by The Metro Rail Guy; no DPR/approval found",
+     "km": 36,
+     "n_stations": 44,
+     "stations": [
+      "Ambedkar Chowk",
+      "University Back Gate",
+      "University Main Gate",
+      "JW Marriott",
+      "Patrakar Nagar",
+      "Kelewadi",
+      "Paud Phata",
+      "Alankar Police Chowk",
+      "Saket Society",
+      "Siddhi Garden",
+      "Senadatta Police Chowk",
+      "NS Phadke Chowk",
+      "Sanas Ground",
+      "Laxmi Narayan Chowk",
+      "City Pride",
+      "Market Station",
+      "Market Yard Bus Depot",
+      "Gangadham Chowk",
+      "Bibewadi",
+      "Lulla Nagar",
+      "Samvidhan Chowk",
+      "Jambhulkar Chowk",
+      "Fatima Nagar",
+      "Kalubai",
+      "Ghorpodi",
+      "Pingle Vasti",
+      "Tadigutta Junction",
+      "East Avenue Road",
+      "Vadgaon Sheri",
+      "Viman Nagar",
+      "Clover Park",
+      "Sakore Nagar",
+      "Pune Airport",
+      "509 Junction",
+      "Shahu Maharaj Chowk",
+      "Vishrantwadi",
+      "Sathe Biscuit",
+      "Vishrantwadi Police Station",
+      "Home Guard",
+      "Deccan College",
+      "Holkar Jal Shuddi",
+      "Kirkee Methodist Church",
+      "Kirkee",
+      "Kirloskar"
+     ],
+     "sources": [
+      "https://themetrorailguy.com/pune-metro-phase-2-route-map-tenders-status-updates/"
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Operational Oct 2026: Purple PCMC Bhavan–Swargate 13 stns (~17.4 km incl. unopened Range Hills); Aqua Vanaz–Ramwadi 16 stns (~14.66–15.7 km). District Court Pune is the only interchange (Purple/Aqua; Pink pending).",
+  "Colours: Purple #903373, Aqua #007CB0, Pink #F91C91 from Wikipedia Module:Adjacent stations/Pune Metro; Pink Line infobox uses #E7449A. Lines 4, 5 and HCMTR have no published colour (null).",
+  "Pink Line not opened as of latest reports (Sep 2026): CMRS cleared Maan–R K Laxman Museum Balewadi (12 stns, ~13 km) 2026-07-23; PMRDA planned to open 17 of 23 stations first (closed: Laxmi Nagar, Balewadi Phata, Baner Gaon, Baner, RBI, Shivajinagar), date depends on PM/CMO. Total 23.203 km per PMRDA; per-segment km not published.",
+  "Pink Line station names vary heavily between sources. Wikipedia's renamed list is used; press names e.g. Megapolis Society/Megapolis Circle (=Maan), Quadron Business Park, Dohler, Infosys Phase 2, Wipro Phase 2, Pall India, Shivaji Chowk, Courtyard by Marriott, Balewadi Stadium, Orchid Hotel, Ramnagar, High Street/Laxmi Nagar, Krushi Anusandhan, YASHADA, District and Sessions Court/Civil Court. Mapping between old and new names not fully verified.",
+  "Dec 2025 renames (single news source + Wikipedia): Nal Stop -> SNDT College, Ideal Colony -> Paud Phata, Mandai -> Mahatma Phule Mandai. Wikipedia also lists Budhwar Peth as Kasba Peth, Civil Court as District Court Pune, PMC as PMC Bhavan; treat as current Wikipedia names.",
+  "Purple km by section from Wikipedia Phase 1 table (5.87/8.03/3.33); Wikipedia line infobox says 16.59 km, network table 17.4 km.",
+  "Range Hills (between Khadki and Shivaji Nagar) still listed as under construction; trains pass through. Target date unknown.",
+  "Swargate–Katraj: originally 3 stations (Market Yard, Padmavati, Katraj); Bibwewadi and Balaji Nagar added via revised tender Apr 2025 (state-funded, +Rs 683 cr). TMRG also mentions 'Saibaba Nagar' for the middle station. Order of Bibwewadi/Padmavati/Balaji Nagar follows Wikipedia.",
+  "Nigdi extension official target Dec 2027 (MahaMetro MD, Apr 2026); TMRG blog says no sooner than 2029.",
+  "Line 2A/2B: Union Cabinet approved 2025-06-25 (12.75 km, 13 stns, Rs 3,626.24 cr, 4 years -> 2029). 2B marked approved (tenders/groundwork only, no confirmed civil award found). 2B terminus spelled Vitthalwadi/Vithalwadi/Vitthalawadi; Chandani/Chandni Chowk.",
+  "Line 4 numbering conflict: Wikipedia calls Khadakwasla–Kharadi 'Line 4' (4A Nal Stop–Warje–Manik Baug, 4B Hadapsar–Loni Kalbhor, 4C Hadapsar–Saswad Road); TMRG calls it 'Line-5' and 'Spur Line'; Wikipedia's 'Line 5' is Nigdi–Chakan. Year 2030 for Line 4/4A is inferred from 5-year completion in Nov 2025 approval.",
+  "Line 4 station names variants: Sant Nagar Chowk vs Sainath Nagar; Swargate vs Swargate North; Hingne vs Hingane; Pu La Deshpande Udyan vs Deshpande Udyan; Kolhewadi proposed as start (Aug 2026 reports). 4A: Wikipedia ends at SNDT (Nal Stop interchange); TMRG list starts Paud Phata; Dahanukar vs Dhunkar Colony.",
+  "Line 4B variants: one source lists Hadapsar Phata, Hadapsar Bus Depot, Akashwani-Hadapsar, Laxmi Colony, Stud Farm, Manjari Phata, Grape Growers' Association, Toll Naka, Wak Wasti, Loni Kalbhor (no Hadapsar Chowk). 4C 'Subhash Garden' vs 'Sulabh Garden'; Gliding Centre vs Glider Club. Official count: 4B 10 stns, 4C 4 new stns.",
+  "Line 5 Nigdi–Chakan: Wikipedia list (31 stns) is from an earlier 45.29 km DPR; revised plan is 40.926 km / 31 stns so list may have changed. 'Bhumar Chowk'/'Bhosairi' in Wikipedia corrected to Bhumkar/Bhosari; 'Bharatmata Chowk (Moshi)' parenthetical dropped.",
+  "HCMTR ring line: only source is TMRG; status/stage unverified; low confidence.",
+  "Older PMRDA idea of extending Line 3 from Civil Court to Hadapsar/Phursungi IT Park (~11.8 km, 12 stns) appears only in Wikipedia; no current status, not included as a segment.",
+  "n_stations = length of stations list (includes shared end/interchange stations), not the count of new stations.",
+  "Suburban rail: Central Railway Pune–Lonavala and Pune–Daund suburban/DEMU services run alongside; metro interchanges at Kasarwadi, Dapodi, Khadki, Shivaji Nagar, Pune Railway Station, and planned Akurdi, Chinchwad, Hadapsar."
+ ]
+}

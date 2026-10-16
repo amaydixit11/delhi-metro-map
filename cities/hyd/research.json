@@ -1,0 +1,426 @@
+{
+ "city": "Hyderabad",
+ "as_of": "2026-10",
+ "lines": [
+  {
+   "line": "Red Line (Corridor I)",
+   "color": "#D84A4E",
+   "segments": [
+    {
+     "from": "Miyapur",
+     "to": "Ameerpet",
+     "status": "operational",
+     "year": "2017-11",
+     "stage": "Phase 1",
+     "km": 11.3,
+     "n_stations": 11,
+     "stations": [
+      "Miyapur",
+      "JNTU College",
+      "KPHB Colony",
+      "Kukatpally",
+      "Dr. B.R. Ambedkar Balanagar",
+      "Moosapet",
+      "Bharat Nagar",
+      "Erragadda",
+      "ESI Hospital",
+      "S.R. Nagar",
+      "Ameerpet"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)",
+      "https://en.wikipedia.org/wiki/Hyderabad_Metro"
+     ]
+    },
+    {
+     "from": "Ameerpet",
+     "to": "LB Nagar",
+     "status": "operational",
+     "year": "2018-09",
+     "stage": "Phase 1",
+     "km": 16.8,
+     "n_stations": 17,
+     "stations": [
+      "Ameerpet",
+      "Punjagutta",
+      "Irrum Manzil",
+      "Khairatabad",
+      "Lakdi-ka-pul",
+      "Assembly",
+      "Nampally",
+      "Gandhi Bhavan",
+      "Osmania Medical College",
+      "MG Bus Station",
+      "Malakpet",
+      "New Market",
+      "Musarambagh",
+      "Dilsukhnagar",
+      "Chaitanyapuri",
+      "Victoria Memorial",
+      "LB Nagar"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)",
+      "https://en.wikipedia.org/wiki/Hyderabad_Metro"
+     ]
+    },
+    {
+     "from": "Miyapur",
+     "to": "Patancheru",
+     "status": "approved",
+     "year": null,
+     "stage": "Corridor VII, Phase 2A; Phase 2A; state-sanctioned (GO Nov 2024); Centre gave in-principle nod for 50:50 JV (May 2026) but no Union Cabinet/financial sanction; DPR under MoHUA appraisal; NOT in GC Package-I RfP (Aug 2026); stations tentative",
+     "km": 13.4,
+     "n_stations": 11,
+     "stations": [
+      "Miyapur",
+      "Miyapur X Road",
+      "Allwyn X Road",
+      "Madinaguda",
+      "Chanda Nagar",
+      "BHEL",
+      "Jyoti Nagar",
+      "Beeramguda",
+      "RC Puram",
+      "ICRISAT",
+      "Patancheru"
+     ],
+     "sources": [
+      "https://hmrl.co.in/phase-ii/",
+      "https://www.siasat.com/hyderabad-metro-phase-2-miyapur-to-patancheru-route-map-announced-3167535/",
+      "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+     ]
+    },
+    {
+     "from": "LB Nagar",
+     "to": "Hayathnagar",
+     "status": "approved",
+     "year": null,
+     "stage": "Corridor VIII, Phase 2A; Phase 2A; state-sanctioned (GO Nov 2024); Centre gave in-principle nod for 50:50 JV (May 2026) but no Union Cabinet/financial sanction; DPR under MoHUA appraisal; in GC Package-I RfP dt 11 Aug 2026 (bids due 22 Oct 2026, 48-month completion); stations tentative",
+     "km": 7.1,
+     "n_stations": 7,
+     "stations": [
+      "LB Nagar",
+      "Chintalkunta",
+      "Vanasthalipuram",
+      "Autonagar",
+      "Lecturers' Colony",
+      "RTC Colony",
+      "Hayathnagar"
+     ],
+     "sources": [
+      "https://hmrl.co.in/phase-ii/",
+      "https://hmrl.co.in/wp-content/uploads/2026/08/RfP-for-Appointment-of-GC-for-Cor-IV-Cor-V-Cor-VI-Cor-VIII-dt.11.08.2026-1.pdf",
+      "https://telanganatoday.com/hyderabad-metro-phase-2-six-new-stations-planned-between-lb-nagar-and-hayathnagar",
+      "https://en.wikipedia.org/wiki/Red_Line_(Hyderabad_Metro)"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Blue Line (Corridor III)",
+   "color": "#0081BF",
+   "segments": [
+    {
+     "from": "Nagole",
+     "to": "Ameerpet",
+     "status": "operational",
+     "year": "2017-11",
+     "stage": "Phase 1",
+     "km": 16.8,
+     "n_stations": 14,
+     "stations": [
+      "Nagole",
+      "Uppal",
+      "Stadium",
+      "NGRI",
+      "Habsiguda",
+      "Tarnaka",
+      "Mettuguda",
+      "Secunderabad East",
+      "Parade Ground",
+      "Paradise",
+      "Rasoolpura",
+      "Prakash Nagar",
+      "Begumpet",
+      "Ameerpet"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)",
+      "https://en.wikipedia.org/wiki/Hyderabad_Metro"
+     ]
+    },
+    {
+     "from": "Ameerpet",
+     "to": "HITEC City",
+     "status": "operational",
+     "year": "2019-03",
+     "stage": "Phase 1 (Peddamma Gudi opened 2019-03-30, Madhapur 2019-04-13, Jubilee Hills Check Post 2019-05-18)",
+     "km": 10.0,
+     "n_stations": 9,
+     "stations": [
+      "Ameerpet",
+      "Madhura Nagar",
+      "Yusufguda",
+      "Road No. 5 Jubilee Hills",
+      "Jubilee Hills Check Post",
+      "Peddamma Gudi",
+      "Madhapur",
+      "Durgam Cheruvu",
+      "HITEC City"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)",
+      "https://en.wikipedia.org/wiki/Hyderabad_Metro"
+     ]
+    },
+    {
+     "from": "HITEC City",
+     "to": "Raidurg",
+     "status": "operational",
+     "year": "2019-11",
+     "stage": "Phase 1",
+     "km": 1.5,
+     "n_stations": 2,
+     "stations": [
+      "HITEC City",
+      "Raidurg"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)",
+      "https://en.wikipedia.org/wiki/Hyderabad_Metro"
+     ]
+    },
+    {
+     "from": "Raidurg",
+     "to": "Kokapet Neopolis",
+     "status": "approved",
+     "year": null,
+     "stage": "Corridor V, Phase 2A; Phase 2A; state-sanctioned (GO Nov 2024); Centre gave in-principle nod for 50:50 JV (May 2026) but no Union Cabinet/financial sanction; DPR under MoHUA appraisal; in GC Package-I RfP dt 11 Aug 2026; official count 8 new stations, names not officially published",
+     "km": 11.6,
+     "n_stations": 9,
+     "stations": [],
+     "sources": [
+      "https://hmrl.co.in/phase-ii/",
+      "https://hmrl.co.in/wp-content/uploads/2026/08/RfP-for-Appointment-of-GC-for-Cor-IV-Cor-V-Cor-VI-Cor-VIII-dt.11.08.2026-1.pdf",
+      "https://hmrl.co.in/hyderabad-metro-phase-2-gains-momentum/"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Green Line (Corridor II)",
+   "color": "#008D42",
+   "segments": [
+    {
+     "from": "JBS Parade Ground",
+     "to": "MG Bus Station",
+     "status": "operational",
+     "year": "2020-02",
+     "stage": "Phase 1 (inaugurated 2020-02-07, public 2020-02-08)",
+     "km": 11.0,
+     "n_stations": 10,
+     "stations": [
+      "JBS Parade Ground",
+      "Parade Ground",
+      "Secunderabad West",
+      "Gandhi Hospital",
+      "Musheerabad",
+      "RTC Cross Roads",
+      "Chikkadpally",
+      "Narayanguda",
+      "Sultan Bazar",
+      "MG Bus Station"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Green_Line_(Hyderabad_Metro)",
+      "https://en.wikipedia.org/wiki/Hyderabad_Metro"
+     ]
+    },
+    {
+     "from": "MG Bus Station",
+     "to": "Chandrayangutta",
+     "status": "approved",
+     "year": null,
+     "stage": "Corridor VI (Old City), Phase 2A; foundation stone 2024-03-08; land acquisition 833 of 888 properties done (Oct 2026), road widening/utility shifting, pillar marking from 2025-07-30; no civil contract yet; CM ordered construction tender Aug 2026; in GC Package-I RfP; station list PARTIAL (official 6 new stations, 4 intermediate named)",
+     "km": 7.5,
+     "n_stations": 7,
+     "stations": [
+      "MG Bus Station",
+      "Salarjung Museum",
+      "Charminar",
+      "Shalibanda",
+      "Falaknuma",
+      "Chandrayangutta"
+     ],
+     "sources": [
+      "https://hmrl.co.in/foundation-stone-for-old-city-metro-rail-a-momentous-day/",
+      "https://hmrl.co.in/hyderabad-metro-rail-extension-in-old-city-gains-momentum/",
+      "https://hmrl.co.in/wp-content/uploads/2026/08/RfP-for-Appointment-of-GC-for-Cor-IV-Cor-V-Cor-VI-Cor-VIII-dt.11.08.2026-1.pdf",
+      "https://indtoday.com/hyderabad-metro-phase-2-gc-tenders-extended-to-october-22/",
+      "https://hmrl.co.in/wp-content/uploads/2024/12/TheHindu-06-12-2024.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Purple Line (Corridor IV, Airport Corridor)",
+   "color": "#800080",
+   "segments": [
+    {
+     "from": "Nagole",
+     "to": "RGIA",
+     "status": "approved",
+     "year": null,
+     "stage": "Corridor IV, Phase 2A; Phase 2A; state-sanctioned (GO Nov 2024); Centre gave in-principle nod for 50:50 JV (May 2026) but no Union Cabinet/financial sanction; DPR under MoHUA appraisal; in GC Package-I RfP dt 11 Aug 2026 (48-month completion); via LB Nagar and Chandrayangutta; RGIA station underground; stations tentative (HMRL Feb 2025)",
+     "km": 36.8,
+     "n_stations": 24,
+     "stations": [
+      "Nagole",
+      "Nagole X Road",
+      "Alkapuri Junction",
+      "Kamineni Hospital",
+      "LB Nagar",
+      "Bairamalguda",
+      "Maitri Nagar",
+      "Karmanghat",
+      "Champapet Road",
+      "Owaisi Hospital",
+      "DRDO Kanchanbagh",
+      "Balapur Road",
+      "Chandrayangutta",
+      "Bandlaguda Road",
+      "Mailardevpally",
+      "Katedan",
+      "Aramghar",
+      "New High Court",
+      "Gaganpahad",
+      "Satamrai",
+      "Siddanthi",
+      "Shamshabad",
+      "Cargo",
+      "RGIA"
+     ],
+     "sources": [
+      "https://hmrl.co.in/phase-ii/",
+      "https://hmrl.co.in/wp-content/uploads/2026/08/RfP-for-Appointment-of-GC-for-Cor-IV-Cor-V-Cor-VI-Cor-VIII-dt.11.08.2026-1.pdf",
+      "https://www.deccanchronicle.com/southern-states/telangana/hyderabad-metro-rail-limited-unveils-proposed-route-for-corridor-iv-from-nagole-to-rgia-1862745",
+      "https://en.wikipedia.org/wiki/Corridor_IV_(Hyderabad_Metro)"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Airport Express (Raidurg–RGIA, cancelled)",
+   "color": "#6EB2FE",
+   "segments": [
+    {
+     "from": "Raidurg",
+     "to": "RGIA Terminal",
+     "status": "proposed",
+     "year": null,
+     "stage": "Cancelled: foundation stone Dec 2022, EPC tender May 2023, put on hold 2023-12-13 and dropped Jan 2024; replaced by Corridor IV (Nagole–RGIA)",
+     "km": 31.0,
+     "n_stations": 10,
+     "stations": [
+      "Raidurg",
+      "Biodiversity Junction",
+      "Nanakramguda Junction",
+      "Puppalaguda",
+      "Narsingi",
+      "TS Police Academy",
+      "Rajendranagar",
+      "Shamshabad",
+      "Airport Cargo",
+      "RGIA Terminal"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Hyderabad_Airport_Metro_Express",
+      "https://themetrorailguy.com/hyderabad-metro-phase-2-information-map/"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Corridor IX (RGIA–Bharat Future City)",
+   "color": null,
+   "segments": [
+    {
+     "from": "RGIA",
+     "to": "Bharat Future City",
+     "status": "proposed",
+     "year": null,
+     "stage": "Phase 2B; DPR (HAML) submitted to Centre 2025-06-21; state cabinet cleared June 2025; May 2026 CM asked Centre to move it to a Phase III; terminus Skills University; 1.5 km underground, ~21 km elevated, ~17 km at-grade; station names not published (9 stations per unverified secondary source)",
+     "km": 39.6,
+     "n_stations": 0,
+     "stations": [],
+     "sources": [
+      "https://hmrl.co.in/phase-ii/",
+      "https://www.thehansindia.com/news/cities/hyderabad/hydbad-metro-phase-ii-b-dprs-finalised-973438",
+      "https://swarajyamag.com/news-brief/telangana-cm-seeks-centres-approval-for-rs-38595-crore-hyderabad-metro-phase-ii-pushes-airportbharat-future-city-link"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Corridor X (JBS–Medchal)",
+   "color": null,
+   "segments": [
+    {
+     "from": "JBS",
+     "to": "Medchal",
+     "status": "proposed",
+     "year": null,
+     "stage": "Phase 2B; DPR submitted to Centre 2025-06-21; fully elevated; 18 stations per DPR reports, names not published; starts at a new JBS station",
+     "km": 24.5,
+     "n_stations": 18,
+     "stations": [],
+     "sources": [
+      "https://hmrl.co.in/phase-ii/",
+      "https://www.thehansindia.com/news/cities/hyderabad/hydbad-metro-phase-ii-b-dprs-finalised-973438",
+      "https://metrorailnews.in/dpr-for-hyderabad-metro-phase-2b/"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Corridor XI (JBS–Shamirpet)",
+   "color": null,
+   "segments": [
+    {
+     "from": "JBS",
+     "to": "Shamirpet",
+     "status": "proposed",
+     "year": null,
+     "stage": "Phase 2B; DPR submitted to Centre 2025-06-21; 20.35 km elevated + 1.65 km underground near Hakimpet Air Force Station; 14 stations per DPR reports, names not published",
+     "km": 22.0,
+     "n_stations": 14,
+     "stations": [],
+     "sources": [
+      "https://hmrl.co.in/phase-ii/",
+      "https://www.thehansindia.com/news/cities/hyderabad/hydbad-metro-phase-ii-b-dprs-finalised-973438",
+      "https://metrorailnews.in/dpr-for-hyderabad-metro-phase-2b/"
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Operational network Oct 2026: 3 lines, 67.21 km (Wikipedia; segment km sum ~68.4 because Wikipedia gives Ameerpet-HITEC City as both 10 km and 8.5 km), 57 unique stations (27 Red + 23 Blue + 10 Green, with Ameerpet, MG Bus Station, Parade Ground shared).",
+  "No Phase 2 corridor is under civil construction as of Oct 2026. Old City (Cor VI) has foundation stone (Mar 2024), demolitions and utility shifting only; no construction contract awarded. Nothing is marked under_construction.",
+  "'approved' for Phase 2A = state-government sanctioned + Centre in-principle (21 May 2026, Newsmeter); formal Union Cabinet / financial sanction NOT found. MoHUA told Parliament on 2 Apr 2026 there was 'no fixed timeline'.",
+  "Official corridor numbering (hmrl.co.in/phase-ii): IV Nagole-RGIA 36.8 km, V Raidurg-Kokapet Neopolis 11.6, VI MGBS-Chandrayangutta 7.5, VII Miyapur-Patancheru 13.4, VIII LB Nagar-Hayat Nagar 7.1 (Phase 2A = 76.4 km, Rs 24,269 cr); IX RGIA-Bharat Future City 39.6, X JBS New-Medchal 24.5, XI JBS New-Shamirpet 22.0 (Phase 2B = 86.1 km, Rs 19,579 cr). Total 162.5 km. Older press uses different numbers (e.g. Corridor 6 = Miyapur-Patancheru).",
+  "2026 revised plan: 7 corridors, 122.9 km, Rs 38,595 cr (CM to Union minister 6 May 2026). INFERRED: 122.9 = Phase 2A 76.4 + JBS-Medchal 24.5 + JBS-Shamirpet 22.0, with RGIA-Future City pushed to a proposed Phase III. Not stated explicitly in any source found.",
+  "GC RfP dt 11 Aug 2026 (HAML) covers Package-I = Cor IV (24 stns), V (8), VI (6), VIII (6), 63 km, 48-month completion; bid deadline extended to 22 Oct 2026. indtoday (13 Oct 2026) wrongly lists Miyapur-Patancheru instead of Nagole-RGIA in that package.",
+  "Station counts: Phase 2A sources give 56 vs 54 total stations; HMRL Dec 2024 page gave Patancheru 6 stations and Kokapet 8; Wikipedia gives Patancheru 10 and Kokapet 10. Patancheru list here follows Wikipedia order; Siasat (Jan 2025) names 9 of them (no ICRISAT, no Miyapur X Road) and calls them tentative. Wikipedia's 10 Kokapet names (Biodiversity Junction, Khajaguda, Nanakramguda, Golf Course, Wipro Circle, Puppalguda, ORR Junction, Khanapur, Movie Towers, Kokapet Neopolis) are unsourced and contradict the official 8, so stations left empty.",
+  "Old City list: HMRL (Mar 2024) and The Hindu (Dec 2024) name 4 new stations Salarjung Museum, Charminar, Shalibanda, Falaknuma; Shamsheergunj and Jangammet were dropped; 2026 RfP says 6 stations for MGBS-Chandrayangutta, so one station is unnamed (Aliabad appears on Wikipedia, unconfirmed). n_stations=7 includes MGBS.",
+  "Corridor IV station order follows HMRL release via Deccan Chronicle (22 Feb 2025): Nagole X Road before Alkapuri Junction; Wikipedia has them reversed. HMRL labels Nagole and LB Nagar on this line 'Airport' stations (separate from existing ones).",
+  "Renames / name variants: JBS Parade Ground (Wikipedia: 'Parade Ground' for Green terminus); Dr. B.R. Ambedkar Balanagar (aka Balanagar); Madhura Nagar (Wikipedia: Taruni Madhura Nagar); Sultan Bazar/Sultan Bazaar; RTC Cross Roads/R.T.C. X Roads; Patancheru/Patancheruvu; Hayathnagar/Hayat Nagar; Shamirpet/Shameerpet; MG Bus Station = MGBS.",
+  "Green Line Phase 1 originally ran to Falaknuma (16.6 km, 15 stns in Wikipedia infobox); Old City stretch was deferred and reshaped as Cor VI to Chandrayangutta.",
+  "Cancelled/dropped: Raidurg-RGIA Airport Express (31 km, Jan 2024); Tarnaka-ECIL and earlier BHEL-Lakdikapul / Nagole-LB Nagar standalone proposals (Nagole-LB Nagar now inside Cor IV). 'Paradise-Medchal' in older reports = current JBS-Medchal (Cor X). 'Shamshabad-Future City' / 'Fourth City' = Cor IX. The Jan 2024 draft (The Metro Rail Guy) also had a Mailardevpally-Aramghar-New High Court spur (4 km); Aramghar and New High Court are now stations on Cor IV.",
+  "Phase 2B station counts (18 Medchal, 14 Shamirpet) are from DPR press reports; unclear whether they include the JBS terminus.",
+  "Colours: Red/Blue/Green/Purple/Airport hex from Wikipedia Module:Adjacent stations/Hyderabad Metro, not an HMRL brand spec. Purple for Cor IV is Wikipedia's convention; HMRL has not published an official colour. Phase 2B corridors have no colour (null).",
+  "Ownership: L&T agreed (29 Apr 2026) to divest 100% of L&T Metro Rail (Hyderabad) to the state for ~Rs 15,000 cr; HMRL operates from 1 May 2026.",
+  "MMTS (Multi-Modal Transport System) is suburban rail run by South Central Railway, not part of the metro; interchanges at Bharat Nagar, Khairatabad, Lakdi-ka-pul, Malakpet, Begumpet (and Nampally/Secunderabad mainline)."
+ ]
+}

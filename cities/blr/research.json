@@ -1,0 +1,816 @@
+{
+ "city": "Bengaluru",
+ "as_of": "2026-10",
+ "lines": [
+  {
+   "line": "Purple Line",
+   "color": "#8C2877",
+   "segments": [
+    {
+     "from": "Baiyappanahalli",
+     "to": "Mahatma Gandhi Road",
+     "status": "operational",
+     "year": "2011-10",
+     "stage": "Phase 1 Reach 1; opened 20 Oct 2011 (first Namma Metro section)",
+     "km": 6.7,
+     "n_stations": 6,
+     "stations": [
+      "Baiyappanahalli",
+      "Swami Vivekananda Road",
+      "Indiranagar",
+      "Halasuru",
+      "Trinity",
+      "Mahatma Gandhi Road [interchange: Pink (u/c)]"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Mysuru Road",
+     "to": "Magadi Road",
+     "status": "operational",
+     "year": "2015-11",
+     "stage": "Phase 1 Reach 2; opened 16 Nov 2015 (Wikipedia table counts 5 stations, 5.12 km for this section; line text says 6 stations, 6.4 km)",
+     "km": 6.4,
+     "n_stations": 6,
+     "stations": [
+      "Magadi Road",
+      "Sri Balagangadharanatha Swamiji Station, Hosahalli [interchange: Grey (approved)]",
+      "Vijayanagara",
+      "Attiguppe",
+      "Deepanjali Nagar",
+      "Mysuru Road [interchange: Orange (approved)]"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Mahatma Gandhi Road",
+     "to": "Magadi Road",
+     "status": "operational",
+     "year": "2016-04",
+     "stage": "Phase 1 underground section (Cubbon Park–KSR Railway Station, 4.8 km underground); opened 29/30 Apr 2016",
+     "km": 6.4,
+     "n_stations": 5,
+     "stations": [
+      "Mahatma Gandhi Road",
+      "Cubbon Park",
+      "Dr. B.R. Ambedkar Station, Vidhana Soudha",
+      "Sir M. Visvesvaraya Station, Central College [interchange: Red (proposed, KR Circle)]",
+      "Nadaprabhu Kempegowda Station, Majestic [interchange: Green]",
+      "Krantivira Sangolli Rayanna Railway Station",
+      "Magadi Road"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Mysuru Road",
+     "to": "Kengeri",
+     "status": "operational",
+     "year": "2021-08",
+     "stage": "Phase 2 west extension; opened 30 Aug 2021",
+     "km": 7.5,
+     "n_stations": 6,
+     "stations": [
+      "Mysuru Road",
+      "Pantharapalya - Nayandahalli",
+      "Rajarajeshwari Nagar",
+      "Jnanabharathi",
+      "Pattanagere",
+      "Kengeri Bus Terminal",
+      "Kengeri"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Whitefield (Kadugodi)",
+     "to": "Krishnarajapura",
+     "status": "operational",
+     "year": "2023-03",
+     "stage": "Phase 2 east extension (Reach 1A/1B); opened 26 Mar 2023, initially disconnected from rest of line",
+     "km": 13.71,
+     "n_stations": 12,
+     "stations": [
+      "Whitefield (Kadugodi)",
+      "Hopefarm Channasandra",
+      "Kadugodi Tree Park",
+      "Pattandur Agrahara",
+      "Sri Sathya Sai Hospital",
+      "Nallurhalli",
+      "Kundalahalli",
+      "Seetharampalya",
+      "Hoodi",
+      "Garudacharpalya",
+      "Singayyanapalya",
+      "Krishnarajapura (K.R.Pura) [interchange: Blue (u/c)]"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Baiyappanahalli",
+     "to": "Krishnarajapura",
+     "status": "operational",
+     "year": "2023-10",
+     "stage": "Phase 2 gap closure; opened 9 Oct 2023",
+     "km": 2.1,
+     "n_stations": 1,
+     "stations": [
+      "Krishnarajapura (K.R.Pura)",
+      "Benniganahalli",
+      "Baiyappanahalli"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Kengeri",
+     "to": "Challaghatta",
+     "status": "operational",
+     "year": "2023-10",
+     "stage": "Phase 2 west extension; opened 9 Oct 2023",
+     "km": 2.05,
+     "n_stations": 1,
+     "stations": [
+      "Kengeri",
+      "Challaghatta"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Challaghatta",
+     "to": "Bidadi",
+     "status": "proposed",
+     "year": null,
+     "stage": "Feasibility study stage (Oct 2026); no station list published",
+     "km": 15,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/six-namma-metro-lines-planned-for-extension/98096"
+     ]
+    },
+    {
+     "from": "Whitefield (Kadugodi)",
+     "to": "Hoskote (via Katamanalluru)",
+     "status": "proposed",
+     "year": null,
+     "stage": "Announced (Nov 2023 / Mar 2023 state proposals), est. Rs 2,400 cr; no station list published. May be superseded by the KR Puram–Hoskote new-line proposal",
+     "km": 9,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Purple_Line_(Namma_Metro)"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Green Line",
+   "color": "#009933",
+   "segments": [
+    {
+     "from": "Mantri Square Sampige Road",
+     "to": "Peenya Industry",
+     "status": "operational",
+     "year": "2014-03",
+     "stage": "Phase 1 Reach 3/3A; opened 1 Mar 2014",
+     "km": 9.91,
+     "n_stations": 10,
+     "stations": [
+      "Peenya Industry",
+      "Peenya [interchange: Orange (approved)]",
+      "Goraguntepalya",
+      "Yeshwanthpur",
+      "Sandal Soap Factory",
+      "Mahalakshmi",
+      "Rajajinagara",
+      "Mahakavi Kuvempu Road",
+      "Srirampura",
+      "Mantri Square Sampige Road"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Peenya Industry",
+     "to": "Nagasandra",
+     "status": "operational",
+     "year": "2015-05",
+     "stage": "Phase 1 Reach 3B; opened 1 May 2015",
+     "km": 2.5,
+     "n_stations": 3,
+     "stations": [
+      "Nagasandra",
+      "Dasarahalli",
+      "Jalahalli",
+      "Peenya Industry"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Mantri Square Sampige Road",
+     "to": "Yelachenahalli",
+     "status": "operational",
+     "year": "2017-06",
+     "stage": "Phase 1 underground + south; inaugurated 17 Jun 2017, public 18 Jun 2017",
+     "km": 11.62,
+     "n_stations": 11,
+     "stations": [
+      "Mantri Square Sampige Road",
+      "Nadaprabhu Kempegowda Station, Majestic [interchange: Purple]",
+      "Chickpete",
+      "Krishna Rajendra Market",
+      "National College",
+      "Lalbagh",
+      "South End Circle",
+      "Jayanagara",
+      "Rashtreeya Vidyalaya Road [interchange: Yellow]",
+      "Banashankari",
+      "Jaya Prakash Nagar [interchange: Orange (approved)]",
+      "Yelachenahalli"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Yelachenahalli",
+     "to": "Silk Institute",
+     "status": "operational",
+     "year": "2021-01",
+     "stage": "Phase 2 south extension; inaugurated 14 Jan, opened 15 Jan 2021",
+     "km": 6.29,
+     "n_stations": 5,
+     "stations": [
+      "Yelachenahalli",
+      "Konanakunte Cross",
+      "Doddakallasandra",
+      "Vajarahalli",
+      "Thalaghattapura",
+      "Silk Institute"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Nagasandra",
+     "to": "Madavara",
+     "status": "operational",
+     "year": "2024-11",
+     "stage": "Phase 2 north extension; opened 7 Nov 2024",
+     "km": 3.14,
+     "n_stations": 3,
+     "stations": [
+      "Madavara",
+      "Chikkabidarakallu",
+      "Manjunath Nagar",
+      "Nagasandra"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Green_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Madavara",
+     "to": "Tumakuru",
+     "status": "proposed",
+     "year": null,
+     "stage": "DPR stage (DPR reported May 2026, PPP model, Rs 17,785–19,361 cr); length given as 59.6 km (Wikipedia) / ~60 km (Construction World) / 52.4 km (other report); no station list found",
+     "km": 59.6,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/six-namma-metro-lines-planned-for-extension/98096",
+      "https://www.deccanherald.com/india/karnataka/tumakuru-metro-dpr-pitches-for-pvt-investment-with-30-yr-concession-4014858"
+     ]
+    },
+    {
+     "from": "Silk Institute",
+     "to": "Harohalli",
+     "status": "proposed",
+     "year": null,
+     "stage": "Feasibility study stage (Oct 2026); no station list published",
+     "km": 24,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/six-namma-metro-lines-planned-for-extension/98096"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Yellow Line",
+   "color": "#FFDF00",
+   "segments": [
+    {
+     "from": "Rashtreeya Vidyalaya Road",
+     "to": "Delta Electronics Bommasandra",
+     "status": "operational",
+     "year": "2025-08",
+     "stage": "Phase 2 Reach 5; inaugurated 10 Aug 2025, public service 11 Aug 2025",
+     "km": 19.15,
+     "n_stations": 16,
+     "stations": [
+      "Rashtreeya Vidyalaya Road [interchange: Green]",
+      "Ragigudda",
+      "Jayadeva Hospital [interchange: Pink (u/c)]",
+      "BTM Layout",
+      "Central Silk Board [interchange: Blue (u/c)]",
+      "Bommanahalli",
+      "Hongasandra",
+      "Kudlu Gate",
+      "Singasandra",
+      "Hosa Road",
+      "Beratena Agrahara",
+      "Electronic City",
+      "Infosys Foundation Konappana Agrahara",
+      "Huskur Road",
+      "Biocon Hebbagodi",
+      "Delta Electronics Bommasandra"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Yellow_Line_(Namma_Metro)"
+     ]
+    },
+    {
+     "from": "Delta Electronics Bommasandra",
+     "to": "Attibele",
+     "status": "proposed",
+     "year": null,
+     "stage": "Feasibility study stage (Oct 2026); no station list published",
+     "km": 11,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/six-namma-metro-lines-planned-for-extension/98096"
+     ]
+    },
+    {
+     "from": "Delta Electronics Bommasandra",
+     "to": "Hosur (Tamil Nadu)",
+     "status": "proposed",
+     "year": null,
+     "stage": "Inter-state link; feasibility study commissioned by CMRL/Tamil Nadu (consultant Balaji Railroad Systems, 2024); Karnataka asked TN to fund study; no 2026 decision found; no station list. ~20.5 km (11.7 km Karnataka + 8.8 km TN) per one report, ~20 km (12+8) per another",
+     "km": 20.5,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://www.railwaygazette.com/metro/hosur-bommasandra-metro-study-commissioned/65808.article",
+      "https://www.trackopedia.com/en/news/asia/cmrl-awards-feasibility-study-on-tamil-nadu-bommasandra-metro-line",
+      "https://indiainfrahub.com/metrorail/south-indias-first-inter-state-metro-11-firms-compete-for-feasibility-study-contract-of-hosur-bengaluru-link/"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Pink Line",
+   "color": "#FF49A7",
+   "segments": [
+    {
+     "from": "Kalena Agrahara",
+     "to": "Tavarekere",
+     "status": "under_construction",
+     "year": "2026",
+     "stage": "Elevated; civil work complete, Railway Board rolling-stock nod 23 Sep 2026, CMRS inspection 6–8 Oct 2026; passenger opening expected after 15 Oct 2026 but no confirmed date found as of 2026-10-16",
+     "km": 7.5,
+     "n_stations": 6,
+     "stations": [
+      "Kalena Agrahara",
+      "Hulimavu",
+      "Bilekahalli IIM-B",
+      "JP Nagar 4th Phase [interchange: Orange (approved)]",
+      "Jayadeva Hospital [interchange: Yellow]",
+      "Tavarekere"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Pink_Line_(Namma_Metro)",
+      "https://www.nativeplanet.com/news/bengaluru-metro-pink-line-cmrs-inspection-2026-stations-timeline-opening-date-011-24771.html",
+      "https://urbanacres.in/bengaluru-pink-line-opening-delayed-again-may-start-after-october-15/",
+      "https://www.etvbharat.com/en/state/bengaluru-metros-7-dot-5-km-pink-line-stretch-ready-awaiting-centres-nod-for-inauguration-enn26090208155"
+     ]
+    },
+    {
+     "from": "Tavarekere",
+     "to": "Nagawara",
+     "status": "under_construction",
+     "year": "2027-03",
+     "stage": "Underground (Dairy Circle–Nagawara, 12 stations); target March 2027 (earlier Dec 2026)",
+     "km": 13.76,
+     "n_stations": 12,
+     "stations": [
+      "Tavarekere",
+      "Dairy Circle [interchange: Red (proposed)]",
+      "Lakkasandra",
+      "Langford Town",
+      "National Military School",
+      "Mahatma Gandhi Road [interchange: Purple]",
+      "Shivajinagar",
+      "Cantonment Railway Station",
+      "Pottery Town",
+      "Tannery Road",
+      "Venkateshpura",
+      "Kadugundanahalli",
+      "Nagawara [interchange: Blue (u/c)]"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Pink_Line_(Namma_Metro)",
+      "https://www.etvbharat.com/en/state/bengaluru-metros-7-dot-5-km-pink-line-stretch-ready-awaiting-centres-nod-for-inauguration-enn26090208155"
+     ]
+    },
+    {
+     "from": "Kalena Agrahara",
+     "to": "Kadugodi Tree Park",
+     "status": "proposed",
+     "year": null,
+     "stage": "Feasibility assessment (Oct 2026); ~68 km via Bannerghatta, Jigani, Attibele, Sarjapura, Dommasandra, Varthur; est. Rs 4,800 cr (Mar 2023); no station list published",
+     "km": 68,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/six-namma-metro-lines-planned-for-extension/98096"
+     ]
+    },
+    {
+     "from": "Nagawara",
+     "to": "Kempegowda International Airport (via Thanisandra)",
+     "status": "proposed",
+     "year": null,
+     "stage": "Announced (Mar 2023 state proposals), est. Rs 10,000 cr; no station list published",
+     "km": 25,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro"
+     ]
+    },
+    {
+     "from": "Jigani",
+     "to": "Surya City Sports Complex",
+     "status": "proposed",
+     "year": null,
+     "stage": "Announced branch of the proposed Pink extension; no station list published",
+     "km": 4,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Blue Line",
+   "color": "#28458C",
+   "segments": [
+    {
+     "from": "Central Silk Board",
+     "to": "Krishnarajapura",
+     "status": "under_construction",
+     "year": "2027",
+     "stage": "Phase 2A (ORR East). Targets conflict: DH (Shivakumar directive) Dec 2026; Wikipedia Mar/Jun/Dec 2027; Swarajya (Aug 2026) says commercial opening slips to 2027, trial runs KR Pura–HSR Layout targeted Oct 2026",
+     "km": 19.75,
+     "n_stations": 13,
+     "stations": [
+      "Central Silk Board [interchange: Yellow]",
+      "HSR Layout",
+      "Agara [interchange: Red (proposed)]",
+      "Ibbaluru [interchange: Red (proposed)]",
+      "Prestige Bellanduru",
+      "Embassy TechVillage Devarabeesanahalli",
+      "Kadubeesanahalli",
+      "Marathahalli",
+      "ISRO",
+      "Doddanekundi",
+      "Bagmane Developers - DRDO Sports Complex",
+      "Saraswathi Nagara",
+      "Krishnarajapura (K.R.Pura) [interchange: Purple]"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)",
+      "https://swarajyamag.com/news-brief/bengaluru-namma-metro-blue-line-opening-delayed-to-2027-as-civil-works-remain-pending-along-orr-report",
+      "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fd-k-shivakumar-warns-namma-metros-blue-line-contractors-says-no-new-work-if-deadlines-slip-3821677"
+     ]
+    },
+    {
+     "from": "Krishnarajapura",
+     "to": "Hebbala",
+     "status": "under_construction",
+     "year": "2027-12",
+     "stage": "Phase 2B part 1. Target Dec 2027 (DH/Shivakumar directive); Wikipedia history table says March 2028. Source counts 8 stations but station table lists 9 between KR Pura and Hebbala inclusive of Hebbala",
+     "km": 11.35,
+     "n_stations": 9,
+     "stations": [
+      "Krishnarajapura (K.R.Pura) [interchange: Purple]",
+      "Kasturi Nagara",
+      "Horamavu",
+      "HRBR Layout",
+      "Kalyana Nagara",
+      "HBR Layout",
+      "Nagawara [interchange: Pink (u/c)]",
+      "Veerannapalya",
+      "Kempapura [interchange: Orange (approved)]",
+      "Hebbala [interchange: Orange (approved), Red (proposed)]"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)",
+      "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fd-k-shivakumar-warns-namma-metros-blue-line-contractors-says-no-new-work-if-deadlines-slip-3821677"
+     ]
+    },
+    {
+     "from": "Hebbala",
+     "to": "KIAL Terminals",
+     "status": "under_construction",
+     "year": "2027-06",
+     "stage": "Phase 2B part 2 (airport line). Target June 2027 (DH/Shivakumar directive); Wikipedia gives Sep 2027 / Mar 2028 / Dec 2028 in different places. Length 27.09 km (wiki history), 27.44 km (DH), 30.09 km (Namma Metro phase table). Airport stations to be built with BIAL/KIAL funding; Bettahalasuru station (Embassy-funded) and other 'future stations' (3 per infobox) not in the 29-station list",
+     "km": 27.09,
+     "n_stations": 7,
+     "stations": [
+      "Hebbala",
+      "Kodigehalli",
+      "Jakkuru Cross",
+      "Yelahanka",
+      "Bagaluru Cross",
+      "Doddajala",
+      "Airport City",
+      "KIAL Terminals"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Blue_Line_(Namma_Metro)",
+      "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fbengaluru%2Fd-k-shivakumar-warns-namma-metros-blue-line-contractors-says-no-new-work-if-deadlines-slip-3821677"
+     ]
+    },
+    {
+     "from": "Doddajala",
+     "to": "Devanahalli",
+     "status": "proposed",
+     "year": null,
+     "stage": "Announced (Mar 2023 proposals; Devanahalli extension re-announced in Karnataka Budget 2025); no station list published",
+     "km": 6,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://www.thedailyjagran.com/india/bm-property-bengaluru-namma-metro-expansion-to-devanahalli-likely-to-boost-real-estate-business-bengaluru-news-10222750"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Orange Line",
+   "color": "#FF6300",
+   "segments": [
+    {
+     "from": "JP Nagar 4th Phase",
+     "to": "Kempapura",
+     "status": "approved",
+     "year": "2031",
+     "stage": "Phase 3 (ORR West), double-decker (metro + road flyover). Union Cabinet approval 16 Aug 2024 (Phase 3 total 44.65 km, 31 stations, Rs 15,611 cr). First civil tender (3 packages, ~Rs 4,187 cr) bids due Feb 2026; no award found. Not yet under civil construction. Target: 2031 (Namma Metro article) vs 2036 (Orange Line infobox)",
+     "km": 32.15,
+     "n_stations": 22,
+     "stations": [
+      "Jaya Prakash Nagar 4th Phase [interchange: Pink (u/c)]",
+      "Jaya Prakash Nagar 5th Phase",
+      "Jaya Prakash Nagar [interchange: Green]",
+      "Kadirenahalli",
+      "Kamakya Bus Depot",
+      "Hosakerahalli",
+      "Dwarka Nagar",
+      "Mysuru Road [interchange: Purple]",
+      "Nagarabhavi Circle",
+      "Vinayaka Layout",
+      "Papireddy Palya",
+      "Nagarbhavi BDA Complex",
+      "Sumanahalli Cross [interchange: Grey (approved)]",
+      "Prem Nagar",
+      "Freedom Fighters Colony",
+      "Kanteerava Nagar",
+      "Peenya [interchange: Green]",
+      "Muthyalanagar",
+      "BEL Circle",
+      "Nagashetty halli",
+      "Hebbala [interchange: Blue (u/c), Red (proposed)]",
+      "Kempapura [interchange: Blue (u/c)]"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Orange_Line_(Namma_Metro)",
+      "https://themetrorailguy.com/2024/08/16/bangalore-metros-phase-3-approved-by-central-government/",
+      "https://themetrorailguy.com/?p=62822",
+      "https://www.nbmcw.com/news/bengaluru-metro-phase-3-tender-process-begins-for-jp-nagar-kempapura-corridor.html"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Grey Line",
+   "color": "#838996",
+   "segments": [
+    {
+     "from": "Sri Balagangadharanatha Swamiji Station, Hosahalli",
+     "to": "Kadabagere",
+     "status": "approved",
+     "year": "2031",
+     "stage": "Phase 3 (Magadi Road corridor), double-decker; approved with Orange Line 16 Aug 2024. Pre-construction (GTI, design consultant SYSTRA). Target 2029 (Grey infobox) vs 2031 (Namma Metro article)",
+     "km": 12.5,
+     "n_stations": 9,
+     "stations": [
+      "Sri Balagangadharanatha Swamiji Station, Hosahalli [interchange: Purple]",
+      "KHB Colony",
+      "Kamakshi Palya",
+      "Sumanahalli Cross [interchange: Orange (approved)]",
+      "Sunkadakatte",
+      "Herohalli",
+      "Byadarahalli",
+      "Kamath Layout",
+      "Kadabagere"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Grey_Line_(Namma_Metro)",
+      "https://themetrorailguy.com/2024/08/16/bangalore-metros-phase-3-approved-by-central-government/"
+     ]
+    },
+    {
+     "from": "Kadabagere",
+     "to": "Tavarekere (Magadi Road)",
+     "status": "proposed",
+     "year": "2033",
+     "stage": "Proposed extension along Magadi Road; 5 stations stated, names not published. Note: this Tavarekere is on Magadi Road (west), NOT the Pink Line's Tavarekere",
+     "km": 6.6,
+     "n_stations": 5,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Red Line",
+   "color": "#CB0020",
+   "segments": [
+    {
+     "from": "Hebbala",
+     "to": "Sarjapura",
+     "status": "approved",
+     "year": "2033-04",
+     "stage": "Phase 3A. DPR approved by state cabinet (Dec 2024/Jan 2025), returned by Centre over cost (Rs 776 cr/km); revised DPR (Systra review) Feb 2026, sent to Centre Apr 2026, Rs 28,405 cr; Union approval PENDING as of Oct 2026. GTI contracts awarded 13 Feb 2026. Target April 2033. Length 36.58 km -> 37.80 km in revised DPR; ~37 km commonly cited. Stated 28 stations but Wikipedia table lists 27 (Veterinary College and Kodati Gate dropped, Sarjapur Terminal added)",
+     "km": 37.8,
+     "n_stations": 28,
+     "stations": [
+      "Hebbala [interchange: Blue (u/c), Orange (approved)]",
+      "Ganganagar",
+      "Mekhri Circle",
+      "Palace Guttahalli",
+      "Bengaluru Golf Course",
+      "Basaveshwara Circle",
+      "KR Circle [interchange: Purple (Sir M. Visvesvaraya Station, Central College)]",
+      "Town Hall",
+      "Shanthinagara",
+      "NIMHANS",
+      "Dairy Circle [interchange: Pink (u/c)]",
+      "Koramangala II Block",
+      "Koramangala III Block",
+      "Jakkasandra",
+      "Agara [interchange: Blue (u/c)]",
+      "Ibbaluru [interchange: Blue (u/c)]",
+      "Bellanduru Gate",
+      "Kaikondrahalli",
+      "Doddakannelli",
+      "Carmelaram",
+      "Ambedkar Nagara",
+      "Muthanalluru Cross",
+      "Dommasandra",
+      "Sompura",
+      "Kada Agrahara Road",
+      "Sarjapura",
+      "Sarjapura Terminal Station"
+     ],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Red_Line_(Namma_Metro)",
+      "https://deccanherald.com/india/karnataka/bengaluru/bengaluru-metro-phase-3a-station-alignment-and-cost-tweaks-push-deadline-back-by-two-years-4074038",
+      "https://newsable.asianetnews.com/gallery/karnataka-news/bengaluru-metro-phase-3a-namma-metro-phase-3a-opening-pushed-to-2033-after-major-cost-cutting-changes-0vp1ugq"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "Unassigned proposed corridors",
+   "color": null,
+   "segments": [
+    {
+     "from": "Krishnarajapura",
+     "to": "Hoskote (via Budigere Cross)",
+     "status": "proposed",
+     "year": null,
+     "stage": "New line; feasibility stage (Oct 2026); no station list published",
+     "km": 16,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/six-namma-metro-lines-planned-for-extension/98096"
+     ]
+    },
+    {
+     "from": "Mahatma Gandhi Road",
+     "to": "Hope Farm (via Marathahalli)",
+     "status": "proposed",
+     "year": null,
+     "stage": "Announced in Mar 2023 state proposals, est. Rs 9,600 cr; no station list published",
+     "km": 16,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro"
+     ]
+    },
+    {
+     "from": "Yeshwanthapura TTMC",
+     "to": "Mahalakshmi (Inner Ring Line)",
+     "status": "proposed",
+     "year": null,
+     "stage": "Inner Ring Line recommended by IISc, in CMP-2019; est. Rs 10,000 cr; no station list in this research",
+     "km": 34,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://en.wikipedia.org/wiki/Namma_Metro",
+      "https://en.wikipedia.org/wiki/Inner_Ring_Line"
+     ]
+    },
+    {
+     "from": "Bengaluru",
+     "to": "Doddaballapur / Nelamangala",
+     "status": "proposed",
+     "year": null,
+     "stage": "State 'considering' extensions to satellite towns (2023 report); no corridor, length or station list published",
+     "km": null,
+     "n_stations": null,
+     "stations": [],
+     "sources": [
+      "https://indiainfrahub.com/?p=27923"
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Station lists are ordered along the segment and include both endpoint stations (shared endpoints repeat across consecutive sections); n_stations is the count of NEW stations as stated by the source.",
+  "Network operational as of 2026-10: Purple 43.49 km/37 stns, Green 33.46 km/32 stns, Yellow 19.15 km/16 stns = 96.1 km, 83 stations (Wikipedia Namma Metro).",
+  "Pink elevated (Kalena Agrahara–Tavarekere): CMRS inspection 6–8 Oct 2026; no confirmed opening found as of 2026-10-16. Re-check before publishing; may open within days.",
+  "Purple MG Road–Magadi Road underground opening: 29 Apr 2016 (text) vs 30 Apr 2016 (table) in Wikipedia; year-month 2016-04 is unambiguous.",
+  "Phase 1 Mysuru Road–Magadi Road: Wikipedia phase table says 5 stations/5.12 km, line text says 6 stations/6.4 km.",
+  "Blue Line dates conflict heavily across sources (2026-12 to 2028-12); values chosen are the latest government directive reported by Deccan Herald; Swarajya (Aug 2026) says 2A slips into 2027.",
+  "Blue Line 2B: stated 16 stations (8+8) but table splits 9 (KR Pura–Hebbala) + 7 (Hebbala–KIAL). Infobox mentions 3 'future' stations (e.g. Bettahalasuru) not listed.",
+  "Orange Line: Namma Metro article table says 'Under Construction' but Orange Line page says 'Approved' with civil bidding underway; no civil award found -> marked approved.",
+  "Hosahalli–Kadabagere is shown as Grey Line on Wikipedia's Namma Metro page and module; some sources/the Orange infobox treat both Phase 3 corridors under Orange. Official BMRCL colour not confirmed.",
+  "Red Line (Phase 3A) marked 'approved' only at state level; Union approval pending. Station list reflects revised DPR as per Wikipedia (27 names vs 28 stated).",
+  "Colours are Wikipedia's Module:Adjacent_stations/Namma_Metro hexes, not BMRCL brand specs. Unassigned corridors have color null.",
+  "Renamed stations: Kalena Agrahara (was Gottigere), Tavarekere (was Swagath Cross), Hosahalli = Sri Balagangadharanatha Swamiji Station, Majestic = Nadaprabhu Kempegowda Station, City Railway Station = Krantivira Sangolli Rayanna Railway Station, Vidhana Soudha = Dr. B.R. Ambedkar Station, Central College = Sir M. Visvesvaraya Station, Bommasandra = Delta Electronics Bommasandra, Whitefield = Whitefield (Kadugodi), Yelahanka-side names Hebbal/Hebbala used interchangeably.",
+  "Magadi Road: no standalone metro extension found; the Phase 3 Hosahalli–Kadabagere corridor runs along Magadi Road, with a proposed further 6.6 km to Tavarekere (Magadi Road).",
+  "Excluded: Bengaluru Suburban Rail Project (K-RIDE, 4 corridors ~148 km, under construction) — not metro.",
+  "Wikipedia wikitext fetched 2026-10-16/17; some page sections are snapshots from ~Apr 2026 and lag news."
+ ]
+}
