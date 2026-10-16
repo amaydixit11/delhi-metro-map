@@ -2,7 +2,7 @@
 
 Interactive map of the Delhi Metro and the wider NCR rail network: every open, under-construction, approved and proposed line through Phase V(C), plus the Gurugram, Noida and Meerut metros and the Namo Bharat (RRTS) corridors.
 
-Open `dist/index.html` in a browser.
+**Live map: https://amaydixit11.github.io/delhi-metro-map/** (or open `dist/index.html` locally).
 
 - **Geographic view:** open lines traced from OpenStreetMap, planned lines from their station lists
 - **Schematic view:** octilinear layout made with [LOOM](https://github.com/ad-freiburg/loom), with curved or sharp corners
