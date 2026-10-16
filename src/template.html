@@ -154,10 +154,12 @@ button:hover{background:var(--chip)}
   <div class="note" id="yrNote"></div>
 
   <h2>Who's left out</h2>
+  <div class="seg" id="popR"><button data-r="1" class="on">Within 1 km</button><button data-r="2">2 km</button><button data-r="3">3 km</button></div>
   <div class="popstat"><b id="popPct">–</b><span id="popTxt" style="font-size:12.5px;color:var(--muted)"></span></div>
+  <div class="note" id="popAll"></div>
   <label class="row"><input type="checkbox" id="popOn"> Show population density <span class="tag">geographic</span></label>
-  <div id="popLegend" style="display:none"><div class="ramp"></div><div class="rampl"><span>5k</span><span>people / km² with no station within 1 km</span><span>60k+</span></div>
-  <div class="note">Green tint = dense areas already within 1 km of a station.</div></div>
+  <div id="popLegend" style="display:none"><div class="ramp"></div><div class="rampl"><span>5k</span><span id="rampTxt">people / km² with no station within 1 km</span><span>60k+</span></div>
+  <div class="note">Green tint = dense areas already within <span id="rTxt2">1 km</span> of a station.</div></div>
   <div class="note">Population: WorldPop 2020, 1 km grid, smoothed to 500 m. Area names are the nearest locality from OpenStreetMap, so they're approximate.</div>
   <div class="note" style="margin-top:8px"><b>Most people still unserved</b> (for the year and phases shown):</div>
   <div id="hotlist"></div>
@@ -508,8 +510,9 @@ const P=window.POP, NPC=P.nx*P.ny;
 const kmLat=111.2, kmLon=111.2*Math.cos(28.6*Math.PI/180), cellKm2=(P.d*kmLat)*(P.d*kmLon);
 const totalPop=P.cells.reduce((a,b)=>a+b,0);
 let popLayer=null; const popCanvas=document.createElement("canvas"); popCanvas.width=P.nx; popCanvas.height=P.ny;
-function coverage(){
-  const cov=new Uint8Array(NPC), R=1.0, ry=Math.ceil(R/(P.d*kmLat)), rx=Math.ceil(R/(P.d*kmLon));
+let popR=1;
+function coverage(R=popR){
+  const cov=new Uint8Array(NPC), ry=Math.ceil(R/(P.d*kmLat)), rx=Math.ceil(R/(P.d*kmLon));
   S.forEach(s=>{
     if(!servedVisible(s).length||(s.conf==="p"&&!state.proj)) return;
     const cy=Math.floor((P.lat0-s.lat)/P.d), cx=Math.floor((s.lon-P.lon0)/P.d);
@@ -523,10 +526,13 @@ function coverage(){
 function ramp(t){const st=[[253,230,138],[251,146,60],[220,38,38],[127,29,29]];t=Math.max(0,Math.min(1,t))*3;const i=Math.min(2,Math.floor(t)),f=t-i;return st[i].map((c,k)=>Math.round(c+(st[i+1][k]-c)*f));}
 function lakh(n){return n>=1e5?(n/1e5).toFixed(n>=1e6?0:1)+" lakh":Math.round(n/1000)+"k";}
 function renderPop(){
-  const cov=coverage(); let covered=0;
-  for(let i=0;i<NPC;i++) if(cov[i]) covered+=P.cells[i];
-  document.getElementById("popPct").textContent=Math.round(covered/totalPop*100)+"%";
-  document.getElementById("popTxt").textContent=`of ${(totalPop/1e7).toFixed(1)} crore people in Delhi NCR live within 1 km of a station${state.year<YMAX?` (${state.year})`:""}`;
+  const pct=R=>{const c=coverage(R);let s=0;for(let i=0;i<NPC;i++) if(c[i]) s+=P.cells[i];return [c,Math.round(s/totalPop*100)];};
+  const all=[1,2,3].map(r=>pct(r)), [cov,p]=all[popR-1];
+  document.getElementById("popPct").textContent=p+"%";
+  document.getElementById("popTxt").textContent=`of ${(totalPop/1e7).toFixed(1)} crore people in Delhi NCR live within ${popR} km of a station${state.year<YMAX?` (${state.year})`:""}`;
+  document.getElementById("popAll").textContent=`1 km: ${all[0][1]}% · 2 km: ${all[1][1]}% · 3 km: ${all[2][1]}%`;
+  document.getElementById("rampTxt").textContent=`people / km² with no station within ${popR} km`;
+  document.getElementById("rTxt2").textContent=popR+" km";
   // top unserved neighbourhoods (hotspot blocks, grouped by name)
   const by=new Map();
   P.hot.forEach(([lat,lon,name,y0,x0])=>{let u=0;for(let y=y0;y<y0+P.B&&y<P.ny;y++)for(let x=x0;x<x0+P.B&&x<P.nx;x++){const i=y*P.nx+x;if(!cov[i])u+=P.cells[i];}
@@ -549,6 +555,7 @@ function renderPop(){
   if(!map.hasLayer(popLayer)) popLayer.addTo(map);
 }
 document.getElementById("popOn").onchange=()=>renderPop();
+document.querySelectorAll("#popR button").forEach(b=>b.onclick=()=>{popR=+b.dataset.r;document.querySelectorAll("#popR button").forEach(x=>x.classList.toggle("on",x===b));renderPop();});
 
 // ---------- timeline ----------
 const yrEl=document.getElementById("yr"),yrLbl=document.getElementById("yrLbl"),yrNote=document.getElementById("yrNote"),badge=document.getElementById("yearBadge"),playBtn=document.getElementById("play");
