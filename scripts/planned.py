@@ -222,10 +222,6 @@ SEGMENTS += [
     ("Greater Noida West Sector II", 28.6000, 77.4440, "o"), ("Greater Noida West Sector 3", 28.5930, 77.4480, "o"),
     ("Greater Noida West Sector 10", 28.5850, 77.4520, "o"), ("Greater Noida West Sector 12", 28.5780, 77.4560, "o"),
     ("Knowledge Park V", 28.5700, 77.4610, "o")]),
-  dict(line="violet", phase="G2", title="Palwal → Noida Airport (Jewar)", status="Proposed · no study yet", km=30, src="nmrc", st=[
-    ("@Palwal Railway Station",), ("Chandhat", 28.1541, 77.3752, "p"), ("Sihol", 28.1566, 77.4086, "p"), ("Rampur Khor", 28.1591, 77.4420, "p"),
-    ("Rajupur", 28.1617, 77.4754, "p"), ("Jewar Khader", 28.1642, 77.5087, "p"), ("Sirsa (Jewar)", 28.1667, 77.5421, "p"),
-    ("Mukimpur", 28.1692, 77.5755, "p"), ("Jewar Airport", 28.1717, 77.6089, "o")]),
   # ---- Namo Bharat (NCRTC) ----
   dict(line="rrJ", phase="RR", title="Namo Bharat: Ghaziabad → Noida Airport (Jewar)", status="DPR submitted Apr 2024 · revised Aug 2024", km=72.44, n=12, src="rr-jewar", st=[
     ("@Ghaziabad",), ("Ghaziabad South", 28.6405, 77.4113, "o"), ("@Greater Noida West Sector IV",), ("@Greater Noida West Sector II",),
@@ -305,9 +301,6 @@ SEGMENTS += [
   dict(line="grey", phase="G2", title="Grey Line: Dhansa Bus Stand → Jhajjar (via Badli)", status="Proposed · DPR consultant tendered Mar 2025 · stops projected", km=33, src="dm-wiki", st=[
     ("@Dhansa Bus Stand",), ("Surakhpur", 28.6054, 76.9339, "p"), ("Rawata Mor", 28.5989, 76.8893, "p"), ("Gubhana", 28.5925, 76.8447, "p"),
     ("Badli (Jhajjar)", 28.5727, 76.8101, "o"), ("Jhajjar Bypass", 28.5960, 76.7100, "p"), ("Jhajjar", 28.6060, 76.6570, "o")]),
-  dict(line="green", phase="G2", title="Green Line: Asaudha → Rohtak", status="Proposed · studies done · stops projected", km=32, src="dm-wiki", st=[
-    ("@Asaudha",), ("Loharheri", 28.7735, 76.8346, "p"), ("Kharkhauda Road", 28.7964, 76.7978, "p"), ("@Sampla",),
-    ("Gandhra", 28.8383, 76.7223, "p"), ("Kheri Sadh", 28.8573, 76.6838, "p"), ("Garhi Bohar", 28.8764, 76.6452, "p"), ("@Rohtak",)]),
 ]
 
 SEGMENTS += [
