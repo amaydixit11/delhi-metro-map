@@ -421,8 +421,8 @@ const C=window.CITY;
 document.title=C.title; document.getElementById("cityH1").textContent=C.h1; document.getElementById("citySub").textContent=C.sub;
 document.getElementById("cityNotes").innerHTML=C.notes;
 (()=>{const here=C.code||"delhi",root=here==="delhi"?"":"../";
-  if(C.jumps){const nav=document.getElementById("cities");nav.innerHTML=C.jumps.map((j,i)=>`<a href="#" data-j="${i}">${j[0]}</a>`).join("")+`<a href="#" data-j="all" class="on">All</a>`;
-    nav.onclick=e=>{const a=e.target.closest("a");if(!a)return;e.preventDefault();nav.querySelectorAll("a").forEach(x=>x.classList.toggle("on",x===a));map.fitBounds(a.dataset.j==="all"?C.fit:C.jumps[+a.dataset.j][1]);};return;}
+  if(C.jumps){const nav=document.getElementById("cities");nav.innerHTML=C.jumps.map((j,i)=>`<a href="#" data-j="${i}">${j[0]}</a>`).join("")+`<a href="#" data-j="all">All</a>`;
+    nav.querySelector('a[data-j="0"]').classList.add("on");nav.onclick=e=>{const a=e.target.closest("a");if(!a)return;e.preventDefault();nav.querySelectorAll("a").forEach(x=>x.classList.toggle("on",x===a));map.fitBounds(a.dataset.j==="all"?C.allFit:C.jumps[+a.dataset.j][1]);};return;}
   document.getElementById("cities").innerHTML=[["india","All cities"],["delhi","Delhi NCR"],["blr","Bengaluru"],["mum","Mumbai"],["pune","Pune"],["hyd","Hyderabad"]]
   .map(([c,n])=>`<a href="${root}${c==="delhi"?"":c+"/"}${c==="delhi"?"index.html":"index.html"}" class="${c===here?"on":""}">${n}</a>`).join("");})();
 const PH=C.phases, ORDER=C.order, SHORT=C.short;

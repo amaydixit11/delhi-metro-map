@@ -31,7 +31,7 @@ for c, name, f in CITIES:
 phases["OP"]["n"] = "Open (recent, other cities)"; phases["AP"]["n"] = "Approved (other cities)"; phases["UC"]["n"] = "Under construction (other cities)"; phases["PR"]["n"] = "Proposed (other cities)"
 cfg = dict(code="india", title="India metro maps", h1="India's metros · open, building and planned",
            sub="Delhi NCR, Bengaluru, Mumbai, Pune and Hyderabad on one map. Pick a city below or zoom around. Data as of Oct 2026.",
-           agency="the metro authority", region="these cities", fit=[[17.0, 72.6], [29.2, 78.8]], lat=22.0,
+           agency="the metro authority", region="these cities", fit=pages["delhi"]["fit"], allFit=[[17.0, 72.6], [29.2, 78.8]], lat=22.0,
            phases=phases, order=order, short=short, label=label, thin=thin, rail=rail, speeds=speeds, jumps=jumps,
            noSchematic=True, newLabel="planned stations",
            notes="".join(f'<div class="note"><b>{n}:</b> see the single-city page for its notes and sources.</div>' for _, n, _ in CITIES))
