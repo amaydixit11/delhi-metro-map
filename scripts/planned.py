@@ -25,6 +25,7 @@ LINES = {
     "rrF": ("Namo Bharat: Delhi–Faridabad–Palwal", "#BF360C"), "rrK": ("Namo Bharat: Ghaziabad–Khurja", "#E65100"),
     "rrR": ("Namo Bharat: Delhi–Bahadurgarh–Rohtak", "#D84315"), "rrH": ("Namo Bharat: Ghaziabad–Hapur", "#FF7043"),
     "rrB": ("Namo Bharat: Delhi–Shahdara–Baraut", "#A0522D"),
+    "gfm": ("Gurugram–Faridabad Metro (on Namo Bharat track)", "#26C6DA"),
     "aqua": ("Aqua Line (NMRC)", "#2BB3C0"), "rapid": ("Rapid Metro Gurugram", "#6E7B8B"), "rrts": ("Namo Bharat RRTS", "#E8590C"),
 }
 
@@ -309,6 +310,17 @@ SEGMENTS += [
     ("Gandhra", 28.8383, 76.7223, "p"), ("Kheri Sadh", 28.8573, 76.6838, "p"), ("Garhi Bohar", 28.8764, 76.6452, "p"), ("@Rohtak",)]),
 ]
 
+SEGMENTS += [
+  # metro services proposed on the Gurugram–Faridabad Namo Bharat corridor (NCRTC/HMRTC, Mar 2026)
+  dict(line="gfm", phase="G2", title="Gurugram metro on Namo Bharat track: IFFCO Chowk → Gwal Pahari", status="Proposed Mar 2026 · shares the Namo Bharat corridor", src="hmrtc", st=[
+    ("@IFFCO Chowk",), ("Sector 29 (Gurugram)", 28.4669, 77.0671, "o"), ("@Millennium City Centre Gurugram",), ("Sector 52 (Gurugram)", 28.4368, 77.0795, "o"),
+    ("Wazirabad (Gurugram)", 28.4338, 77.0878, "o"), ("@Sector 57", "o"), ("@Sector 61",), ("Sectors 58-61", 28.4180, 77.1150, "o"), ("@Gwal Pahari",)]),
+  dict(line="gfm", phase="G2", title="Faridabad metro on Namo Bharat track: NIT-3 → Sectors 88-89", status="Proposed Mar 2026 · shares the Namo Bharat corridor", src="hmrtc", st=[
+    ("NIT-3", 28.3961, 77.2903, "o"), ("NIT-1", 28.3847, 77.3026, "o"), ("@Bata Chowk",), ("Sectors 12-15", 28.3855, 77.3232, "o"),
+    ("Sector 80 (Faridabad)", 28.3815, 77.3330, "o"), ("Sectors 81-82", 28.3900, 77.3400, "o"), ("Sectors 85-86", 28.4068, 77.3425, "o"),
+    ("Sectors 88-89", 28.4210, 77.3668, "o")]),
+]
+
 # Phase IV/V stations on operational-line geometry that are not open yet
 PENDING_EXISTING = {"Soorghat": "IV"}
 
@@ -339,5 +351,6 @@ SOURCES = {
   "dm-wiki": ("Wikipedia: Delhi Metro – Phase V expansion", "https://en.wikipedia.org/wiki/Delhi_Metro"),
   "fgm": ("DNA: Faridabad–Gurgaon metro, 12 stations", "https://www.dnaindia.com/india/report-faridabad-gurgaon-to-have-metro-connectivity-list-of-12-stations-route-details-3031311"),
   "ncrtc": ("NCRTC: Project details – future phases", "https://ncrtc.in/details/"),
+  "hmrtc": ("HMRTC/NCRTC: metro stations on the Gurugram–Faridabad Namo Bharat corridor (2026)", "https://hmrtc.in/"),
   "wiki-green": ("Wikipedia: Green Line – Bahadurgarh–Asaudha", "https://en.wikipedia.org/wiki/Green_Line_(Delhi_Metro)"),
 }

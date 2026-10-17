@@ -77,6 +77,8 @@ EST = {
   "Namo Bharat: Ghaziabad → Bulandshahr → Khurja": (2038, "NCRTC future phase"),
   "Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli)": (2040, "stalled since 2019; may be cancelled"),
   "Palwal → Noida Airport (Jewar)": (2040, "no study yet"),
+  "Gurugram metro on Namo Bharat track: IFFCO Chowk → Gwal Pahari": (2033, "built with the Namo Bharat corridor (est. 2032)"),
+  "Faridabad metro on Namo Bharat track: NIT-3 → Sectors 88-89": (2033, "built with the Namo Bharat corridor (est. 2032)"),
 }
 NEVER = 9999
 import os as _os, sys as _sys
