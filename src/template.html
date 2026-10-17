@@ -249,7 +249,7 @@ try{state.view=localStorage.getItem('dm-view')||"geo";state.solid=localStorage.g
 Object.keys(M.lines).forEach(k=>state.lines[k]=true);
 
 const root=document.documentElement;
-try{const t=localStorage.getItem("dm-theme"); if(t) root.dataset.theme=t;}catch(e){}
+root.dataset.theme="light"; try{const t=localStorage.getItem("dm-theme"); if(t) root.dataset.theme=t;}catch(e){}
 const isDark=()=>root.dataset.theme==="dark"||(!root.dataset.theme&&matchMedia("(prefers-color-scheme: dark)").matches);
 
 const map=L.map("map",{zoomControl:true,preferCanvas:false,minZoom:9,maxZoom:17,zoomSnap:.25});
