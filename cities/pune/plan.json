@@ -483,85 +483,12 @@
 "line": "pinklineline",
 "status": "under_construction",
 "phase": "UC",
-"year": "2026",
-"stage": "CMRS provisional authorisation 2026-07-23; awaiting inauguration date; not opened as of early Oct 2026",
-"km": null,
-"n": 12,
-"title": "Maan → R K Laxman Museum Balewadi",
-"src": "s11",
-"st": [
-[
-"Maan",
-18.57462,
-73.70925
-],
-[
-"Maan - MIDC Circle, Phase II",
-18.58158,
-73.7072
-],
-[
-"Maan Bus Depot",
-18.58854,
-73.70514
-],
-[
-"Hinjawadi Phase-II Circle-II",
-18.59049,
-73.71301
-],
-[
-"Hinjawadi Phase-II Circle-I",
-18.59243,
-73.72087
-],
-[
-"Padmabhushan Chowk",
-18.59437,
-73.72874
-],
-[
-"Shree Shiv Chhatrapati Shivaji Maharaj Chowk, Hinjawadi",
-18.5941,
-73.71833
-],
-[
-"Hinjawadi Phase - I",
-18.59383,
-73.70791
-],
-[
-"Wakad Chowk",
-18.5903,
-73.75756
-],
-[
-"Shree Shiv Chhatrapati Sports Complex, Mahalunge",
-18.58295,
-73.76173
-],
-[
-"Mitcon Balewadi",
-18.5756,
-73.76591
-],
-[
-"R K Laxman Museum Balewadi",
-18.56825,
-73.77008
-]
-]
-},
-{
-"line": "pinklineline",
-"status": "under_construction",
-"phase": "UC",
 "year": "2027",
 "stage": "PPP (Tata-Siemens, PITCMRL); remaining stations targeted Dec 2026 per PMRDA, Wikipedia says Mar 2027",
 "km": null,
 "n": 11,
 "title": "Balewadi High Street → District Court Pune",
-"src": "s12",
+"src": "s11",
 "st": [
 [
 "Balewadi High Street",
@@ -629,7 +556,7 @@
 "km": 25.518,
 "n": 22,
 "title": "Khadakwasla → Kharadi Chowk",
-"src": "s13",
+"src": "s12",
 "st": [
 [
 "Khadakwasla",
@@ -752,7 +679,7 @@
 "km": 6.118,
 "n": 7,
 "title": "SNDT College → Manik Baug",
-"src": "s14",
+"src": "s13",
 "st": [
 [
 "SNDT College",
@@ -796,74 +723,11 @@
 "status": "approved",
 "phase": "AP",
 "year": null,
-"stage": "Line 4B; Maharashtra state approval 2025-11-04 (with 4C Rs 5,704 cr); awaiting Union approval; consultant tenders Feb 2026",
-"km": 11.35,
-"n": 10,
-"title": "Hadapsar Chowk → Loni Kalbhor",
-"src": "s15",
-"st": [
-[
-"Hadapsar Chowk",
-18.50488,
-73.91385
-],
-[
-"Hadapsar Phata",
-18.50304,
-73.92589
-],
-[
-"Hadapsar Bus Depot",
-18.5012,
-73.93793
-],
-[
-"Akashwani Hadapsar",
-18.49937,
-73.94997
-],
-[
-"Laxmi Colony",
-18.49753,
-73.962
-],
-[
-"Stud Phata",
-18.4957,
-73.97404
-],
-[
-"Grape Growers Association",
-18.49386,
-73.98608
-],
-[
-"Toll Naka",
-18.49202,
-73.99812
-],
-[
-"Wak Vasti",
-18.49019,
-74.01016
-],
-[
-"Loni Kalbhor",
-18.48835,
-74.02219
-]
-]
-},
-{
-"line": "line4khadakw",
-"status": "approved",
-"phase": "AP",
-"year": null,
 "stage": "Line 4C; Maharashtra state approval 2025-11-04; awaiting Union approval",
 "km": 5.57,
 "n": 5,
 "title": "Hadapsar Bus Depot → Saswad Road",
-"src": "s16",
+"src": "s14",
 "st": [
 [
 "Hadapsar Bus Depot",
@@ -901,7 +765,7 @@
 "km": 40.926,
 "n": 31,
 "title": "Bhakti Shakti → Chakan",
-"src": "s17",
+"src": "s15",
 "st": [
 [
 "Bhakti Shakti",
@@ -1059,239 +923,6 @@
 73.8485
 ]
 ]
-},
-{
-"line": "hcmtrringlin",
-"status": "proposed",
-"phase": "PR",
-"year": null,
-"stage": "HCMTR ring-road metro concept listed by The Metro Rail Guy; no DPR/approval found",
-"km": 36,
-"n": 44,
-"title": "Ambedkar Chowk → Kirloskar",
-"src": "s18",
-"st": [
-[
-"Ambedkar Chowk",
-18.56262,
-73.83022
-],
-[
-"University Back Gate",
-18.55253,
-73.83
-],
-[
-"University Main Gate",
-18.54244,
-73.82978
-],
-[
-"JW Marriott",
-18.53235,
-73.82956
-],
-[
-"Patrakar Nagar",
-18.52381,
-73.82747
-],
-[
-"Kelewadi",
-18.5118,
-73.82265
-],
-[
-"Paud Phata",
-18.50888,
-73.82214
-],
-[
-"Alankar Police Chowk",
-18.53521,
-73.81192
-],
-[
-"Saket Society",
-18.56153,
-73.80169
-],
-[
-"Siddhi Garden",
-18.54695,
-73.81454
-],
-[
-"Senadatta Police Chowk",
-18.53237,
-73.8274
-],
-[
-"NS Phadke Chowk",
-18.51779,
-73.84025
-],
-[
-"Sanas Ground",
-18.50321,
-73.85311
-],
-[
-"Laxmi Narayan Chowk",
-18.49854,
-73.85363
-],
-[
-"City Pride",
-18.49388,
-73.85415
-],
-[
-"Market Station",
-18.48922,
-73.85468
-],
-[
-"Market Yard Bus Depot",
-18.48456,
-73.8552
-],
-[
-"Gangadham Chowk",
-18.4799,
-73.85572
-],
-[
-"Bibewadi",
-18.47523,
-73.85625
-],
-[
-"Lulla Nagar",
-18.48189,
-73.87083
-],
-[
-"Samvidhan Chowk",
-18.48855,
-73.88541
-],
-[
-"Jambhulkar Chowk",
-18.49521,
-73.9
-],
-[
-"Fatima Nagar",
-18.50655,
-73.90053
-],
-[
-"Kalubai",
-18.47995,
-73.82675
-],
-[
-"Ghorpodi",
-18.49354,
-73.84235
-],
-[
-"Pingle Vasti",
-18.50713,
-73.85796
-],
-[
-"Tadigutta Junction",
-18.52072,
-73.87357
-],
-[
-"East Avenue Road",
-18.53431,
-73.88917
-],
-[
-"Vadgaon Sheri",
-18.54789,
-73.90478
-],
-[
-"Viman Nagar",
-18.56148,
-73.92039
-],
-[
-"Clover Park",
-18.5619,
-73.91471
-],
-[
-"Sakore Nagar",
-18.56232,
-73.90903
-],
-[
-"Pune Airport",
-18.58485,
-73.91961
-],
-[
-"509 Junction",
-18.58078,
-73.90583
-],
-[
-"Shahu Maharaj Chowk",
-18.5767,
-73.89204
-],
-[
-"Vishrantwadi",
-18.57263,
-73.87825
-],
-[
-"Sathe Biscuit",
-18.57027,
-73.87893
-],
-[
-"Vishrantwadi Police Station",
-18.56467,
-73.87753
-],
-[
-"Home Guard",
-18.55678,
-73.8762
-],
-[
-"Deccan College",
-18.54889,
-73.87486
-],
-[
-"Holkar Jal Shuddi",
-18.55532,
-73.86684
-],
-[
-"Kirkee Methodist Church",
-18.56175,
-73.85881
-],
-[
-"Kirkee",
-18.56818,
-73.85078
-],
-[
-"Kirloskar",
-18.5746,
-73.84275
-]
-]
 }
 ],
 "sources": {
@@ -1340,36 +971,24 @@
 "https://en.wikipedia.org/wiki/Aqua_Line_(Pune_Metro)"
 ],
 "s11": [
-"Pink Line (Line 3, Puneri Metro, PMRDA PPP): Maan – R K Laxman Museum Balewadi",
-"https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)"
-],
-"s12": [
 "Pink Line (Line 3, Puneri Metro, PMRDA PPP): Balewadi High Street – District Court Pune",
 "https://en.wikipedia.org/wiki/Pink_Line_(Pune_Metro)"
 ],
-"s13": [
+"s12": [
 "Line 4 (Khadakwasla–Kharadi, with 4A/4B/4C): Khadakwasla – Kharadi Chowk",
 "https://en.wikipedia.org/wiki/Pune_Metro"
 ],
-"s14": [
+"s13": [
 "Line 4 (Khadakwasla–Kharadi, with 4A/4B/4C): SNDT College – Manik Baug",
 "https://en.wikipedia.org/wiki/Pune_Metro"
 ],
-"s15": [
-"Line 4 (Khadakwasla–Kharadi, with 4A/4B/4C): Hadapsar Chowk – Loni Kalbhor",
-"https://en.wikipedia.org/wiki/Pune_Metro"
-],
-"s16": [
+"s14": [
 "Line 4 (Khadakwasla–Kharadi, with 4A/4B/4C): Hadapsar Bus Depot – Saswad Road",
 "https://en.wikipedia.org/wiki/Pune_Metro"
 ],
-"s17": [
+"s15": [
 "Line 5 (Nigdi–Chakan): Bhakti Shakti – Chakan",
 "https://en.wikipedia.org/wiki/Pune_Metro"
-],
-"s18": [
-"HCMTR Ring Line: Ambedkar Chowk – Kirloskar",
-"https://themetrorailguy.com/pune-metro-phase-2-route-map-tenders-status-updates/"
 ]
 },
 "notes": [

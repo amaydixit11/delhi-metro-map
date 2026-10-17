@@ -54,6 +54,8 @@ def make(city_dir, osm_lines, extra_rename=None):
         status = s["status"].replace("_", " ").capitalize() + (f" · {s['stage']}" if s.get("stage") else "") + (f" · {yr}" if yr and s["status"] != "operational" else "")
         SEGMENTS.append(dict(line=key, phase=phase, title=title, status=status[:160], km=s.get("km"), n=s.get("n"), src=s["src"],
                              st=[(nm, la, lo, "o") for nm, la, lo in s["st"]]))
+    used = {s["line"] for s in SEGMENTS} | set(osm_lines)
+    LINES = {k: v for k, v in LINES.items() if k in used}
     DEFAULT = {}
     for k, lst in OPEN.items(): DEFAULT[k] = min(d for _, _, d in lst)
     first = {}

@@ -458,29 +458,6 @@
 ]
 },
 {
-"line": "bluelinecorr",
-"status": "operational",
-"phase": "OP",
-"year": "2019-11",
-"stage": "Phase 1",
-"km": 1.5,
-"n": 2,
-"title": "HITEC City → Raidurg",
-"src": "s6",
-"st": [
-[
-"HITEC City",
-17.44901,
-78.38314
-],
-[
-"Raidurg",
-17.44218,
-78.37718
-]
-]
-},
-{
 "line": "greenlinecor",
 "status": "operational",
 "phase": "OP",
@@ -489,7 +466,7 @@
 "km": 11.0,
 "n": 10,
 "title": "JBS Parade Ground → MG Bus Station",
-"src": "s7",
+"src": "s6",
 "st": [
 [
 "JBS Parade Ground",
@@ -552,7 +529,7 @@
 "km": 7.5,
 "n": 7,
 "title": "MG Bus Station → Chandrayangutta",
-"src": "s8",
+"src": "s7",
 "st": [
 [
 "MG Bus Station",
@@ -595,7 +572,7 @@
 "km": 36.8,
 "n": 24,
 "title": "Nagole → RGIA",
-"src": "s9",
+"src": "s8",
 "st": [
 [
 "Nagole",
@@ -718,115 +695,6 @@
 78.3943
 ]
 ]
-},
-{
-"line": "airportexpre",
-"status": "proposed",
-"phase": "PR",
-"year": null,
-"stage": "Cancelled: foundation stone Dec 2022, EPC tender May 2023, put on hold 2023-12-13 and dropped Jan 2024; replaced by Corridor IV (Nagole–RGIA)",
-"km": 31.0,
-"n": 10,
-"title": "Raidurg → RGIA Terminal",
-"src": "s10",
-"st": [
-[
-"Raidurg",
-17.44218,
-78.37718
-],
-[
-"Biodiversity Junction",
-17.42812,
-78.38018
-],
-[
-"Nanakramguda Junction",
-17.41406,
-78.38317
-],
-[
-"Puppalaguda",
-17.4,
-78.38617
-],
-[
-"Narsingi",
-17.39672,
-78.37172
-],
-[
-"TS Police Academy",
-17.36567,
-78.3902
-],
-[
-"Rajendranagar",
-17.33462,
-78.40868
-],
-[
-"Shamshabad",
-17.23848,
-78.3943
-],
-[
-"Airport Cargo",
-17.14235,
-78.37992
-],
-[
-"RGIA Terminal",
-17.04621,
-78.36554
-]
-]
-},
-{
-"line": "corridorxjbs",
-"status": "proposed",
-"phase": "PR",
-"year": null,
-"stage": "Phase 2B; DPR submitted to Centre 2025-06-21; fully elevated; 18 stations per DPR reports, names not published; starts at a new JBS station",
-"km": 24.5,
-"n": 18,
-"title": "JBS → Medchal",
-"src": "s11",
-"st": [
-[
-"JBS",
-17.44882,
-78.49648
-],
-[
-"Medchal",
-17.49306,
-78.39142
-]
-]
-},
-{
-"line": "corridorxijb",
-"status": "proposed",
-"phase": "PR",
-"year": null,
-"stage": "Phase 2B; DPR submitted to Centre 2025-06-21; 20.35 km elevated + 1.65 km underground near Hakimpet Air Force Station; 14 stations per DPR reports, names not published",
-"km": 22.0,
-"n": 14,
-"title": "JBS → Shamirpet",
-"src": "s12",
-"st": [
-[
-"JBS",
-17.44882,
-78.49648
-],
-[
-"Shamirpet",
-17.57371,
-78.56409
-]
-]
 }
 ],
 "sources": {
@@ -855,31 +723,15 @@
 "https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
 ],
 "s6": [
-"Blue Line (Corridor III): HITEC City – Raidurg",
-"https://en.wikipedia.org/wiki/Blue_Line_(Hyderabad_Metro)"
-],
-"s7": [
 "Green Line (Corridor II): JBS Parade Ground – MG Bus Station",
 "https://en.wikipedia.org/wiki/Green_Line_(Hyderabad_Metro)"
 ],
-"s8": [
+"s7": [
 "Green Line (Corridor II): MG Bus Station – Chandrayangutta",
 "https://hmrl.co.in/foundation-stone-for-old-city-metro-rail-a-momentous-day/"
 ],
-"s9": [
+"s8": [
 "Purple Line (Corridor IV, Airport Corridor): Nagole – RGIA",
-"https://hmrl.co.in/phase-ii/"
-],
-"s10": [
-"Airport Express (Raidurg–RGIA, cancelled): Raidurg – RGIA Terminal",
-"https://en.wikipedia.org/wiki/Hyderabad_Airport_Metro_Express"
-],
-"s11": [
-"Corridor X (JBS–Medchal): JBS – Medchal",
-"https://hmrl.co.in/phase-ii/"
-],
-"s12": [
-"Corridor XI (JBS–Shamirpet): JBS – Shamirpet",
 "https://hmrl.co.in/phase-ii/"
 ]
 },

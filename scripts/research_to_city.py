@@ -64,6 +64,7 @@ def locate(name):
 # ---- lines and segments ----
 PAL = ["#E21F26", "#1F63B6", "#1E9E48", "#6A2C91", "#F28C28", "#EE82B4", "#B5267B", "#C49A3A", "#0E9AA7", "#8B5A2B",
        "#7CB518", "#22408F", "#8E1B3C", "#5B5BD6", "#00ACC1", "#A1887F", "#D84315", "#9575CD"]
+DROPPED = []
 lines, segs, srcs, stats = {}, [], {}, {"osm": 0, "osm~": 0, "nom": 0, "interp": 0}
 STATUS = {"operational": "OP", "under_construction": "UC", "approved": "AP", "proposed": "PR"}
 for li, L in enumerate(R["lines"]):
@@ -73,7 +74,8 @@ for li, L in enumerate(R["lines"]):
     if not re.match(r"^#[0-9a-fA-F]{6}$", str(col)): col = PAL[li % len(PAL)]
     lines[key] = (L["line"], col)
     for sg in L["segments"]:
-        st = [s for s in sg.get("stations", []) if s] or [sg["from"], sg["to"]]   # no published list: endpoints only
+        st = [s for s in sg.get("stations", []) if s]
+        if len(st) < 3: DROPPED.append((L["line"], sg["from"], sg["to"], "no station list")); continue
         if len(st) < 2: continue
         pts = []
         for nm in st:
@@ -98,6 +100,8 @@ for li, L in enumerate(R["lines"]):
                     if hop > max(6, ref * abs(nb - i) * 4) and hop > worst: worst, wi = hop, i
             if wi is None: break
             pts[wi][1] = None; stats["dropped"] = stats.get("dropped", 0) + 1
+        if sum(1 for _, c in pts if c) < max(3, 0.6 * len(pts)):
+            DROPPED.append((L["line"], sg["from"], sg["to"], "too few stations locatable")); continue
         # interpolate gaps between located neighbours
         idx = [i for i, (_, c) in enumerate(pts) if c]
         if len(idx) < 2: print("SKIP (unlocatable)", L["line"], sg["from"], sg["to"]); continue
@@ -109,9 +113,14 @@ for li, L in enumerate(R["lines"]):
             f = (i - a) / (b - a)
             pts[i][1] = [pts[a][1][0] + (pts[b][1][0] - pts[a][1][0]) * f, pts[a][1][1] + (pts[b][1][1] - pts[a][1][1]) * f]
             stats["interp"] += 1
+        hops = sorted(dk(a[1], b[1]) for a, b in zip(pts, pts[1:]))
+        med = hops[len(hops) // 2]
+        if hops[-1] > max(6, 4 * med):
+            DROPPED.append((L["line"], sg["from"], sg["to"], f"implausible {hops[-1]:.0f} km gap")); continue
         sid = f"s{len(srcs)}"; srcs[sid] = (f"{L['line']}: {sg['from']} – {sg['to']}", (sg.get("sources") or [""])[0])
         segs.append(dict(line=key, status=sg["status"], phase=STATUS.get(sg["status"], "PR"), year=sg.get("year"),
                          stage=sg.get("stage") or "", km=sg.get("km"), n=sg.get("n_stations"), title=f"{sg['from']} → {sg['to']}",
                          src=sid, st=[[re.sub(r"\s*\[.*?\]", "", nm).strip(), round(c[0], 5), round(c[1], 5)] for nm, c in pts]))
 json.dump(dict(lines=lines, segs=segs, sources=srcs, notes=R.get("notes", [])), open(f"{D}/plan.json", "w"), indent=0, ensure_ascii=False)
+for d in DROPPED: print("DROP", *d)
 print("lines", len(lines), "segments", len(segs), "located:", stats)
