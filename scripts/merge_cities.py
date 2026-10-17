@@ -35,7 +35,15 @@ cfg = dict(code="india", title="India metro maps", h1="India's metros · open, b
            phases=phases, order=order, short=short, label=label, thin=thin, rail=rail, speeds=speeds, jumps=jumps,
            noSchematic=True, newLabel="planned stations",
            notes="".join(f'<div class="note"><b>{n}:</b> see the single-city page for its notes and sources.</div>' for _, n, _ in CITIES))
-t = open("src/template.html").read()
+
+def og_tags(cfg, path):
+    base = os.environ.get("BASE", "https://india-metro-map.vercel.app")
+    title = cfg["h1"]; desc = cfg["sub"].replace('"', "'")
+    return (f'<meta property="og:title" content="{title}">\n<meta property="og:description" content="{desc}">\n'
+            f'<meta property="og:image" content="{base}/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
+            f'<meta property="og:url" content="{base}/{path}">\n<meta property="og:type" content="website">\n<meta name="twitter:card" content="summary_large_image">\n'
+            f'<meta name="description" content="{desc}">')
+t = open("src/template.html").read().replace("<!--OG-->", og_tags(cfg, "india/"))
 html = (t.replace("/*CITY*/", "window.CITY=" + json.dumps(cfg, ensure_ascii=False) + ";")
         .replace("/*DATA*/", "window.METRO=" + json.dumps(out, separators=(",", ":"), ensure_ascii=False) + ";")
         .replace("<!--SCHEM-->", '<svg xmlns="http://www.w3.org/2000/svg" id="schem-svg" viewBox="0 0 10 10"></svg>')

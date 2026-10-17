@@ -4,6 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Metro map</title>
+<meta property="og:title" content="Bengaluru Namma Metro · open, building and planned">
+<meta property="og:description" content="Purple, Green and Yellow lines open; Pink and Blue under construction; Phase 3, 3A and proposed extensions. Data as of Oct 2026.">
+<meta property="og:image" content="https://india-metro-map.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://india-metro-map.vercel.app/blr/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Purple, Green and Yellow lines open; Pink and Blue under construction; Phase 3, 3A and proposed extensions. Data as of Oct 2026.">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
@@ -131,19 +140,25 @@ details.more{margin-top:22px;border-top:1px solid var(--line);padding-top:10px}d
 #card{position:absolute;z-index:6;background:var(--panel);color:var(--ink);border-radius:12px;box-shadow:var(--shadow);padding:12px 14px;min-width:220px;max-width:300px;display:none}
 #card .x{position:absolute;right:8px;top:6px;border:0;background:none;font-size:16px;padding:2px 6px}
 #app{position:relative}
+#grab{display:none}
 @media (max-width:760px){
-  #app{flex-direction:column-reverse}
-  aside{width:100%;min-width:0;flex:none;height:46%;border-right:0;border-top:1px solid var(--line);padding:14px 16px 24px}
-  aside.collapsed{height:56px;overflow:hidden}
-  #toggle{display:block;position:absolute;right:0;top:0}
-  header{padding-right:44px}
-  header{position:relative}
+  #app{display:block}
+  #map,#schem{position:absolute!important;inset:0;width:100%;height:100%}
+  aside{position:absolute;left:0;right:0;bottom:0;width:100%;height:38%;z-index:1500;border-right:0;border-top:1px solid var(--line);
+        border-radius:18px 18px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.18);padding:6px 16px 28px;transition:height .25s ease}
+  aside.full{height:86%}
+  aside.min{height:96px;overflow:hidden}
+  #grab{display:block;width:100%;padding:6px 0 10px;background:none;border:0;cursor:pointer}
+  #grab span{display:block;width:44px;height:5px;border-radius:3px;background:var(--line);margin:0 auto}
+  #toggle{display:none}
+  h1{font-size:17px}.sub{display:none}
+  #yearBadge{bottom:auto;top:12px;right:12px;font-size:40px}
 }
 </style>
 </head>
 <body>
 <div id="app">
-<aside id="side">
+<aside id="side"><button id="grab" aria-label="Expand or collapse panel"><span></span></button>
   <header>
     <nav id="cities"></nav>
     <h1 id="cityH1"></h1>
@@ -177,7 +192,7 @@ details.more{margin-top:22px;border-top:1px solid var(--line);padding-top:10px}d
   <div class="rp">
     <input id="rFrom" list="stlist" placeholder="From, e.g. Rohini Sector 34" autocomplete="off">
     <input id="rTo" list="stlist" placeholder="To, e.g. Jewar Airport" autocomplete="off">
-    <div class="btns"><button id="rGo">Find route</button><button id="rSwap">Swap</button><button id="rClear">Clear</button></div>
+    <div class="btns"><button id="rGo">Find route</button><button id="rSwap">Swap</button><button id="rClear">Clear</button><button id="rShare" style="display:none">Copy link</button></div>
     <datalist id="stlist"></datalist>
     <div id="rOut"></div>
   </div>
@@ -666,6 +681,12 @@ document.getElementById("theme").onclick=()=>{
 };
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{base.setUrl(tileUrl());render();});
 document.getElementById("toggle").onclick=()=>document.getElementById("side").classList.toggle("collapsed");
+(()=>{const side=document.getElementById("side"),st=["min","","full"];let i=1;
+  const set=k=>{i=k;side.classList.remove("min","full");if(st[i])side.classList.add(st[i]);setTimeout(()=>map.invalidateSize(),260);};
+  document.getElementById("grab").onclick=()=>set((i+1)%3);
+  let y0=null;side.addEventListener("touchstart",e=>{if(e.target.closest("#grab,header"))y0=e.touches[0].clientY;},{passive:true});
+  side.addEventListener("touchend",e=>{if(y0==null)return;const dy=e.changedTouches[0].clientY-y0;y0=null;if(dy<-30)set(Math.min(2,i+1));else if(dy>30)set(Math.max(0,i-1));},{passive:true});
+  window.__sheet=set;})();
 
 const srcEl=document.getElementById("src");
 Object.values(M.sources).forEach(s=>{const a=document.createElement("a");a.href=s.u;a.target="_blank";a.rel="noopener";a.textContent=s.t;srcEl.appendChild(a);});
@@ -827,16 +848,22 @@ function runRoute(fit){
 }
 const rFrom=document.getElementById("rFrom"),rTo=document.getElementById("rTo");
 function pick(inp){const v=inp.value.trim();if(byName.has(v))return byName.get(v);const m=names.find(([n])=>n.toLowerCase().includes(v.toLowerCase()));return v&&m?m[1]:null;}
-document.getElementById("rGo").onclick=()=>{route.from=pick(rFrom);route.to=pick(rTo);if(route.from!=null&&route.to!=null)track(`route:${C.code||"delhi"}`,`${S[route.from].name} → ${S[route.to].name}`);if(route.from!=null)rFrom.value=S[route.from].name;if(route.to!=null)rTo.value=S[route.to].name;runRoute(true);};
+document.getElementById("rGo").onclick=()=>{route.from=pick(rFrom);route.to=pick(rTo);
+  if(route.from!=null&&route.to!=null){const u=new URLSearchParams(location.search);u.set("from",S[route.from].name);u.set("to",S[route.to].name);if(state.year<YMAX)u.set("year",state.year);else u.delete("year");history.replaceState(null,"","?"+u.toString()+location.hash);
+    const sh=document.getElementById("rShare");if(sh)sh.style.display="";if(window.innerWidth<=760&&window.__sheet)window.__sheet(0);}if(route.from!=null&&route.to!=null)track(`route:${C.code||"delhi"}`,`${S[route.from].name} → ${S[route.to].name}`);if(route.from!=null)rFrom.value=S[route.from].name;if(route.to!=null)rTo.value=S[route.to].name;runRoute(true);};
 document.getElementById("rSwap").onclick=()=>{[rFrom.value,rTo.value]=[rTo.value,rFrom.value];[route.from,route.to]=[route.to,route.from];if(route.from!=null&&route.to!=null)runRoute(true);};
-document.getElementById("rClear").onclick=()=>{route.from=route.to=null;rFrom.value=rTo.value="";runRoute(false);};
+document.getElementById("rShare").onclick=e=>{const b=e.target;navigator.clipboard?.writeText(location.href).then(()=>{b.textContent="Copied!";setTimeout(()=>b.textContent="Copy link",1500);});track("route-share");};
+document.getElementById("rClear").onclick=()=>{history.replaceState(null,"",location.pathname+location.hash);document.getElementById("rShare").style.display="none";route.from=route.to=null;rFrom.value=rTo.value="";runRoute(false);};
 [rFrom,rTo].forEach(i=>i.addEventListener("keydown",e=>{if(e.key==="Enter")document.getElementById("rGo").click();}));
 document.addEventListener("click",e=>{const b=e.target.closest("[data-from],[data-to]");if(!b)return;
   if(b.dataset.from!=null){route.from=+b.dataset.from;rFrom.value=S[route.from].name;}else{route.to=+b.dataset.to;rTo.value=S[route.to].name;}
   map.closePopup(); hideCard(); if(route.from!=null&&route.to!=null) runRoute(true);});
 
-setYear(YMAX);
+const qs=new URLSearchParams(location.search);
+setYear(qs.has("year")?Math.max(2002,Math.min(YMAX,+qs.get("year"))):YMAX);
 applyView();
+if(qs.get("from")&&qs.get("to")){rFrom.value=qs.get("from");rTo.value=qs.get("to");document.getElementById("rGo").click();}
+if(qs.get("view")==="diagram"){state.view="schem";applyView();}
 })();
 </script>
 </body>
