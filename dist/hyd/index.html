@@ -82,6 +82,7 @@ button:hover{background:var(--chip)}
 .pp a{color:var(--muted)}
 .leaflet-tile-pane{filter:var(--tile-filter)}
 #toggle{display:none}
+details.more{margin-top:22px;border-top:1px solid var(--line);padding-top:10px}details.more>summary{cursor:pointer;font-weight:600;padding:6px 2px;color:var(--muted)}details.more[open]>summary{color:var(--ink)}
 #cities{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}#cities a{font-size:12.5px;padding:4px 10px;border-radius:99px;background:var(--chip);color:var(--ink);text-decoration:none}#cities a.on{background:var(--accent);color:#fff}
 .popstat{display:flex;align-items:baseline;gap:8px;margin:6px 6px 2px}.popstat b{font-size:26px;font-variant-numeric:tabular-nums}
 .ramp{height:10px;border-radius:5px;margin:6px 6px 2px;background:linear-gradient(90deg,#FDE68A,#FB923C,#DC2626,#7F1D1D)}
@@ -149,40 +150,11 @@ button:hover{background:var(--chip)}
     <div class="sub" id="citySub"></div>
     <button id="toggle" aria-label="Toggle panel">☰</button>
   </header>
-  <div class="stats" id="stats"></div>
+  <div class="seg" role="tablist"><button id="vGeo" class="on">Map</button><button id="vSch">Metro diagram</button></div>
 
   <h2>Timeline</h2>
   <div class="tl"><button id="play" aria-label="Play timeline">▶</button><input type="range" id="yr" min="2002" max="2041" step="1" value="2041" aria-label="Year"><b id="yrLbl">All plans</b></div>
   <div class="note" id="yrNote"></div>
-
-  <div id="popSec">
-  <h2>Who's left out</h2>
-  <div class="seg" id="popR"><button data-r="1" class="on">Within 1 km</button><button data-r="2">2 km</button><button data-r="3">3 km</button></div>
-  <div class="popstat"><b id="popPct">–</b><span id="popTxt" style="font-size:12.5px;color:var(--muted)"></span></div>
-  <div class="note" id="popAll"></div>
-  <label class="row"><input type="checkbox" id="popOn"> Show population density <span class="tag">geographic</span></label>
-  <div id="popLegend" style="display:none"><div class="ramp"></div><div class="rampl"><span>5k</span><span id="rampTxt">people / km² with no station within 1 km</span><span>60k+</span></div>
-  <div class="note">Green tint = dense areas already within <span id="rTxt2">1 km</span> of a station.</div></div>
-  <div class="note">Population: WorldPop 2020, 1 km grid, smoothed to 500 m. Area names are the nearest locality from OpenStreetMap, so they're approximate.</div>
-  <div class="note" style="margin-top:8px"><b>Most people still unserved</b> (for the year and phases shown):</div>
-  <div id="hotlist"></div>
-  </div>
-
-  <h2>Phases</h2>
-  <div id="phases"></div>
-
-  <h2>Station markers</h2>
-  <div class="key"><span class="k-st"></span> Station — named in a source</div>
-  <div class="key"><span class="k-st k-pr"></span><span><i>Projected</i>: name and site picked by locality and density, not yet published</span></div>
-  <div class="key"><span class="k-st k-ix"></span> Interchange</div>
-  <label class="row"><input type="checkbox" id="showProj" checked> Show projected stations</label>
-  <label class="row"><input type="checkbox" id="showBase" checked> Street basemap</label>
-  <h2>View</h2>
-  <div class="seg" role="tablist"><button id="vGeo" class="on">Geographic</button><button id="vSch">Schematic</button></div>
-  <label class="row"><input type="checkbox" id="solid"> Solid lines <span class="tag">ignore phase dashes</span></label>
-  <label class="row"><input type="checkbox" id="names" checked> Station names</label>
-  <label class="row" id="curvedRow"><input type="checkbox" id="curved" checked> Curved lines <span class="tag">schematic</span></label>
-  <div class="btns"><button id="theme">Toggle dark mode</button><button id="fit">Reset view</button></div>
 
   <h2>Route planner</h2>
   <div class="rp">
@@ -197,6 +169,37 @@ button:hover{background:var(--chip)}
   <input type="search" id="q" placeholder="e.g. JNU, Mithapur, Kishangarh" autocomplete="off">
   <div id="results"></div>
 
+  <div id="popSec">
+  <h2>How many people live near a station?</h2>
+  <div class="seg" id="popR"><button data-r="1" class="on">Within 1 km</button><button data-r="2">2 km</button><button data-r="3">3 km</button></div>
+  <div class="popstat"><b id="popPct">–</b><span id="popTxt" style="font-size:12.5px;color:var(--muted)"></span></div>
+  <div class="note" id="popAll"></div>
+  <label class="row"><input type="checkbox" id="popOn"> Show population density <span class="tag">geographic</span></label>
+  <div id="popLegend" style="display:none"><div class="ramp"></div><div class="rampl"><span>5k</span><span id="rampTxt">people / km² with no station within 1 km</span><span>60k+</span></div>
+  <div class="note">Green tint = dense areas already within <span id="rTxt2">1 km</span> of a station.</div></div>
+  <div class="note" style="margin-top:8px"><b>Most people still unserved</b> (for the year and phases shown):</div>
+  <div id="hotlist"></div>
+  </div>
+
+  <details class="more"><summary>More options &amp; sources</summary>
+  <div class="stats" id="stats"></div>
+
+  <h2>Phases</h2>
+  <div id="phases"></div>
+
+  <h2>Station markers</h2>
+  <div class="key"><span class="k-st"></span> Station — named in a source</div>
+  <div class="key"><span class="k-st k-pr"></span><span><i>Projected</i>: name and site picked by locality and density, not yet published</span></div>
+  <div class="key"><span class="k-st k-ix"></span> Interchange</div>
+  <label class="row"><input type="checkbox" id="showProj" checked> Show projected stations</label>
+  <label class="row"><input type="checkbox" id="showBase" checked> Street basemap</label>
+
+  <h2>Display</h2>
+  <label class="row"><input type="checkbox" id="solid"> Solid lines <span class="tag">ignore phase dashes</span></label>
+  <label class="row"><input type="checkbox" id="names" checked> Station names</label>
+  <label class="row" id="curvedRow"><input type="checkbox" id="curved" checked> Curved lines <span class="tag">schematic</span></label>
+  <div class="btns"><button id="theme">Toggle dark mode</button><button id="fit">Reset view</button></div>
+
   <h2>Lines <span style="text-transform:none;letter-spacing:0;font-weight:400">· click to dim/show</span></h2>
   <div class="lines" id="lines"></div>
 
@@ -205,6 +208,8 @@ button:hover{background:var(--chip)}
 
   <h2>Sources</h2>
   <div class="src" id="src"></div>
+  <div class="note">Population: WorldPop 2020, 1 km grid, smoothed to 500 m. Area names are the nearest locality from OpenStreetMap, so they're approximate.</div>
+  </details>
 </aside>
 <div id="map"></div>
 <div id="yearBadge"></div>
