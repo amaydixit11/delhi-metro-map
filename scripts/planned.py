@@ -226,7 +226,7 @@ SEGMENTS += [
   dict(line="rrJ", phase="RR", title="Namo Bharat: Ghaziabad → Noida Airport (Jewar)", status="DPR submitted Apr 2024 · revised Aug 2024", km=72.44, n=12, src="rr-jewar", st=[
     ("@Ghaziabad",), ("Ghaziabad South", 28.6405, 77.4113, "o"), ("@Greater Noida West Sector IV",), ("@Greater Noida West Sector II",),
     ("@Knowledge Park V",), ("@Surajpur",), ("@Pari Chowk",), ("Ecotech VI", 28.4500, 77.5300, "o"), ("Dankaur", 28.3496, 77.5540, "o"),
-    ("YEIDA Sector 18", 28.3150, 77.5450, "o"), ("YEIDA Sector 21", 28.2700, 77.5570, "o"), ("@Jewar Airport",)]),
+    ("YEIDA Sector 18", 28.3150, 77.5450, "o"), ("YEIDA Sector 21", 28.2700, 77.5570, "o"), ("Jewar Airport", 28.1717, 77.6089, "o")]),
   dict(line="lrt", phase="G2", title="Film City light rail: Noida Airport → YEIDA Sector 21", status="Proposed · 14.6 km", km=14.6, src="rr-jewar", st=[
     ("@Jewar Airport",), ("Kureb", 28.1914, 77.5985, "p"), ("YEIDA Sector 29", 28.2110, 77.5881, "p"), ("Dhanpura", 28.2307, 77.5778, "p"),
     ("YEIDA Sector 22", 28.2503, 77.5674, "p"), ("@YEIDA Sector 21",)]),
