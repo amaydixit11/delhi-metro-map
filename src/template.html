@@ -220,11 +220,12 @@ button:hover{background:var(--chip)}
 (function(){
 const M = window.METRO;
 const C=window.CITY;
+const track=(name,title)=>{try{window.goatcounter&&goatcounter.count&&goatcounter.count({path:name,title:title||name,event:true});}catch(e){}};
 document.title=C.title; document.getElementById("cityH1").textContent=C.h1; document.getElementById("citySub").textContent=C.sub;
 document.getElementById("cityNotes").innerHTML=C.notes;
 (()=>{const here=C.code||"delhi",root=here==="delhi"?"":"../";
   if(C.jumps){const nav=document.getElementById("cities");nav.innerHTML=C.jumps.map((j,i)=>`<a href="#" data-j="${i}">${j[0]}</a>`).join("")+`<a href="#" data-j="all">All</a>`;
-    nav.querySelector('a[data-j="0"]').classList.add("on");nav.onclick=e=>{const a=e.target.closest("a");if(!a)return;e.preventDefault();nav.querySelectorAll("a").forEach(x=>x.classList.toggle("on",x===a));map.fitBounds(a.dataset.j==="all"?C.allFit:C.jumps[+a.dataset.j][1]);};return;}
+    nav.querySelector('a[data-j="0"]').classList.add("on");nav.onclick=e=>{const a=e.target.closest("a");if(!a)return;e.preventDefault();track("city-jump",a.textContent);nav.querySelectorAll("a").forEach(x=>x.classList.toggle("on",x===a));map.fitBounds(a.dataset.j==="all"?C.allFit:C.jumps[+a.dataset.j][1]);};return;}
   document.getElementById("cities").innerHTML=[["india","All cities"],["delhi","Delhi NCR"],["blr","Bengaluru"],["mum","Mumbai"],["pune","Pune"],["hyd","Hyderabad"]]
   .map(([c,n])=>`<a href="${root}${c==="delhi"?"":c+"/"}${c==="delhi"?"index.html":"index.html"}" class="${c===here?"on":""}">${n}</a>`).join("");})();
 const PH=C.phases, ORDER=C.order, SHORT=C.short;
@@ -473,7 +474,7 @@ function applyView(){
   if(!sc) setTimeout(()=>map.invalidateSize(),0);
 }
 vGeo.onclick=()=>{state.view="geo";applyView();};
-vSch.onclick=()=>{state.view="schem";applyView();};
+vSch.onclick=()=>{track(`schematic:${C.code||"delhi"}`);state.view="schem";applyView();};
 solidBox.onchange=e=>{state.solid=e.target.checked;applyView();};
 namesBox.onchange=e=>{state.names=e.target.checked;applyView();};
 curvedBox.onchange=e=>{state.curved=e.target.checked;applyView();};
@@ -553,7 +554,7 @@ function renderPop(){
   if(!popLayer) popLayer=L.imageOverlay(url,b,{opacity:.78,interactive:false}); else popLayer.setUrl(url);
   if(!map.hasLayer(popLayer)) popLayer.addTo(map);
 }
-document.getElementById("popOn").onchange=()=>renderPop();
+document.getElementById("popOn").onchange=e=>{if(e.target.checked)track(`coverage-on:${C.code||"delhi"}`);renderPop();};
 document.querySelectorAll("#popR button").forEach(b=>b.onclick=()=>{popR=+b.dataset.r;document.querySelectorAll("#popR button").forEach(x=>x.classList.toggle("on",x===b));renderPop();});
 
 // ---------- timeline ----------
@@ -574,7 +575,7 @@ function setYear(y){
 yrEl.oninput=e=>{stopPlay();setYear(e.target.value);};
 let playT=null;
 function stopPlay(){if(playT){clearInterval(playT);playT=null;playBtn.textContent="▶";}}
-playBtn.onclick=()=>{
+playBtn.onclick=()=>{track(`timeline-play:${C.code||"delhi"}`);
   if(playT){stopPlay();return;}
   let y=state.year>=YMAX||state.year<2002?2002:state.year; setYear(y); playBtn.textContent="❚❚";
   playT=setInterval(()=>{y++; setYear(y); if(y>=YMAX) stopPlay();},650);
@@ -647,7 +648,7 @@ function runRoute(fit){
 }
 const rFrom=document.getElementById("rFrom"),rTo=document.getElementById("rTo");
 function pick(inp){const v=inp.value.trim();if(byName.has(v))return byName.get(v);const m=names.find(([n])=>n.toLowerCase().includes(v.toLowerCase()));return v&&m?m[1]:null;}
-document.getElementById("rGo").onclick=()=>{route.from=pick(rFrom);route.to=pick(rTo);if(route.from!=null)rFrom.value=S[route.from].name;if(route.to!=null)rTo.value=S[route.to].name;runRoute(true);};
+document.getElementById("rGo").onclick=()=>{route.from=pick(rFrom);route.to=pick(rTo);if(route.from!=null&&route.to!=null)track(`route:${C.code||"delhi"}`,`${S[route.from].name} → ${S[route.to].name}`);if(route.from!=null)rFrom.value=S[route.from].name;if(route.to!=null)rTo.value=S[route.to].name;runRoute(true);};
 document.getElementById("rSwap").onclick=()=>{[rFrom.value,rTo.value]=[rTo.value,rFrom.value];[route.from,route.to]=[route.to,route.from];if(route.from!=null&&route.to!=null)runRoute(true);};
 document.getElementById("rClear").onclick=()=>{route.from=route.to=null;rFrom.value=rTo.value="";runRoute(false);};
 [rFrom,rTo].forEach(i=>i.addEventListener("keydown",e=>{if(e.key==="Enter")document.getElementById("rGo").click();}));
