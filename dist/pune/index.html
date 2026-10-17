@@ -155,6 +155,7 @@ button:hover{background:var(--chip)}
   <div class="tl"><button id="play" aria-label="Play timeline">▶</button><input type="range" id="yr" min="2002" max="2041" step="1" value="2041" aria-label="Year"><b id="yrLbl">All plans</b></div>
   <div class="note" id="yrNote"></div>
 
+  <div id="popSec">
   <h2>Who's left out</h2>
   <div class="seg" id="popR"><button data-r="1" class="on">Within 1 km</button><button data-r="2">2 km</button><button data-r="3">3 km</button></div>
   <div class="popstat"><b id="popPct">–</b><span id="popTxt" style="font-size:12.5px;color:var(--muted)"></span></div>
@@ -165,6 +166,7 @@ button:hover{background:var(--chip)}
   <div class="note">Population: WorldPop 2020, 1 km grid, smoothed to 500 m. Area names are the nearest locality from OpenStreetMap, so they're approximate.</div>
   <div class="note" style="margin-top:8px"><b>Most people still unserved</b> (for the year and phases shown):</div>
   <div id="hotlist"></div>
+  </div>
 
   <h2>Phases</h2>
   <div id="phases"></div>
@@ -362,7 +364,10 @@ const M = window.METRO;
 const C=window.CITY;
 document.title=C.title; document.getElementById("cityH1").textContent=C.h1; document.getElementById("citySub").textContent=C.sub;
 document.getElementById("cityNotes").innerHTML=C.notes;
-(()=>{const here=C.code||"delhi",root=here==="delhi"?"":"../";document.getElementById("cities").innerHTML=[["delhi","Delhi NCR"],["blr","Bengaluru"],["mum","Mumbai"],["pune","Pune"],["hyd","Hyderabad"]]
+(()=>{const here=C.code||"delhi",root=here==="delhi"?"":"../";
+  if(C.jumps){const nav=document.getElementById("cities");nav.innerHTML=C.jumps.map((j,i)=>`<a href="#" data-j="${i}">${j[0]}</a>`).join("")+`<a href="#" data-j="all" class="on">All</a>`;
+    nav.onclick=e=>{const a=e.target.closest("a");if(!a)return;e.preventDefault();nav.querySelectorAll("a").forEach(x=>x.classList.toggle("on",x===a));map.fitBounds(a.dataset.j==="all"?C.fit:C.jumps[+a.dataset.j][1]);};return;}
+  document.getElementById("cities").innerHTML=[["india","All cities"],["delhi","Delhi NCR"],["blr","Bengaluru"],["mum","Mumbai"],["pune","Pune"],["hyd","Hyderabad"]]
   .map(([c,n])=>`<a href="${root}${c==="delhi"?"":c+"/"}${c==="delhi"?"index.html":"index.html"}" class="${c===here?"on":""}">${n}</a>`).join("");})();
 const PH=C.phases, ORDER=C.order, SHORT=C.short;
 const state={ph:Object.fromEntries(ORDER.map(p=>[p,true])),lines:{},proj:true,view:"geo",solid:false,names:true,curved:true,year:2041};
@@ -595,6 +600,7 @@ const baseBox=document.getElementById("showBase");
 function syncBase(){ baseBox.checked?base.addTo(map):map.removeLayer(base); }
 baseBox.onchange=syncBase;
 const solidBox=document.getElementById("solid"),namesBox=document.getElementById("names"),curvedBox=document.getElementById("curved"),vGeo=document.getElementById("vGeo"),vSch=document.getElementById("vSch");
+if(C.noSchematic){vSch.style.display="none";state.view="geo";}
 let schFitted=false;
 function applyView(){
   const sc=state.view==="schem";
@@ -640,7 +646,8 @@ q.oninput=()=>{
   });
 };
 // ---------- population coverage ----------
-const P=window.POP, NPC=P.nx*P.ny;
+const P=window.POP||{nx:0,ny:0,cells:[],hot:[],d:1,lat0:0,lon0:0,B:4}, NPC=P.nx*P.ny;
+if(!window.POP){const h=document.getElementById("popSec");if(h)h.style.display="none";}
 const kmLat=111.2, kmLon=111.2*Math.cos(C.lat*Math.PI/180), cellKm2=(P.d*kmLat)*(P.d*kmLon);
 const totalPop=P.cells.reduce((a,b)=>a+b,0);
 let popLayer=null; const popCanvas=document.createElement("canvas"); popCanvas.width=P.nx; popCanvas.height=P.ny;

@@ -14,3 +14,5 @@ python3 -I scripts/render_schematic.py schematic/layout.json data/metro-data.js 
 # population grid (only when updating it): python scripts/population.py <worldpop.tif> data/pop.js
 python3 -I scripts/assemble.py                                             # -> dist/index.html
 echo "built dist/index.html"
+
+python3 -I scripts/merge_cities.py   # all cities on one map -> dist/india/
