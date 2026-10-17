@@ -156,14 +156,6 @@ details.more{margin-top:22px;border-top:1px solid var(--line);padding-top:10px}d
   <div class="tl"><button id="play" aria-label="Play timeline">▶</button><input type="range" id="yr" min="2002" max="2041" step="1" value="2041" aria-label="Year"><b id="yrLbl">All plans</b></div>
   <div class="note" id="yrNote"></div>
 
-  <h2>Route planner</h2>
-  <div class="rp">
-    <input id="rFrom" list="stlist" placeholder="From, e.g. Rohini Sector 34" autocomplete="off">
-    <input id="rTo" list="stlist" placeholder="To, e.g. Jewar Airport" autocomplete="off">
-    <div class="btns"><button id="rGo">Find route</button><button id="rSwap">Swap</button><button id="rClear">Clear</button></div>
-    <datalist id="stlist"></datalist>
-    <div id="rOut"></div>
-  </div>
 
   <h2>Find a station</h2>
   <input type="search" id="q" placeholder="e.g. JNU, Mithapur, Kishangarh" autocomplete="off">
@@ -179,6 +171,15 @@ details.more{margin-top:22px;border-top:1px solid var(--line);padding-top:10px}d
   <div class="note">Green tint = dense areas already within <span id="rTxt2">1 km</span> of a station.</div></div>
   <div class="note" style="margin-top:8px"><b>Most people still unserved</b> (for the year and phases shown):</div>
   <div id="hotlist"></div>
+  </div>
+
+  <h2>Route planner</h2>
+  <div class="rp">
+    <input id="rFrom" list="stlist" placeholder="From, e.g. Rohini Sector 34" autocomplete="off">
+    <input id="rTo" list="stlist" placeholder="To, e.g. Jewar Airport" autocomplete="off">
+    <div class="btns"><button id="rGo">Find route</button><button id="rSwap">Swap</button><button id="rClear">Clear</button></div>
+    <datalist id="stlist"></datalist>
+    <div id="rOut"></div>
   </div>
 
   <details class="more"><summary>More options &amp; sources</summary>
