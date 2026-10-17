@@ -109,15 +109,19 @@ SEGMENTS = [
     ("@Samaypur Badli",), ("Siraspur", 28.7581, 77.1298, "p"), ("Khera Kalan", 28.7697, 77.1159, "p"),
     ("Khera Khurd", 28.7840, 77.1200, "p"), ("Alipur", 28.7973, 77.1330, "p"), ("Bakoli", 28.8105, 77.1290, "p"),
     ("Holambi Kalan", 28.8215, 77.1150, "p"), ("Narela Sector A-9", 28.8335, 77.1100, "p"), ("@Narela DDA Sports Complex",)]),
-  dict(line="green", phase="VB", title="Kirti Nagar → Palam", status="State approved May 2026", km=9.967, n=6, src="vb", st=[
-    ("@Kirti Nagar",), ("Mayapuri Industrial Area", 28.6290, 77.1300, "p"), ("Hari Nagar", 28.6255, 77.1110, "p"),
-    ("Janakpuri A-Block", 28.6185, 77.0975, "p"), ("Sagarpur", 28.6080, 77.0990, "p"), ("Sadh Nagar", 28.5960, 77.0905, "p"),
-    ("@Palam",)]),
+  # Station names: Delhi CM's Phase V(B) announcement, 3 May 2026 (Punjab Kesari, RealtyHunting), matching
+  # the togetherbuying.in reel. Six stations including the Mayapuri (Pink) and Palam (Magenta) interchanges.
+  dict(line="green", phase="VB", title="Kirti Nagar → Palam", status="State approved May 2026 · ₹6,200 cr", km=9.967, n=6, src="vb", st=[
+    ("@Kirti Nagar",), ("Saraswati Garden", 28.6500, 77.1415, "o"), ("@Mayapuri",),
+    ("Mayapuri Industrial Area Phase III", 28.6230, 77.1190, "o"), ("IITM Janakpuri", 28.6150, 77.1010, "o"),
+    ("Sagarpur", 28.6060, 77.1040, "o"), ("@Palam",)]),
+  # Named localities and interchanges: same 3 May 2026 announcement. 12 stations officially; 11 are named,
+  # Defence Colony stays projected to fill the count.
   dict(line="jm", phase="VB", title="Jor Bagh → Mithapur", status="State approved May 2026", km=16.991, n=12, src="vb", st=[
-    ("@Jor Bagh",), ("Lodhi Colony", 28.5850, 77.2255, "p"), ("Defence Colony", 28.5735, 77.2310, "p"), ("@Lajpat Nagar",),
-    ("Amar Colony", 28.5615, 77.2431, "p"), ("@Okhla NSIC",), ("Okhla Phase II", 28.5366, 77.2756, "p"), ("@Jasola Apollo",),
-    ("@Madanpur Khadar",), ("Madanpur Khadar Extension", 28.5180, 77.3065, "p"), ("Jaitpur", 28.5060, 77.3105, "p"),
-    ("Mithapur", 28.4935, 77.3185, "p")]),
+    ("@Jor Bagh",), ("Lodhi Colony", 28.5850, 77.2255, "o"), ("Defence Colony", 28.5735, 77.2310, "p"), ("@Lajpat Nagar",),
+    ("@Okhla NSIC",), ("Old Ishwar Nagar", 28.5495, 77.2790, "o"), ("@Jasola Apollo",),
+    ("@Madanpur Khadar",), ("Ali Village", 28.5230, 77.2990, "o"), ("Jaitpur", 28.5060, 77.3105, "o"),
+    ("Molarband", 28.4995, 77.3150, "o"), ("Mithapur", 28.4935, 77.3185, "o")]),
   dict(line="sm", phase="VB", title="Shastri Park → Mayur Vihar Ph-III", status="State approved May 2026", km=13.197, n=8, src="vb", st=[
     ("@Shastri Park",), ("Gandhi Nagar", 28.6588, 77.2716, "p"), ("Geeta Colony", 28.6500, 77.2760, "p"), ("@Nirman Vihar",),
     ("Patparganj", 28.6235, 77.2960, "p"), ("@Trilokpuri–Sanjay Lake",), ("Kondli", 28.6071, 77.3243, "p"),
@@ -151,7 +155,7 @@ SEGMENTS = [
     ("Hindon Airport", 28.7043, 77.3648, "o"), ("Karhaira", 28.6965, 77.3790, "o"), ("New Karhaira Colony", 28.6900, 77.3840, "o"),
     ("Loni Road Industrial Area", 28.6830, 77.3885, "o"), ("@Arthala",)]),
   dict(line="tn", phase="VC", title="Tughlakabad → Noida Sector 142", status="Proposed", km=15, n=10, src="vc", st=[
-    ("@Tughlakabad",), ("Molarband", 28.5000, 77.3110, "p"), ("@Mithapur",), ("Noida Sector 168", 28.4975, 77.3520, "p"),
+    ("@Tughlakabad",), ("@Molarband",), ("@Mithapur",), ("Noida Sector 168", 28.4975, 77.3520, "p"),
     ("Noida Sector 133", 28.5052, 77.3715, "p"), ("Noida Sector 132", 28.5100, 77.3830, "p"), ("Noida Sector 134", 28.5020, 77.3895, "p"),
     ("Noida Sector 135", 28.4980, 77.4000, "p"), ("Noida Sector 140A", 28.5040, 77.4070, "p"), ("@Noida Sector 142",)]),
   dict(line="violet", phase="VC", title="Raja Nahar Singh → Palwal", status="Proposed · HMRTC feasibility done", km=24, n=13, src="vc", st=[
@@ -253,8 +257,8 @@ SEGMENTS += [
 
 SEGMENTS += [
   dict(line="lite", phase="G2", title="Delhi Metrolite: Kirti Nagar → Dwarka Sector 28 (Bamnoli)", status="DPR approved by DMRC board Oct 2019 · awaiting Delhi govt · listed as cancelled in Wikipedia's index", km=19.09, n=21, src="metrolite", st=[
-    ("@Kirti Nagar",), ("Saraswati Garden", 28.6466, 77.1374, "o"), ("Mayapuri Bus Depot", 28.6420, 77.1330, "o"), ("@Mayapuri",),
-    ("Hari Nagar Block BE", 28.6340, 77.1240, "o"), ("@Mayapuri Industrial Area", "o"), ("Mayapuri Industrial Area-II", 28.6230, 77.1235, "o"),
+    ("@Kirti Nagar",), ("@Saraswati Garden",), ("Mayapuri Bus Depot", 28.6420, 77.1330, "o"), ("@Mayapuri",),
+    ("Hari Nagar Block BE", 28.6340, 77.1240, "o"), ("Mayapuri Industrial Area", 28.6290, 77.1300, "o"), ("Mayapuri Industrial Area-II", 28.6230, 77.1235, "o"),
     ("Lajwanti Garden", 28.6133, 77.1073, "o"), ("Shivpuri", 28.6118, 77.0985, "o"), ("Dabri Village", 28.6101, 77.0889, "o"),
     ("Sitapuri Extension", 28.6131, 77.0836, "o"), ("Mahavir Enclave", 28.6000, 77.0790, "o"), ("Dwarka Sector 2", 28.5986, 77.0687, "o"),
     ("Dwarka Sector 7", 28.5874, 77.0673, "o"), ("Dwarka Sector 6", 28.5925, 77.0647, "o"), ("@Dwarka Sector 10",),
