@@ -594,7 +594,7 @@ const baseBox=document.getElementById("showBase");
 function syncBase(){ baseBox.checked?base.addTo(map):map.removeLayer(base); }
 baseBox.onchange=syncBase;
 const solidBox=document.getElementById("solid"),namesBox=document.getElementById("names"),curvedBox=document.getElementById("curved"),vGeo=document.getElementById("vGeo"),vSch=document.getElementById("vSch");
-if(C.noSchematic){vSch.style.display="none";state.view="geo";}
+if(C.noSchematic){vSch.closest(".seg").style.display="none";state.view="geo";}
 let schFitted=false;
 function applyView(){
   const sc=state.view==="schem";
