@@ -2,7 +2,7 @@
 # Deploy dist/ to Vercel (india-metro-map.vercel.app) with GoatCounter analytics; no name in the URL.
 # GC = GoatCounter site code. Rename the code in GoatCounter settings to keep your username out of page source.
 set -euo pipefail; cd "$(dirname "$0")"
-GC=${GC:-amaydixit11}
+GC=${GC:-indiametro}
 D=$(mktemp -d)/india-metro-map; mkdir -p "$D"; cp -R dist/. "$D/"; rm -f "$D/planned-stations.csv"
 mkdir -p "$D/.vercel"; cp .vercel-project.json "$D/.vercel/project.json"
 for f in "$D"/index.html "$D"/*/index.html; do
