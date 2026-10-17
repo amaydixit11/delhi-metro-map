@@ -242,10 +242,10 @@ document.getElementById("cityNotes").innerHTML=C.notes;
   document.getElementById("cities").innerHTML=[["india","All cities"],["delhi","Delhi NCR"],["blr","Bengaluru"],["mum","Mumbai"],["pune","Pune"],["hyd","Hyderabad"]]
   .map(([c,n])=>`<a href="${root}${c==="delhi"?"":c+"/"}${c==="delhi"?"index.html":"index.html"}" class="${c===here?"on":""}">${n}</a>`).join("");})();
 const PH=C.phases, ORDER=C.order, SHORT=C.short;
-const state={ph:Object.fromEntries(ORDER.map(p=>[p,true])),lines:{},proj:true,view:"geo",solid:false,names:true,curved:true,year:2041};
+const state={ph:Object.fromEntries(ORDER.map(p=>[p,true])),lines:{},proj:true,view:"geo",solid:true,names:true,curved:true,year:2041};
 const YMAX=2041;
 function yrOK(y){return state.year>=YMAX||(y??9999)<state.year+1;}
-try{state.view=localStorage.getItem('dm-view')||"geo";state.solid=localStorage.getItem('dm-solid')==='1';state.names=localStorage.getItem('dm-names')!=='0';state.curved=localStorage.getItem('dm-curved')!=='0';}catch(e){}
+try{state.view=localStorage.getItem('dm-view')||"geo";state.solid=localStorage.getItem('dm-solid')!=='0';state.names=localStorage.getItem('dm-names')!=='0';state.curved=localStorage.getItem('dm-curved')!=='0';}catch(e){}
 Object.keys(M.lines).forEach(k=>state.lines[k]=true);
 
 const root=document.documentElement;
